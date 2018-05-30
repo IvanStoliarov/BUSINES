@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic.woff2') format('woff2'),
+        url('AdelleCyrillic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-ThinItalic.woff2') format('woff2'),
+        url('AdelleCyrillic-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-Bold.woff2') format('woff2'),
+        url('AdelleCyrillic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-Heavy.woff2') format('woff2'),
+        url('AdelleCyrillic-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-Thin.woff2') format('woff2'),
+        url('AdelleCyrillic-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-Light.woff2') format('woff2'),
+        url('AdelleCyrillic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-SemiBoldItalic.woff2') format('woff2'),
+        url('AdelleCyrillic-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-LightItalic.woff2') format('woff2'),
+        url('AdelleCyrillic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-SemiBold.woff2') format('woff2'),
+        url('AdelleCyrillic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-HeavyItalic.woff2') format('woff2'),
+        url('AdelleCyrillic-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-Italic.woff2') format('woff2'),
+        url('AdelleCyrillic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-BoldItalic.woff2') format('woff2'),
+        url('AdelleCyrillic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-ExtraboldItalic.woff2') format('woff2'),
+        url('AdelleCyrillic-ExtraboldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adelle Cyrillic';
+    src: url('AdelleCyrillic-Extrabold.woff2') format('woff2'),
+        url('AdelleCyrillic-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
