@@ -11,6 +11,14 @@
   font-family: Gotham;
   src: url("../fonts/GothaProBol.otf");
 }
+
+.projectDescription{
+  padding:1rem
+}
+.projectDescription h2{
+  text-align:center
+}
+
 body {
   font-family: OpenSans;
 }
