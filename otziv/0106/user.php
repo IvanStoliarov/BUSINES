@@ -1,9 +1,9 @@
 <?php
 
-include "engine/db_connect.php";
-if(!isset($_GET['page'])){
-$_GET['page']=1;
+require "engine/db_connect.php";
+
 $video_on_page_counter=0;
+$user=mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `USERS` WHERE ID='".$_GET['ID']."'"));
 function getAvatarLink($ID){
 			if(mysqli_fetch_assoc(mysqli_query(mysqli_connect("localhost", "root", "qweqwe123", "OT"), "SELECT * FROM `USERS` WHERE ID='".$ID."'"))['exAVATAR']==""){
 						if(mysqli_fetch_assoc(mysqli_query(mysqli_connect("localhost", "root", "qweqwe123", "OT"), "SELECT * FROM `USERS` WHERE ID='".$ID."'"))['HAS_AVATAR']==1){
@@ -16,7 +16,7 @@ function getAvatarLink($ID){
 					}
 			return $link;
 		}
-mysqli_set_charset($connection, 'utf8');
+		mysqli_set_charset($connection, 'utf8');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,22 +25,22 @@ mysqli_set_charset($connection, 'utf8');
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	
+
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="animate.css-master/animate.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<title>Исполнители</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Пользователь</title>
 </head>
 <body>
+
 <header class="header" id="ex1">
 		<div class="container">
 			<nav class="header__nav">
 				<a style="text-decoration: none;" href="../">
-					<img src="img/logo.png" alt="Otziv video" class="logo  rubberBand">
+					<img src="img/logo.png" alt="Otziv video" class="logo animated rubberBand">
 				</a>
 				<ul class="header__menu d-flex">
 					<li class="menu__item">
@@ -142,305 +142,118 @@ mysqli_set_charset($connection, 'utf8');
 		</div>
 	</header>
 
-	<main class="main_isp">
+	<main class="main">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-9">
+					<div class="user__block">
+						<div class="row">
+							<div class="col-md-5">
+								<iframe id="video_<?php echo $video_on_page_counter ?>" style="border-radius: 50%;" width="295" height="295" class="implementers__movie user__block_video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube.com/embed/<?php echo mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `USERS` WHERE ID='".$_GET['ID']."'"))['PROMO_URL'] ?>?rel=0&amp;controls=0">
+								</iframe>
+								<img src="img/pol_elips.png" alt="ellips" class="user__block_ellips">
+							</div>
+							<div class="col-md-3">
+								<h2 class="user__block_title">
+									<?php echo $user['LOGIN'] ?>
+								</h2>
+								<p class="user__block_green">
+									+ <?php echo $user['GRANTED_ORDERS'] ?>
+								</p>
+								<p class="user__block_gray">
+									- <?php echo $user['DENIED_ORDERS'] ?>
+								</p>
+								<p class="user__block_accepted">
+									<?php echo $user['GRANTED_ORDERS'] ?> принятых
+								</p>
+								<p class="user__block_unaccepted">
+									<?php echo $user['DENIED_ORDERS'] ?> непринятых
+								</p>			
+							</div>
+							<div class="col-md-4">
+								<div class="user__block_about_block">
+									<h2 class="user__block_about">
+										обо мне:
+									</h2>
+									<div class="user__block_description">
+										<p class="user__block_year">
+											 <?php
+											 function calculate_age($birthday) {
+												  $birthday_timestamp = strtotime($birthday);
+												  $age = date('Y') - date('Y', $birthday_timestamp);
+												  if (date('md', $birthday_timestamp) > date('md')) {
+												    $age--;
+												  }
+												  return $age;
+											 };
+											 $age=calculate_age($user['BIRTH_DATE']);
+											echo $age." ";
+											if(($age%10)==1){
+												echo "год";
+											}elseif(($age%10)<5&&($age%10!=0)){
+												echo "года";
+											}else{
+												echo "лет";
+											}
+											?>
+										</p>
+										<div class="user__block_line"></div>
+										<p class="user__block_half">
+											Пол: <?php
+												if($user['SEX']==1){
+													echo "М";
+												}elseif($user['SEX']==2){
+													echo "Ж";
+												}
+												?>
+										</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<a href="#ex6" class="order__btn">заказать отзыв</a>
+					<!--<a href="#77" class="become__btn">написать исполнителю</a>-->
+				</div>
+			</div>
+			<?php if(mysqli_num_rows(mysqli_query($connection, "SELECT * FROM `ORDERS` WHERE PERFORMER_ID='".$_GET['ID']."' AND STATUS='2'"))>0){ ?>
+			<div class="row">
 				<div class="col-12">
-					<h2 class="directory__executor">
-						каталог исполнителей
+					<h2 class="user__work_title">
+						Работы пользователя
 					</h2>
 				</div>
 			</div>
+			<?php }else{ ?>
+					<h2 class="user__work_title">
+						У этого пользователя пока нет готовых работ.
+					</h2>
+			<?php } ?>
 			<div class="row">
-				<div class="col-lg-9">
-                    <div class="messageWindow">
-                        <div class="messageWindow__video">
-                            <iframe id="video_<?php echo ++$video_on_page_counter ?>" width="270" height="270" class="video implementers__movie" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube.com/embed/<?php echo $select_best_array['0']['PROMO_URL'] ?>?rel=0&amp;controls=0">
-                            </iframe>
-                        </div>
-                        <div class="messageWindow__right">
-                            <div class="nickName">Никнейм Никнейм</div>
-                            <div class="messageStatus">
-                                <div class="messageStatus__icons">
-                                    <div class="messageStatus__icon icon__inbox">+6</div>
-                                    <div class="messageStatus__icon icon__unaccepted">+0</div>
-                                </div>
-                                <div class="messageStatus__text">
-                                    <div class="text__inbox">6 принятых</div>
-                                    <div class="text__unaccepted"> 0 неприянтых</div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="messageBtns">
-                                <a href="#">Подробнее</a>
-                                <button class="messageBtn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="messageWindow">
-                        <div class="messageWindow__video">
-                            <iframe id="video_<?php echo ++$video_on_page_counter ?>" width="270" height="270" class="video implementers__movie" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube.com/embed/<?php echo $select_best_array['0']['PROMO_URL'] ?>?rel=0&amp;controls=0">
-                            </iframe>
-                        </div>
-                        <div class="messageWindow__right">
-                            <div class="nickName">Никнейм Никнейм</div>
-                            <div class="messageStatus">
-                                <div class="messageStatus__icons">
-                                    <div class="messageStatus__icon icon__inbox">+6</div>
-                                    <div class="messageStatus__icon icon__unaccepted">+0</div>
-                                </div>
-                                <div class="messageStatus__text">
-                                    <div class="text__inbox">6 принятых</div>
-                                    <div class="text__unaccepted"> 0 неприянтых</div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="messageBtns">
-                                <a href="#">Подробнее</a>
-                                <button class="messageBtn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="messageWindow">
-                        <div class="messageWindow__video">
-                            <iframe id="video_<?php echo ++$video_on_page_counter ?>" width="270" height="270" class="video implementers__movie" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube.com/embed/<?php echo $select_best_array['0']['PROMO_URL'] ?>?rel=0&amp;controls=0">
-                            </iframe>
-                        </div>
-                        <div class="messageWindow__right">
-                            <div class="nickName">Никнейм Никнейм</div>
-                            <div class="messageStatus">
-                                <div class="messageStatus__icons">
-                                    <div class="messageStatus__icon icon__inbox">+6</div>
-                                    <div class="messageStatus__icon icon__unaccepted">+0</div>
-                                </div>
-                                <div class="messageStatus__text">
-                                    <div class="text__inbox">6 принятых</div>
-                                    <div class="text__unaccepted"> 0 неприянтых</div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="messageBtns">
-                                <a href="#">Подробнее</a>
-                                <button class="messageBtn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="messageWindow">
-                        <div class="messageWindow__video">
-                            <iframe id="video_<?php echo ++$video_on_page_counter ?>" width="270" height="270" class="video implementers__movie" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube.com/embed/<?php echo $select_best_array['0']['PROMO_URL'] ?>?rel=0&amp;controls=0">
-                            </iframe>
-                        </div>
-                        <div class="messageWindow__right">
-                            <div class="nickName">Никнейм Никнейм</div>
-                            <div class="messageStatus">
-                                <div class="messageStatus__icons">
-                                    <div class="messageStatus__icon icon__inbox">+6</div>
-                                    <div class="messageStatus__icon icon__unaccepted">+0</div>
-                                </div>
-                                <div class="messageStatus__text">
-                                    <div class="text__inbox">6 принятых</div>
-                                    <div class="text__unaccepted"> 0 неприянтых</div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="messageBtns">
-                                <a href="#">Подробнее</a>
-                                <button class="messageBtn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-				<div class="col-lg-3">
-					<a href="#2" class="directory__exepted_btn">стать исполнителем</a>
-					<div class="search">
-						<form id="search-form" action="ispolniteli.php" method="GET">
-							<input type="text" name="search-text" placeholder="искать исполнителя" class="search__input">
-							<button form="search-form" class="search__img"><img src="img/search.png" alt="search" ></button>
-						</form>
-						<form id="filter" action="ispolniteli.php" method="GET">
-							<h4 class="category__name">
-								Возраст исполнителя
-							</h4>
-							
-								<input id="checkbox1" type="checkbox" name="teen" class="category__chexbox">
-								<label for="checkbox1" class="category__label">16 - 25 гг</label>
-							
-								<input id="checkbox2" type="checkbox" name="young" class="category__chexbox">
-								<label for="checkbox2" class="category__label">25 - 35гг</label>
-								
-								<input id="checkbox3" type="checkbox" name="old" class="category__chexbox">
-								<label for="checkbox3" class="category__label">35+</label>
-
-							<h4 class="category__name">
-								Пол
-							</h4>
-								<input id="checkbox4" type="checkbox" name="sex_male" class="category__chexbox">
-								<label for="checkbox4" class="category__label">М</label>
-							
-								<input id="checkbox5" type="checkbox" name="sex_female" class="category__chexbox">
-								<label for="checkbox5" class="category__label">Ж</label>
-
-							
-
-							<button form="filter" class="cetegory__btn_left">Показать</button>
-							<button form="reset-form" class="cetegory__btn_right">Сбросить</button>
-						</form>
-						<form style="display: none;" id="reset-form" action="ispolniteli.php">
-						</form>
-					</div>
-				</div>
-			</div>
-			<?php
-			$num_rows_query="SELECT * FROM `USERS` WHERE STATUS='2' OR STATUS='4'";
-			$num_rows_result=mysqli_query($connection, $num_rows_query);
-			$num_rows=mysqli_num_rows($num_rows_result);
-			if(mysqli_num_rows($num_rows_result)>10){ 
-				if(isset($_GET['page'])){
-					$optional_get_queries="";
-					if(isset($_GET['teen'])){
-						$optional_get_queries=$optional_get_queries."&teen=".$_GET['teen'];
-					}
-					if(isset($_GET['young'])){
-						$optional_get_queries=$optional_get_queries."&young=".$_GET['young'];
-					}
-					if(isset($_GET['old'])){
-						$optional_get_queries=$optional_get_queries."&old=".$_GET['old'];
-					}
-					if(isset($_GET['sex_male'])){
-						$optional_get_queries=$optional_get_queries."&sex_male=".$_GET['sex_male'];
-					}
-					if(isset($_GET['sex_female'])){
-						$optional_get_queries=$optional_get_queries."&sex_female=".$_GET['sex_female'];
-					}
-					if(isset($_GET['search-text'])){
-						$optional_get_queries=$optional_get_queries."&search-text=".$_GET['search-text'];
-					}
-					if($_GET['page']==1){
-					?>
-					<div class="row">
-						<div class="col-12 col-md-9">
-						<a href="" class="pages"><?php echo $_GET['page']?></a>
-							<?php if((($num_rows-($num_rows%10))/10+1)>1){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']+1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']+1 ?></a><?php
-							} 
-							if((($num_rows-($num_rows%10))/10+1)>2){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']+2).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']+2 ?></a><?php
-							}
-							if((($num_rows-($num_rows%10))/10+1)>3){
-								?><p class="dots">. . .</p>
-									<a href="../ispolniteli.php?page=<?php 
-									echo (($num_rows-($num_rows%10))/10+1).$optional_get_queries;
-									?>" class="pages">
-									<?php 
-									echo ($num_rows-($num_rows%10))/10+1;
-									?></a><?php
-							}
-							?>
-					<?php
-					}elseif((($num_rows-($num_rows%10))/10+1)>=($_GET['page']+1)){
-						if((($num_rows-($num_rows%10))/10+1)==($_GET['page']+1)){?>
-							<div class="row">
-							<div class="col-12 col-md-9">
-							<a href="../ispolniteli.php?page=<?php echo ($_GET['page']-2).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-2 ?></a>
-							<?php if((($num_rows-($num_rows%10))/10+1)>1){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']-1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-1 ?></a><?php
-							} 
-							if((($num_rows-($num_rows%10))/10+1)>2){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']).$optional_get_queries ?>" class="pages"><?php echo $_GET['page'] ?></a><?php
-							}
-							if((($num_rows-($num_rows%10))/10+1)>3){
-								?><p class="dots">. . .</p>
-									<a href="../ispolniteli.php?page=<?php 
-									echo (($num_rows-($num_rows%10))/10+1).$optional_get_queries;
-									?>" class="pages">
-									<?php 
-									echo ($num_rows-($num_rows%10))/10+1;
-									?></a><?php
-							}
-							}else{ 
+				<div class="col-12">
+					<div class="slickp-slider">
+						
+						<?php
+						$result=mysqli_query($connection, "SELECT * FROM `ORDERS` WHERE PERFORMER_ID='".$_GET['ID']."' AND STATUS='2'");
+						while($res=mysqli_fetch_assoc($result)){
 						?>
-
-						<div class="row">
-						<div class="col-12 col-md-9">
-						<a href="../ispolniteli.php?page=<?php echo ($_GET['page']-1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-1 ?></a>
-							<?php if((($num_rows-($num_rows%10))/10+1)>1){
-								?><a href="../ispolniteli.php?page=<?php echo $_GET['page'].$optional_get_queries ?>" class="pages"><?php echo $_GET['page'] ?></a><?php
-							} 
-							if((($num_rows-($num_rows%10))/10+1)>2){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']+1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']+1 ?></a><?php
-							}
-							if((($num_rows-($num_rows%10))/10+1)>3){
-								?><p class="dots">. . .</p>
-									<a href="../ispolniteli.php?page=<?php 
-									echo (($num_rows-($num_rows%10))/10+1).$optional_get_queries;
-									?>" class="pages">
-									<?php 
-									echo ($num_rows-($num_rows%10))/10+1;
-									?></a><?php
-							}}
-							
-					}elseif($_GET['page']>3){
-						if((($num_rows-($num_rows%10))/10+1)>($_GET['page']+1)){
-						?>
-						<div class="row">
-						<div class="col-12 col-md-9">
-						<a href="../ispolniteli.php?page=<?php echo '1'.$optional_get_queries ?>" class="pages">1</a>
-						<p class="dots">. . .</p>
-						<a href="../ispolniteli.php?page=<?php echo ($_GET['page']-1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-1 ?></a>
-							<?php if((($num_rows-($num_rows%10))/10+1)>1){
-								?><a href="../ispolniteli.php?page=<?php echo $_GET['page'].$optional_get_queries ?>" class="pages"><?php echo $_GET['page'] ?></a><?php
-							} 
-							if((($num_rows-($num_rows%10))/10+1)>2){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']+1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']+1 ?></a><?php
-							}
-							if((($num_rows-($num_rows%10))/10+1)>3){
-								?><p class="dots">. . .</p>
-									<a href="../ispolniteli.php?page=<?php 
-									echo (($num_rows-($num_rows%10))/10+1).$optional_get_queries;
-									?>" class="pages">
-									<?php 
-									echo ($num_rows-($num_rows%10))/10+1;
-									?></a><?php
-							}
-						}elseif((($num_rows-($num_rows%10))/10+1)==($_GET['page']+1)){?>
-							<div class="row">
-							<div class="col-12 col-md-9">
-							<a href="../ispolniteli.php?page=<?php echo ($_GET['page']-2).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-2 ?></a>
-							<?php if((($num_rows-($num_rows%10))/10+1)>1){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']-1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-1 ?></a><?php
-							} 
-							if((($num_rows-($num_rows%10))/10+1)>2){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']).$optional_get_queries ?>" class="pages"><?php echo $_GET['page'] ?></a><?php
-							}
-							if((($num_rows-($num_rows%10))/10+1)>3){
-								?><p class="dots">. . .</p>
-									<a href="../ispolniteli.php?page=<?php 
-									echo (($num_rows-($num_rows%10))/10+1).$optional_get_queries;
-									?>" class="pages">
-									<?php 
-									echo ($num_rows-($num_rows%10))/10+1;
-									?></a><?php
-							}
-						}else{
-							?>
-						<div class="row">
-						<div class="col-12 col-md-9">
-						<a href="../ispolniteli.php?page=<?php echo '1'.$optional_get_queries ?>" class="pages">1</a>
-						<p class="dots">. . .</p>
-						<a href="../ispolniteli.php?page=<?php echo ($_GET['page']-2).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-2 ?></a>
-							<?php if((($num_rows-($num_rows%10))/10+1)>1){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']-1).$optional_get_queries ?>" class="pages"><?php echo $_GET['page']-1 ?></a><?php
-							} 
-							if((($num_rows-($num_rows%10))/10+1)>2){
-								?><a href="../ispolniteli.php?page=<?php echo ($_GET['page']).$optional_get_queries ?>" class="pages"><?php echo $_GET['page'] ?></a><?php
-							}
-							}
+						<div class="slide">
+							<img src="img/slider_img.png" alt="" class="slide__img">
+							<p class="slider__desc">
+								<?php $res['NAME'] ?><br>
+								<?php $res['DONE_DATE'] ?>
+							</p>
+						</div>
+						<?php
 						}
-					}
-				}
-			 ?>
+						?>
+					</div>
+				</div>		
+			</div>
 		</div>
 	</main>
 
@@ -451,7 +264,7 @@ mysqli_set_charset($connection, 'utf8');
 					$result=mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `ADMIN` WHERE ID='1'"));
 					if(($result['PHONE']!="")||($result['EMAIL']!="")||($result['TELEGRAM']!="")||($result['WHATSAPP']!="")||($result['VIBER']!="")){
 					?>
-				<div class="col-md-3 footer_a">
+				<div class="col-md-3 animated footer_a">
 					<img src="img/contact.png" alt="contact" class="footer__img_contact">
 					<h2 class="footer__contact">
 						контакты
@@ -487,7 +300,7 @@ mysqli_set_charset($connection, 'utf8');
 				</div>
 				<?php } ?>
 				<div class="col-md-1"></div>
-				<div class="col-md-4 footer_b">
+				<div class="col-md-4 animated footer_b">
 					<img src="img/file.png" alt="message" class="footer__img_massage">
 					<h3 class="footer__message">
 						написать нам
@@ -500,7 +313,7 @@ mysqli_set_charset($connection, 'utf8');
 					</form>
 				</div>
 				<div class="col-md-1"></div>
-				<div class="col-md-3 footer_c">
+				<div class="col-md-3 animated footer_c">
 					<img src="img/user.png" alt="user" class="footer__img_user">
 					<h3 class="footer__user">
 						пользователю
@@ -529,10 +342,21 @@ mysqli_set_charset($connection, 'utf8');
 		</div>
 	</footer>
 
-<div class="hidden"><?php
+	<div class="hidden">
+		<div id="77" class="send_message_box" style="position: relative;">
+			<form method="post" action="../engine/send_message.php" id="send_message_form"></form>
+			<label for="message_body">Ваше сообщение для <a href="../user.php?ID=<?php echo $_GET['ID'] ?>" style="text-decoration: none;"><?php echo mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `USERS` WHERE ID='".$_GET['ID']."'"))['LOGIN'] ?></a></label><br>
+			<input form="send_message_form" type="hidden" name="to_id" value="<?php echo $_GET['ID'] ?>">
+			<input type="hidden" name="from" value="../user.php?ID=<?php echo $_GET['ID'] ?>">
+			<textarea form="send_message_form" style="width: 100%; height: 125px;" id="message_body" name="message_body"></textarea>
+			<button form="send_message_form" id="send_message_btn" type="submit" class="contractor__btn" style="width: 15%; height: 3%; right: -370px; position: relative;" form="upload_order_video">отправить</button>
+		</div>
+	</div>
+
+	<div class="hidden"><?php
 
 	if(isset($_SESSION['logged_user'])){
-		if(mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `USERS` WHERE ID='".$_SESSION['logged_user']['ID']."'"))['STATUS']==1){?>
+		if((mysqli_num_rows(mysqli_query($connection, "SELECT * FROM `USERS` WHERE (STATUS='2' OR STATUS='4') AND ID='".$_SESSION['logged_user']."'"))>0)){?>
 			<div class="contractor" id="2">
 						<h2 class="contractor__title">
 						стать исполнителем
@@ -540,13 +364,13 @@ mysqli_set_charset($connection, 'utf8');
 						<p class="contractor__desc">
 					Для того, чтобы  стать исполнителем, Вы должны заполнить данную форму.
 						</p>
-					<form id="become_performer" method="POST" action="../engine/promo_upload.php">
+					<form action="engine/promo_upload.php" enctype="multipart/form-data" method="POST">
 					<div class="contractor__left">
 						<div class="contractor__block">
 							<p class="contractor__desc_category">
 								Пол:
 							</p>
-							<select form="become_performer" id="sex_selector" name="sex" class="contractor__desc_category_pol">
+							<select name="sex" class="contractor__desc_category_pol">
 								 <option value="1">М</option>
 								 <option value="2">Ж</option>
 							</select>
@@ -555,16 +379,18 @@ mysqli_set_charset($connection, 'utf8');
 							<p class="contractor__desc_category contractor__desc_date">
 								Дата рождения
 							</p>
-							<input id="birth_date" required type="date" name="date" value="25" class="contractor__desc_date_i" form="become_performer">
+							<input required type="date" name="date" value="25" class="contractor__desc_date_i">
 						</div>
 					</div>
-					<div class="contractor__block">
-						<p class="contractor__desc_category contractor__desc_date">
-							youtube ссылка вашего промо ролика
-						</p>
-						<input required type="text" name="youtube_url" class="contractor__desc_date_i" form="become_performer">
+					<div class="contractor__right">
+						<input required type="file" name="file" id="file" class="contractor__file inputfile">
+						<label for="file" class="contractor__file_label">
+							<img src="img/download-file.png" alt="download" class="contractor__img">
+							<span class="contractor__file_label_span">Загрузите свое промо-видео. В нём Вы должны максимально подробно рассказать 
+							о себе <br><span style="color: yellow;">(MP4 или AVI меньше 200Мб)</span></span>
+						</label>
 					</div>
-					<button form="become_performer" class="contractor__btn">отправить</button>
+					<button type="submit" class="contractor__btn">отправить</button>
 				</form>
 				<a href="#" class="contractor__exit"><img src="img/exit.png" alt="exit" class="contractor__exit_img"></a>
 			</div>
@@ -572,11 +398,9 @@ mysqli_set_charset($connection, 'utf8');
 			?><div class="contractor" id="2"><h2 class="contractor__title"><?php echo $_SESSION['logged_user']['LOGIN'] ?>, вы уже являетесь исполнителем!</h2><a href="#" class="contractor__exit"><img src="img/exit.png" alt="exit" class="contractor__exit_img"></a><div><?php
 		}
 	}else{ ?>
-		<div class="contractor" id="2"><h2 class="contractor__title">Для того, чтобы стать исполнителем вы должны <a href="../signup.php" target="_blank">зарегистрироваться</a> или <a href="../login.php?from=../cabinet.php" target="_blank">войти</a></h2><a href="#" class="contractor__exit"><img src="img/exit.png" alt="exit" class="contractor__exit_img"></a><div>
+		<div class="contractor" id="2"><h2 class="contractor__title">Для того, чтобы стать исполнителем вы должны <a href="../signup.php" target="_blank">зарегистрироваться</a> или <a href="../login.php" target="_blank">войти</a></h2><a href="#" class="contractor__exit"><img src="img/exit.png" alt="exit" class="contractor__exit_img"></a><div>
 	<?php }
 ?>
-	
-
 <div class="hidden">
 	<div style="height: auto;" class="order__video" id="ex6">
 		<h2 class="order__video_title">
@@ -602,7 +426,7 @@ mysqli_set_charset($connection, 'utf8');
 		</p>
 		<p class="order__video_text">
 			Для того, чтобы заказать видеоотзывы, 
-			Вы должны <a href=../signup.php?from=../ispolniteli.php" class="order__video_text_link">зарегистрироваться</a> или <a href="../login.php?from=../ispolniteli.php" class="order__video_text_link">войти</a> 
+			Вы должны <a href="../signup.php?from=../user.php?ID=<?php echo $_GET['ID'] ?>" class="order__video_text_link">зарегистрироваться</a> или <a href="../login.php?from=../user.php?ID=<?php echo $_GET['ID'] ?>" class="order__video_text_link">войти</a> 
 			в личный кабинет!
 		</p>
 		<?php
@@ -618,6 +442,19 @@ mysqli_set_charset($connection, 'utf8');
 	</div>
 	
 </div>
+
+	<style type="text/css">
+		.send_message_box{
+			margin: auto;
+			position: relative;
+			max-width: 60%;
+			height: auto;
+			padding: 10px;
+			background-color: white;
+			border-radius: 6px;
+		}
+	</style>
+
 	<!-- Присваиваю JS переменным значения PHP переменных -->
 	<script type="text/javascript">
 		setInterval(function(){
@@ -630,12 +467,21 @@ mysqli_set_charset($connection, 'utf8');
 			previous=contacts_counter;
 		}, 500)
 		
-		var selected_performers_counter = 0;
 		var current_performer_id = [];
+		var selected_performers_counter = 0;
 		var tarif_quantities = [];
 		var logged_in = false;
 		var videoPlayer = [];
 		var meme = [];
+
+		<?php
+		foreach ($_SESSION['choosen_performers'] as $value) {
+			?>
+			current_performer_id.push('<?php echo $value ?>');
+			selected_performers_counter++;
+			<?php
+		}
+		?>
 
 		<?php
 		$result=mysqli_query($connection, "SELECT * FROM `TARIFS`");
@@ -675,7 +521,7 @@ mysqli_set_charset($connection, 'utf8');
 			?>
 			meme.push('<?php echo $value ?>');
 			<?php
-		}  } ?>
+		} ?>
 		$(".notification_close_button").on('click', function(){
 			var this_notification_box_index = $(".notification_close_button").index(this);
 			var notification_id = $(".notification_close_button").siblings(".notification_id").eq(this_notification_box_index).text();
@@ -712,5 +558,6 @@ mysqli_set_charset($connection, 'utf8');
 	<script src="js/js.js"></script>
 
 	<script type="text/javascript" src="//consultsystems.ru/script/36596/" async charset="utf-8"></script>
+	<script src="js/main1.js"></script>
 </body>
 </html>

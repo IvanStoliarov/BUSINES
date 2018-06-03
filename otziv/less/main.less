@@ -903,7 +903,157 @@ left: -2000em;
 
 @import "reclam";
 
+.messageWindow{
+    display: flex;
+    padding: 35px 15px;
+    background: url("../img/chat__bg.png");
+    background-size: cover;
+    align-items: center;
+    background-origin: border-box;
+}
 
+.messageWindow__video{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.messadeBlock__title{
+    color: #111011;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nickName{
+    color: #111011;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 33px;
+}
+
+.messageStatus__icons{
+    display: flex;
+    align-items: center;
+}
+
+.messageStatus__icon{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 57px;
+    width: 57px;
+    background: #009f3c;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.icon__unaccepted{
+    height: 50px;
+    width: 50px;
+    background: #e8e7e7;
+
+}
+
+.messageStatus{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 40px;
+
+}
+
+.messadeBlock{
+    background: #dfe0e2;
+}
+
+.messageWindow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageWindow__right{
+    width: 50%;
+    margin-left: 5px;
+}
+
+.text__inbox{
+    color: #207d04;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.text__unaccepted{
+    color: #6f7072;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.implementers__movie{
+    margin: 0;
+}
+
+.message__text{
+    color: #6f7072;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.messageBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    a{
+        color: #111011;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+
+.messageBtn{
+    width: 124px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #42e7f4;
+    color: #111011;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.smallVideos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.implementers___link{
+    margin: 5px 0;
+}
 
 
 
@@ -943,8 +1093,15 @@ left: -2000em;
 
     }
 }
+@media (min-width: 991px) {
+
+    .messageWindow {
+        background-position-x: right;
+    }
+}
 
 @media (max-width: 991px){
+
     .sendMail{
         width: 272px;
         height: auto;
@@ -1010,6 +1167,12 @@ left: -2000em;
 
 
 @media (max-width: 768px){
+    .messageWindow__right{
+        width: 100%;
+    }
+    .messageWindow{
+        flex-wrap: wrap;
+    }
 .accaunt__settings, .sendMail{
     margin-left: auto;
     margin-right: auto;

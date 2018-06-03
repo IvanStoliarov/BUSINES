@@ -3,7 +3,7 @@ require "engine/db_connect.php";
 
 
 $_SESSION['post']=$_POST;
-
+mysqli_set_charset($connection, 'utf8');
 
 ?>
 <!DOCTYPE html>

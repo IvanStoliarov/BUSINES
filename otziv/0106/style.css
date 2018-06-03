@@ -12,6 +12,7 @@ ul, li {
   width: 100%;
   z-index: 9999;
   background: #fdfcfc;
+  padding: 10px 0;
   box-shadow: 0 0 8px #e1e1e1;
 }
 
@@ -2226,6 +2227,10 @@ ul, li {
   }
   .dots {
     margin-right: 10px;
+  }
+  .search__img {
+    top: 155px;
+    left: 280px;
   }
   .search__input {
     width: 100%;

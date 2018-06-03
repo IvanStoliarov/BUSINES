@@ -26,12 +26,12 @@ $result=mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `ADMIN` WHER
         <div class="container">
             <nav class="header__nav">
                 <a style="text-decoration: none;" href="../">
-                    <img src="../../../img/logo.png" alt="Otziv video" class="logo  rubberBand">
+                    <img src="img/logo.png" alt="Otziv video" class="logo  rubberBand">
                 </a>
                 <ul class="header__menu d-flex">
                     <li class="menu__item">
-                        <div id="contacts_helper" style="position: fixed; background-color: rgba(127, 127, 127, 0.6); opacity: 0.95; padding: 10px; border-radius: 50%; color: white; text-align: center; visibility: hidden; right: 38%;">Нажмите чтобы оформить заказ <img src="../../../img/point_right.png" height="25px"></div>
-                        <a id="performers_adder" style="position: relative;" href="<?php if(isset($_SESSION['logged_user'])){ echo '../order_confirm.php'; }else{ echo '#'; } ?>" class="menu__link"><img id="contacts_counter" src="../../../img/add-contact.png" alt="Contact" class="user__red"><span style="visibility: <?php if(count($_SESSION['choosen_performers'])!=0){ echo 'visible'; }else{ echo 'hidden'; } ?>; position: absolute; left: 19px; top: 15px; color: white; text-decoration: none;" id="counter" class="kol__message"><?php echo count($_SESSION['choosen_performers']) ?></span></a>
+                        <div id="contacts_helper" style="position: fixed; background-color: rgba(127, 127, 127, 0.6); opacity: 0.95; padding: 10px; border-radius: 50%; color: white; text-align: center; visibility: hidden; right: 38%;">Нажмите чтобы оформить заказ <img src="img/point_right.png" height="25px"></div>
+                        <a id="performers_adder" style="position: relative;" href="<?php if(isset($_SESSION['logged_user'])){ echo '../order_confirm.php'; }else{ echo '#'; } ?>" class="menu__link"><img id="contacts_counter" src="img/add-contact.png" alt="Contact" class="user__red"><span style="visibility: <?php if(count($_SESSION['choosen_performers'])!=0){ echo 'visible'; }else{ echo 'hidden'; } ?>; position: absolute; left: 19px; top: 15px; color: white; text-decoration: none;" id="counter" class="kol__message"><?php echo count($_SESSION['choosen_performers']) ?></span></a>
                         <div id="performers_adder_desc" style="position: fixed; background-color: grey; background-color: rgba(127,127,127, 0.6); opacity: 0.95; padding: 10px; border-radius: 2px; color: white; display: none; text-align: center;">
                             <?php
                             if(!isset($_SESSION['logged_user'])){
@@ -56,7 +56,7 @@ $result=mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `ADMIN` WHER
                         </div>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link" id="notifications_button" style="position: relative;"><img src="../../../img/info.png" alt="Info" class="user__red">
+                        <a href="#" class="menu__link" id="notifications_button" style="position: relative;"><img src="img/info.png" alt="Info" class="user__red">
                             <?php
                             $result = mysqli_query($connection, "SELECT * FROM `MAILS` WHERE STATUS='2' AND TYPE='1' AND TO_ID='".$_SESSION['logged_user']['ID']."'");
                             if(mysqli_num_rows($result)!=0){
@@ -94,7 +94,7 @@ $result=mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `ADMIN` WHER
                                 <a style="text-decoration: none; color: white;" href="../login.php">Выйти</a>
                             </div>
                         <?php }else{ ?>
-                            <a href="../login.php" class="menu__link" ><img src="../../../img/web-log-in.png" alt="Exit" class="user__red"></a>
+                            <a href="../login.php" class="menu__link" ><img src="img/web-log-in.png" alt="Exit" class="user__red"></a>
                         <?php } ?>
                     </li>
                 </ul>

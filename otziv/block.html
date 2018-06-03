@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Заказать качественные видео-отзывы для Вашего бизнеса.</title>
+</head>
+<body>
+<div class="container messadeBlock">
+    <h3 class="messadeBlock__title">лучшие исполнители</h3>
+    <div class="row">
+        <div class="col-xl-6 col-lg-8">
+            <div class="messageWindow">
+                <div class="messageWindow__video">
+                    <iframe id="video_<?php echo ++$video_on_page_counter ?>" width="270" height="270" class="video implementers__movie" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.youtube.com/embed/<?php echo $select_best_array['0']['PROMO_URL'] ?>?rel=0&amp;controls=0">
+                    </iframe>
+                </div>
+                <div class="messageWindow__right">
+                    <div class="nickName">Никнейм Никнейм</div>
+                    <div class="messageStatus">
+                        <div class="messageStatus__icons">
+                            <div class="messageStatus__icon icon__inbox">+6</div>
+                            <div class="messageStatus__icon icon__unaccepted">+0</div>
+                        </div>
+                        <div class="messageStatus__text">
+                            <div class="text__inbox">6 принятых</div>
+                            <div class="text__unaccepted"> 0 неприянтых</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="message__text">
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                    <div class="messageBtns">
+                        <a href="#">Подробнее</a>
+                        <button class="messageBtn">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-4 smallVideos">
+                <a href="#" class="implementers___link implementers___link1">
+                    <img src="//img.youtube.com/vi/<?php echo $select_best_array['0']['PROMO_URL'] ?>/maxresdefault.jpg" style="border-radius: 50%;" width="170" height="170" class="implementers___person" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    </img>
+                </a>
+                <a href="#" class="implementers___link implementers___link2">
+                    <img src="//img.youtube.com/vi/<?php echo $select_best_array['1']['PROMO_URL'] ?>/maxresdefault.jpg" style="border-radius: 50%;" width="170" height="170" class="implementers___person" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    </img>
+                </a>
+                <a href="#" class="implementers___link implementers___link3">
+                    <img src="//img.youtube.com/vi/<?php echo $select_best_array['2']['PROMO_URL'] ?>/maxresdefault.jpg" style="border-radius: 50%;" width="170" height="170" class="implementers___person" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    </img>
+                </a>
+
+                <a href="#" class="implementers___link implementers___link4">
+                    <img src="//img.youtube.com/vi/<?php echo $select_best_array['3']['PROMO_URL'] ?>/maxresdefault.jpg" style="border-radius: 50%;" width="170" height="170" class="implementers___person" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    </img>
+                </a>
+                <a href="#" class="implementers___link implementers___link5">
+                    <img src="//img.youtube.com/vi/<?php echo $select_best_array['4']['PROMO_URL'] ?>/maxresdefault.jpg" style="border-radius: 50%;" width="170" height="170" class="implementers___person" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    </img>
+                </a>
+                <a href="#" class="implementers___link implementers___link6">
+                    <img src="//img.youtube.com/vi/<?php echo $select_best_array['5']['PROMO_URL'] ?>/maxresdefault.jpg" style="border-radius: 50%;" width="170" height="170" class="implementers___person" frameborder="0" allow="encrypted-media" allowfullscreen>
+                    </img>
+                </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

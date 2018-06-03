@@ -1014,59 +1014,6 @@ nav .menu__switch-active:hover {
 .scheme__img-mobile {
   display: none;
 }
-.search__input{
-  width: 100%;
-}
-#search-form{
-  position: relative;
-}
-.search__img{
-  top: 10px;
-  left: unset;
-  right: 0;
-}
-.ulogin-buttons-container > div{
-border-radius: 50%!important;
-}
-
-.main_isp{
-  padding-top: 70px;
-}
-
-
-.messageBtn:hover{
-  background: #f1543f;
-}
-
-.menu__switch a:hover{
-  background: #f1543f!important;
-}
-
-
-.messageStatus{
-  flex-wrap: wrap;
-}
-.messageBtns{
-  flex-wrap: wrap;
-}
-
-.messageBtns a,
-.messageBtns button,
-.messageStatus__icons,
-.messageStatus__text{
-margin-left: auto;
-margin-right: auto;
-}
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1200px) {
   .reclam {
     -webkit-background-size: 50%;
@@ -1086,26 +1033,26 @@ margin-right: auto;
   .reclam__content {
     width: auto;
   }
-  .reclam__wrapper nav, .header__nav {
+  .reclam__wrapper nav {
     flex-wrap: wrap;
   }
-  .reclam__wrapper nav > a, .header__nav > a {
+  .reclam__wrapper nav > a {
     width: 100%;
     text-align: center;
   }
-  .header__menu {
+  .reclam__wrapper nav .header__menu {
     justify-content: space-around;
     align-items: center;
     width: 50%;
   }
-  .header__menu .menu__item {
+  .reclam__wrapper nav .header__menu .menu__item {
     margin: 0;
   }
-  nav .menu__switch {
+  .reclam__wrapper nav .menu__switch {
     flex-wrap: wrap;
     width: 50%;
   }
-  nav .menu__switch a {
+  .reclam__wrapper nav .menu__switch a {
     padding-left: 0;
     padding-right: 0;
     width: 50%;
@@ -1113,14 +1060,14 @@ margin-right: auto;
   }
 }
 @media (max-width: 350px) {
-  .reclam__wrapper nav, .header__nav {
+  .reclam__wrapper nav {
     flex-direction: column;
   }
-  nav .menu__switch {
+  .reclam__wrapper nav .menu__switch {
     width: 100%;
     margin-top: 10px;
   }
-  nav .menu__switch a {
+  .reclam__wrapper nav .menu__switch a {
     padding: 15px 0;
   }
   .reclam__content h1 {
@@ -1169,9 +1116,6 @@ margin-right: auto;
   .reclam__wrapper .container {
     max-width: 720px;
   }
-  .main_isp{
-    padding-top: 150px;
-  }
 }
 .messageWindow {
   display: flex;
@@ -1180,13 +1124,6 @@ margin-right: auto;
   background-size: cover;
   align-items: center;
   background-origin: border-box;
-}
-
-.main_isp .messageWindow{
-  background:none;
-  border: 1px solid rgba(0,0,0,.1);
-  margin-bottom: 1rem;
-
 }
 .messageWindow__video {
   margin-left: auto;

@@ -3,6 +3,7 @@
 	include "engine/vk_config.php";
 	include "engine/fb_config.php";
 	unset($_SESSION['logged_user']);
+	mysqli_set_charset($connection, 'utf8');
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -79,8 +80,93 @@
 		</form>
 		<p><strong>Вход через социальные сети</strong></p>
 		<script src="//ulogin.ru/js/ulogin.js"></script>
-		<div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name,photo_big,bdate;providers=vkontakte,facebook,twitter;hidden=;redirect_uri=http%3A%2F%2Fotziv.video%2Fengine%2Fauthorisation_success.php;mobilebuttons=0;"></div>
+		<div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name,photo_big,bdate;providers=vkontakte,facebook;hidden=;redirect_uri=http%3A%2F%2Fotziv.video%2Fengine%2Fauthorisation_success.php;mobilebuttons=0;"></div>
 	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+					<?php
+					$result=mysqli_fetch_assoc(mysqli_query($connection, "SELECT * FROM `ADMIN` WHERE ID='1'"));
+					if(($result['PHONE']!="")||($result['EMAIL']!="")||($result['TELEGRAM']!="")||($result['WHATSAPP']!="")||($result['VIBER']!="")){
+					?>
+				<div class="col-md-3 animated footer_a">
+					<img src="img/contact.png" alt="contact" class="footer__img_contact">
+					<h2 class="footer__contact">
+						контакты
+					</h2>
+					<div class="footer__line"></div>
+					<?php if($result['EMAIL']!=""){ ?>
+					<img src="img/mail (1).png" alt="mail" class="footer__img_mail">
+					<p class="footer__mail"><a style="text-decoration: none; color: white; top: -23px; position: relative;" href="mailto:<?php echo $result['EMAIL'] ?>"><?php echo $result['EMAIL'] ?></a></p>
+					<?php } ?>
+					<ul class="footer__contact_social d-flex">
+						<?php if($result['TELEGRAM']!=""){ ?>
+						<li class="footer__contact_item">
+							<a href="#" class="footer__contact_link">
+								<img src="img/telegram.png" alt="telegram" class="footer__contact_img">
+							</a>
+						</li>
+						<?php } ?>
+						<?php if($result['WHATSAPP']!=""){ ?>
+						<li class="footer__contact_item">
+							<a href="#" class="footer__contact_link">
+								<img src="img/whatsapp.png" alt="whatsapp" class="footer__contact_img">
+							</a>
+						</li>
+						<?php } ?>
+						<?php if($result['VIBER']!=""){ ?>
+						<li class="footer__contact_item">
+							<a href="#" class="footer__contact_link">
+								<img src="img/viber.png" alt="viber" class="footer__contact_img">
+							</a>
+						</li>
+						<?php } ?>
+					</ul>
+				</div>
+				<?php } ?>
+				<div class="col-md-1"></div>
+				<div class="col-md-4 animated footer_b">
+					<img src="img/file.png" alt="message" class="footer__img_massage">
+					<h3 class="footer__message">
+						написать нам
+					</h3>
+					<form id="contact_form" method="POST" action="../engine/send_external_message.php">
+						<input type="hidden" name="message_type" value="contact_form">
+						<input form="contact_form" type="email" class="footer__form_email" name="email" placeholder="Ваш мейл">
+						<textarea form="contact_form" type="text" class="footer__form_text" name="text" placeholder="Текст сообщения"></textarea>
+						<button form="contact_form" class="footer__form_btn"><img src="img/mail.png" alt="" class="footer__img_mailf"></button>
+					</form>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-3 animated footer_c">
+					<img src="img/user.png" alt="user" class="footer__img_user">
+					<h3 class="footer__user">
+						пользователю
+					</h3>
+					<div class="footer__line footer__line_right"></div>
+					<ul class="footer__menu">
+						<li class="footer__item">
+							<a href="#2" class="footer__link">Стать исполнителем</a>
+						</li>
+						<li class="footer__item">
+							<a href="#ex6" class="footer__link">Заказать отзыв</a>
+						</li>
+						<li class="footer__item footer__item_a">
+							<a href="../login.php" style="color: #dfe0e2; text-align: right; font-size: 18px; font-family: 'Open Sans', sans-serif; font-weight: 600; text-decoration: none;" ">Войти/зарегистрироваться</a>
+						</li>
+						<li class="footer__item">
+							<a href="../login.php" class="footer__link">Авторизация через соцсети</a>
+						</li>
+					</ul>
+					<ul class="footer__menu_social d-flex justify-content-end">
+						<script src="//ulogin.ru/js/ulogin.js"></script>
+						<div id="uLogin" data-ulogin="display=panel;theme=flat;fields=first_name,last_name,photo_big,bdate;providers=vkontakte,facebook,twitter;hidden=;redirect_uri=http%3A%2F%2Fotziv.video%2Fengine%2Fauthorisation_success.php;mobilebuttons=0;"></div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<style type="text/css">
 		div.login-form{
@@ -105,6 +191,10 @@
 		}
 		input:hover{
 			background-color: #e7e7e7;
+		}
+		footer{
+			position: relative;
+			bottom: -250px;
 		}
 	</style>
 
