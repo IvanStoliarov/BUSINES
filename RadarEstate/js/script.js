@@ -77,18 +77,18 @@ if(estateItems) {
     }
 }
 
-const complexEstateItems = document.querySelectorAll(".complex-real-estate__item");
-if(complexEstateItems) {
-    for (let i = 0; i < complexEstateItems.length; i++) {
-        complexEstateItems[i].addEventListener("click", function () {
-            let linkedItem = this.querySelector(".complex-real-estate__name");
-            linkedItem.classList.add("complex-real-estate__name-active");
-            setTimeout(function () {
-                linkedItem.classList.remove("complex-real-estate__name-active");
-            }, 400);
-        })
-    }
-}
+// const complexEstateItems = document.querySelectorAll(".complex-real-estate__item");
+// if(complexEstateItems) {
+//     for (let i = 0; i < complexEstateItems.length; i++) {
+//         complexEstateItems[i].addEventListener("click", function () {
+//             let linkedItem = this.querySelector(".complex-real-estate__name");
+//             linkedItem.classList.add("complex-real-estate__name-active");
+//             setTimeout(function () {
+//                 linkedItem.classList.remove("complex-real-estate__name-active");
+//             }, 400);
+//         })
+//     }
+// }
 
 // const footerMenu = document.querySelector(".footer__menu");
 // const footerLinks = footerMenu.querySelectorAll("a");
