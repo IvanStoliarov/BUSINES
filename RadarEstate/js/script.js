@@ -40,12 +40,12 @@ mobileCityListToggler.addEventListener("click", function () {
 
 
 // Show about company text
-const showTextBtn = document.querySelector(".article__text-toggler");
-if (showTextBtn) {
-    showTextBtn.addEventListener("click", function () {
-        document.querySelector(".article__text-wrapper").classList.toggle("article__text-wrapper-full");
-    });
-}
+// const showTextBtn = document.querySelector(".article__text-toggler");
+// if (showTextBtn) {
+//     showTextBtn.addEventListener("click", function () {
+//         document.querySelector(".article__text-wrapper").classList.toggle("article__text-wrapper-full");
+//     });
+// }
 
 // let allLinks = document.querySelectorAll("a");
 // for (let i = 0; i < allLinks.length; i++){
