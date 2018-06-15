@@ -47,7 +47,7 @@ if (showTextBtn) {
     });
 }
 
-// let allLinks = document.querySelectorAll("a");
+let allLinks = document.querySelectorAll("a");
 for (let i = 0; i < allLinks.length; i++){
     allLinks[i].addEventListener("click", function () {
         let element = this;
