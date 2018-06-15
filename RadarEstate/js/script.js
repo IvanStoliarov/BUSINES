@@ -106,6 +106,7 @@ if(footerLinks){
 // DOWNLOAD FILE
 const downloadButton = document.querySelector("#downloadButton");
 if(downloadButton){
+    const downloadForm = document.querySelector("#downloadForm");
     const downloadLink = downloadButton.querySelector("a");
     downloadLink.addEventListener("click", function () {
         downloadForm.click();
@@ -113,17 +114,16 @@ if(downloadButton){
 }
 
 // Form validation
-let form = document.querySelector("form");
+let form = document.querySelector("#form");
 if(form) {
     let emailInput = form.email;
     let emptyValue = emailInput.value;
     emailInput.addEventListener("input", function (event) {
         let validMail = event.target.value.match(/^[0-9a-z-\.-\@]+$/i);
-        let currentForm = event.target.closest(".form__item");
-        if ((emptyValue == event.target.value) || (validMail)) {
-            currentForm.classList.remove("form__email-wrong");
+        if((emptyValue == event.target.value) || (validMail)) {
+            document.querySelector(".form__email").classList.remove("form__email-wrong");
         } else {
-            currentForm.classList.add("form__email-wrong");
+            document.querySelector(".form__email").classList.add("form__email-wrong");
         }
     });
 }
