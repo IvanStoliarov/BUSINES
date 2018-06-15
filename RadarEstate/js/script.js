@@ -40,78 +40,78 @@ mobileCityListToggler.addEventListener("click", function () {
 
 
 // Show about company text
-// const showTextBtn = document.querySelector(".article__text-toggler");
-// if (showTextBtn) {
-//     showTextBtn.addEventListener("click", function () {
-//         document.querySelector(".article__text-wrapper").classList.toggle("article__text-wrapper-full");
-//     });
-// }
-
-// let allLinks = document.querySelectorAll("a");
-// for (let i = 0; i < allLinks.length; i++){
-//     allLinks[i].addEventListener("click", function () {
-//         let element = this;
-//         if(element.getAttribute("target")) {
-//             return;
-//         }
-//         event.preventDefault();
-//         let link = element.getAttribute("href");
-//         element.classList.add("active-link");
-//         setTimeout(function(){
-//             location.href = link;
-//             element.classList.remove("active-link");
-//         },400);
-//     });
-// }
-
-// const estateItems = document.querySelectorAll(".zim-real-estate__item");
-// if(estateItems) {
-//     for (let i = 0; i < estateItems.length; i++) {
-//         estateItems[i].addEventListener("click", function () {
-//             let linkedItem = this.querySelector(".zim-real-estate__name");
-//             linkedItem.classList.add("zim-real-estate__name-active");
-//             setTimeout(function () {
-//                 linkedItem.classList.remove("zim-real-estate__name-active");
-//             }, 400);
-//         })
-//     }
-// }
-
-// const complexEstateItems = document.querySelectorAll(".complex-real-estate__item");
-// if(complexEstateItems) {
-//     for (let i = 0; i < complexEstateItems.length; i++) {
-//         complexEstateItems[i].addEventListener("click", function () {
-//             let linkedItem = this.querySelector(".complex-real-estate__name");
-//             linkedItem.classList.add("complex-real-estate__name-active");
-//             setTimeout(function () {
-//                 linkedItem.classList.remove("complex-real-estate__name-active");
-//             }, 400);
-//         })
-//     }
-// }
-
-// const footerMenu = document.querySelector(".footer__menu");
-// const footerLinks = footerMenu.querySelectorAll("a");
-// if(footerLinks){
-//     for (let i = 0; i < footerLinks.length; i++) {
-//         footerLinks[i].addEventListener("click", function () {
-//             footerLinks[i].classList.add("pressed-link");
-//             setTimeout(function () {
-//                 footerLinks[i].classList.remove("pressed-link");
-//             }, 400)
-//         });
-//     }
-// }
-
-// DOWNLOAD FILE
-const downloadButton = document.querySelector("#downloadButton");
-if(downloadButton){
-    const downloadForm = document.querySelector("#downloadForm");
-    const downloadLink = downloadButton.querySelector("a");
-    downloadLink.addEventListener("click", function () {
-        downloadForm.click();
+const showTextBtn = document.querySelector(".article__text-toggler");
+if (showTextBtn) {
+    showTextBtn.addEventListener("click", function () {
+        document.querySelector(".article__text-wrapper").classList.toggle("article__text-wrapper-full");
     });
 }
+
+let allLinks = document.querySelectorAll("a");
+for (let i = 0; i < allLinks.length; i++){
+    allLinks[i].addEventListener("click", function () {
+        let element = this;
+        if(element.getAttribute("target")) {
+            return;
+        }
+        event.preventDefault();
+        let link = element.getAttribute("href");
+        element.classList.add("active-link");
+        setTimeout(function(){
+            location.href = link;
+            element.classList.remove("active-link");
+        },400);
+    });
+}
+
+const estateItems = document.querySelectorAll(".zim-real-estate__item");
+if(estateItems) {
+    for (let i = 0; i < estateItems.length; i++) {
+        estateItems[i].addEventListener("click", function () {
+            let linkedItem = this.querySelector(".zim-real-estate__name");
+            linkedItem.classList.add("zim-real-estate__name-active");
+            setTimeout(function () {
+                linkedItem.classList.remove("zim-real-estate__name-active");
+            }, 400);
+        })
+    }
+}
+
+const complexEstateItems = document.querySelectorAll(".complex-real-estate__item");
+if(complexEstateItems) {
+    for (let i = 0; i < complexEstateItems.length; i++) {
+        complexEstateItems[i].addEventListener("click", function () {
+            let linkedItem = this.querySelector(".complex-real-estate__name");
+            linkedItem.classList.add("complex-real-estate__name-active");
+            setTimeout(function () {
+                linkedItem.classList.remove("complex-real-estate__name-active");
+            }, 400);
+        })
+    }
+}
+
+const footerMenu = document.querySelector(".footer__menu");
+const footerLinks = footerMenu.querySelectorAll("a");
+if(footerLinks){
+    for (let i = 0; i < footerLinks.length; i++) {
+        footerLinks[i].addEventListener("click", function () {
+            footerLinks[i].classList.add("pressed-link");
+            setTimeout(function () {
+                footerLinks[i].classList.remove("pressed-link");
+            }, 400)
+        });
+    }
+}
+
+// DOWNLOAD FILE
+// const downloadButton = document.querySelector("#downloadButton");
+// if(downloadButton){
+//     const downloadForm = document.querySelector("#downloadForm");
+//     const downloadLink = downloadButton.querySelector("a");
+//     downloadLink.addEventListener("click", function () {
+//         downloadForm.click();
+//     });
+// }
 
 // Form validation
 let form = document.querySelector("#form");
