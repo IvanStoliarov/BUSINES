@@ -17,24 +17,20 @@ mobileMenuBtnHide.addEventListener("click", function () {
 
 });
 
-
 // Show city list
 
-const cityListArea = document.querySelector(".header__city");
-cityListArea.addEventListener("click", function () {
+const currentCity = document.querySelector(".current__city");
+currentCity.addEventListener("click", function () {
     document.querySelector(".city-popup").classList.toggle("city-popup-hidden");
 });
 
 document.addEventListener("click", function (element) {
-    if(element.target.closest(".city-popup")) {
-        return;
-    }else if (element.target.closest(".header__city")) {
+    if((element.target.className == "header__city")||(element.target.className == "current__city") ) {
         return;
     }else {
         document.querySelector(".city-popup").classList.add("city-popup-hidden");
     }
 });
-
 
 // Show city list mobile
 const mobileCityListToggler = document.querySelector(".header__city-mobile");
@@ -120,11 +116,11 @@ if(downloadButton){
 let form = document.querySelector("form");
 if(form) {
     let emailInput = form.email;
-    let empetyValue = emailInput.value;
+    let emptyValue = emailInput.value;
     emailInput.addEventListener("input", function (event) {
         let validMail = event.target.value.match(/^[0-9a-z-\.-\@]+$/i);
         let currentForm = event.target.closest(".form__item");
-        if ((empetyValue == event.target.value) || (validMail)) {
+        if ((emptyValue == event.target.value) || (validMail)) {
             currentForm.classList.remove("form__email-wrong");
         } else {
             currentForm.classList.add("form__email-wrong");
