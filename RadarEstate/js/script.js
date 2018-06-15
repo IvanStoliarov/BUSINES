@@ -9,13 +9,13 @@ mobileMenuBtnShow.addEventListener("click", function () {
 });
 
 // Hide mobile menu
-// const mobileMenuBtnHide = document.querySelector(".mobile-menu__btn");
-// mobileMenuBtnHide.addEventListener("click", function () {
-//     mobileMenu.classList.add("mobile-menu-hidden");
-//     document.querySelector(".main").style.display = "flex";
-//     document.querySelector("footer").style.display = "flex";
+const mobileMenuBtnHide = document.querySelector(".mobile-menu__btn");
+mobileMenuBtnHide.addEventListener("click", function () {
+    mobileMenu.classList.add("mobile-menu-hidden");
+    document.querySelector(".main").style.display = "flex";
+    document.querySelector("footer").style.display = "flex";
 
-// });
+});
 
 // Show city list
 
