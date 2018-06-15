@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Complex</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/complex.css">
+
+
+</head>
+<body>
+<div class="projectDescription">
+    <h2>Создание страницы <a href="company.html">О компании</a> , <a href="complex.html">Страницы комплекса</a>, 
+        <a href="contacts.html">Старницы с контактами</a> и <a href="job_list.html">Страницы с вакансиями</a></h2>
+    <p>Адаптивность: FLex, Grid</p>
+    <p>Все эффеккты реализованы на JavaScript. Согласно ТЗ никакие сторонние библиотеки не подключались </p>
+    <p>Диаграммы- canvas </p>
+</div>
+<header>
+    <div class="header__left-side">
+        <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+        <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="Radar Estate">
+        </a>
+        <div class="header__city">
+            <div  class="current__city">Каменець-Подільський</div>
+            <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            <div class="city-popup city-popup-hidden">
+                <ul class="city__list">
+                    <li class="city__item">Белая Церковь</li>
+                    <li class="city__item">Бровары</li>
+                    <li class="city__item">Ирпень</li>
+                    <li class="city__item">Винница</li>
+                    <li class="city__item">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header__nav-desktop">
+            <ul>
+                <li><a href="#">Мапа новобудов</a></li>
+                <li><a href="#">Каталог новобудов</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header__right-side">
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/heart-2.svg" title="heart">
+                <div class="notification__status">23</div>
+            </div>
+            <div class="notification__text">Улюблене</div>
+        </div>
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
+                <div class="notification__status">5</div>
+            </div>
+            <div class="notification__text">Порівняння</div>
+        </div>
+        <div class="header__sign-up">
+            <div class="sign-up__icon">
+                <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+            </div>
+            <div class="sign-up__name">Dmytro Ivanov</div>
+            <div class="sign-up__btn">
+                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu mobile-menu-registered  mobile-menu-hidden"> <!--Add class "mobile-menu-registered" for registered users-->
+    <div class="mobile-menu__links">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__btn">
+                <img src="img/mobile-btn.svg" alt="mobile-button">
+            </div>
+            <div class="header__city header__city-mobile">
+                <div class="current__city-wrapper">
+                    <div  class="current__city">Каменець-Подільський</div>
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+                <ul class="city__list city__list-hidden city__list-mobile">
+                    <li class="city__item city__item-mobile">Белая Церковь</li>
+                    <li class="city__item city__item-mobile">Бровары</li>
+                    <li class="city__item city__item-mobile">Ирпень</li>
+                    <li class="city__item city__item-mobile">Винница</li>
+                    <li class="city__item city__item-mobile">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="mobile-menu__main-nav">
+            <li><a href="#">Мапа новобудов</a></li>
+            <li><a href="#">Каталог новобудов</a></li>
+        </ul>
+        <ul class="mobile-menu__nav">
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </div>
+
+    <div class="mobile-menu__sign-in">
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+            <div class="sign-in__text">Вхід</div>
+        </div>
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+            <div class="sign-in__text">Реєстрація</div>
+        </div>
+    </div>
+
+    <div class="mobile-menu__profile">
+        <ul>
+            <li class="mobileProfile__item"><a href="#">Мій профіль</a> <img src="img/user-icon.svg" alt="icon"></li>
+            <li class="mobileProfile__item"><a href="#">Моніторинг</a></li>
+            <li class="mobileProfile__item"><a href="#">Мої закази</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <aside id="aside">
+        <div class="aside-logo">
+            <div class="aside-logo__wrapper">
+                <img src="img/aside-logo.svg" alt="ZIM">
+            </div>
+            <div class="aside-logo__about">
+                <a href="#">ZIM Capital Group</a><br>
+                Забудовник
+            </div>
+        </div>
+        <div class="aside-contacts">
+            <div class="aside-contacts__title">Контакти:</div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/location-icon-2.png" alt="location">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Адреса головного офісу</div>
+                    <a class="aside-contacts__value" target="_blank" href="https://www.google.com.ua/maps/place/%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA+%D0%9E%D1%85%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9,+7,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3950895,30.4765824,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8d909c92b8b:0x7d95f9b694f6c792!8m2!3d50.3950861!4d30.4787711">м. Київ, пров. Охтирський 7/3</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/tel-icon-2.svg" alt="tel">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Телефон відділу продаж</div>
+                    <a class="aside-contacts__value" href="tel:+38 (044) 243-28-19">+38 (044) 243-28-19</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/tel-icon-2.svg" alt="tel">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Телефон голофного офісу</div>
+                    <a class="aside-contacts__value" href="tel:+38 (050) 127-38-24">+38 (050) 127-38-24</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/telegram-icon-2.png" alt="telegram">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Телеграм-чат</div>
+                    <a class="aside-contacts__value" target="_blank" href="https://t.me/zimcapitalgroup">@zimcapitalgroup</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/viber-icon-2.svg" alt="viber">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Viber</div>
+                    <a class="aside-contacts__value" href="viber://chat?number=+380449432817">+38 (044) 943-28-17</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/mail-icon-2.svg" alt="mail">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Електронна пошта</div>
+                    <a class="aside-contacts__value" href="mailto:info@zimcapitalgroup.com">info@zimcapitalgroup.com</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/skype-icon-2.svg" alt="skype">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Skype</div>
+                    <a class="aside-contacts__value" href="skype:zimcapitalgroup">zimcapitalgroup</a>
+                </div>
+            </div>
+        </div>
+        <div class="aside-logo aside-logo-aid ">
+            <div class="aside-logo__wrapper">
+                <img src="img/aid-group.png" alt="AID Group">
+            </div>
+            <div class="aside-logo__about">
+                Продаж квартир в новобудовах
+            </div>
+        </div>
+        <div class="aside-contacts">
+            <div class="aside-contacts__title">Контакти:</div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/location-icon-2.png" alt="location">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Адреса головного офісу</div>
+                    <a class="aside-contacts__value" target="_blank" href="https://goo.gl/maps/ZeJacDmwJ6Q2">м. Ірпінь пров. Гнатюка, 6</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/tel-icon-2.svg" alt="tel">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Телефон відділу продаж</div>
+                    <a class="aside-contacts__value" href="tel:+38 (067) 547-13-28">+38 (067) 547-13-28</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <div class="icon-wrapper">
+                    <img class="aside-contacts__icon" src="img/mail-icon-2.svg" alt="mail">
+                </div>
+                <div>
+                    <div class="aside-contacts__description">Електронна пошта</div>
+                    <a class="aside-contacts__value" href="mailto:info@aid.group">info@aid.group</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <article>
+        <section>
+            <h1 class="article__title">ЖК &laquo;Журавлівська слобода&raquo;</h1>
+            <div id="carouselWrapper" class="carousel-wrapper">
+                <ul id="carousel" class="carousel">
+                    <li class="carousel__item"><img src="img/slide-2.jpg" alt="slide"></li>
+                    <li class="carousel__item"><img src="img/slide-1.jpg" alt="slide"></li>
+                    <li class="carousel__item"><img src="img/slide-2.jpg" alt="slide"></li>
+                    <li class="carousel__item"><img src="img/slide-1.jpg" alt="slide"></li>
+                    <li class="carousel__item"><img src="img/slide-2.jpg" alt="slide"></li>
+                    <li class="carousel__item"><img src="img/slide-1.jpg" alt="slide"></li>
+                    <li class="carousel__item"><img src="img/slide-2.jpg" alt="slide"></li>
+                </ul>
+                <div id="prevBtn" class="carousel__btn carousel__btn-prev"></div>
+                <div id="nextBtn" class="carousel__btn carousel__btn-next"></div>
+            </div>
+            <div id="about-company" class="article__text-wrapper">
+                <p class="article__text ">
+                    Новий ЖК на вул. Демнянській-Б є продовженням розвитку спального району Хуторівка. Панорамні
+                    вигляди на мікрорайон Сихів, Сихівський міст, корпуси Українського Католицького Університету.
+                    Максимальна близькість до паркових зон. Зручна транспортна розв«язка.
+                <p class="article__text ">
+                    Основна ідея забудовника — «Ми не забудовуємо кожний вільний квадратний метр земельної ділянки!
+                Ми створюємо комфортне житло для приємного проживання!»
+                </p>
+                <p class="article__text ">
+                    Новий проект по вул. Демнянській-Б є покращеною версією і логічним розвитком попереднього проекту
+                    ЖК по вул. Демнянській 26, який був реалізований в 2012 − 2015 рр.
+                </p>
+                <p class="article__text ">
+                    Нова концепція ЖК по вул. Демнянській-Б передбачає усі переваги для майбутніх мешканців.
+                    Внутрішній простір ЖК відведено під комфортні пішохідні зони — майбутні улюблені місця відпочинку
+                    та прогулянки мешканців.
+                </p>
+                </p>
+            </div>
+        </section>
+        <div class="map-wrapper">
+            <div class="map__title">Житловий комплекс на мапі міста</div>
+            <div class="map">
+                <img src="img/map.jpg" alt="map">
+            </div>
+        </div>
+
+        <section id="estate" class="complex-real-estate">
+            <h2 class="complex-real-estate__title">Будинки в складі житлового комплексу</h2>
+            <ul class="complex-real-estate__grid">
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-12.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name ">Будинок № 12</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">29%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-14.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 14</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">72%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-16.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 16</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">90%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-16.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 7</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">45%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-9.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 9</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">29%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-11.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 11</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">72%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-4.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 4</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">90%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="complex-real-estate__item">
+                    <a href="#" class="complex-real-estate__image">
+                        <img src="img/building-5.jpg" alt="photo">
+                        <div class="complex-real-estate__inner">
+                            <div class="complex-real-estate__name">Будинок № 5</div>
+                            <div class="complex-real-estate__address">Січових Стрільців</div>
+                        </div>
+                    </a>
+                    <div class="complex-real-estate__status">
+                        <div class="progress">
+                            <div class="progress__icon">
+                                <div class="progress__value">29%</div>
+                                <canvas class="canvas"></canvas>
+                            </div>
+                            <div class="progress__help">
+                                <div class="progress__help-text">
+                                    <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                </div>
+                                <div class="progress__help-text">
+                                    <span class="circle"></span>Залишилось — 19 міс.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <div class="terms__start">
+                            <div class="terms__text terms__text-title">Початок</div>
+                            <div class="terms__text">06.2017</div>
+                        </div>
+                        <div class="terms__finish">
+                            <div class="terms__text terms__text-title">Здача</div>
+                            <div class="terms__text">1 квартал 2019</div>
+                        </div>
+                    </div>
+                    <div class="complex__link">
+                        <a href="#">На сторінку новобудови</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="infrastructure">
+            <div class="infrastructure__title">Інфраструктура біля житлового комплексу</div>
+            <div class="objects-list">
+                <div class="object">
+                    <div class="object__image"><img src="img/object-image-1.jpg" alt="object image"></div>
+                    <div class="object__description">
+                        <div class="object__type">Спорткомплекси</div>
+                        <div class="object__name">Фітнес-центр &laquo;Лайм&raquo;</div>
+                        <div class="object__distance">
+                            <img src="img/building-icon.svg" alt="building icon">
+                            До новобудови
+                        </div>
+                        <div class="object__icons">
+                            <div class="object__icon">
+                                <img src="img/distance-icon.png" alt="distance icon">300 м.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/walk-icon.svg" alt="walk icon">6 хв.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/car-icon.svg" alt="car icon">2 хв.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="object__image"><img src="img/object-image-2.jpg" alt="object image"></div>
+                    <div class="object__description">
+                        <div class="object__type">Бібліотеки</div>
+                        <div class="object__name">Національна бібліотека</div>
+                        <div class="object__distance">
+                            <img src="img/building-icon.svg" alt="building icon">
+                            До новобудови
+                        </div>
+                        <div class="object__icons">
+                            <div class="object__icon">
+                                <img src="img/distance-icon.png" alt="distance icon">1.3 км.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/walk-icon.svg" alt="walk icon">27 хв.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/car-icon.svg" alt="car icon">5 хв.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="object__image"><img src="img/object-image-3.jpg" alt="object image"></div>
+                    <div class="object__description">
+                        <div class="object__type">Парки</div>
+                        <div class="object__name">Шодуарівський парк</div>
+                        <div class="object__distance">
+                            <img src="img/building-icon.svg" alt="building icon">
+                            До новобудови
+                        </div>
+                        <div class="object__icons">
+                            <div class="object__icon">
+                                <img src="img/distance-icon.png" alt="distance icon">1.2 км.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/walk-icon.svg" alt="walk icon">20 хв.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/car-icon.svg" alt="car icon">4 хв.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="object__image"><img src="img/object-image-4.jpg" alt="object image"></div>
+                    <div class="object__description">
+                        <div class="object__type">Спорткомплекси</div>
+                        <div class="object__name">Тренажерна зала &laquo;3 богатирі&raquo;</div>
+                        <div class="object__distance">
+                            <img src="img/building-icon.svg" alt="building icon">
+                            До новобудови
+                        </div>
+                        <div class="object__icons">
+                            <div class="object__icon">
+                                <img src="img/distance-icon.png" alt="distance icon">300 м.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/walk-icon.svg" alt="walk icon">6 хв.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/car-icon.svg" alt="car icon">2 хв.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="object__image"><img src="img/object-image-5.jpg" alt="object image"></div>
+                    <div class="object__description">
+                        <div class="object__type">Магазини</div>
+                        <div class="object__name">Супермаркет &laquo;Ашан&raquo;</div>
+                        <div class="object__distance">
+                            <img src="img/building-icon.svg" alt="building icon">
+                            До новобудови
+                        </div>
+                        <div class="object__icons">
+                            <div class="object__icon">
+                                <img src="img/distance-icon.png" alt="distance icon">300 м.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/walk-icon.svg" alt="walk icon">6 хв.
+                            </div>
+                            <div class="object__icon">
+                                <img src="img/car-icon.svg" alt="car icon">2 хв.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
+
+<footer>
+    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+    <nav class="footer__menu">
+        <ul>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </nav>
+    <div class="footer__social">
+        <ul>
+            <li><a class="footer__social-facebook" target="_blank" href="#"></a></li>
+            <li><a class="footer__social-instagram" target="_blank" href="#"></a></li>
+            <li><a class="footer__social-youtube" target="_blank" href="#"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/canvas.js"></script>
+</body>
+</html>

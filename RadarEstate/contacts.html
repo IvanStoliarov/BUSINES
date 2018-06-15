@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/contacts.css">
+
+
+</head>
+<body>
+<div class="projectDescription">
+    <h2>Создание страницы <a href="company.html">О компании</a> , <a href="complex.html">Страницы комплекса</a>, 
+        <a href="contacts.html">Старницы с контактами</a> и <a href="job_list.html">Страницы с вакансиями</a></h2>
+    <p>Адаптивность: FLex, Grid</p>
+    <p>Все эффеккты реализованы на JavaScript. Согласно ТЗ никакие сторонние библиотеки не подключались </p>
+    <p>Диаграммы- canvas </p>
+</div>
+<header>
+    <div class="header__left-side">
+        <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+        <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="Radar Estate">
+        </a>
+        <div class="header__city">
+            <div  class="current__city">Каменець-Подільський</div>
+            <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            <div class="city-popup city-popup-hidden">
+                <ul class="city__list">
+                    <li class="city__item">Белая Церковь</li>
+                    <li class="city__item">Бровары</li>
+                    <li class="city__item">Ирпень</li>
+                    <li class="city__item">Винница</li>
+                    <li class="city__item">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header__nav-desktop">
+            <ul>
+                <li><a href="#">Мапа новобудов</a></li>
+                <li><a href="#">Каталог новобудов</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header__right-side">
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/heart-2.svg" title="heart">
+                <div class="notification__status">23</div>
+            </div>
+            <div class="notification__text">Улюблене</div>
+        </div>
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
+                <div class="notification__status">5</div>
+            </div>
+            <div class="notification__text">Порівняння</div>
+        </div>
+        <div class="header__sign-up">
+            <div class="sign-up__icon">
+                <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+            </div>
+            <div class="sign-up__name">Dmytro Ivanov</div>
+            <div class="sign-up__btn">
+                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu mobile-menu-registered  mobile-menu-hidden"> <!--Add class "mobile-menu-registered" for registered users-->
+    <div class="mobile-menu__links">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__btn">
+                <img src="img/mobile-btn.svg" alt="mobile-button">
+            </div>
+            <div class="header__city header__city-mobile">
+                <div class="current__city-wrapper">
+                    <div  class="current__city">Каменець-Подільський</div>
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+                <ul class="city__list city__list-hidden city__list-mobile">
+                    <li class="city__item city__item-mobile">Белая Церковь</li>
+                    <li class="city__item city__item-mobile">Бровары</li>
+                    <li class="city__item city__item-mobile">Ирпень</li>
+                    <li class="city__item city__item-mobile">Винница</li>
+                    <li class="city__item city__item-mobile">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="mobile-menu__main-nav">
+            <li><a href="#">Мапа новобудов</a></li>
+            <li><a href="#">Каталог новобудов</a></li>
+        </ul>
+        <ul class="mobile-menu__nav">
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </div>
+
+    <div class="mobile-menu__sign-in">
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+            <div class="sign-in__text">Вхід</div>
+        </div>
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+            <div class="sign-in__text">Реєстрація</div>
+        </div>
+    </div>
+
+    <div class="mobile-menu__profile">
+        <ul>
+            <li class="mobileProfile__item"><a href="#">Мій профіль</a> <img src="img/user-icon.svg" alt="icon"></li>
+            <li class="mobileProfile__item"><a href="#">Моніторинг</a></li>
+            <li class="mobileProfile__item"><a href="#">Мої закази</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="main">
+    <h1 class="contacts-title">Контакти</h1>
+    <div class="left-side">
+        <div class="aside-contacts">
+            <div class="aside-contacts__title">Приходьте та телефонуйте</div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/location-icon.svg" alt="location">
+                <div>
+                    <div class="aside-contacts__description">Адреса головного офісу</div>
+                    <a class="aside-contacts__value" target="_blank" href="https://www.google.com.ua/maps/place/%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA+%D0%9E%D1%85%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9,+7,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3950895,30.4765824,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8d909c92b8b:0x7d95f9b694f6c792!8m2!3d50.3950861!4d30.4787711">м. Київ, пров. Охтирський 7/3</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="tel">
+                <div>
+                    <div class="aside-contacts__description">Для забудовників</div>
+                    <a class="aside-contacts__value" href="tel:+38 (050) 127-38-24">+38 (050) 127-38-24</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="tel">
+                <div>
+                    <div class="aside-contacts__description">Відділ підтримки користувачів</div>
+                    <a class="aside-contacts__value" href="tel:+38 (044) 243-28-19">+38 (044) 243-28-19</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="telegram">
+                <div>
+                    <div class="aside-contacts__description">Для здобувачів</div>
+                    <a class="aside-contacts__value" href="tel:+38 (050) 978-45-20">+38 (050) 978-45-20</a>
+                </div>
+            </div>
+        </div>
+        <div class="aside-contacts aside-contacts-vertical-align ">
+            <div class="aside-contacts__title">Приєднуйтесь в соцмережах</div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/facebook-icon.svg" alt="location">
+                <div>
+                    <a class="aside-contacts__value" target="_blank" href="#">Наша сторінка в Facebook</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/instagram-icon.svg" alt="tel">
+                <div>
+                    <a class="aside-contacts__value" target="_blank" href="#">Наш профль в Instagram</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/youtube-icon.svg" alt="tel">
+                <div>
+                    <a class="aside-contacts__value" target="_blank" href="#">«Radar Estate» в YouTube</a>
+                </div>
+            </div>
+            <div class="aside-contacts__contact">
+                <img class="aside-contacts__icon" src="img/google-icon.svg" alt="telegram">
+                <div>
+                    <a class="aside-contacts__value" target="_blank" href="#">Ми в Google+</a>
+                </div>
+            </div>
+        </div>
+        <form class="contacts-form" action="">
+            <div class="form__title">Напишіть нам</div>
+            <div class="form__item form__name">
+                <label for="name">Ваше ім'я</label>
+                <input required id="name" type="text">
+            </div>
+            <div class="form__item form__email">
+                <label for="email">Адреса електронної пошти</label>
+                <input required id="email" type="email">
+                <div class="form__item-warning-message">
+                    <span>Це поле має містити тільки латинські літери, цифри, знаки "." та "@"</span>
+                </div>
+            </div>
+            <div class="form__item form__topic">
+                <label for="topic">Тема звернення</label>
+                <select id="topic" name="topic" >
+                    <option selected disabled>Оберіть тему звернення</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
+            </div>
+            <div class="form__item form__company-name">
+                <label for="company-name">Назва новобудови або забудовника</label>
+                <textarea placeholder="Назва новобудови / забудовника" rows="5" id="company-name" type="text"></textarea>
+            </div>
+            <div id="downloadButton" class="form__download-button">
+                <img src="img/clop-icon.svg" alt="clip-icon">
+                <a href="#">додати файл</a>
+            </div>
+            <input id="downloadForm" class="form__download-file" type="file">
+            <input class="form__submit-btn" type="submit" value="Відправити повідомлення">
+        </form>
+    </div>
+    <div class="right-side">
+        <div class="right-side__title">Наш офіс на карті</div>
+        <div id="map" class="right-side__map">
+            <script>
+                function initMap() {
+                    var uluru = {lat: 49.841099, lng:  24.024719};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 17.5,
+                        center: uluru,
+                        disableDefaultUI: true
+                    });
+                    var image = "img/map-marker.svg";
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map,
+                        icon: image
+                    });
+                    var contentString = '<div id="content">'+
+                        '<div id="siteNotice">'+
+                        '</div>'+
+                        '<div id="googlePopup" class="first-heading">Леся Курбаса 25</div>'+
+                        '<div id="bodyContent">'+
+                        '</div>'+
+                        '</div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+                    marker.addListener('mouseover', function() {
+                        infowindow.open(map, marker);
+                    });
+                    marker.addListener('mouseout', function() {
+                        infowindow.close(map, marker);
+                    });
+                }
+            </script>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+    <nav class="footer__menu">
+        <ul>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </nav>
+    <div class="footer__social">
+        <ul>
+            <li><a class="footer__social-facebook" target="_blank" href="#"></a></li>
+            <li><a class="footer__social-instagram" target="_blank" href="#"></a></li>
+            <li><a class="footer__social-youtube" target="_blank" href="#"></a></li>
+        </ul>
+    </div>
+</footer>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxbWHUu9hRmLPnWQbaaP0Xn4hGREvyGfY&callback=initMap">
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

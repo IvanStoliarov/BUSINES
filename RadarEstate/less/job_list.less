@@ -1,0 +1,717 @@
+@import "main";
+
+.vacancies-top {
+  display: flex;
+  padding: 15px 40px 65px 72px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.vacancies-top__description, .vacancies-top__img {
+  width: 50%;
+}
+
+.vacancies-top__img {
+  img {
+    max-width: 100%;
+  }
+}
+
+.vacancies-top__description {
+  margin-top: 82px;
+  h1 {
+    max-width: 350px;
+    color: #2a313b;
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    margin: 0;
+  }
+  p {
+    max-width: 535px;
+    margin: 30px 64px 0 0;
+    color: #2a313b;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.hr {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.hr__title {
+  color: #2a313b;
+  font-family: "Montserrat";
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 38px;
+  max-width: 543px;
+}
+
+.hr__employees {
+  display: flex;
+  width: 465px;
+  justify-content: space-between;
+}
+
+.employee {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.employee__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.employee__name {
+  margin: 13px auto;
+  color: #2a313b;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.employee__tel {
+  display: flex;
+  align-items: center;
+  a {
+    margin-left: 10px;
+    color: #2a313b;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.job_list-form {
+  margin-top: 64px;
+  background: #f9f9fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0;
+  width: 50%;
+}
+
+.form__company-name {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.form__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 19px;
+  label {
+    width: 100%;
+    color: #94989d;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  input, textarea {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #d7d8db;
+    padding: 6px 9px 6px 16px;
+    color: #2a313b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    &::placeholder {
+      color: #94989d;
+      opacity: 1;
+    }
+    :-ms-input-placeholder {
+      color: #94989d;
+    }
+    ::-ms-input-placeholder {
+      color: #94989d;
+    }
+  }
+}
+
+.input__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__name, .form__email {
+  width: 47%;
+}
+
+.form__submit-btn {
+  width: 290px;
+  height: 40px;
+  background: #f8ce46;
+  color: #2a313b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background: #ffbf00;
+  }
+}
+
+.form__download-file {
+  display: none;
+}
+
+.form__download-button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  align-self: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  &:hover {
+    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: #2a313b;
+  }
+}
+
+.form__item-warning-message {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 5% ;
+  z-index: 2;
+  background: #f84646;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-size: cover;
+  height: auto;
+  width: 90%;
+  &:before {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: calc(50% - 20px);
+    bottom: 100%;
+    //border: 5px solid transparent; /* Прозрачные границы */
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f84646;
+  }
+  span {
+    padding: 1rem;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.form__email-wrong{
+  position: relative;
+  input {
+    outline: solid 1px #f84646;
+  }
+  .form__item-warning-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__footer {
+  margin-top: 40px;
+  background: #f5f5f8;
+  height: 70px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-vacancies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f1f4;
+  padding: 40px;
+  h2 {
+    margin: 25px auto 33px;
+    color: #2a313b;
+    font-family: "Montserrat";
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
+.vacancy {
+  background: #ffffff;
+  margin-bottom: 33px;
+  padding: 43px 32px;
+  display: flex;
+}
+
+.vacancy-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #e1e3ea;
+  padding-right: 20px;
+}
+
+.vacancy__title {
+  color: #2a313b;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.vacancy__img {
+  margin-top: 6px;
+}
+
+.vacancy__responsibility {
+  padding-left: 18px;
+  margin-top: 22px;
+  li {
+    padding-left: 20px;
+    list-style: disc;
+    color: #2a313b;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+}
+
+.vacancy__button {
+  margin-left: 38px;
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2a313b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 184px;
+  height: 40px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 2px solid #f8ce46;
+  background-color: #ffffff;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffbf00;
+  }
+}
+
+.vacancy__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 37px;
+  justify-content: space-between;
+  .vacancy__button {
+    display: none;
+  }
+}
+
+.vacancy__description {
+  max-width: 798px;
+  color: #2a313b;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.working-conditions, .requirements {
+  width: 45%;
+}
+
+.working-conditions__title, .requirements__title {
+  color: #2a313b;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.working-conditions__list, .requirements__list {
+  .vacancy__responsibility;
+  margin-left: 15px;
+}
+
+.vacancies__line {
+  display: none;
+}
+
+.vacancies-top__title {
+  display: none;
+}
+
+//no-job page
+
+.vacancies-no-job {
+  .vacancies-top__description h1{
+    max-width: 535px;
+  }
+}
+
+//------------------TABLET------------------
+
+@media (max-width: 992px) {
+  .vacancies-top {
+    padding: 25px 25px 45px;
+  }
+
+  .vacancies-top__description, .vacancies-top__img, .hr, .job_list-form {
+    width: 100%;
+  }
+
+  .vacancies-top__description {
+    margin-top: 0;
+    h1 {
+      max-width: unset;
+    }
+  }
+  .vacancies-top__description p {
+    margin-top: 10px;
+    margin-right: 0;
+    max-width: unset;
+  }
+
+  .vacancies-top__img {
+    text-align: center;
+  }
+
+  .hr {
+    margin-top: 42px;
+    text-align: center;
+    padding: 0 10px;
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .hr__employees {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .job_list-form {
+    margin-top: 40px;
+    background: #fff;
+    box-shadow: inset 0 -72px 0 #f9f9fb;
+    border-radius: 4px;
+    border: 1px solid #e1e3ea;
+  }
+
+  .open-vacancies {
+    padding-bottom: 26px;
+    h2 {
+      margin: 7px 0 25px;
+      align-self: flex-start;
+    }
+  }
+
+  .vacancy {
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+  }
+
+  .vacancy-header {
+    width: 100%;
+    border: none;
+  }
+
+  .vacancy-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+            'image title' 'image list' 'image button';
+    column-gap: 24px;
+    padding: 0;
+  }
+
+  .vacancy-without-image {
+    .vacancy-header {
+      grid-template-areas: 'title' 'list' 'button';
+    }
+  }
+
+
+  .vacancy__img {
+    grid-area: image;
+  }
+
+  .vacancy__title {
+    grid-area: title;
+  }
+
+  .vacancy__responsibility {
+    grid-area: list;
+    margin-top: 0;
+  }
+
+  .vacancy__button {
+    grid-area: button;
+  }
+
+  .vacancy__inner {
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .working-conditions__list, .requirements__list {
+    margin-left: 10px;
+    list-style-position: inside;
+    li {
+      padding-left: 0;
+
+    }
+  }
+
+  .vacancy__description {
+    margin-bottom: 20px;
+  }
+
+  .vacancies-no-job {
+    .vacancies-top__description h1 {
+      max-width: unset;
+    }
+  }
+
+}
+//----------------PHONE--------------
+
+@media (max-width: 576px) {
+  .vacancies-top {
+    padding: 0;
+    padding-top: 15px;
+  }
+
+  .vacancies-top__description {
+    padding: 0 15px;
+  }
+
+  .vacancies-top__description p {
+    margin-top: 13px;
+  }
+
+  .vacancies-top__description h1 {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .hr {
+    margin-top: 34px;
+    padding: 0 15px;
+  }
+
+  .hr__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hr__employees {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .employee {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 92px auto;
+    grid-template-areas: 'img name' 'img tel';
+    align-items: end;
+    column-gap: 13px;
+    &__img {
+      grid-area: img;
+      width: 92px;
+      height: 92px;
+      img {
+        max-width: 100%;
+      }
+    }
+    &__name {
+      grid-area: name;
+      margin: 0;
+    }
+    &__tel {
+      grid-area: tel;
+      align-self: start;
+    }
+  }
+
+  .job_list-form {
+    margin-top: 32px;
+    padding-top: 22px;
+    background: #f9f9fb;
+    border: none;
+    box-shadow: none;
+  }
+
+  .form__name, .form__email {
+    width: 100%;
+  }
+
+  .input__wrapper {
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+
+  .form__company-name {
+    padding: 0 15px;
+  }
+
+  .form__item {
+    margin-bottom: 11px;
+  }
+
+  .form__footer {
+    margin-top: 28px;
+  }
+
+  .open-vacancies {
+    padding: 0;
+    h2 {
+      margin: 0;
+      padding: 34px 15px 10px;
+      background: #fff;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .vacancies__line-wrapper {
+    width: 100%;
+    background: #fff;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .vacancies__line {
+    display: block;
+    background: #e1e3ea;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  .vacancy-header {
+    grid-template-columns: 60px auto;
+    grid-template-areas: 'image title' 'list list' 'button button';
+    column-gap: 10px;
+    padding: 18px 15px 0;
+  }
+
+  .vacancy {
+    padding: 0;
+    padding-bottom: 23px;
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+      align-self: center;
+    }
+    &__img {
+      width: 60px;
+    }
+    &__responsibility {
+      li {
+        padding-left: 5px;
+      }
+    }
+    &__inner {
+      margin-top: 22px;
+      padding: 0 15px;
+      .vacancy__button {
+        order: 4;
+        margin-top: 10px;
+        display: flex;
+      }
+    }
+    &__description {
+      order: 1;
+    }
+  }
+
+  .working-conditions {
+    order: 3;
+  }
+
+  .requirements {
+    order: 2;
+  }
+
+  .working-conditions, .requirements {
+    width: 100%;
+  }
+
+  .vacancy-without-image {
+    .vacancy-header {
+      grid-template-areas: 'title title' 'list list' 'button button';
+    }
+  }
+
+  .vacancies-top__title {
+    display: block;
+    color: #2a313b;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    align-self: flex-start;
+    margin:0 0 9px 15px;
+  }
+
+
+}
+
+
+
+
+
+
+
+

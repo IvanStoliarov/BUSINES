@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/job_list.css">
+
+
+</head>
+<body>
+<div class="projectDescription">
+    <h2>Создание страницы <a href="company.html">О компании</a> , <a href="complex.html">Страницы комплекса</a>, 
+        <a href="contacts.html">Старницы с контактами</a> и <a href="job_list.html">Страницы с вакансиями</a></h2>
+    <p>Адаптивность: FLex, Grid</p>
+    <p>Все эффеккты реализованы на JavaScript. Согласно ТЗ никакие сторонние библиотеки не подключались </p>
+    <p>Диаграммы- canvas </p>
+</div>
+<header>
+    <div class="header__left-side">
+        <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+        <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="Radar Estate">
+        </a>
+        <div class="header__city">
+            <div  class="current__city">Каменець-Подільський</div>
+            <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            <div class="city-popup city-popup-hidden">
+                <ul class="city__list">
+                    <li class="city__item">Белая Церковь</li>
+                    <li class="city__item">Бровары</li>
+                    <li class="city__item">Ирпень</li>
+                    <li class="city__item">Винница</li>
+                    <li class="city__item">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header__nav-desktop">
+            <ul>
+                <li><a href="#">Мапа новобудов</a></li>
+                <li><a href="#">Каталог новобудов</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header__right-side">
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/heart-2.svg" title="heart">
+                <div class="notification__status">23</div>
+            </div>
+            <div class="notification__text">Улюблене</div>
+        </div>
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
+                <div class="notification__status">5</div>
+            </div>
+            <div class="notification__text">Порівняння</div>
+        </div>
+        <div class="header__sign-up">
+            <div class="sign-up__icon">
+                <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+            </div>
+            <div class="sign-up__name">Dmytro Ivanov</div>
+            <div class="sign-up__btn">
+                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu mobile-menu-registered  mobile-menu-hidden"> <!--Add class "mobile-menu-registered" for registered users-->
+    <div class="mobile-menu__links">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__btn">
+                <img src="img/mobile-btn.svg" alt="mobile-button">
+            </div>
+            <div class="header__city header__city-mobile">
+                <div class="current__city-wrapper">
+                    <div  class="current__city">Каменець-Подільський</div>
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+                <ul class="city__list city__list-hidden city__list-mobile">
+                    <li class="city__item city__item-mobile">Белая Церковь</li>
+                    <li class="city__item city__item-mobile">Бровары</li>
+                    <li class="city__item city__item-mobile">Ирпень</li>
+                    <li class="city__item city__item-mobile">Винница</li>
+                    <li class="city__item city__item-mobile">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="mobile-menu__main-nav">
+            <li><a href="#">Мапа новобудов</a></li>
+            <li><a href="#">Каталог новобудов</a></li>
+        </ul>
+        <ul class="mobile-menu__nav">
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </div>
+
+    <div class="mobile-menu__sign-in">
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+            <div class="sign-in__text">Вхід</div>
+        </div>
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+            <div class="sign-in__text">Реєстрація</div>
+        </div>
+    </div>
+
+    <div class="mobile-menu__profile">
+        <ul>
+            <li class="mobileProfile__item"><a href="#">Мій профіль</a> <img src="img/user-icon.svg" alt="icon"></li>
+            <li class="mobileProfile__item"><a href="#">Моніторинг</a></li>
+            <li class="mobileProfile__item"><a href="#">Мої закази</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="vacancies">
+    <div class="vacancies-top">
+        <div class="vacancies-top__description">
+            <h1>Вакансії компанії &laquo;Radar&nbsp;Estate&raquo;</h1>
+            <p>Ми шукаємо талановитих, відповідальних, орієнтованих на результат людей, які бажають розвиватися та
+                досягати успіху разом з нами. Ми зосережені на складних та цікавих проектах.
+            </p>
+        </div>
+        <div class="vacancies-top__img">
+            <img src="img/job_list-img.jpg" alt="building">
+        </div>
+        <div class="hr">
+            <div class="hr__title">Звертайтесь до наших працівників відділу&nbsp;кадрів</div>
+            <div class="hr__employees">
+                <div class="employee">
+                    <div class="employee__img">
+                        <img src="img/hr-photo-1.jpg" alt="photo">
+                    </div>
+                    <div class="employee__name">Мірослава Топілко</div>
+                    <div class="employee__tel">
+                        <img src="img/icon-phone.svg" alt="phone">
+                        <a href="tel:(067) 987-65-43">(067) 987-65-43</a>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="employee__img">
+                        <img src="img/hr-photo-2.jpg" alt="photo">
+                    </div>
+                    <div class="employee__name">Вікторія Кусковець</div>
+                    <div class="employee__tel">
+                        <img src="img/icon-phone.svg" alt="phone">
+                        <a href="tel:(067) 321-65-49">(067) 321-65-49</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="job_list-form" action="">
+            <h3 class="vacancies-top__title">Напишіть нам</h3>
+            <div class="input__wrapper">
+                <div class="form__item form__name">
+                    <label for="name">Ваше ім'я</label>
+                    <input required id="name" type="text">
+                </div>
+                <div class="form__item form__email">
+                    <label for="email">Адреса електронної пошти</label>
+                    <input required id="email" type="email">
+                    <div class="form__item-warning-message ">
+                        <span>Це поле має містити тільки латинські літери, цифри, знаки "." та "@"</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form__item form__company-name">
+                <label for="company-name">Назва новобудови або забудовника</label>
+                <textarea placeholder="Назва новобудови / забудовника" rows="5" id="company-name" type="text"></textarea>
+            </div>
+
+            <div id="downloadButton" class="form__download-button">
+                <img src="img/clop-icon.svg" alt="clip-icon">
+                <a href="#">додати резюме</a>
+            </div>
+            <input id="downloadForm" class="form__download-file" type="file">
+            <div class="form__footer">
+                <input class="form__submit-btn" type="submit" value="Відправити повідомлення">
+            </div>
+        </form>
+
+    </div>
+    <div class="open-vacancies">
+        <h2>Відкриті вакансії</h2>
+        <div class="vacancies__line-wrapper">
+            <hr class="vacancies__line">
+        </div>
+        <div class="vacancy">
+            <div class="vacancy-header">
+                <div class="vacancy__title">Контент менеджер</div>
+                <img class="vacancy__img" src="img/vacancy-image.jpg" alt="picture">
+                <ul class="vacancy__responsibility">
+                    <li>Наповнення сайту</li>
+                    <li>Обробка фотографій (обрізання, масштабування тощо)</li>
+                    <li>Пошук інформації в інтернеті</li>
+                    <li>Уточнення інформації у партнерів та клієнтів по телефону</li>
+                    <li>Облік та звітування робочого часу</li>
+                    <li>Робота з системами звітування часу, керування завданнями, ведення документації тощо</li>
+                </ul>
+                <button class="vacancy__button">Надіслати резюме</button>
+            </div>
+            <div class="vacancy__inner">
+                <div class="vacancy__description">
+                    Компанія RadarEstate, що займається розробкою інформаційного каталогу нерухомості, шукає
+                    контент менеджера у Львові для роботи із наповненням сайту. Якщо ви перфекціоніст, вам
+                    подобається працювати з даними та ви прагнете працювати у молодому колективі — надсилайте ваше
+                    резюме на job@radar.estate з темою "Контент менеджер - резюме", ця робота для вас
+                </div>
+                <div class="working-conditions">
+                    <div class="working-conditions__title">Умови праці</div>
+                    <ul class="working-conditions__list">
+                        <li>Заробітна плата 6000 грн/міс </li>
+                        <li>8-годинний робочий день + 1 година на обід </li>
+                        <li>Субота, неділя та державні свята — вихідні </li>
+                        <li>Можливість обрання зручного робочого графіку </li>
+                        <li>Комфортне робоче місце в офісі, комп'ютер </li>
+                        <li>Оплачувані компанією кава, чай, печиво тощо </li>
+                        <li>Оплачувані відпустка, лікарняні та випробувальний період </li>
+                        <li>Робота у молодому колективі </li>
+                        <li>Зручне розташування офісу (навпроти податкової)</li>
+                    </ul>
+                </div>
+                <div class="requirements">
+                    <div class="requirements__title">Вимоги до здобудувачів</div>
+                    <ul class="requirements__list">
+                        <li>Уважність до деталей. </li>
+                        <li>Хороше знання правопису, відсутність орфографічних, стилістичних, чи пунктуаційних
+                            помилок. </li>
+                        <li>Знання Word, Excel та PowerPoint. Знання Photoshop на початковому рівні. </li>
+                        <li>Пунктуальність</li>
+                    </ul>
+                </div>
+                <button class="vacancy__button">Надіслати резюме</button>
+            </div>
+        </div>
+        <div class="vacancy vacancy-without-image">
+            <div class="vacancy-header">
+                <div class="vacancy__title">Програміст</div>
+                <ul class="vacancy__responsibility">
+                    <li>Наповнення сайту</li>
+                    <li>Обробка фотографій (обрізання, масштабування тощо)</li>
+                    <li>Пошук інформації в інтернеті</li>
+                    <li>Уточнення інформації у партнерів та клієнтів по телефону</li>
+                    <li>Облік та звітування робочого часу</li>
+                    <li>Робота з системами звітування часу, керування завданнями, ведення документації тощо</li>
+                </ul>
+                <button class="vacancy__button">Надіслати резюме</button>
+            </div>
+            <div class="vacancy__inner">
+                <div class="vacancy__description">
+                    Компанія RadarEstate, що займається розробкою інформаційного каталогу нерухомості, шукає
+                    контент менеджера у Львові для роботи із наповненням сайту. Якщо ви перфекціоніст, вам
+                    подобається працювати з даними та ви прагнете працювати у молодому колективі — надсилайте ваше
+                    резюме на job@radar.estate з темою "Контент менеджер - резюме", ця робота для вас
+                </div>
+                <div class="working-conditions">
+                    <div class="working-conditions__title">Умови праці</div>
+                    <ul class="working-conditions__list">
+                        <li>Заробітна плата 6000 грн/міс </li>
+                        <li>8-годинний робочий день + 1 година на обід </li>
+                        <li>Субота, неділя та державні свята — вихідні </li>
+                        <li>Можливість обрання зручного робочого графіку </li>
+                        <li>Комфортне робоче місце в офісі, комп'ютер </li>
+                        <li>Оплачувані компанією кава, чай, печиво тощо </li>
+                        <li>Оплачувані відпустка, лікарняні та випробувальний період </li>
+                        <li>Робота у молодому колективі </li>
+                        <li>Зручне розташування офісу (навпроти податкової)</li>
+                    </ul>
+                </div>
+                <div class="requirements">
+                    <div class="requirements__title">Вимоги до здобудувачів</div>
+                    <ul class="requirements__list">
+                        <li>Уважність до деталей. </li>
+                        <li>Хороше знання правопису, відсутність орфографічних, стилістичних, чи пунктуаційних
+                            помилок. </li>
+                        <li>Знання Word, Excel та PowerPoint. Знання Photoshop на початковому рівні. </li>
+                        <li>Пунктуальність</li>
+                    </ul>
+                </div>
+                <button class="vacancy__button">Надіслати резюме</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+    <nav class="footer__menu">
+        <ul>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </nav>
+    <div class="footer__social">
+        <ul>
+            <li><a class="footer__social-facebook" target="_blank" href="#"></a></li>
+            <li><a class="footer__social-instagram" target="_blank" href="#"></a></li>
+            <li><a class="footer__social-youtube" target="_blank" href="#"></a></li>
+        </ul>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
