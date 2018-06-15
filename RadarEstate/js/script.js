@@ -47,35 +47,35 @@ if (showTextBtn) {
     });
 }
 
-let allLinks = document.querySelectorAll("a");
-for (let i = 0; i < allLinks.length; i++){
-    allLinks[i].addEventListener("click", function () {
-        let element = this;
-        if(element.getAttribute("target")) {
-            return;
-        }
-        event.preventDefault();
-        let link = element.getAttribute("href");
-        element.classList.add("active-link");
-        setTimeout(function(){
-            location.href = link;
-            element.classList.remove("active-link");
-        },400);
-    });
-}
-
-// const estateItems = document.querySelectorAll(".zim-real-estate__item");
-// if(estateItems) {
-//     for (let i = 0; i < estateItems.length; i++) {
-//         estateItems[i].addEventListener("click", function () {
-//             let linkedItem = this.querySelector(".zim-real-estate__name");
-//             linkedItem.classList.add("zim-real-estate__name-active");
-//             setTimeout(function () {
-//                 linkedItem.classList.remove("zim-real-estate__name-active");
-//             }, 400);
-//         })
-//     }
+// let allLinks = document.querySelectorAll("a");
+// for (let i = 0; i < allLinks.length; i++){
+//     allLinks[i].addEventListener("click", function () {
+//         let element = this;
+//         if(element.getAttribute("target")) {
+//             return;
+//         }
+//         event.preventDefault();
+//         let link = element.getAttribute("href");
+//         element.classList.add("active-link");
+//         setTimeout(function(){
+//             location.href = link;
+//             element.classList.remove("active-link");
+//         },400);
+//     });
 // }
+
+const estateItems = document.querySelectorAll(".zim-real-estate__item");
+if(estateItems) {
+    for (let i = 0; i < estateItems.length; i++) {
+        estateItems[i].addEventListener("click", function () {
+            let linkedItem = this.querySelector(".zim-real-estate__name");
+            linkedItem.classList.add("zim-real-estate__name-active");
+            setTimeout(function () {
+                linkedItem.classList.remove("zim-real-estate__name-active");
+            }, 400);
+        })
+    }
+}
 
 // const complexEstateItems = document.querySelectorAll(".complex-real-estate__item");
 // if(complexEstateItems) {
