@@ -104,14 +104,14 @@ mobileCityListToggler.addEventListener("click", function () {
 // }
 
 // DOWNLOAD FILE
-// const downloadButton = document.querySelector("#downloadButton");
-// if(downloadButton){
-//     const downloadForm = document.querySelector("#downloadForm");
-//     const downloadLink = downloadButton.querySelector("a");
-//     downloadLink.addEventListener("click", function () {
-//         downloadForm.click();
-//     });
-// }
+const downloadButton = document.querySelector("#downloadButton");
+if(downloadButton){
+    const downloadForm = document.querySelector("#downloadForm");
+    const downloadLink = downloadButton.querySelector("a");
+    downloadLink.addEventListener("click", function () {
+        downloadForm.click();
+    });
+}
 
 // Form validation
 let form = document.querySelector("#form");
