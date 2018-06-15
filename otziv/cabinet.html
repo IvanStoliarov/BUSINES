@@ -17,82 +17,43 @@
 </head>
 
 <body>
-	
+		<header class="header" id="ex1">
+				<div class="container">
+					<nav>
+						<a style="text-decoration: none;" href="../">
+							<img src="img/logo.png" alt="Otziv video" class="logo rubberBand">
+						</a>
+						<ul class="header__menu d-flex">
+							<li class="menu__item">
+								<a id="performers_adder" style="position: relative;" href="#" class="menu__link"><img id="contacts_counter" src="img/add-contact.png" alt="Contact" class="user__red"><span style="visibility: hidden; position: absolute; left: 19px; top: 15px; color: white; text-decoration: none;" id="counter" class="kol__message">0</span></a>
+									<div id="performers_adder_desc" style="position: fixed; background-color: rgba(127, 127, 127, 0.6); opacity: 0.95; padding: 10px; border-radius: 2px; color: white; text-align: center">
+									Для того чтобы оформить ваш заказ<br>вы должны <a style="text-decoration: none; color: green;" href="../login.php?from=index.php">авторизоваться</a>
+									</div>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link" id="notifications_button" style="position: relative;"><img src="img/info.png" alt="Info" class="user__red"></a>
+								<div id="show_notifications" style="position: fixed; background-color: rgba(127, 127, 127, 0.6); opacity: 0.95; padding: 10px; border-radius: 2px; color: white; max-width: 450px; text-align: left;">У вас пока нет уведомлений</div>
+							</li>
+							<li class="menu__item">
+								<a href="../login.php" class="menu__link"><img src="img/web-log-in.png" alt="Exit" class="user__red"></a>
+							</li>
+						</ul>
+						<div class="menu__switch">
+							<a class="menu__switch-active" href="#">Главная</a>
+							<a href="#">Каталог</a>
+						</div>
+					</nav>
+				</div>
+			</header>
 
-
-    <header class="header" id="ex1">
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<a style="text-decoration: none;" href="../">
-						<img src="img/logo.png" alt="Otziv video" class="logo rubberBand">
-					</a>
-				</div>
-				<div class="col-md-5"></div>
-				<div class="col-md-4">
-					<ul class="header__menu d-flex justify-content-between">
-						<li class="menu__item">
-							<a id="performers_adder" style="position: relative;" href="#" class="menu__link"><img id="contacts_counter" src="img/add-contact.png" alt="Contact" class="user__red"><span style="visibility: hidden; position: absolute; left: 19px; top: 15px; color: white; text-decoration: none;" id="counter" class="kol__message">0</span></a>
-								<div id="performers_adder_desc" style="position: fixed; background-color: rgba(127, 127, 127, 0.6); opacity: 0.95; padding: 10px; border-radius: 2px; color: white; text-align: center">
-								Для того чтобы оформить ваш заказ<br>вы должны <a style="text-decoration: none; color: green;" href="../login.php?from=index.php">авторизоваться</a>								</div>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link" id="notifications_button" style="position: relative;"><img src="img/info.png" alt="Info" class="user__red">
-															</a>
-															<div id="show_notifications" style="position: fixed; background-color: rgba(127, 127, 127, 0.6); opacity: 0.95; padding: 10px; border-radius: 2px; color: white; max-width: 450px; text-align: left;">
-									У вас пока нет уведомлений
-								</div>
-														</li>
-						<li class="menu__item">
-															<a href="../login.php" class="menu__link"><img src="img/web-log-in.png" alt="Exit" class="user__red"></a>
-								
-						</li>
-						<li class="menu__item">	
-							<a href="#" class="menu__link menu__link_active">
-								<div class="menu__line"></div>
-								<div class="menu__line"></div>
-								<div class="menu__line menu__line_down"></div>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="menu__mobile">
-					<ul class="menu__list" id="menu">
-						<li class="menu__item_m">
-							<a href="#ex1" class="menu__link_m">Видео-отзывы</a>
-						</li>
-						<li class="menu__item_m">
-							<a href="#ex3" class="menu__link_m">Видео-отзывы</a>
-						</li>
-						<li class="menu__item_m">
-							<a href="#ex4" class="menu__link_m">Почему мы?</a>
-						</li>
-						<li class="menu__item_m">
-							<a href="#ex5" class="menu__link_m">Тарифы</a>
-						</li>
-						<li class="menu__item_m">
-							<a href="#ex6" class="menu__link_m menu__link_m_f">Быстрый заказ</a>
-						</li>
-						<div class="line__red"></div>
-						<li class="menu__item_m">
-							<a href="cabinet.php" class="menu__link_m" id="to_cabinet"><img src="img/user1.png" alt="User" class="user__red" id="cabinet"> <span id="cabinet" class="link__red">Мои заказы</span></a>
-						</li>
-					</ul>
-					<img src="img/error.png" alt="cancel" class="img__cancel">
-				</div>
-			</div>
-		</div>
-	</header>
-	<div class="projectDescription">
 
 	<div class="container cabinet">
-			<h2>Создание страницы личного кабинета и <a href="file:///D:/WebstormProjects/ivanstoliarov.github.io/otziv/reclam.html#">промо страницы</a>   </h2>
+		<div class="projectDescription">
+			<h2>Создание страницы <a href="cabinet.html">личного кабинета</a> , <a href="reclam.html">промо страницы</a> и <a href="catalog.html">страницы каталога</a></h2>
 			<p>Адаптивность: bootstrap 4</p>
 			<p>Раскрывающиеся элементы, переключения типа посетителя(заказчик/исполнитель: JS</p>
 			<p>Карусель : jQuery plugin "jcarousel" </p>
 		</div>
-	
 		<div class="row">
 			<aside class="col-lg-3 profile ">
 				<div class="userpic">
