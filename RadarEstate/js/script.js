@@ -19,18 +19,18 @@ mobileMenuBtnHide.addEventListener("click", function () {
 
 // Show city list
 
-// const currentCity = document.querySelector(".current__city");
-// currentCity.addEventListener("click", function () {
-//     document.querySelector(".city-popup").classList.toggle("city-popup-hidden");
-// });
+const currentCity = document.querySelector(".current__city");
+currentCity.addEventListener("click", function () {
+    document.querySelector(".city-popup").classList.toggle("city-popup-hidden");
+});
 
-// document.addEventListener("click", function (element) {
-//     if((element.target.className == "header__city")||(element.target.className == "current__city") ) {
-//         return;
-//     }else {
-//         document.querySelector(".city-popup").classList.add("city-popup-hidden");
-//     }
-// });
+document.addEventListener("click", function (element) {
+    if((element.target.className == "header__city")||(element.target.className == "current__city") ) {
+        return;
+    }else {
+        document.querySelector(".city-popup").classList.add("city-popup-hidden");
+    }
+});
 
 // Show city list mobile
 // const mobileCityListToggler = document.querySelector(".header__city-mobile");
