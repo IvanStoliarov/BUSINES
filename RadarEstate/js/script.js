@@ -90,18 +90,18 @@ if(complexEstateItems) {
     }
 }
 
-const footerMenu = document.querySelector(".footer__menu");
-const footerLinks = footerMenu.querySelectorAll("a");
-if(footerLinks){
-    for (let i = 0; i < footerLinks.length; i++) {
-        footerLinks[i].addEventListener("click", function () {
-            footerLinks[i].classList.add("pressed-link");
-            setTimeout(function () {
-                footerLinks[i].classList.remove("pressed-link");
-            }, 400)
-        });
-    }
-}
+// const footerMenu = document.querySelector(".footer__menu");
+// const footerLinks = footerMenu.querySelectorAll("a");
+// if(footerLinks){
+//     for (let i = 0; i < footerLinks.length; i++) {
+//         footerLinks[i].addEventListener("click", function () {
+//             footerLinks[i].classList.add("pressed-link");
+//             setTimeout(function () {
+//                 footerLinks[i].classList.remove("pressed-link");
+//             }, 400)
+//         });
+//     }
+// }
 
 // DOWNLOAD FILE
 // const downloadButton = document.querySelector("#downloadButton");
