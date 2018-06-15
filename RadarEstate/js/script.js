@@ -32,11 +32,11 @@ document.addEventListener("click", function (element) {
     }
 });
 
-// Show city list mobile
-// const mobileCityListToggler = document.querySelector(".header__city-mobile");
-// mobileCityListToggler.addEventListener("click", function () {
-//     document.querySelector(".city__list-mobile").classList.toggle("city__list-hidden");
-// });
+Show city list mobile
+const mobileCityListToggler = document.querySelector(".header__city-mobile");
+mobileCityListToggler.addEventListener("click", function () {
+    document.querySelector(".city__list-mobile").classList.toggle("city__list-hidden");
+});
 
 
 // Show about company text
