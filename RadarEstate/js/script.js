@@ -9,34 +9,34 @@ mobileMenuBtnShow.addEventListener("click", function () {
 });
 
 // Hide mobile menu
-const mobileMenuBtnHide = document.querySelector(".mobile-menu__btn");
-mobileMenuBtnHide.addEventListener("click", function () {
-    mobileMenu.classList.add("mobile-menu-hidden");
-    document.querySelector(".main").style.display = "flex";
-    document.querySelector("footer").style.display = "flex";
+// const mobileMenuBtnHide = document.querySelector(".mobile-menu__btn");
+// mobileMenuBtnHide.addEventListener("click", function () {
+//     mobileMenu.classList.add("mobile-menu-hidden");
+//     document.querySelector(".main").style.display = "flex";
+//     document.querySelector("footer").style.display = "flex";
 
-});
+// });
 
 // Show city list
 
-const currentCity = document.querySelector(".current__city");
-currentCity.addEventListener("click", function () {
-    document.querySelector(".city-popup").classList.toggle("city-popup-hidden");
-});
+// const currentCity = document.querySelector(".current__city");
+// currentCity.addEventListener("click", function () {
+//     document.querySelector(".city-popup").classList.toggle("city-popup-hidden");
+// });
 
-document.addEventListener("click", function (element) {
-    if((element.target.className == "header__city")||(element.target.className == "current__city") ) {
-        return;
-    }else {
-        document.querySelector(".city-popup").classList.add("city-popup-hidden");
-    }
-});
+// document.addEventListener("click", function (element) {
+//     if((element.target.className == "header__city")||(element.target.className == "current__city") ) {
+//         return;
+//     }else {
+//         document.querySelector(".city-popup").classList.add("city-popup-hidden");
+//     }
+// });
 
 // Show city list mobile
-const mobileCityListToggler = document.querySelector(".header__city-mobile");
-mobileCityListToggler.addEventListener("click", function () {
-    document.querySelector(".city__list-mobile").classList.toggle("city__list-hidden");
-});
+// const mobileCityListToggler = document.querySelector(".header__city-mobile");
+// mobileCityListToggler.addEventListener("click", function () {
+//     document.querySelector(".city__list-mobile").classList.toggle("city__list-hidden");
+// });
 
 
 // Show about company text
