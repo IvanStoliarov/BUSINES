@@ -119,8 +119,8 @@ if(form) {
     let emailInput = form.email;
     let emptyValue = emailInput.value;
     emailInput.addEventListener("input", function (event) {
-        let validMail = event.target.value.match(/^[0-9a-z-\.-\@]+$/i);
-        if((emptyValue == event.target.value) || (validMail)) {
+        // let validMail = event.target.value.match(/^[0-9a-z-\.-\@]+$/i);
+        if((emptyValue == event.target.value) ) {
             document.querySelector(".form__email").classList.remove("form__email-wrong");
         } else {
             document.querySelector(".form__email").classList.add("form__email-wrong");
