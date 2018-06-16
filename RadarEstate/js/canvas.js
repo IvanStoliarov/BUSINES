@@ -1,26 +1,25 @@
 
-var Create = function (options) {
+var Create = function(options) {
     var content = {};
-    content.myCanvas = options;
     myCanvas = options;
-    myCanvas.width = 45;
-    myCanvas.height = 45;
-    myCanvas.test = options.getAttribute("name");
-    let passed =  parseInt(options.parentNode.querySelector(".progress__value").innerHTML);
-    let left = 100 - passed;
-    myVinyls = {
+    content.myCanvas = options;
+    var passed =  parseInt(options.parentNode.querySelector(".progress__value").innerHTML);
+    var left = 100 - passed;
+    content.myVinyls = {
         "passed": passed,
         "left": left
     };
-    return content
-};
+    return content;
+}
 
+var fields = document.querySelectorAll(".canvas");
+for (var i = 0; i < fields.length; i++) {
+    var newCanvas = new Create(fields[i]);
+    fields[i].width = 45;
+    fields[i].height = 45;
 
-let fields = document.querySelectorAll(".canvas");
-    for (let i = 0; i < fields.length; i++) {
-        let newCanvas = new Create(fields[i]);
-        var ctx = newCanvas.myCanvas.getContext("2d");
-
+    var ctx = newCanvas.myCanvas.getContext("2d");
+    
     function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color) {
         ctx.fillStyle = color;
         ctx.beginPath();
@@ -82,17 +81,17 @@ let fields = document.querySelectorAll(".canvas");
         }
     }
 
-
     var myDougnutChart = new PieChart(
         {
-            canvas: myCanvas,
-            data: myVinyls,
+            canvas: newCanvas.myCanvas,
+            data: newCanvas.myVinyls,
             colors: ["#f8ce46","#e1e3ea"],
             doughnutHoleSize: 0.5
         }
     );
 
     myDougnutChart.draw();
+    
 }
 
 
