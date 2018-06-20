@@ -695,10 +695,10 @@ footer {
   height: 32px;
 }
 .footer__social-facebook {
-  background-image: url("../img/facebook-icon.svg");
+  background-image: url("../img/fk-icon.svg");
 }
 .footer__social-facebook:hover {
-  background-image: url("../img/facebook-icon-hovered.svg");
+  background-image: url("../img/fk-icon-hovered.svg");
 }
 .footer__social-instagram {
   background-image: url("../img/icons-instagram.svg");
@@ -707,10 +707,10 @@ footer {
   background-image: url("../img/icons-instagram-hovered.svg");
 }
 .footer__social-youtube {
-  background-image: url("../img/youtube-icon.svg");
+  background-image: url("../img/y-icon.svg");
 }
 .footer__social-youtube:hover {
-  background-image: url("../img/youtube-icon-hovered.svg");
+  background-image: url("../img/y-icon-hovered.svg");
 }
 @media (max-width: 1340px) {
   header {

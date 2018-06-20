@@ -109,7 +109,6 @@ article {
   font-size: 36px;
   font-weight: 700;
   line-height: 52px;
-  width: 100%;
   padding: 0 40px;
   margin: 0;
   box-sizing: border-box;
@@ -399,7 +398,8 @@ article {
 
 .progress {
   display: flex;
-  padding: 15px 25px;
+  align-items: center;
+  padding: 15px 25px 10px;
 }
 
 .terms__text {
@@ -496,8 +496,10 @@ article {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 5px;
   img {
     margin-right: 10px;
+    margin-bottom: -6px;
   }
 }
 
@@ -506,6 +508,9 @@ article {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
   img {
     margin-right: 8px;
   }
@@ -720,6 +725,10 @@ article {
     left: -340px;
   }
 
+  .object__distance {
+    margin-bottom: 3px;
+  }
+
 }
 
 //----------------PHONE--------------
@@ -831,6 +840,7 @@ article {
     flex-direction: column;
     align-items: center;
     margin-right: 18px;
+    white-space: initial;
     img {
       margin: 0 0 9px;
     }
@@ -902,11 +912,6 @@ article {
   .complex-real-estate__btn {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .carousel-wrapper {
-    //display: flex;
-    //align-items: center;
   }
 
 }

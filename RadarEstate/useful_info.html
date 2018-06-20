@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Company</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/useful_info.css">
+
+
+</head>
+<body>
+
+<header>
+    <div class="header__left-side">
+        <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+        <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="Radar Estate">
+        </a>
+        <div class="header__city">
+            <div  class="current__city">Каменець-Подільський</div>
+            <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            <div class="city-popup city-popup-hidden">
+                <ul class="city__list">
+                    <li class="city__item">Белая Церковь</li>
+                    <li class="city__item">Бровары</li>
+                    <li class="city__item">Ирпень</li>
+                    <li class="city__item">Винница</li>
+                    <li class="city__item">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header__nav-desktop">
+            <ul>
+                <li><a href="#">Мапа новобудов</a></li>
+                <li><a href="#">Каталог новобудов</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header__right-side">
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/heart-2.svg" title="heart">
+                <div class="notification__status">23</div>
+            </div>
+            <div class="notification__text">Улюблене</div>
+        </div>
+        <div class="header__notification">
+            <div class="notification__img">
+                <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
+                <div class="notification__status">5</div>
+            </div>
+            <div class="notification__text">Порівняння</div>
+        </div>
+        <div class="header__sign-up">
+            <div class="sign-up__icon">
+                <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+            </div>
+            <div class="sign-up__name">Dmytro Ivanov</div>
+            <div class="sign-up__btn">
+                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu mobile-menu-registered  mobile-menu-hidden"> <!--Add class "mobile-menu-registered" for registered users-->
+    <div class="mobile-menu__links">
+        <div class="mobile-menu__top">
+            <div class="mobile-menu__btn">
+                <img src="img/mobile-btn.svg" alt="mobile-button">
+            </div>
+            <div class="header__city header__city-mobile">
+                <div class="current__city-wrapper">
+                    <div  class="current__city">Каменець-Подільський</div>
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+                <ul class="city__list city__list-hidden city__list-mobile">
+                    <li class="city__item city__item-mobile">Белая Церковь</li>
+                    <li class="city__item city__item-mobile">Бровары</li>
+                    <li class="city__item city__item-mobile">Ирпень</li>
+                    <li class="city__item city__item-mobile">Винница</li>
+                    <li class="city__item city__item-mobile">Чернигов</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="mobile-menu__main-nav">
+            <li><a href="#">Мапа новобудов</a></li>
+            <li><a href="#">Каталог новобудов</a></li>
+        </ul>
+        <ul class="mobile-menu__nav">
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </div>
+
+    <div class="mobile-menu__sign-in">
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+            <div class="sign-in__text">Вхід</div>
+        </div>
+        <div class="sign-in__line">
+            <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+            <div class="sign-in__text">Реєстрація</div>
+        </div>
+    </div>
+
+    <div class="mobile-menu__profile">
+        <ul>
+            <li class="mobileProfile__item"><a href="#">Мій профіль</a> <img src="img/user-icon.svg" alt="icon"></li>
+            <li class="mobileProfile__item"><a href="#">Моніторинг</a></li>
+            <li class="mobileProfile__item"><a href="#">Мої закази</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <aside>
+        <h2 class="aside__title">Категорії:</h2>
+        <ul>
+            <li class="category-item"><a href="#">Новини сайту</a></li>
+            <li class="category-item category-item_active"><a href="#">Новини ринку</a></li>
+            <li class="category-item"><a href="#">Технології будівництва</a></li>
+            <li class="category-item"><a href="#">Статистика забудов</a></li>
+            <li class="category-item"><a href="#">Поради до вибору квартир</a></li>
+            <li class="category-item"><a href="#">Новини сайту</a></li>
+            <li class="category-item"><a href="#">Новини ринку</a></li>
+            <li class="category-item"><a href="#">Технології будівництва</a></li>
+            <li class="category-item"><a href="#">Статистика забудов</a></li>
+            <li class="category-item"><a href="#">Поради до вибору квартир</a></li>
+            <li class="category-item"><a href="#">Новини сайту</a></li>
+            <li class="category-item"><a href="#">Новини ринку</a></li>
+            <li class="category-item"><a href="#">Технології будівництва</a></li>
+            <li class="category-item"><a href="#">Статистика забудов</a></li>
+            <li class="category-item"><a href="#">Поради до вибору квартир</a></li>
+        </ul>
+    </aside>
+    <article>
+        <div class="current-category">Новини ринку</div>
+        <h1 class="category-title">Корисна інформація</h1>
+        <div class="rss">
+            <div class="rss__icon"></div>
+            <a class="rss__link" href="#">RSS  стрічка</a>
+        </div>
+
+        <div class="category-list">
+            <div class="category-list__subtitle"> Категорія</div>
+            <select class="category-list__select" name="category">
+                <option value="">Новини сайту</option>
+                <option value="">Новини ринку</option>
+                <option value="">Технології будівництва</option>
+                <option value="">Статистика забудов</option>
+                <option value="">Поради до вибору квартир</option>
+                <option value="">Новини сайту</option>
+                <option value="">Новини ринку</option>
+                <option value="">Технології будівництва</option>
+                <option value="">Статистика забудов</option>
+                <option value="">Поради до вибору квартир</option>
+                <option value="">Новини сайту</option>
+                <option value="">Новини ринку</option>
+                <option value="">Технології будівництва</option>
+                <option value="">Статистика забудов</option>
+                <option value="">Поради до вибору квартир</option>
+            </select>
+        </div>
+
+        <div class="grid">
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-1.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Поради до вибору квартир</div>
+                    <a href="#" class="grid-item__title">Пропозиції та попит нерухомості у Львові</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">372</div>
+                        </div>
+                    </div>
+                    <div class="grid-item__text">Протягом березня 2018 року обсяг інвестицій в нерухомість Києва склав еквівалент 16 млн. 105 тис. дол. США, що на 20 % менше
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-2.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Поради до вибору квартир</div>
+                    <a href="#" class="grid-item__title">Динаміка середньої ціни пропозиції квартир</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">93</div>
+                        </div>
+                    </div>
+                    <div class="grid-item__text">Новобудова ЕКО-ДІМ на перехресті вулиць Мазепи-Інструментальна здано в експлуатацію. Мікроквартал сладається з трьох
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-3.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Новини ринку</div>
+                    <a href="#" class="grid-item__title">Будівництво у Львові та області</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">372</div>
+                        </div>
+                    </div>
+                    <div class="grid-item__text">Купуйте квартиру в житловому комплексі CAMPUS з дизайнерським ремонтом та повним комплектом сантехнічного
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-4.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Поради до вибору квартир</div>
+                    <a href="#" class="grid-item__title">Незаконні чи законні забудови - тепер це легко перевірити на карті!
+                    </a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">93</div>
+                        </div>
+                    </div>
+                    <div>Будівельна компанія Stolitsa Group об'явила про початок продажу квартир</div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-5.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Статистика забудов</div>
+                    <a href="#" class="grid-item__title">Будівництво у Львові</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">124</div>
+                        </div>
+                    </div>
+                    <div>У ніч на суботу кияни відчули землетрус силою в 4 бали. Якщо ви замислились про безпеку власної оселі, радимо обирати житло в монолітно-каркасному будинку
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-6.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Технології будівництва</div>
+                    <a href="#" class="grid-item__title">Динаміка середньої ціни пропозиції квартир</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">372</div>
+                        </div>
+                    </div>
+                    <div>Не має достатньо грошей на житло? Скористуйтесь програмою «Доступне житло», та станьте власником свого будинку
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-1.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Поради до вибору квартир</div>
+                    <a href="#" class="grid-item__title">Пропозиції та попит нерухомості у Львові</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">372</div>
+                        </div>
+                    </div>
+                    <div class="grid-item__text">Протягом березня 2018 року обсяг інвестицій в нерухомість Києва склав еквівалент 16 млн. 105 тис. дол. США, що на 20 % менше
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-2.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Поради до вибору квартир</div>
+                    <a href="#" class="grid-item__title">Динаміка середньої ціни пропозиції квартир</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">93</div>
+                        </div>
+                    </div>
+                    <div class="grid-item__text">Новобудова ЕКО-ДІМ на перехресті вулиць Мазепи-Інструментальна здано в експлуатацію. Мікроквартал сладається з трьох
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-3.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Новини ринку</div>
+                    <a href="#" class="grid-item__title">Будівництво у Львові та області</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">372</div>
+                        </div>
+                    </div>
+                    <div class="grid-item__text">Купуйте квартиру в житловому комплексі CAMPUS з дизайнерським ремонтом та повним комплектом сантехнічного
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-4.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Поради до вибору квартир</div>
+                    <a href="#" class="grid-item__title">Незаконні чи законні забудови - тепер це легко перевірити на карті!
+                    </a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">93</div>
+                        </div>
+                    </div>
+                    <div>Будівельна компанія Stolitsa Group об'явила про початок продажу квартир</div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-5.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Статистика забудов</div>
+                    <a href="#" class="grid-item__title">Будівництво у Львові</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">124</div>
+                        </div>
+                    </div>
+                    <div>У ніч на суботу кияни відчули землетрус силою в 4 бали. Якщо ви замислились про безпеку власної оселі, радимо обирати житло в монолітно-каркасному будинку
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-item__img"><img src="img/useful-info-img-6.jpg" alt="photo"></div>
+                <div class="grid-item__inner">
+                    <div class="grid-item__type">Технології будівництва</div>
+                    <a href="#" class="grid-item__title">Динаміка середньої ціни пропозиції квартир</a>
+                    <div class="grid-item__status">
+                        <div class="grid-item__date">
+                            <div class="date-icon"></div>
+                            <div class="news-date">23.04.2018</div>
+                        </div>
+                        <div class="grid-item__views">
+                            <div class="views-icon"></div>
+                            <div class="grid-item__views">372</div>
+                        </div>
+                    </div>
+                    <div>Не має достатньо грошей на житло? Скористуйтесь програмою «Доступне житло», та станьте власником свого будинку
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page-controls">
+            <div class="page-controls_left">
+                <button class="page-controls__btn page-controls__btn_left"></button>
+                <a href="#" class="page-controls__link">Попередня</a>
+                <a href="#" class="page-controls__link">Наступна</a>
+                <button class="page-controls__btn page-controls__btn_right"></button>
+            </div>
+            <div class="page-controls_right">
+                <button class="page-controls__btn page-controls__btn_more"></button>
+                <a href="#" class="page-controls__link">Завантажити ще</a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<footer>
+    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+    <nav class="footer__menu">
+        <ul>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Забудовнику</a></li>
+            <li><a href="#">Послуги та ціни</a></li>
+            <li><a href="#">Умови використання</a></li>
+            <li><a href="#">Корисні статті</a></li>
+            <li><a href="#">Вакансії</a></li>
+        </ul>
+    </nav>
+    <div class="footer__sn">
+        <ul>
+            <li><a class="footer__sn-face-book" target="_blank" href="#"></a></li>
+            <li><a class="footer__sn-instagram" target="_blank" href="#"></a></li>
+            <li><a class="footer__sn-y" target="_blank" href="#"></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

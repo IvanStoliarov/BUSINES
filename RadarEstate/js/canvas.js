@@ -79,7 +79,7 @@ for (var i = 0; i < fields.length; i++) {
                 );
             }
         }
-    }
+    };
 
     var myDougnutChart = new PieChart(
         {

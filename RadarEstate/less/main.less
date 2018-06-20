@@ -83,17 +83,6 @@ header {
     margin-right: 12px;
     margin-left: 12px;
     text-align: center;
-    //&:hover {
-    //  &:before {
-    //    position: absolute;
-    //    bottom: -7px;
-    //    left: calc(50% - 32px);
-    //    content: "";
-    //    width: 64px;
-    //    height: 4px;
-    //    background-color: #f8ce46;
-    //  }
-    //}
   }
 }
 
@@ -119,7 +108,6 @@ header {
   color: rgba(255, 255, 255, 0.95);
   font-size: 10px;
   font-weight: 500;
-  //line-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,6 +400,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .copyright {
@@ -426,7 +415,7 @@ footer {
   margin-left: 46px;
 }
 
-.footer__social {
+.footer__sn {
   ul {
     display: flex;
     li {
@@ -440,24 +429,24 @@ footer {
   }
 }
 
-.footer__social-facebook {
-  background-image: url("../img/facebook-icon.svg");
+.footer__sn-face-book {
+  background-image: url("../img/fk-icon.svg");
   &:hover {
-    background-image: url("../img/facebook-icon-hovered.svg");
+    background-image: url("../img/fk-icon-hovered.svg");
   }
 }
 
-.footer__social-instagram {
+.footer__sn-instagram {
   background-image: url("../img/icons-instagram.svg");
   &:hover {
     background-image: url("../img/icons-instagram-hovered.svg");
   }
 }
 
-.footer__social-youtube {
-  background-image: url("../img/youtube-icon.svg");
+.footer__sn-y {
+  background-image: url("../img/y-icon.svg");
   &:hover {
-    background-image: url("../img/youtube-icon-hovered.svg");
+    background-image: url("../img/y-icon-hovered.svg");
   }
 }
 
@@ -596,7 +585,7 @@ footer {
     display: none;
   }
 
-  .footer__social {
+  .footer__sn {
     display: none;
   }
 
@@ -649,8 +638,6 @@ footer {
     text-align: center;
   }
 }
-
-
 //----------------PHONE--------------
 
 @media (max-width: 576px) {
@@ -748,5 +735,4 @@ footer {
   footer {
     display: none!important;
   }
-
 }
