@@ -1273,6 +1273,9 @@ footer {
   text-decoration: underline;
   margin-bottom: 7px;
 }
+.similar-apartment__link:hover {
+  text-decoration: none;
+}
 .similar-apartment__info {
   display: flex;
 }
