@@ -221,12 +221,6 @@ select {
   line-height: 20px;
   padding: 10px 12px;
 }
-.projectDescription{
-  padding: 1rem;
-}
-.projectDescription h2{
-  text-align: center;
-}
 @media (max-width: 1200px) {
   .mexanizm-carrying__form {
     flex-direction: column;
