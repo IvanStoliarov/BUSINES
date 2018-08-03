@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>favorite_cards</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/favorite_cards.css">
+
+
+</head>
+
+<body>
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
+            </div>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <aside class="favorite-lists ">
+            <div class="filters-show-button "></div>
+            <div class="favorite-lists__wrapper">
+                <div class="favorite-lists__title">Списки улюбленого</div>
+                <ul class="favorite-lists__group">
+
+                    <li class="favorite-lists-item">
+                        <div class="favorite-lists-item__top">
+                            <div class="favorite-lists-item__icon">
+                                <div class="link-icon"></div>
+                            </div>
+                            <div class="favorite-lists-item__name">Мій список</div>
+                            <div class="favorite-lists-item__remove"></div>
+                        </div>
+                        <div class="favorite-lists-item__inner">
+                            <div class="favorite-lists-item__date">Створено: 27.03.2018</div>
+                            <div class="favorite-lists-item__access">
+                                <div class="favorite-lists-item__access-text">Спільний доступ:
+                                    <span class="favorite-lists-item__access-text_date">28.03.2018</span>
+                                </div>
+                                <div class="access__toggler access__toggler_yes">
+                                    <div class="switch access__toggler-switch"></div>
+                                    <div class="toggler-state toggler-state_yes">Так</div>
+                                    <div class="toggler-state toggler-state_no">Hi</div>
+                                </div>
+                            </div>
+                            <div class="favorite-lists-item__link-section">
+                                <div class="favorite-lists-item__link-icon"></div>
+                                <a class="favorite-lists-item__link" href="#">https://www.radarestate.com/avqla3xplqky</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="favorite-lists-item">
+                        <div class="favorite-lists-item__top">
+                            <div class="favorite-lists-item__icon"></div>
+                            <div class="favorite-lists-item__name">Для розміну</div>
+                            <div class="favorite-lists-item__remove"></div>
+                        </div>
+                        <div class="favorite-lists-item__inner">
+                            <div class="favorite-lists-item__date">Створено: 27.03.2018</div>
+                            <div class="favorite-lists-item__access">
+                                <div class="favorite-lists-item__access-text">Спільний доступ:
+                                    <span class="favorite-lists-item__access-text_date">28.03.2018</span>
+                                </div>
+                                <div class="access__toggler access__toggler_yes">
+                                    <div class="switch access__toggler-switch"></div>
+                                    <div class="toggler-state toggler-state_yes">Так</div>
+                                    <div class="toggler-state toggler-state_no">Hi</div>
+                                </div>
+                            </div>
+                            <div class="favorite-lists-item__link-section">
+                                <div class="favorite-lists-item__link-icon"></div>
+                                <a class="favorite-lists-item__link" href="#">https://www.radarestate.com/avqla3xplqky</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="favorite-lists-item">
+                        <div class="favorite-lists-item__top">
+                            <div class="favorite-lists-item__icon">
+                                <div class="link-icon"></div>
+                            </div>
+                            <div class="favorite-lists-item__name">Поряд зі школою</div>
+                            <div class="favorite-lists-item__remove"></div>
+                        </div>
+                        <div class="favorite-lists-item__inner">
+                            <div class="favorite-lists-item__date">Створено: 27.03.2018</div>
+                            <div class="favorite-lists-item__access">
+                                <div class="favorite-lists-item__access-text">Спільний доступ:
+                                    <span class="favorite-lists-item__access-text_date">28.03.2018</span>
+                                </div>
+                                <div class="access__toggler access__toggler_yes">
+                                    <div class="switch access__toggler-switch"></div>
+                                    <div class="toggler-state toggler-state_yes">Так</div>
+                                    <div class="toggler-state toggler-state_no">Hi</div>
+                                </div>
+                            </div>
+                            <div class="favorite-lists-item__link-section">
+                                <div class="favorite-lists-item__link-icon"></div>
+                                <a class="favorite-lists-item__link" href="#">https://www.radarestate.com/avqla3xplqky</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="favorite-lists-item">
+                        <div class="favorite-lists-item__top">
+                            <div class="favorite-lists-item__icon"></div>
+                            <div class="favorite-lists-item__name">Дивитись пізніше</div>
+                            <div class="favorite-lists-item__remove"></div>
+                        </div>
+                        <div class="favorite-lists-item__inner">
+                            <div class="favorite-lists-item__date">Створено: 27.03.2018</div>
+                            <div class="favorite-lists-item__access">
+                                <div class="favorite-lists-item__access-text">Спільний доступ:
+                                    <span class="favorite-lists-item__access-text_date">28.03.2018</span>
+                                </div>
+                                <div class="access__toggler access__toggler_yes">
+                                    <div class="switch access__toggler-switch"></div>
+                                    <div class="toggler-state toggler-state_yes">Так</div>
+                                    <div class="toggler-state toggler-state_no">Hi</div>
+                                </div>
+                            </div>
+                            <div class="favorite-lists-item__link-section">
+                                <div class="favorite-lists-item__link-icon"></div>
+                                <a class="favorite-lists-item__link" href="#">https://www.radarestate.com/avqla3xplqky</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="favorite-lists-item">
+                        <div class="favorite-lists-item__top">
+                            <div class="favorite-lists-item__icon"></div>
+                            <div class="favorite-lists-item__name">Для Катрусі</div>
+                            <div class="favorite-lists-item__remove"></div>
+                        </div>
+                        <div class="favorite-lists-item__inner">
+                            <div class="favorite-lists-item__date">Створено: 27.03.2018</div>
+                            <div class="favorite-lists-item__access">
+                                <div class="favorite-lists-item__access-text">Спільний доступ:
+                                    <span class="favorite-lists-item__access-text_date">28.03.2018</span>
+                                </div>
+                                <div class="access__toggler access__toggler_yes">
+                                    <div class="switch access__toggler-switch"></div>
+                                    <div class="toggler-state toggler-state_yes">Так</div>
+                                    <div class="toggler-state toggler-state_no">Hi</div>
+                                </div>
+                            </div>
+                            <div class="favorite-lists-item__link-section">
+                                <div class="favorite-lists-item__link-icon"></div>
+                                <a class="favorite-lists-item__link" href="#">https://www.radarestate.com/avqla3xplqky</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="favorite-lists-item">
+                        <div class="favorite-lists-item__top">
+                            <div class="favorite-lists-item__icon"></div>
+                            <div class="favorite-lists-item__name">5 хвилин до роботи</div>
+                            <div class="favorite-lists-item__remove"></div>
+                        </div>
+                        <div class="favorite-lists-item__inner">
+                            <div class="favorite-lists-item__date">Створено: 27.03.2018</div>
+                            <div class="favorite-lists-item__access">
+                                <div class="favorite-lists-item__access-text">Спільний доступ:
+                                    <span class="favorite-lists-item__access-text_date">28.03.2018</span>
+                                </div>
+                                <div class="access__toggler access__toggler_yes">
+                                    <div class="switch access__toggler-switch"></div>
+                                    <div class="toggler-state toggler-state_yes">Так</div>
+                                    <div class="toggler-state toggler-state_no">Hi</div>
+                                </div>
+                            </div>
+                            <div class="favorite-lists-item__link-section">
+                                <div class="favorite-lists-item__link-icon"></div>
+                                <a class="favorite-lists-item__link" href="#">https://www.radarestate.com/avqla3xplqky</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="favorite-lists__bottom favorite-lists__bottom_fixed ">
+                    <label class="favorite-lists__input-label">Введіть назву для нового списку улюбленого</label>
+                    <input type="text" class="favorite-lists__input">
+                    <button class="favorite-lists__button">Створити новий список</button>
+                </div>
+            </div>
+        </aside>
+        <div class="main page-content">
+            <h1 class="page-title">Улюблене: «Поряд зі школою»</h1>
+            <h1 class="page-title page-title__mobile">
+                <span class="page-title__mobile_lite">Улюблене:
+                    <br>
+                </span>
+                Поруч зі школою
+            </h1>
+            <div class="sort">
+                <div>Сортувати по:</div>
+                <div class="sort__wrapper">
+                    <div class="sort__link">даті додавання</div>
+                    <div class="sort__link sort__link_active">кількісті кімнат</div>
+                    <div class="sort__link">ціні</div>
+                </div>
+            </div>
+            <ul class="favorite-list">
+                <li class="favorite-card">
+                    <div class="favorite-card__header">
+                        <div class="favorite-card__add-date">
+                            <span class="favorite-card__add-date_hide">Додано:</span> 12.02.2018</div>
+                        <div class="favorite-card__list">
+                            <div class="favorite-card__current-list">Декілька списків</div>
+                            <div class="favorite-card-popup">
+                                <ul class="favorite-card-popup__list">
+
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Двокімнатні</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Дивитися пізніше</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Для Катрусі</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Поряд зі школою</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>5 хвилин до роботи</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Кирилу Петровичу</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Двокімнатні</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Дивитися пізніше</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Для Катрусі</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Поряд зі школою</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>5 хвилин до роботи</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Кирилу Петровичу</div>
+                                    </li>
+                                </ul>
+                                <button class="favorite-card-popup__btn">Додати</button>
+                            </div>
+                            <div class="favorite-card__list-button"></div>
+                        </div>
+                    </div>
+                    <div class="building__main">
+                        <div class="building__carousel-wrapper">
+                            <div class="building__carousel">
+                                <img src="img/catalog-carousel.png" alt="carousel">
+                            </div>
+                            <div class="checked-status">
+                                <div class="checked-icon"></div>
+                                Перевірено
+                            </div>
+                            <div class="news">
+                                <div class="news__icon">
+                                    <div class="news__status">4</div>
+                                </div>
+                                <a href="#" class="news__link">Стрічка новин</a>
+                            </div>
+                        </div>
+
+                        <div class="building__info">
+                            <a href="#" class="building__developer">«Авантаж-Буд»</a>
+                            <div class="building__name">ЖК «Смарт-Плаза» 1 черга</div>
+                            <div class="building__address">
+                                <div class="location-icon"></div>
+                                <a href="#">Володимира Великого 12</a>
+                            </div>
+                            <a href="#">
+                            </a>
+                            <a href="#" class="building__button">На сторінку новобудови</a>
+                            <div class="building-status__wrapper">
+                                <div class="building-status__title">Прогрес будіництва</div>
+
+                                <div class="building-status">
+                                    <div class="progress">
+                                        <div class="progress__icon">
+                                            <div class="progress__value">29%</div>
+                                            <canvas class="canvas" width="45" height="45"></canvas>
+                                        </div>
+                                        <div class="progress__help">
+                                            <div class="progress__help-text">
+                                                <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                            </div>
+                                            <div class="progress__help-text">
+                                                <span class="circle"></span>Залишилось — 19 міс.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="building-status__terms">
+                                        <div class="building-status__block">
+                                            <div class="building-status__block_title">Початок</div>
+                                            <div>06.2017</div>
+                                        </div>
+                                        <div class="building-status__block">
+                                            <div class="building-status__block_title">Здача</div>
+                                            <div>1 квартал 2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="building__buttons-bar buttons-bar">
+                            <div class="buttons-bar__item buttons-bar__item_favorite buttons-bar__item_active">
+                                <div class="buttons-bar__icon buttons-bar__icon_unfavorite"></div>
+                                <div>З улюбленого</div>
+                            </div>
+                            <div class="buttons-bar__item buttons-bar__item_compare">
+                                <div class="buttons-bar__icon buttons-bar__icon_compare"></div>
+                                <div>В порівняння</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="building__bottom">
+                        <div class="building__price-table">
+                            <div class="price-table__cell price-table__cell_title">1-кімнатні</div>
+                            <div class="price-table__cell">від 45 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $20,000</div>
+                            <div class="price-table__cell">від $300/m</div>
+
+                            <div class="price-table__cell price-table__cell_title">2-кімнатні</div>
+                            <div class="price-table__cell">від 45 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $40,000</div>
+                            <div class="price-table__cell">від $275/m</div>
+
+                            <div class="price-table__cell price-table__cell_title">3-кімнатні</div>
+                            <div class="price-table__cell">від 80 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $75,000</div>
+                            <div class="price-table__cell">від $410/m</div>
+                        </div>
+                        <div class="building__infrastructure-table">
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_bus-stop"></div>Зупинка</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>300 м.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>6 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>2 хв.</div>
+
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_park"></div>Парк</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>1,7 км.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>22 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>5 хв.</div>
+
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_shop"></div>Супермаркет</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>800 м.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>12 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>6 хв.</div>
+                        </div>
+                    </div>
+
+                    <div class="building__comment comment">
+                        <div class="comment__top">
+                            <div class="comment__label">Ваш коментар
+                                <span class="comment__label_hide"> до цієї новобудови</span>
+                            </div>
+                            <div class="comment__status">
+                                <div class="comment__status-text comment__status-text_error">Помилка збереження</div>
+                                <div class="comment__status-icon comment__status-icon_error"></div>
+                            </div>
+                        </div>
+                        <textarea rows="3" class="comment__input"></textarea>
+                    </div>
+                    <div class="building-bottom-link_wrapper">
+                        <div class="building-bottom-link__icon"></div>
+                        <a href="#" class="building-bottom-link">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="favorite-card">
+                    <div class="favorite-card__header">
+                        <div class="favorite-card__add-date">
+                            <span class="favorite-card__add-date_hide">Додано:</span> 21.03.2018</div>
+                        <div class="favorite-card__list">
+                            <div class="favorite-card__current-list">Поряд зі школою</div>
+                            <div class="favorite-card-popup">
+                                <ul class="favorite-card-popup__list">
+
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Двокімнатні</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Дивитися пізніше</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Для Катрусі</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Поряд зі школою</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>5 хвилин до роботи</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Кирилу Петровичу</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Двокімнатні</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Дивитися пізніше</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Для Катрусі</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Поряд зі школою</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>5 хвилин до роботи</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Кирилу Петровичу</div>
+                                    </li>
+                                </ul>
+                                <button class="favorite-card-popup__btn">Додати</button>
+                            </div>
+                            <div class="favorite-card__list-button"></div>
+                        </div>
+                    </div>
+                    <div class="building__main">
+                        <div class="building__carousel-wrapper">
+                            <div class="building__carousel">
+                                <img src="img/catalog-carousel.png" alt="carousel">
+                            </div>
+                            <div class="checked-status">
+                                <div class="checked-icon"></div>
+                                Перевірено
+                            </div>
+                            <div class="news">
+                                <div class="news__icon">
+                                    <div class="news__status">4</div>
+                                </div>
+                                <a href="#" class="news__link">Стрічка новин</a>
+                            </div>
+                        </div>
+
+                        <div class="building__info">
+                            <a href="#" class="building__developer">«Авантаж-Буд»</a>
+                            <div class="building__name">ЖК «Журавлівська слобода»</div>
+                            <div class="building__address">
+                                <div class="location-icon"></div>
+                                <a href="#">Леся Курбаса 32</a>
+                            </div>
+                            <a href="#">
+                            </a>
+                            <a href="#" class="building__button">На сторінку новобудови</a>
+                            <div class="building-status__wrapper">
+                                <div class="building-status__title">Прогрес будіництва</div>
+
+                                <div class="building-status">
+                                    <div class="progress">
+                                        <div class="progress__icon">
+                                            <div class="progress__value">72%</div>
+                                            <canvas class="canvas" width="45" height="45"></canvas>
+                                        </div>
+                                        <div class="progress__help">
+                                            <div class="progress__help-text">
+                                                <span class="circle circle-yellow"></span>Будується — 14 міс.
+                                            </div>
+                                            <div class="progress__help-text">
+                                                <span class="circle"></span>Залишилось — 7 міс.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="building-status__terms">
+                                        <div class="building-status__block">
+                                            <div class="building-status__block_title">Початок</div>
+                                            <div>04.2016</div>
+                                        </div>
+                                        <div class="building-status__block">
+                                            <div class="building-status__block_title">Здача</div>
+                                            <div>07.2018</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="building__buttons-bar buttons-bar">
+                            <div class="buttons-bar__item buttons-bar__item_favorite buttons-bar__item_active">
+                                <div class="buttons-bar__icon buttons-bar__icon_unfavorite"></div>
+                                <div>З улюбленого</div>
+                            </div>
+                            <div class="buttons-bar__item buttons-bar__item_compare">
+                                <div class="buttons-bar__icon buttons-bar__icon_compare"></div>
+                                <div>В порівняння</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="building__bottom">
+                        <div class="building__price-table">
+                            <div class="price-table__cell price-table__cell_title">1-кімнатні</div>
+                            <div class="price-table__cell">від 45 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $20,000</div>
+                            <div class="price-table__cell">від $300/m</div>
+
+                            <div class="price-table__cell price-table__cell_title">2-кімнатні</div>
+                            <div class="price-table__cell">від 45 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $40,000</div>
+                            <div class="price-table__cell">від $275/m</div>
+
+                            <div class="price-table__cell price-table__cell_title">3-кімнатні</div>
+                            <div class="price-table__cell">від 80 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $75,000</div>
+                            <div class="price-table__cell">від $410/m</div>
+                        </div>
+                        <div class="building__infrastructure-table">
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_bus-stop"></div>Зупинка</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>300 м.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>6 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>2 хв.</div>
+
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_park"></div>Парк</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>1,7 км.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>22 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>5 хв.</div>
+
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_shop"></div>Супермаркет</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>800 м.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>12 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>6 хв.</div>
+                        </div>
+                    </div>
+
+                    <div class="building__comment comment">
+                        <div class="comment__top">
+                            <div class="comment__label">Ваш коментар
+                                <span class="comment__label_hide"> до цієї новобудови</span>
+                            </div>
+                            <div class="comment__status">
+                                <div class="comment__status-text comment__status-text">Збережено</div>
+                                <div class="comment__status-icon comment__status-icon"></div>
+                            </div>
+                        </div>
+                        <textarea rows="3" class="comment__input"></textarea>
+                    </div>
+                    <div class="building-bottom-link_wrapper">
+                        <div class="building-bottom-link__icon"></div>
+                        <a href="#" class="building-bottom-link">На сторінку новобудови</a>
+                    </div>
+                </li>
+                <li class="favorite-card">
+                    <div class="favorite-card__header">
+                        <div class="favorite-card__add-date">
+                            <span class="favorite-card__add-date_hide">Додано:</span> 12.02.2018</div>
+                        <div class="favorite-card__list">
+                            <div class="favorite-card__current-list">Декілька списків</div>
+                            <div class="favorite-card-popup">
+                                <ul class="favorite-card-popup__list">
+
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Двокімнатні</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Дивитися пізніше</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Для Катрусі</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Поряд зі школою</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>5 хвилин до роботи</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Кирилу Петровичу</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Двокімнатні</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Дивитися пізніше</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Для Катрусі</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Поряд зі школою</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>5 хвилин до роботи</div>
+                                    </li>
+                                    <li class="favorite-card-popup__item">
+                                        <div class="favorite-card-popup__status"></div>
+                                        <div>Кирилу Петровичу</div>
+                                    </li>
+                                </ul>
+                                <button class="favorite-card-popup__btn">Додати</button>
+                            </div>
+                            <div class="favorite-card__list-button"></div>
+                        </div>
+                    </div>
+                    <div class="building__main">
+                        <div class="building__carousel-wrapper">
+                            <div class="building__carousel">
+                                <img src="img/catalog-carousel.png" alt="carousel">
+                            </div>
+                            <div class="checked-status">
+                                <div class="checked-icon"></div>
+                                Перевірено
+                            </div>
+                            <div class="news">
+                                <div class="news__icon">
+                                    <div class="news__status">4</div>
+                                </div>
+                                <a href="#" class="news__link">Стрічка новин</a>
+                            </div>
+                        </div>
+
+                        <div class="building__info">
+                            <a href="#" class="building__developer">«Авантаж-Буд»</a>
+                            <div class="building__name">ЖК «Смарт-Плаза» 1 черга</div>
+                            <div class="building__address">
+                                <div class="location-icon"></div>
+                                <a href="#">Вільський шлях 16</a>
+                            </div>
+                            <a href="#">
+                            </a>
+                            <a href="#" class="building__button">На сторінку новобудови</a>
+                            <div class="building-status__wrapper">
+                                <div class="building-status__title">Прогрес будіництва</div>
+
+                                <div class="building-status">
+                                    <div class="progress">
+                                        <div class="progress__icon">
+                                            <div class="progress__value">29%</div>
+                                            <canvas class="canvas" width="45" height="45"></canvas>
+                                        </div>
+                                        <div class="progress__help">
+                                            <div class="progress__help-text">
+                                                <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                            </div>
+                                            <div class="progress__help-text">
+                                                <span class="circle"></span>Залишилось — 19 міс.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="building-status__terms">
+                                        <div class="building-status__block">
+                                            <div class="building-status__block_title">Початок</div>
+                                            <div>06.2017</div>
+                                        </div>
+                                        <div class="building-status__block">
+                                            <div class="building-status__block_title">Здача</div>
+                                            <div>1 квартал 2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="building__buttons-bar buttons-bar">
+                            <div class="buttons-bar__item buttons-bar__item_favorite buttons-bar__item_active">
+                                <div class="buttons-bar__icon buttons-bar__icon_unfavorite"></div>
+                                <div>З улюбленого</div>
+                            </div>
+                            <div class="buttons-bar__item buttons-bar__item_compare">
+                                <div class="buttons-bar__icon buttons-bar__icon_compare"></div>
+                                <div>В порівняння</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="building__bottom">
+                        <div class="building__price-table">
+                            <div class="price-table__cell price-table__cell_title">1-кімнатні</div>
+                            <div class="price-table__cell">від 45 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $20,000</div>
+                            <div class="price-table__cell">від $300/m</div>
+
+                            <div class="price-table__cell price-table__cell_title">2-кімнатні</div>
+                            <div class="price-table__cell">від 45 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $40,000</div>
+                            <div class="price-table__cell">від $275/m</div>
+
+                            <div class="price-table__cell price-table__cell_title">3-кімнатні</div>
+                            <div class="price-table__cell">від 80 м
+                                <sup>2</sup>
+                            </div>
+                            <div class="price-table__cell">від $75,000</div>
+                            <div class="price-table__cell">від $410/m</div>
+                        </div>
+                        <div class="building__infrastructure-table">
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_bus-stop"></div>Зупинка</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>300 м.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>6 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>2 хв.</div>
+
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_park"></div>Парк</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>1,7 км.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>22 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>5 хв.</div>
+
+                            <div class="infrastructure-table__cell infrastructure-table__cell_title">
+                                <div class="infrastructure-title-icon infrastructure-title-icon_shop"></div>Супермаркет</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_distance"></div>800 м.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_walk"></div>12 хв.</div>
+                            <div class="infrastructure-table__cell">
+                                <div class="infrastructure-icon infrastructure-icon_car"></div>6 хв.</div>
+                        </div>
+                    </div>
+
+                    <div class="building__comment comment">
+                        <div class="comment__top">
+                            <div class="comment__label">Ваш коментар
+                                <span class="comment__label_hide"> до цієї новобудови</span>
+                            </div>
+                            <div class="comment__status">
+                                <div class="comment__status-text comment__status-text_loading">Зберігається</div>
+                                <div class="comment__status-icon comment__status-icon_loading"></div>
+                            </div>
+                        </div>
+                        <textarea rows="3" class="comment__input"></textarea>
+                    </div>
+                    <div class="building-bottom-link_wrapper">
+                        <div class="building-bottom-link__icon"></div>
+                        <a href="#" class="building-bottom-link">На сторінку новобудови</a>
+                    </div>
+                </li>
+            </ul>
+            <section class="page-nav">
+                <div class="page-nav__wrapper">
+                    <div class="page-nav__button page-nav__button_left"></div>
+                    <div class="page-nav__link page-nav__link_prev">Попередня</div>
+                    <div class="page-nav__link page-nav__link_next">Наступна</div>
+                    <div class="page-nav__button page-nav__button_right"></div>
+                </div>
+                <div class="page-nav__wrapper">
+                    <div class="page-nav__button page-nav__button_more"></div>
+                    <div class="page-nav__link">Завантажити ще</div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

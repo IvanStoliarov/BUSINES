@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>info_page</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/info_page.css">
+</head>
+
+<body>
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
+            </div>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <article class="article">
+                    <div class="article__date">28 березня 2018 року</div>
+                    <h1 class="article__title">Старий житловий фонд: що&nbsp;перешкоджає оновленню?</h1>
+                    <div class="article__print-version">
+                        <div class="print-icon"></div>
+                        <div class="article__link">Версія для друку</div>
+                    </div>
+                    <h4 class="article__subtitle">
+                        Українцям обіцяють черговий закон, після прийняття якого новими будинками замінять старі
+                    </h4>
+
+                    <div class="content content_mobile">
+                        <div class="content__title">Зміст:</div>
+                        <ul class="content__list">
+                            <li class="content__item">
+                                <a href="#dynamic">
+                                    Динаміка середньої ціни пропозиції квартир в новобудовах Києва
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="#">
+                                    Середні ціни пропозиції квартир у новобудовах за районами Києва
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="#">
+                                    Середня вартість квартир у новобудовах Києва за класами і кількістю кімнат
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="#">
+                                    Динаміка пропозиції новобудов на первинному ринку житла Києва
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="article__text-wrapper">
+                        <p class="article__text">
+                            Питання реконструкції або знесення старого житла піднімалося владою неодноразово. При цьому крім заяв, конкретних дій не
+                            було. Зараз тема знову стала актуальною. 100realty.ua вирішив з'ясувати, чим пояснюється нинішня
+                            активність влади у питанні реконструкції застарілого житлового фонду і чи є у цих ініціатив перспективи
+                            втілення у життя. На думку експертів, основна причина того, що досі в Україні майже половина
+                            житла – старе, про що говорять у Мінрегіонбуді, полягає у відсутності «працездатного» закону.
+                        </p>
+                        <p class="article__text">
+                            У чинній законодавчій базі України ці правовідносини регулює Закон України «Про комплексну реконструкцію кварталів (мікрорайонів)
+                            застарілого житлового фонду», якому вже 10 років.
+
+                        </p>
+                        <p class="article__text">
+                            Також досі чинна постанова Кабінету Міністрів України «Про заходи щодо реконструкції житлових будинків перших масових серій»,
+                            прийнята ще у 1999 році і Програма реконструкції житлових будинків перших масових серій. Але
+                            на практиці не видно, що такі документи існують.
+                        </p>
+                    </div>
+
+                    <section class="section">
+                        <h2 id="dynamic" class="section__title">Динаміка середньої ціни пропозиції квартир в новобудовах Києва</h2>
+                        <div class="article__text-wrapper">
+                            <div class="article__text">
+                                Протягом березня 2018 року обсяг інвестицій в нерухомість Києва склав еквівалент 16 млн. 105 тис. дол. США, що на 20 % менше
+                                показників лютого. Про це повідомили в аналітичній службі АН «Благовіст».
+                            </div>
+                            <p class="article__text">
+                                Про це повідомили в аналітичній службі АН «Благовіст».
+                            </p>
+                            <p class="article__text">
+                                <i>
+                                    Всі, придбані протягом місяця об«єкти нерухомості, були представлені квартирами.
+                                </i>
+                            </p>
+                            <p class="article__text">
+                                Сегмент до 50 тис. дол. в березні зайняв частку 39 % від загальної кількості операцій. У цій категорії купувалися 1 − 2-кімнатні
+                                квартири, в основному в старому житловому фонді, переважно в Дарницькому, Дніпровському та
+                                Святошинському районах столиці.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <h2 class="section__title">Пропозиції новобудов на первинному ринку житла</h2>
+                        <div class="article__text-wrapper">
+                            <p class="article__text">
+                                Кілька місяців тому чиновники знову заговорили про необхідність створення законодавчої бази, яка допомогла б зрушити питання
+                                з мертвої точки. Мінрегіонбуд ініціював розробку нового законопроекту, який був би адаптований
+                                до нинішніх українських реалій.
+                            </p>
+                            <p class="article__text">
+                                У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
+                                бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="section section_flex article__text-wrapper">
+                        <div class="image__wrapper">
+                            <img src="img/info_page-image.png" alt="photo">
+                            <div class="image__description">
+                                Про необхідність заміни відповідного регулювання свідчить те, що наша держава не може похвалитися успішною реалізацією наявного
+                                правового регулювання
+                            </div>
+                        </div>
+                        <section class="section">
+                            <h3 class="section__subtitle">Без закону нема реконструкції</h3>
+                            <p class="article__text">
+                                На думку експертів, основна причина того, що досі в Україні майже половина житла — старе, про що говорять у Мінрегіонбуді,
+                                полягає у відсутності «працездатного» закону.
+                            </p>
+                            <p class="article__text">
+                                У чинній законодавчій базі України ці правовідносини регулює Закон України «Про комплексну реконструкцію кварталів (мікрорайонів)
+                                застарілого житлового фонду», якому вже 10 років.
+                            </p>
+                            <p class="article__text">
+                                Також досі чинна постанова Кабінету Міністрів України «Про заходи щодо реконструкції житлових будинків перших масових серій»,
+                                прийнята ще у 1999 році і Програма реконструкції житлових будинків перших масових серій.
+                                Але на практиці не видно, що такі документи існують.
+                            </p>
+                            <p class="article__text">
+                                «Про необхідність заміни відповідного регулювання свідчить те, що наша держава не може похвалитися успішною реалізацією наявного
+                                правового регулювання», – зазначає Віталій Грусевич, виконавчий директор Конфедерації будівельників
+                                України.
+                            </p>
+                        </section>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section__title">Пропозиції новобудов на первинному ринку житла</h2>
+                        <div class="article__text-wrapper  article__text-wrapper_no-margin">
+                            <p class="article__text">
+                                Кілька місяців тому чиновники знову заговорили про необхідність створення законодавчої бази, яка допомогла б зрушити питання
+                                з мертвої точки. Мінрегіонбуд ініціював розробку нового законопроекту, який був би адаптований
+                                до нинішніх українських реалій.
+                            </p>
+                            <p class="article__text">
+                                У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
+                                бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
+                            </p>
+                        </div>
+                    </section>
+
+                    <div class="warning__text">Використання інформації можливе лише зі згоди адміністрації сайту, та за умови розміщення посилання на
+                        джерело.
+                    </div>
+                </article>
+            </div>
+
+            <div class="content">
+                <div class="content__title">Зміст:</div>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a href="#dynamic">
+                            Динаміка середньої ціни пропозиції квартир в новобудовах Києва
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#">
+                            Середні ціни пропозиції квартир у новобудовах за районами Києва
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#">
+                            Середня вартість квартир у новобудовах Києва за класами і кількістю кімнат
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#">
+                            Динаміка пропозиції новобудов на первинному ринку житла Києва
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="articles-list">
+            <div class="articles-list__item">
+                <div class="articles-list__date">28.03.2018</div>
+                <a href="#" class="articles-list__link">У Києві завершується опалювальний сезон</a>
+                <p class="articles-list__text">
+                    У Києві планують завершити опалювальний сезон 6 квітня.
+                </p>
+                <p class="articles-list__text">
+                    Заступник голови Київської міської державної адміністрації Петро Пантелєєв відзначив, що таке рішення було прийнято в зв'язку
+                    з прогнозами Українського гідрометцентру.
+                </p>
+            </div>
+            <div class="articles-list__item">
+                <div class="articles-list__date">28.03.2018</div>
+                <a href="#" class="articles-list__link">ЄБРР цього року інвестує в нові проектів інфраструктури в Україні</a>
+                <p class="articles-list__text">
+                    Європейський банк реконструкції і розвитку планує в 2018 році реалізувати в Україні близько 25-30 нових проектів фінансування.
+                </p>
+                <p class="articles-list__text">Про це заявив директор представництва ЄБРР в Україні Шевки Аджунер.</p>
+            </div>
+            <div class="articles-list__item">
+                <div class="articles-list__date">28.03.2018</div>
+                <a href="#" class="articles-list__link">На інфраструктуру ОТГ виділили майже два мільярди гривень
+                </a>
+                <p class="articles-list__text">Кабінет міністрів затвердив виділення 1 млрд. 900 млн. грн. субвенції з державного бюджету місцевим бюджетам
+                    на формування відповідної інфраструктури об'єднаних територіальних громад в 2018 році.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

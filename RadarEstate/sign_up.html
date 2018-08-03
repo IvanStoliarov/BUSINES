@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Company</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/sign_in.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+    </header>
+    <div class="main">
+      <h1>Створити аккаунт</h1>
+      <div class="subtitle">Вже маєте аккаунт?
+        <a class="subtitle__link" href="#">Увійти</a>
+      </div>
+
+      <div class="form-wrapper">
+        <form class="form" action="">
+          <div class="input-wrapper">
+            <label for="tel">Номер телефона або e-mail</label>
+            <input id="tel" type="tel">
+          </div>
+          <div class="input-wrapper">
+            <!--  Add class "input-wrapper_error" -->
+            <label class="password-label" for="password">Пароль</label>
+            <label class="password-label_wrong" for="password">
+              <div class="password-label__icon"></div>
+              <div class="password-label__text">Пароль має містити від 8 до 16 символів</div>
+            </label>
+            <input class="password" id="password" type="password">
+            <div class="error-message">Пароль має містити
+              <br> від 8 до 16 символів</div>
+          </div>
+          <div class="input-wrapper">
+            <label for="password-repeat">Підтвердити пароль</label>
+            <input class="password" id="password-repeat" type="password">
+          </div>
+          <button class="button_submit" type="submit">Зареєструватися</button>
+        </form>
+        <div class="so-buttons">
+          <div class="alternative">
+            <div class="alternative__line"></div>
+            <div class="alternative__text">або</div>
+            <div class="alternative__line"></div>
+          </div>
+          <a href="#" class="button-so button-so_fb">
+            <div class="button-so__icon button-so__icon_fb"></div>
+            <span class="button-so__text">Продовжити з Facebook</span>
+          </a>
+          <a href="#" class="button-so button-so_google">
+            <div class="button-so__icon button-so__icon_google"></div>
+            <span class="button-so__text">Продовжити з Google</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="conditions">
+      Реєструючись, ви приймаєте
+      <a class="conditions__link" href="#">Правила користування сервісом</a>,
+      <br> та погоджуєтесь отримувати розсилку про новини сервісу
+    </div>
+
+  </div>
+
+  <script src="js/sign_up.js"></script>
+</body>
+
+</html>

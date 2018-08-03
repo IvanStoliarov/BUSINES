@@ -1,7 +1,8 @@
 @import "main";
 
-html,body{
-  height:100% ;
+html,
+body {
+  height: 100%;
 }
 
 .wrapper {
@@ -14,6 +15,7 @@ html,body{
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
 }
 
 .main {
@@ -25,8 +27,8 @@ html,body{
   padding: 40px 20px 40px 40px;
   background: #f0f1f4;
   width: 375px;
-  border-right: 10px solid #7f7f7f;
-  box-sizing: border-box
+  box-sizing: border-box;
+  box-shadow: 10px 0 20px -15px rgba(0, 0, 0, 0.5), inset -1px 0 0 #d7d8db;
 }
 
 .profile__image {
@@ -136,7 +138,6 @@ h1 {
 //------------------TABLET------------------
 
 @media (max-width: 992px) {
-
   .profile {
     display: none;
   }
@@ -163,7 +164,6 @@ h1 {
 //----------------PHONE--------------
 
 @media (max-width: 576px) {
-
   body {
     height: auto;
   }
@@ -185,7 +185,7 @@ h1 {
 
   .order__button {
     width: 290px;
-    margin: 34px  auto;
+    margin: 34px auto;
     padding: 0;
   }
 
@@ -196,6 +196,6 @@ h1 {
   .no-order-image_mobile {
     height: 255px;
     width: 100%;
-    background:url(../img/face-img.jpg) center;
+    background: url(../img/img_sad_person_city.svg) center/cover;
   }
 }

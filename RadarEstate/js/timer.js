@@ -5,13 +5,12 @@ var button = document.querySelector(".resend");
 var timerBlock = document.querySelector(".timer");
 
 function timer() {
-    if (timerStart > 0) {
-        timerStart -= 1;
-        timeField.innerHTML = timerStart;
-    }
-    else {
-        button.removeAttribute("disabled");
-        timerBlock.style.opacity = 0;
-    }
+  if (timerStart > 0) {
+    timerStart -= 1;
+    timeField.innerHTML = timerStart;
+  } else {
+    button.removeAttribute("disabled");
+    timerBlock.style.opacity = 0;
+  }
 }
 setInterval(timer, 1000);

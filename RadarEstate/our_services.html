@@ -2,702 +2,740 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Company</title>
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/our_services.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>our services</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/our_services.css">
 
 </head>
 
 <body>
 
-  <header>
-    <div class="header__left-side">
-      <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
-      <a href="#" class="header__logo">
-        <img src="img/logo.svg" alt="Radar Estate">
-      </a>
-      <div class="header__city">
-        <div class="current__city">Каменець-Подільський</div>
-        <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-        <div class="city-popup city-popup-hidden">
-          <ul class="city__list">
-            <li class="city__item">Белая Церковь</li>
-            <li class="city__item">Бровары</li>
-            <li class="city__item">Ирпень</li>
-            <li class="city__item">Винница</li>
-            <li class="city__item">Чернигов</li>
-          </ul>
-        </div>
-      </div>
-      <nav class="header__nav-desktop">
-        <ul>
-          <li>
-            <a href="#">Мапа новобудов</a>
-          </li>
-          <li>
-            <a href="#">Каталог новобудов</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  
-    <div class="header__right-side">
-      <div class="header__notification">
-        <div class="notification__img">
-          <img class="notification__icon" src="img/heart-2.svg" title="heart">
-          <div class="notification__status">23</div>
-        </div>
-        <div class="notification__text">Улюблене</div>
-      </div>
-      <div class="header__notification">
-        <div class="notification__img">
-          <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
-          <div class="notification__status">5</div>
-        </div>
-        <div class="notification__text">Порівняння</div>
-      </div>
-      <div class="header__sign-up">
-        <div class="sign-up__icon">
-          <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
-        </div>
-        <div class="sign-up__name">Dmytro Ivanov</div>
-        <div class="sign-up__btn">
-          <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-        </div>
-      </div>
-    </div>
-  </header>
-  
-  <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
-    <!--Add class "mobile-menu-registered" for registered users-->
-    <div class="mobile-menu__links">
-      <div class="mobile-menu__top">
-        <div class="mobile-menu__btn">
-          <img src="img/mobile-btn.svg" alt="mobile-button">
-        </div>
-        <div class="header__city header__city-mobile">
-          <div class="current__city-wrapper">
-            <div class="current__city">Каменець-Подільський</div>
-            <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-          </div>
-          <ul class="city__list city__list-hidden city__list-mobile">
-            <li class="city__item city__item-mobile">Белая Церковь</li>
-            <li class="city__item city__item-mobile">Бровары</li>
-            <li class="city__item city__item-mobile">Ирпень</li>
-            <li class="city__item city__item-mobile">Винница</li>
-            <li class="city__item city__item-mobile">Чернигов</li>
-          </ul>
-        </div>
-      </div>
-      <ul class="mobile-menu__main-nav">
-        <li>
-          <a href="#">Мапа новобудов</a>
-        </li>
-        <li>
-          <a href="#">Каталог новобудов</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu__nav">
-        <li>
-          <a href="#">Контакти</a>
-        </li>
-        <li>
-          <a href="#">Забудовнику</a>
-        </li>
-        <li>
-          <a href="#">Послуги та ціни</a>
-        </li>
-        <li>
-          <a href="#">Умови використання</a>
-        </li>
-        <li>
-          <a href="#">Корисні статті</a>
-        </li>
-        <li>
-          <a href="#">Вакансії</a>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="mobile-menu__sign-in">
-      <div class="sign-in__line">
-        <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
-        <div class="sign-in__text">Вхід</div>
-      </div>
-      <div class="sign-in__line">
-        <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
-        <div class="sign-in__text">Реєстрація</div>
-      </div>
-    </div>
-  
-    <div class="mobile-menu__profile">
-      <ul>
-        <li class="mobileProfile__item">
-          <a href="#">Мій профіль</a>
-          <img src="img/user-icon.svg" alt="icon">
-        </li>
-        <li class="mobileProfile__item">
-          <a href="#">Моніторинг</a>
-        </li>
-        <li class="mobileProfile__item">
-          <a href="#">Мої закази</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="main">
-    <aside>
-      <div class="aside__title">Перейти до послуги:</div>
-      <ul class="services-list">
-        <li class="service service_active">
-          <div class="service__icon service__icon_1"></div>
-          <a class="service__link" href="#">Юридична перевірка угоди з забудовником</a>
-        </li>
-        <li class="service">
-          <div class="service__icon service__icon_2"></div>
-          <a class="service__link" href="#">Інженерний аудит квартири в новобудові</a>
-        </li>
-        <li class="service">
-          <div class="service__icon service__icon_3"></div>
-          <a class="service__link service__link_desktop" href="#">Екологічна перевірка квартири&nbsp;в&nbsp;новобудові
-          </a>
-          <a class="service__link service__link_mobile" href="#">Екологічна перевірка квартири в новобудові</a>
-        </li>
-        <li class="service">
-          <div class="service__icon service__icon_4"></div>
-          <a class="service__link" href="#">Усе включено</a>
-        </li>
-      </ul>
-    </aside>
-
-    <section class="content">
-      <h1 class="page-title">Юридична перевірка угоди&nbsp;із забудовником</h1>
-
-      <div class="city-choice">
-        <div class="city-choice__title">Наші послуги</div>
-        <div class="city-choice__icon"></div>
-        <div class="city-choice__select-wrapper">
-          <label for="city-choice">У місті:</label>
-          <select class="city-choice__select" name="city-choice" id="city-choice">
-            <option value="disable">Оберіть ваше місто</option>
-            <option value="Kyiv">Київ</option>
-            <option value="Lviv">Львів</option>
-            <option value="Odesa">Одеса</option>
-            <option value="Kharkiv">Харкiв</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="about-company-text">Наша компанія надає різні послуги пов'язані з юридичними аспектам придбання нового житла, а також послуги аудиту вашого
-        майбутнього помешкання. Скориставшись ними, ви можете бути впевнені в тому, що вас не зпідкають неприємні сюрпризи
-        і ви придбаєте саме таке житло, як хотіли. Неправильне оформлення правовідносин в сфері нерухомості може мати наслідком
-        втрату бажаного об'єкту: квартири, будинку чи земельної ділянки із одночасною втратою коштів
-      </div>
-
-      <div class="advantage-list__container">
-        <div class="advantage-list">
-          <div class="advantage">
-            <div class="advantage__icon"></div>
-            <div class="advantage__title">Просто заказати</div>
-            <div class="advantage__text">На думку експертів, в Україні майже половина житла — старе</div>
-          </div>
-          <div class="advantage">
-            <div class="advantage__icon"></div>
-            <div class="advantage__title">Зручно оплатити</div>
-            <div class="advantage__text">У чинній законодавчій базі це регулює Закон України</div>
-          </div>
-          <div class="advantage">
-            <div class="advantage__icon"></div>
-            <div class="advantage__title">Легко користуватись</div>
-            <div class="advantage__text">Мінрегіонбуд ініціював розробку нового законопроекту</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tariffs-block">
-        <div class="tariffs-block__title">Тарифи на послугу юридичної перевірки</div>
-        <div class="tariffs-list">
-          <div class="tariff tariff_expertise">
-            <div class="tariff__header">
-              <div class="tariff__icon tariff__icon_expertise"></div>
-              <div class="tariff__title">
-                <div class="tariff__title_small">Тариф</div>
-                <div class="tariff__title_big">Експертиза</div>
-              </div>
-            </div>
-            <ul class="tariff__services-list">
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-1" class="service-name">Консультація</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-2" class="service-name">Перевірка повноважень продавця</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-3" class="service-name">Перевірка законності будівництва</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-4" class="service-name">Перевірка законності договірної схеми продажу</a>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Перевірка об'єкта нерухомості в державних реєстрах
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
                 </div>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Перевірка продавця нерухомості в державних реєстрах
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
                 </div>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Перевірка прав на земельну ділянку</div>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Виявлення та аналіз ризиків в договорі</div>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Узгодження істотних умов договору із продавцем</div>
-              </li>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
+            </div>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
             </ul>
-            <div class="tariff__footer">
-              <div class="tariff__price"> 2900
-                <span class="tariff__price_currency">грн.</span>
-              </div>
-              <button class="tariff__button">Замовити</button>
-            </div>
-          </div>
-          <div class="tariff tariff_support">
-            <div class="tariff__header">
-              <div class="tariff__icon tariff__icon_support"></div>
-              <div class="tariff__title">
-                <div class="tariff__title_small">Тариф</div>
-                <div class="tariff__title_big">Супровід</div>
-              </div>
-            </div>
-            <ul class="tariff__services-list">
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-1" class="service-name">Консультація</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-2" class="service-name">Перевірка повноважень продавця</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-3" class="service-name">Перевірка законності будівництва</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-4" class="service-name">Перевірка законності договірної схеми продажу</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-5" class="service-name">Перевірка об'єкта нерухомості в державних реєстрах
-                </a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-6" class="service-name">Перевірка продавця нерухомості в державних реєстрах
-                </a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-7" class="service-name">Перевірка прав на земельну ділянку</a>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Виявлення та аналіз ризиків в договорі</div>
-              </li>
-              <li class="tariff__service">
-                <div class="yes-icon"></div>
-                <div class="service-name">Узгодження істотних умов договору із продавцем</div>
-              </li>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
             </ul>
-            <div class="tariff__footer">
-              <div class="tariff__price"> 5900
-                <span class="tariff__price_currency">грн.</span>
-              </div>
-              <button class="tariff__button">Замовити</button>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
             </div>
-          </div>
-          <div class="tariff tariff_full">
-            <div class="tariff__header">
-              <div class="tariff__icon tariff__icon_full"></div>
-              <div class="tariff__title">
-                <div class="tariff__title_small">Тариф</div>
-                <div class="tariff__title_big">Експертиза</div>
-              </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
             </div>
-            <ul class="tariff__services-list">
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-1" class="service-name">Консультація</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-2" class="service-name">Перевірка повноважень продавця</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-3" class="service-name">Перевірка законності будівництва</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-4" class="service-name">Перевірка законності договірної схеми продажу</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-5" class="service-name">Перевірка об'єкта нерухомості в державних реєстрах
-                </a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-6" class="service-name">Перевірка продавця нерухомості в державних реєстрах
-                </a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-7" class="service-name">Перевірка прав на земельну ділянку</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-8" class="service-name">Виявлення та аналіз ризиків в договорі</a>
-              </li>
-              <li class="tariff__service tariff__service_active">
-                <div class="yes-icon"></div>
-                <a href="#service-8" class="service-name">Узгодження істотних умов договору із продавцем</a>
-              </li>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
             </ul>
-            <div class="tariff__footer">
-              <div class="tariff__price"> 14900
-                <span class="tariff__price_currency">грн.</span>
-              </div>
-              <button class="tariff__button">Замовити</button>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="our-services">
-        <div class="our-services__title">Наші послуги</div>
-        <div class="our-services__item" id="service-1">
-          <!--Add class "our-services__item_active"-->
-          <div class="item__name">Консультація</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_left">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="our-services__item" id="service-2">
-          <div class="item__name">Перевірка повноважень продавця</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_right">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="our-services__item" id="service-3">
-          <div class="item__name">Перевірка законності будівництва</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_left">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="our-services__item" id="service-4">
-          <div class="item__name">Перевірка законності договірної схеми продажу</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_right">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="our-services__item" id="service-5">
-          <div class="item__name">Перевірка об'єкта нерухомості в державних реєстрах</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_left">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="our-services__item" id="service-6">
-          <div class="item__name">Перевірка продавця нерухомості в державних реєстрах</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_right">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="our-services__item" id="service-7">
-          <div class="item__name">Перевірка прав на земельну ділянку</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_left">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              <span>Входить до тарифів:</span>
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="our-services__item" id="service-8">
-          <div class="item__name">Виявлення та аналіз ризиків в договорі</div>
-          <div class="arrow-down-icon"></div>
-          <div class="our-services__description description_right">
-            <button class="description__button"></button>
-            <div class="description__title">Перевірка законності договірної схеми продажу</div>
-            <div class="description__text">
-              Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
-              всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених технічних умов
-              на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
-            </div>
-            <div class="description__bottom">
-              Входить до тарифів:
-              <a class="description__bottom-link" href="#">Супровід</a>
-              <a class="description__bottom-link" href="#">Повний</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="legal-review">
-        <div class="legal-review__title">Що таке Юридична перевірка угоди з забудовником</div>
-        <p class="legal-review__text">Кілька місяців тому чиновники знову заговорили про необхідність створення законодавчої бази, яка допомогла б зрушити
-          питання з мертвої точки. Мінрегіонбуд ініціював розробку нового законопроекту, який був би адаптований до нинішніх
-          українських реалій.
-        </p>
-        <p class="legal-review__text">
-          У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
-          бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
-        </p>
-        <div class="legal-review__text-container">
-          <div>
-            <div class="legal-review__text">На думку експертів, основна причина того, що досі в Україні майже половина житла — старе, про що говорять у Мінрегіонбуді,
-              полягає у відсутності «працездатного» закону.
-            </div>
-            <div class="legal-review__text">
-              У чинній законодавчій базі України ці правовідносини регулює Закон України «Про комплексну реконструкцію кварталів (мікрорайонів)
-              застарілого житлового фонду», якому вже 10 років. Також досі чинна постанова Кабінету Міністрів України «Про
-              заходи щодо реконструкції житлових будинків перших масових серій»
-            </div>
-          </div>
-          <div class="legal-review__img">
-            <img src="img/skyscraper-3184142.jpg">
-          </div>
-        </div>
-        <p class="legal-review__text">
-          Кілька місяців тому чиновники знову заговорили про необхідність створення законодавчої бази, яка допомогла б зрушити питання
-          з мертвої точки. Мінрегіонбуд ініціював розробку нового законопроекту, який був би адаптований до нинішніх українських
-          реалій.
-        </p>
-        <p class="legal-review__text">
-          У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
-          бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
-        </p>
-        <p class="legal-review__text">
-          Локальні оператори складської нерухомості починають створювати більше серйозну конкуренцію міжнародним логістичним компаніям.
-          Українські компанії вже зараз розглядають нові напрямки для розвитку, демонструють готовність інвестувати в проекти
-          і формати.
-        </p>
-      </div>
-
-      <div class="reviews">
-        <div class="reviews__title">Відгуки клієнтів</div>
-        <div class="reviews-inner">
-          <div class="reviews__clients">
-            <button class="reviews-button reviews-button_prev"></button>
-            <ul class="users-list">
-              <li class="user user-1"></li>
-              <li class="user user-2 user_active"></li>
-              <li class="user user-3"></li>
-            </ul>
-            <button class="reviews-button reviews-button_next"></button>
-          </div>
-          <div class="reviews__comments">
-            <div class="comment-text">
-              Хочу подякувати особисто Оксані та Антону, які від самого початку поставилися ввічливо та уважно до всіх питань. Людяність
-              та порядність в наш час дуже рідкісні речі. Сподіваюсь, що в підсумку квартира виправдає всі очікування.
-              <br>
-              <br> Дякую за роботу та бажаю процвітання. Рекомендую.
-              <br>
-              <br>
-            </div>
-            <div class="comment_author">Роман Тимощук</div>
-            <div class="left-angle-decoration"></div>
-            <div class="right-angle-decoration"></div>
-            <div class="quote-decoration"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="expertise-form__block">
-        <div class="expertise-form__title">
-          <div class="expertise-form__icon"></div>
-          <div class="expertise-form__text">
-            <span class="expertise-form__text_margin-left">Придбайте тариф</span>
-            <br>
-            <span> «Експертиза»</span>
-            <span class="expertise-form__text_mobile">просто зараз</span>
-          </div>
-        </div>
-        <form action="" class="expertise-form">
-          <div class="expertise-input__container">
-            <label class="expertise-form__label" for="expertiseTel">Ваш номер телефону або e-mail</label>
-            <input class="expertise-form__input" id="expertiseTel" type="text">
-          </div>
-          <button type="submit" class="expertise-form__button">Придбати</button>
-        </form>
-      </div>
-
-      <div class="all-in__block">
-        <div class="all-in__text">
-          <div>Замовте послугу</div>
-          <div class="all-in__text_title">«Усе включено»</div>
-          <div>та отримайте комплексну перевірку
-            <br> квартири в новобудові</div>
-          <div class="all-in__text_bold">з єкономією 20%</div>
-        </div>
-        <form action="" class="all-in__form">
-          <div class="all-in__input-container">
-            <label class="all-in__input-label" for="allInName">Ваше ім'я</label>
-            <input class="all-in__input" id="allInName" type="text">
-          </div>
-          <div class="all-in__input-container">
-            <label class="all-in__input-label" for="allInPhone">Номер телефону, або e-mail</label>
-            <input class="all-in__input" id="allInPhone" type="text">
-          </div>
-          <button class="all-in__button">Замовити послугу</button>
-        </form>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
-    <nav class="footer__menu">
-      <ul>
-        <li>
-          <a href="#">Контакти</a>
-        </li>
-        <li>
-          <a href="#">Забудовнику</a>
-        </li>
-        <li>
-          <a href="#">Послуги та ціни</a>
-        </li>
-        <li>
-          <a href="#">Умови використання</a>
-        </li>
-        <li>
-          <a href="#">Корисні статті</a>
-        </li>
-        <li>
-          <a href="#">Вакансії</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="footer__sn">
-      <ul>
-        <li>
-          <a class="footer__sn-face-book" target="_blank" href="#"></a>
-        </li>
-        <li>
-          <a class="footer__sn-instagram" target="_blank" href="#"></a>
-        </li>
-        <li>
-          <a class="footer__sn-y" target="_blank" href="#"></a>
-        </li>
-      </ul>
     </div>
-  </footer>
 
-  <script src="js/script.js"></script>
+    <div class="main">
+        <aside>
+            <div class="aside__title">Перейти до послуги:</div>
+            <ul class="services-list">
+                <li class="service service_active">
+                    <div class="service__icon service__icon_1"></div>
+                    <a class="service__link" href="#">Юридична перевірка угоди з забудовником</a>
+                </li>
+                <li class="service">
+                    <div class="service__icon service__icon_2"></div>
+                    <a class="service__link" href="#">Інженерний аудит квартири в новобудові</a>
+                </li>
+                <li class="service">
+                    <div class="service__icon service__icon_3"></div>
+                    <a class="service__link service__link_desktop" href="#">Екологічна перевірка квартири&nbsp;в&nbsp;новобудові
+                    </a>
+                    <a class="service__link service__link_mobile" href="#">Екологічна перевірка квартири в новобудові</a>
+                </li>
+                <li class="service">
+                    <div class="service__icon service__icon_4"></div>
+                    <a class="service__link" href="#">Усе включено</a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h1 class="page-title">Юридична перевірка угоди&nbsp;із забудовником</h1>
+
+            <div class="city-choice">
+                <div class="city-choice__title">Наші послуги</div>
+                <div class="city-choice__icon"></div>
+                <div class="city-choice__select-wrapper">
+                    <label for="city-choice">У місті:</label>
+                    <select class="city-choice__select" name="city-choice" id="city-choice">
+                        <option value="disable">Оберіть ваше місто</option>
+                        <option value="Kyiv">Київ</option>
+                        <option value="Lviv">Львів</option>
+                        <option value="Odesa">Одеса</option>
+                        <option value="Kharkiv">Харкiв</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="about-company-text">Наша компанія надає різні послуги пов'язані з юридичними аспектам придбання нового житла, а також послуги аудиту
+                вашого майбутнього помешкання. Скориставшись ними, ви можете бути впевнені в тому, що вас не зпідкають неприємні
+                сюрпризи і ви придбаєте саме таке житло, як хотіли. Неправильне оформлення правовідносин в сфері нерухомості
+                може мати наслідком втрату бажаного об'єкту: квартири, будинку чи земельної ділянки із одночасною втратою
+                коштів
+            </div>
+
+            <div class="advantage-list__container">
+                <div class="advantage-list">
+                    <div class="advantage">
+                        <div class="advantage__icon"></div>
+                        <div class="advantage__title">Просто заказати</div>
+                        <div class="advantage__text">На думку експертів, в Україні майже половина житла — старе</div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon"></div>
+                        <div class="advantage__title">Зручно оплатити</div>
+                        <div class="advantage__text">У чинній законодавчій базі це регулює Закон України</div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon"></div>
+                        <div class="advantage__title">Легко користуватись</div>
+                        <div class="advantage__text">Мінрегіонбуд ініціював розробку нового законопроекту</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tariffs-block">
+                <div class="tariffs-block__title">Тарифи на послугу юридичної перевірки</div>
+                <div class="tariffs-list">
+                    <div class="tariff tariff_expertise">
+                        <div class="tariff__header">
+                            <div class="tariff__icon tariff__icon_expertise"></div>
+                            <div class="tariff__title">
+                                <div class="tariff__title_small">Тариф</div>
+                                <div class="tariff__title_big">Експертиза</div>
+                            </div>
+                        </div>
+                        <ul class="tariff__services-list">
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-1" class="service-name">Консультація</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-2" class="service-name">Перевірка повноважень продавця</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-3" class="service-name">Перевірка законності будівництва</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-4" class="service-name">Перевірка законності договірної схеми продажу</a>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Перевірка об'єкта нерухомості в державних реєстрах
+                                </div>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Перевірка продавця нерухомості в державних реєстрах
+                                </div>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Перевірка прав на земельну ділянку</div>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Виявлення та аналіз ризиків в договорі</div>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Узгодження істотних умов договору із продавцем</div>
+                            </li>
+                        </ul>
+                        <div class="tariff__footer">
+                            <div class="tariff__price"> 2900
+                                <span class="tariff__price_currency">грн.</span>
+                            </div>
+                            <button class="tariff__button">Замовити</button>
+                        </div>
+                    </div>
+                    <div class="tariff tariff_support">
+                        <div class="tariff__header">
+                            <div class="tariff__icon tariff__icon_support"></div>
+                            <div class="tariff__title">
+                                <div class="tariff__title_small">Тариф</div>
+                                <div class="tariff__title_big">Супровід</div>
+                            </div>
+                        </div>
+                        <ul class="tariff__services-list">
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-1" class="service-name">Консультація</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-2" class="service-name">Перевірка повноважень продавця</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-3" class="service-name">Перевірка законності будівництва</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-4" class="service-name">Перевірка законності договірної схеми продажу</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-5" class="service-name">Перевірка об'єкта нерухомості в державних реєстрах
+                                </a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-6" class="service-name">Перевірка продавця нерухомості в державних реєстрах
+                                </a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-7" class="service-name">Перевірка прав на земельну ділянку</a>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Виявлення та аналіз ризиків в договорі</div>
+                            </li>
+                            <li class="tariff__service">
+                                <div class="yes-icon"></div>
+                                <div class="service-name">Узгодження істотних умов договору із продавцем</div>
+                            </li>
+                        </ul>
+                        <div class="tariff__footer">
+                            <div class="tariff__price"> 5900
+                                <span class="tariff__price_currency">грн.</span>
+                            </div>
+                            <button class="tariff__button">Замовити</button>
+                        </div>
+                    </div>
+                    <div class="tariff tariff_full">
+                        <div class="tariff__header">
+                            <div class="tariff__icon tariff__icon_full"></div>
+                            <div class="tariff__title">
+                                <div class="tariff__title_small">Тариф</div>
+                                <div class="tariff__title_big">Експертиза</div>
+                            </div>
+                        </div>
+                        <ul class="tariff__services-list">
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-1" class="service-name">Консультація</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-2" class="service-name">Перевірка повноважень продавця</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-3" class="service-name">Перевірка законності будівництва</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-4" class="service-name">Перевірка законності договірної схеми продажу</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-5" class="service-name">Перевірка об'єкта нерухомості в державних реєстрах
+                                </a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-6" class="service-name">Перевірка продавця нерухомості в державних реєстрах
+                                </a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-7" class="service-name">Перевірка прав на земельну ділянку</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-8" class="service-name">Виявлення та аналіз ризиків в договорі</a>
+                            </li>
+                            <li class="tariff__service tariff__service_active">
+                                <div class="yes-icon"></div>
+                                <a href="#service-8" class="service-name">Узгодження істотних умов договору із продавцем</a>
+                            </li>
+                        </ul>
+                        <div class="tariff__footer">
+                            <div class="tariff__price"> 14900
+                                <span class="tariff__price_currency">грн.</span>
+                            </div>
+                            <button class="tariff__button">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-services">
+                <div class="our-services__title">Наші послуги</div>
+                <div class="our-services__item" id="service-1">
+                    <!--Add class "our-services__item_active"-->
+                    <div class="item__name">Консультація</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_left">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services__item" id="service-2">
+                    <div class="item__name">Перевірка повноважень продавця</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_right">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="our-services__item" id="service-3">
+                    <div class="item__name">Перевірка законності будівництва</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_left">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services__item" id="service-4">
+                    <div class="item__name">Перевірка законності договірної схеми продажу</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_right">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services__item" id="service-5">
+                    <div class="item__name">Перевірка об'єкта нерухомості в державних реєстрах</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_left">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services__item" id="service-6">
+                    <div class="item__name">Перевірка продавця нерухомості в державних реєстрах</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_right">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services__item" id="service-7">
+                    <div class="item__name">Перевірка прав на земельну ділянку</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_left">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            <span>Входить до тарифів:</span>
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-services__item" id="service-8">
+                    <div class="item__name">Виявлення та аналіз ризиків в договорі</div>
+                    <div class="arrow-down-icon"></div>
+                    <div class="our-services__description description_right">
+                        <div class="description__button"></div>
+                        <div class="description__title">Перевірка законності договірної схеми продажу</div>
+                        <div class="description__text">
+                            Для успішного введення будинку в експлуатацію будинок має відповідати законодавчо встановленим нормам та мати підключення
+                            всіх комунікаційних систем, відповідно до проекту. Відсутність у забудовника належно оформлених
+                            технічних умов на підключення комунікацій може викликати проблеми із введенням будинку в експлуатацію.
+                        </div>
+                        <div class="description__bottom">
+                            Входить до тарифів:
+                            <a class="description__bottom-link" href="#">Супровід</a>
+                            <a class="description__bottom-link" href="#">Повний</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legal-review">
+                <div class="legal-review__title">Що таке Юридична перевірка угоди з забудовником</div>
+                <p class="legal-review__text">Кілька місяців тому чиновники знову заговорили про необхідність створення законодавчої бази, яка допомогла
+                    б зрушити питання з мертвої точки. Мінрегіонбуд ініціював розробку нового законопроекту, який був би
+                    адаптований до нинішніх українських реалій.
+                </p>
+                <p class="legal-review__text">
+                    У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
+                    бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
+                </p>
+                <div class="legal-review__text-container">
+                    <div>
+                        <div class="legal-review__text">На думку експертів, основна причина того, що досі в Україні майже половина житла — старе, про що
+                            говорять у Мінрегіонбуді, полягає у відсутності «працездатного» закону.
+                        </div>
+                        <div class="legal-review__text">
+                            У чинній законодавчій базі України ці правовідносини регулює Закон України «Про комплексну реконструкцію кварталів (мікрорайонів)
+                            застарілого житлового фонду», якому вже 10 років. Також досі чинна постанова Кабінету Міністрів
+                            України «Про заходи щодо реконструкції житлових будинків перших масових серій»
+                        </div>
+                    </div>
+                    <div class="legal-review__img">
+                        <img src="img/skyscraper-3184142.jpg">
+                    </div>
+                </div>
+                <p class="legal-review__text">
+                    Кілька місяців тому чиновники знову заговорили про необхідність створення законодавчої бази, яка допомогла б зрушити питання
+                    з мертвої точки. Мінрегіонбуд ініціював розробку нового законопроекту, який був би адаптований до нинішніх
+                    українських реалій.
+                </p>
+                <p class="legal-review__text">
+                    У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
+                    бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
+                </p>
+                <p class="legal-review__text">
+                    Локальні оператори складської нерухомості починають створювати більше серйозну конкуренцію міжнародним логістичним компаніям.
+                    Українські компанії вже зараз розглядають нові напрямки для розвитку, демонструють готовність інвестувати
+                    в проекти і формати.
+                </p>
+            </div>
+
+            <div class="reviews">
+                <div class="reviews__title">Відгуки клієнтів</div>
+                <div class="reviews-inner">
+                    <div class="reviews__clients">
+                        <button class="reviews-button reviews-button_prev"></button>
+                        <ul class="users-list">
+                            <li class="user user-1"></li>
+                            <li class="user user-2 user_active"></li>
+                            <li class="user user-3"></li>
+                        </ul>
+                        <button class="reviews-button reviews-button_next"></button>
+                    </div>
+                    <div class="reviews__comments">
+                        <div class="comment-text">
+                            Хочу подякувати особисто Оксані та Антону, які від самого початку поставилися ввічливо та уважно до всіх питань. Людяність
+                            та порядність в наш час дуже рідкісні речі. Сподіваюсь, що в підсумку квартира виправдає всі
+                            очікування.
+                            <br>
+                            <br> Дякую за роботу та бажаю процвітання. Рекомендую.
+                            <br>
+                            <br>
+                        </div>
+                        <div class="comment_author">Роман Тимощук</div>
+                        <div class="left-angle-decoration"></div>
+                        <div class="right-angle-decoration"></div>
+                        <div class="quote-decoration"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expertise-form__block">
+                <div class="expertise-form__title">
+                    <div class="expertise-form__icon"></div>
+                    <div class="expertise-form__text">
+                        <span class="expertise-form__text_margin-left">Придбайте тариф</span>
+                        <br>
+                        <span> «Експертиза»</span>
+                        <span class="expertise-form__text_mobile">просто зараз</span>
+                    </div>
+                </div>
+                <form action="" class="expertise-form">
+                    <div class="expertise-input__container">
+                        <label class="expertise-form__label" for="expertiseTel">Ваш номер телефону або e-mail</label>
+                        <input class="expertise-form__input" id="expertiseTel" type="text">
+                    </div>
+                    <button type="submit" class="expertise-form__button">Придбати</button>
+                </form>
+            </div>
+
+            <div class="all-in__block">
+                <div class="all-in__text">
+                    <div>Замовте послугу</div>
+                    <div class="all-in__text_title">«Усе включено»</div>
+                    <div>та отримайте комплексну перевірку
+                        <br> квартири в новобудові</div>
+                    <div class="all-in__text_bold">з єкономією 20%</div>
+                </div>
+                <form action="" class="all-in__form">
+                    <div class="all-in__input-container">
+                        <label class="all-in__input-label" for="allInName">Ваше ім'я</label>
+                        <input class="all-in__input" id="allInName" type="text">
+                    </div>
+                    <div class="all-in__input-container">
+                        <label class="all-in__input-label" for="allInPhone">Номер телефону, або e-mail</label>
+                        <input class="all-in__input" id="allInPhone" type="text">
+                    </div>
+                    <button class="all-in__button">Замовити послугу</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

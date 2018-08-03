@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Company</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/sign_in.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+      </div>
+    </header>
+    <div class="main main_error">
+      <!--  Add class "input-wrapper_error" -->
+      <h1>Вхід в аккаунт</h1>
+      <div class="subtitle subtitle_sign-in">Ще не маєте аккаунту?
+        <a class="subtitle__link" href="#">Зареєструватись</a>
+      </div>
+      <div class="subtitle subtitle_error subtitle_sign-in">Невірна пара логін-пароль.
+        <span class="subtitle-desktop_error"> Хибна розкладка клавіатури, або натиснута клавіша Caps Lock?</span>
+        <span class="subtitle-mobile_error"> Хибна розкладка клавіатури? </span>
+      </div>
+
+      <div class="form-wrapper">
+        <form class="form" action="">
+          <div class="input-wrapper">
+            <label for="tel">Номер телефона або e-mail</label>
+            <input id="tel" type="tel">
+          </div>
+          <div class="input-wrapper">
+            <label class="password-label" for="password">Пароль</label>
+            <label class="password-label_wrong" for="password">
+              <div class="password-label__icon"></div>
+              <div class="password-label__text">Пароль має містити від 8 до 16 символів</div>
+            </label>
+            <input class="password" id="password" type="password">
+          </div>
+          <div class="checkbox checkbox-active">
+            <div class="checkbox__area">
+              <div class="checkbox__input">
+                <input name="near-work" type="checkbox" checked="true">
+                <div class="input-box input-box_checked"></div>
+                <div class="checkbox__label">Запам'ятати мене</div>
+              </div>
+            </div>
+          </div>
+          <button class="button_submit" type="submit">Увійти в аккаунт</button>
+          <a href="#" class="remind-link">Забули пароль?</a>
+        </form>
+        <div class="so-buttons">
+          <div class="alternative">
+            <div class="alternative__line"></div>
+            <div class="alternative__text">або</div>
+            <div class="alternative__line"></div>
+          </div>
+          <a href="#" class="button-so button-so_fb">
+            <div class="button-so__icon button-so__icon_fb"></div>
+            <span class="button-so__text">Продовжити з Facebook</span>
+          </a>
+          <a href="#" class="button-so button-so_google">
+            <div class="button-so__icon button-so__icon_google"></div>
+            <span class="button-so__text">Продовжити з Google</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="conditions">
+      Реєструючись, ви приймаєте
+      <a class="conditions__link" href="#">Правила користування сервісом</a>,
+      <br> та погоджуєтесь отримувати розсилку про новини сервісу
+    </div>
+
+  </div>
+
+  <script src="js/sign_up.js"></script>
+</body>
+
+</html>

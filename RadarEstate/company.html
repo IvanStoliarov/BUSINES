@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,354 +11,454 @@
 
 
 </head>
+
 <body>
-
-<header>
-    <div class="header__left-side">
-        <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
-        <a href="#" class="header__logo">
-            <img src="img/logo.svg" alt="Radar Estate">
-        </a>
-        <div class="header__city">
-            <div  class="current__city">Каменець-Подільський</div>
-            <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-            <div class="city-popup city-popup-hidden">
-                <ul class="city__list">
-                    <li class="city__item">Белая Церковь</li>
-                    <li class="city__item">Бровары</li>
-                    <li class="city__item">Ирпень</li>
-                    <li class="city__item">Винница</li>
-                    <li class="city__item">Чернигов</li>
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <nav class="header__nav-desktop">
-            <ul>
-                <li><a href="#">Мапа новобудов</a></li>
-                <li><a href="#">Каталог новобудов</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="header__right-side">
-        <div class="header__notification">
-            <div class="notification__img">
-                <img class="notification__icon" src="img/heart-2.svg" title="heart">
-                <div class="notification__status">23</div>
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
             </div>
-            <div class="notification__text">Улюблене</div>
-        </div>
-        <div class="header__notification">
-            <div class="notification__img">
-                <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
-                <div class="notification__status">5</div>
-            </div>
-            <div class="notification__text">Порівняння</div>
-        </div>
-        <div class="header__sign-up">
-            <div class="sign-up__icon">
-                <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
-            </div>
-            <div class="sign-up__name">Dmytro Ivanov</div>
-            <div class="sign-up__btn">
-                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-            </div>
-        </div>
-    </div>
-</header>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
 
-<div class="mobile-menu mobile-menu-registered  mobile-menu-hidden"> <!--Add class "mobile-menu-registered" for registered users-->
-    <div class="mobile-menu__links">
-        <div class="mobile-menu__top">
-            <div class="mobile-menu__btn">
-                <img src="img/mobile-btn.svg" alt="mobile-button">
-            </div>
-            <div class="header__city header__city-mobile">
-                <div class="current__city-wrapper">
-                    <div  class="current__city">Каменець-Подільський</div>
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
                     <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
                 </div>
-                <ul class="city__list city__list-hidden city__list-mobile">
-                    <li class="city__item city__item-mobile">Белая Церковь</li>
-                    <li class="city__item city__item-mobile">Бровары</li>
-                    <li class="city__item city__item-mobile">Ирпень</li>
-                    <li class="city__item city__item-mobile">Винница</li>
-                    <li class="city__item city__item-mobile">Чернигов</li>
-                </ul>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
             </div>
         </div>
-        <ul class="mobile-menu__main-nav">
-            <li><a href="#">Мапа новобудов</a></li>
-            <li><a href="#">Каталог новобудов</a></li>
-        </ul>
-        <ul class="mobile-menu__nav">
-            <li><a href="#">Контакти</a></li>
-            <li><a href="#">Забудовнику</a></li>
-            <li><a href="#">Послуги та ціни</a></li>
-            <li><a href="#">Умови використання</a></li>
-            <li><a href="#">Корисні статті</a></li>
-            <li><a href="#">Вакансії</a></li>
-        </ul>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="mobile-menu__sign-in">
-        <div class="sign-in__line">
-            <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
-            <div class="sign-in__text">Вхід</div>
-        </div>
-        <div class="sign-in__line">
-            <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
-            <div class="sign-in__text">Реєстрація</div>
-        </div>
-    </div>
-
-    <div class="mobile-menu__profile">
-        <ul>
-            <li class="mobileProfile__item"><a href="#">Мій профіль</a> <img src="img/user-icon.svg" alt="icon"></li>
-            <li class="mobileProfile__item"><a href="#">Моніторинг</a></li>
-            <li class="mobileProfile__item"><a href="#">Мої закази</a></li>
-        </ul>
-    </div>
-</div>
-<div class="main">
-    <aside id="aside">
-        <div class="aside-logo">
-            <div class="aside-logo__wrapper">
-                <img src="img/aside-logo.svg" alt="ZIM">
-            </div>
-            <div class="aside-logo__about">
-                Девелоперська компанія <br>
-                Заснована в 2007 році.
-            </div>
-        </div>
-        <div class="aside-contacts">
-            <div class="aside-contacts__title">Контакти:</div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/location-icon.svg" alt="location">
-                <div>
-                    <div class="aside-contacts__description">Адреса головного офісу</div>
-                    <a class="aside-contacts__value" target="_blank" href="https://www.google.com.ua/maps/place/%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA+%D0%9E%D1%85%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9,+7,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3950895,30.4765824,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8d909c92b8b:0x7d95f9b694f6c792!8m2!3d50.3950861!4d30.4787711">м. Київ, пров. Охтирський 7/3</a>
+    <div class="main">
+        <aside id="aside">
+            <div class="aside-logo">
+                <div class="aside-logo__wrapper">
+                    <img src="img/aside-logo.svg" alt="ZIM">
                 </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="tel">
-                <div>
-                    <div class="aside-contacts__description">Телефон відділу продаж</div>
-                    <a class="aside-contacts__value" href="tel:+38 (044) 243-28-19">+38 (044) 243-28-19</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="tel">
-                <div>
-                    <div class="aside-contacts__description">Телефон голофного офісу</div>
-                    <a class="aside-contacts__value" href="tel:+38 (050) 127-38-24">+38 (050) 127-38-24</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/telegram-icon.png" alt="telegram">
-                <div>
-                    <div class="aside-contacts__description">Телеграм-чат</div>
-                    <a class="aside-contacts__value" target="_blank" href="https://t.me/zimcapitalgroup">@zimcapitalgroup</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/viber-icon.svg" alt="viber">
-                <div>
-                    <div class="aside-contacts__description">Viber</div>
-                    <a class="aside-contacts__value" href="viber://chat?number=+380449432817">+38 (044) 943-28-17</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/mail-icon.svg" alt="mail">
-                <div>
-                    <div class="aside-contacts__description">Електронна пошта</div>
-                    <a class="aside-contacts__value" href="mailto:info@zimcapitalgroup.com">info@zimcapitalgroup.com</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/skype-icon.svg" alt="skype">
-                <div>
-                    <div class="aside-contacts__description">Skype</div>
-                    <a class="aside-contacts__value" href="skype:zimcapitalgroup">zimcapitalgroup</a>
-                </div>
-            </div>
-        </div>
-        <div class="aside-contacts">
-            <div class="aside-contacts__title">Компанія в мережі:</div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/website-icon.svg" alt="website">
-                <div>
-                    <div class="aside-contacts__description">Веб-сайт компанії</div>
-                    <a class="aside-contacts__value" target="_blank" href="http://zim-capitalgroup.com">zim-capitalgroup.com</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/fk-icon.svg" alt="website">
-                <div>
-                    <div class="aside-contacts__description">Наша сторінка в Facebook</div>
-                    <a class="aside-contacts__value" target="_blank" href="http://facebook.com/zimcapitalgro">facebook.com/zimcapitalgro</a>
-                </div>
-            </div>
-            <div class="aside-contacts__contact">
-                <img class="aside-contacts__icon" src="img/y-icon.svg" alt="website">
-                <div>
-                    <div class="aside-contacts__description">Адреса головного офісу</div>
-                    <a class="aside-contacts__value" target="_blank" href="http://youtube.com/channel/UCz97">youtube.com/channel/UCz97</a>
+                <div class="aside-logo__about">
+                    Девелоперська компанія
+                    <br> Заснована в 2007 році.
                 </div>
             </div>
             <div class="aside-contacts">
-                <div class="aside-contacts__title">Підрозділи компанії та партнери:</div>
-                <div class="aside-contacts__partner">
-                    <div class="aside-contacts__partner-company">Охоронна компанiя ТОВ &laquo;ZIM Securitycity&raquo;</div>
-                    <div class="aside-contacts__about-partner">
-                    Надає послуги охорони, об` ϵктiв різного ступеню складності, пiдтвердженi вiдповідною ліцензіϵю
+                <div class="aside-contacts__title">Контакти:</div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/location-icon.svg" alt="location">
+                    <div>
+                        <div class="aside-contacts__description">Адреса головного офісу</div>
+                        <a class="aside-contacts__value" target="_blank" href="https://www.google.com.ua/maps/place/%D0%BF%D1%80%D0%BE%D0%B2%D1%83%D0%BB%D0%BE%D0%BA+%D0%9E%D1%85%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9,+7,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3950895,30.4765824,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8d909c92b8b:0x7d95f9b694f6c792!8m2!3d50.3950861!4d30.4787711">м. Київ, пров. Охтирський 7/3</a>
                     </div>
                 </div>
-                <div class="aside-contacts__partner">
-                <div class="aside-contacts__partner-company">ТОВ &laquo;Проджект Консалтингcity&raquo;</div>
-                    <div class="aside-contacts__about-partner">
-                        Наданнє послуги з утримання та обслуговування будинків і прибудинкових територій житлових комплексів
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="tel">
+                    <div>
+                        <div class="aside-contacts__description">Телефон відділу продаж</div>
+                        <a class="aside-contacts__value" href="tel:+38 (044) 243-28-19">+38 (044) 243-28-19</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/tel-icon.svg" alt="tel">
+                    <div>
+                        <div class="aside-contacts__description">Телефон головного офісу</div>
+                        <a class="aside-contacts__value" href="tel:+38 (050) 127-38-24">+38 (050) 127-38-24</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/ic_Telegram_32_dark.svg" alt="telegram">
+                    <div>
+                        <div class="aside-contacts__description">Телеграм-чат</div>
+                        <a class="aside-contacts__value" target="_blank" href="https://t.me/zimcapitalgroup">@zimcapitalgroup</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/viber-icon.svg" alt="viber">
+                    <div>
+                        <div class="aside-contacts__description">Viber</div>
+                        <a class="aside-contacts__value" href="viber://chat?number=+380449432817">+38 (044) 943-28-17</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/mail-icon.svg" alt="mail">
+                    <div>
+                        <div class="aside-contacts__description">Електронна пошта</div>
+                        <a class="aside-contacts__value" href="mailto:info@zimcapitalgroup.com">info@zimcapitalgroup.com</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/skype-icon.svg" alt="skype">
+                    <div>
+                        <div class="aside-contacts__description">Skype</div>
+                        <a class="aside-contacts__value" href="skype:zimcapitalgroup">zimcapitalgroup</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </aside>
-    <article>
-        <section class="about-zim">
-            <h1 class="article__title">ZIM Capital group</h1>
-            <div class="about-zim__mobile-links">
-                <ul>
-                    <li><a href="#about-company">Про компанію</a></li>
-                    <li><a href="#aside">Контакти</a></li>
-                    <li><a href="#estate">Нерухомість компанії</a></li>
+            <div class="aside-contacts">
+                <div class="aside-contacts__title">Компанія в мережі:</div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/website-icon.svg" alt="website">
+                    <div>
+                        <div class="aside-contacts__description">Веб-сайт компанії</div>
+                        <a class="aside-contacts__value" target="_blank" href="http://zim-capitalgroup.com">zim-capitalgroup.com</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/fk-icon.svg" alt="website">
+                    <div>
+                        <div class="aside-contacts__description">Наша сторінка в Facebook</div>
+                        <a class="aside-contacts__value" target="_blank" href="http://facebook.com/zimcapitalgro">facebook.com/zimcapitalgro</a>
+                    </div>
+                </div>
+                <div class="aside-contacts__contact">
+                    <img class="aside-contacts__icon" src="img/y-icon.svg" alt="website">
+                    <div>
+                        <div class="aside-contacts__description">Адреса головного офісу</div>
+                        <a class="aside-contacts__value" target="_blank" href="http://youtube.com/channel/UCz97">youtube.com/channel/UCz97</a>
+                    </div>
+                </div>
+                <div class="aside-contacts">
+                    <div class="aside-contacts__title">Підрозділи компанії та партнери:</div>
+                    <div class="aside-contacts__partner">
+                        <div class="aside-contacts__partner-company">Охоронна компанiя ТОВ &laquo;ZIM Securitycity&raquo;</div>
+                        <div class="aside-contacts__about-partner">
+                            Надає послуги охорони, об`ϵктiв різного ступеню складності, пiдтвердженi вiдповідною ліцензіϵю
+                        </div>
+                    </div>
+                    <div class="aside-contacts__partner">
+                        <div class="aside-contacts__partner-company">ТОВ &laquo;Проджект Консалтингcity&raquo;</div>
+                        <div class="aside-contacts__about-partner">
+                            Надає послуги з утримання та обслуговування будинків і прибудинкових територій житлових комплексів
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <section class="about-zim">
+                <h1 class="article__title">ZIM Capital group</h1>
+                <div class="about-zim__mobile-links">
+                    <ul>
+                        <li>
+                            <a href="#about-company">Про компанію</a>
+                        </li>
+                        <li>
+                            <a href="#aside">Контакти</a>
+                        </li>
+                        <li>
+                            <a href="#estate">Нерухомість компанії</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="about-company" class="article__text-wrapper">
+                    <p class="article__text ">
+                        Компанія ZIM Capital Group здійснює свою діяльність з січня 2014 року як девелоперська компанія повного циклу в області проектування
+                        і будівництва. Стратегія розвитку компанії ZIM Capital Group побудована за принципом гнучкого реагування
+                        на вимоги конкурентного середовища Київського ринку будівельних послуг. Компанія ZIM Capital Group
+                        має в розпорядженні усі необхідні ліцензії, що дозволяють їй виконувати функції генерального підрядника,
+                        забудовника і генерального проектувальника в області будівництва, а також подальше обслуговування
+                        житлових комплексів.
+                    </p>
+                    <p class="article__text ">
+                        У компанії ZIM Capital Group зібрана команда провідних фахівців будівельної галузі. Згуртованість колективу, відповідальний
+                        підхід до якості та реалізації поставлених завдань — це одні з переваг нашої компанії. Навички роботи
+                        наших фахівців були придбані на будівельних майданчиках європейських країн. Був отриманий значний
+                        досвід роботи з європейськими технологіями і матеріалами провідних виробників у відповідності з міжнародними
+                        технічними вимогами і стандартами, в наслідок чого були отримані сертифікати європейського зразка.
+                    </p>
+                    <p class="article__text ">
+                        За 3 роки існування компанії ZIM Capital Group на будівельному ринку, було побудовано більше 50 тисяч квадратних метрів будівель
+                        і такі реалізовані проекти високої якості як ЖК SkyLand, ЖК SkyLand2, комплекс танухаусiв SunLife
+                        і ЖК PаrkLand.
+                    </p>
+                </div>
+                <div class="article__text-toggler" id="readMore">
+                    <a href="#">Читати далі</a>
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </section>
+            <section id="estate" class="zim-real-estate">
+                <h2 class="zim-real-estate__title">Нерухомість компанії &laquo;ZIM Capital groupcity&raquo;</h2>
+                <ul class="zim-real-estate__grid">
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/SunLife.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК &laquo;Сан лайфcity&raquo;</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Новоград-Волинський</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/comfortTown17.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК Комфорт Таун черга №17</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Новоград-Волинський</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/manhattan.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК &laquo;Manhattan citycity&raquo;</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Львів</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/Sunlife2.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК &laquo;Сан лайфcity&raquo;</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Новоград-Волинський</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/comfortTown17.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК Комфорт Таун черга №17</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Новоград-Волинський</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/manhattan2.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК &laquo;Manhattan citycity&raquo;</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Львів</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/sunlife3.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК &laquo;Сан лайфcity&raquo;</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Новоград-Волинський</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/comfortTown17.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК Комфорт Таун черга №17</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Новоград-Волинський</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник</div>
+                    </li>
+                    <li class="zim-real-estate__item">
+                        <a href="#" class="zim-real-estate__image">
+                            <img src="img/SunLife.jpg" alt="photo">
+                            <div class="zim-real-estate__name">ЖК &laquo;Manhattan citycity&raquo;</div>
+                        </a>
+                        <div class="zim-real-estate__city">м. Львів</div>
+                        <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                    </li>
                 </ul>
-            </div>
-            <div id="about-company" class="article__text-wrapper">
-                <p class="article__text ">
-                    Компанія ZIM Capital Group здійснює свою діяльність з січня 2014 року як девелоперська компанія повного циклу в області проектування і будівництва. Стратегія розвитку компанії ZIM Capital Group побудована за принципом гнучкого реагування на вимоги конкурентного середовища Київського ринку будівельних послуг. Компанія ZIM Capital Group має в розпорядженні усі необхідні ліцензії, що дозволяють їй виконувати функції генерального підрядника, забудовника і генерального проектувальника в області будівництва, а також подальше обслуговування житлових комплексів.
-                </p>
-                <p class="article__text ">
-                    У компанії ZIM Capital Group зібрана команда провідних фахівців будівельної галузі. Згуртованість колективу, відповідальний підхід до якості та реалізації поставлених завдань — це одні з переваг нашої компанії. Навички роботи наших фахівців були придбані на будівельних майданчиках європейських країн. Був отриманий значний досвід роботи з європейськими технологіями і матеріалами провідних виробників у відповідності з міжнародними технічними вимогами і стандартами, в наслідок чого були отримані сертифікати європейського зразка.
-                </p>
-                <p class="article__text ">
-                    За 3 роки існування компанії ZIM Capital Group на будівельному ринку, було побудовано більше 50 тисяч квадратних метрів будівель і такі реалізовані проекти високої якості як ЖК SkyLand, ЖК SkyLand2, комплекс танухаусiв SunLife і ЖК PаrkLand.
-                </p>
-            </div>
-            <div class="article__text-toggler" id="readMore">
-                <a href="#">Читати далі</a>
-                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-            </div>
-        </section>
-        <section id="estate" class="zim-real-estate">
-            <h2 class="zim-real-estate__title">Нерухомість компанії &laquo;ZIM Capital groupcity&raquo;</h2>
-            <ul class="zim-real-estate__grid">
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/SunLife.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК &laquo;Сан лайфcity&raquo;</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Новоград-Волинський</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+            </section>
+            <section class="zim-real-estate__bottom">
+                <a href="#" class="zim-real-estate__btn zim-real-estate__btn-prev"></a>
+                <a href="#" class="zim-real-estate__link">Попередня</a>
+                <a href="#" class="zim-real-estate__link">Наступна</a>
+                <a href="#" class="zim-real-estate__btn zim-real-estate__btn-next"></a>
+                <a href="#" class="zim-real-estate__more-icon"></a>
+                <a href="#" class="zim-real-estate__link zim-real-estate__link-more">Завантажити ще</a>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
                 </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/comfortTown17.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК Комфорт Таун черга №17</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Новоград-Волинський</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник</div>
+                <li>
+                    <a href="#">Забудовнику</a>
                 </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/manhattan.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК &laquo;Manhattan citycity&raquo;</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Львів</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                <li>
+                    <a href="#">Послуги та ціни</a>
                 </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/Sunlife2.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК &laquo;Сан лайфcity&raquo;</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Новоград-Волинський</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                <li>
+                    <a href="#">Умови використання</a>
                 </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/comfortTown17.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК Комфорт Таун черга №17</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Новоград-Волинський</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник</div>
+                <li>
+                    <a href="#">Корисні статті</a>
                 </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/manhattan2.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК &laquo;Manhattan citycity&raquo;</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Львів</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
-                </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/sunlife3.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК &laquo;Сан лайфcity&raquo;</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Новоград-Волинський</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
-                </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/comfortTown17.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК Комфорт Таун черга №17</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Новоград-Волинський</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник</div>
-                </li>
-                <li class="zim-real-estate__item">
-                    <a href="#" class="zim-real-estate__image">
-                        <img src="img/SunLife.jpg" alt="photo">
-                        <div class="zim-real-estate__name">ЖК &laquo;Manhattan citycity&raquo;</div>
-                    </a>
-                    <div class="zim-real-estate__city">м. Львів</div>
-                    <div class="zim-real-estate__role">ZIM Capital — забудовник, охорона об’єкту</div>
+                <li>
+                    <a href="#">Вакансії</a>
                 </li>
             </ul>
-        </section>
-        <section class="zim-real-estate__bottom">
-            <a href="#" class="zim-real-estate__btn zim-real-estate__btn-prev"></a>
-            <a href="#" class="zim-real-estate__link">Попередня</a>
-            <a href="#" class="zim-real-estate__link">Наступна</a>
-            <a href="#" class="zim-real-estate__btn zim-real-estate__btn-next"></a>
-            <a href="#" class="zim-real-estate__more-icon"></a>
-            <a href="#" class="zim-real-estate__link zim-real-estate__link-more">Завантажити ще</a>
-        </section>
-    </article>
-</div>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
-<footer>
-    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
-    <nav class="footer__menu">
-        <ul>
-            <li><a href="#">Контакти</a></li>
-            <li><a href="#">Забудовнику</a></li>
-            <li><a href="#">Послуги та ціни</a></li>
-            <li><a href="#">Умови використання</a></li>
-            <li><a href="#">Корисні статті</a></li>
-            <li><a href="#">Вакансії</a></li>
-        </ul>
-    </nav>
-    <div class="footer__sn">
-        <ul>
-            <li><a class="footer__sn-face-book" target="_blank" href="#"></a></li>
-            <li><a class="footer__sn-instagram" target="_blank" href="#"></a></li>
-            <li><a class="footer__sn-y" target="_blank" href="#"></a></li>
-        </ul>
-    </div>
-</footer>
-
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

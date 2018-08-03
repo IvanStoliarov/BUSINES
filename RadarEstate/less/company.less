@@ -1,10 +1,9 @@
-// @import "main";
 
-@import "main.css";
+@import "main";
 //---------------------COMPANY----------------------
 aside {
   flex: 0 0 270px;
-  background:  #f0f1f4;
+  background: #f0f1f4;
   padding-left: 40px;
   padding-top: 32px;
   padding-right: 60px;
@@ -35,7 +34,7 @@ aside {
   display: flex;
   align-items: flex-start;
   margin-top: 10px;
-  >div{
+  > div {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -76,7 +75,6 @@ aside {
 .aside-contacts {
   margin-top: 32px;
 }
-
 
 .aside-contacts__partner-company {
   color: #2a313b;
@@ -151,7 +149,7 @@ article {
 .zim-real-estate__image {
   display: block;
   position: relative;
-  img{
+  img {
     min-width: 100%;
     max-width: 100%;
   }
@@ -167,7 +165,12 @@ article {
   left: 0;
   top: 0;
   right: 0;
-  background-image: linear-gradient(180deg, rgba(42, 49, 59, 0) 0%, rgba(42, 49, 59, 0.25) 40%, #2a313b 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(42, 49, 59, 0) 0%,
+    rgba(42, 49, 59, 0.25) 40%,
+    #2a313b 100%
+  );
   color: rgba(255, 255, 255, 0.95);
   font-family: "Montserrat";
   font-size: 16px;
@@ -260,7 +263,7 @@ article {
 //------------------TABLET------------------
 
 @media (max-width: 992px) {
-//  -------------COMPANY-------------
+  //  -------------COMPANY-------------
 
   article {
     display: contents;
@@ -288,8 +291,9 @@ article {
     order: 4;
   }
 
-  .about-zim, aside,
-  .zim-real-estate{
+  .about-zim,
+  aside,
+  .zim-real-estate {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -302,7 +306,7 @@ article {
 
   .aside-logo__wrapper {
     padding: 23px 10px;
-    img{
+    img {
       width: 40px;
       height: 14px;
     }
@@ -337,7 +341,7 @@ article {
 
   .zim-real-estate__grid {
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(200px,max-content));
+    grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
     column-gap: 20px;
     .zim-real-estate__item {
       width: auto;
@@ -348,7 +352,6 @@ article {
 //----------------PHONE--------------
 
 @media (max-width: 576px) {
-
   //-------------COMPANY-------------
 
   .article__title {
@@ -357,7 +360,9 @@ article {
     line-height: 40px;
   }
 
-  .about-zim, aside, .zim-real-estate {
+  .about-zim,
+  aside,
+  .zim-real-estate {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -451,7 +456,7 @@ article {
   }
 
   .zim-real-estate__grid {
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -460,11 +465,3 @@ article {
     width: 23%;
   }
 }
-
-
-
-
-
-
-
-

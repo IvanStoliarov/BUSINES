@@ -36,7 +36,7 @@
   align-items: flex-start;
   margin-top: 23px;
   width: 47%;
-  >div{
+  > div {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -110,7 +110,10 @@
     font-weight: 400;
     line-height: 20px;
   }
-  input, select, textarea, option {
+  input,
+  select,
+  textarea,
+  option {
     padding: 6px 9px 6px 16px;
     width: 100%;
     color: #2a313b;
@@ -149,12 +152,10 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-  };
-
-
+  }
 }
 
-.form__email-wrong{
+.form__email-wrong {
   position: relative;
   input {
     outline: solid 1px #f84646;
@@ -162,7 +163,7 @@
   .form__item-warning-message {
     display: block;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: -20px;
       top: ~"calc(50% - 10px)";
@@ -172,7 +173,7 @@
     }
     &::after {
       display: none;
-      content: '';
+      content: "";
       position: absolute;
       left: calc(50% - 20px);
       bottom: 100%;
@@ -181,7 +182,6 @@
     }
   }
 }
-
 
 .form__submit-btn {
   width: 290px;
@@ -228,7 +228,7 @@
 }
 
 .right-side__title {
- .aside-contacts__title;
+  .aside-contacts__title;
   margin-bottom: 15px;
 }
 
@@ -238,21 +238,23 @@
 
 //Hide all gMaps icons
 a[href^="http://maps.google.com/maps"] {
-  display:none !important;
+  display: none !important;
 }
 a[href^="https://maps.google.com/maps"] {
-  display:none !important;
+  display: none !important;
 }
 img[src^="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
   display: none !important;
 }
 
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-  display:none;
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+  display: none;
 }
 
 .gmnoprint div {
-  background:none !important;
+  background: none !important;
 }
 
 .first-heading {
@@ -265,7 +267,8 @@ img[src^="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
 //------------------TABLET------------------
 
 @media (max-width: 992px) {
-  .left-side, .right-side {
+  .left-side,
+  .right-side {
     width: 100%;
   }
 
@@ -295,7 +298,7 @@ img[src^="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
   .form__email-wrong {
     .form__item-warning-message {
       top: 80px;
-      left: 5% ;
+      left: 5%;
       height: auto;
       max-width: 70%;
       &::after {
@@ -331,13 +334,4 @@ img[src^="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
   .contacts-form {
     padding: 22px 15px 15px;
   }
-
 }
-
-
-
-
-
-
-
-

@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogue</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/catalogue_page.css">
+
+
+</head>
+
+<body>
+    <div class="no-results-wrapper">
+        <header class="is-registered">
+            <!-- Add class "is-registered" for change header -->
+            <div class="header__left-side">
+                <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="Radar Estate">
+                </a>
+                <div class="header__city">
+                    <div class="current__city">Каменець-Подільський</div>
+                    <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    <div class="city-popup city-popup-hidden">
+                        <ul class="city__list">
+                            <li class="city__item">Белая Церковь</li>
+                            <li class="city__item">Бровары</li>
+                            <li class="city__item">Ирпень</li>
+                            <li class="city__item">Винница</li>
+                            <li class="city__item">Чернигов</li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="header__nav-desktop">
+                    <ul>
+                        <li>
+                            <a href="#">Мапа новобудов</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог новобудов</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__right-side">
+                <div class="header__notification__block">
+                    <div class="header__notification">
+                        <div class="notification__icon notification__icon_favorite">
+                            <div class="notification__status">23</div>
+                        </div>
+                        <div class="notification__text">Улюблене</div>
+                    </div>
+                    <div class="header__notification">
+                        <div class="notification__icon notification__icon_compare">
+                            <div class="notification__status">5</div>
+                        </div>
+                        <div class="notification__text">Порівняння</div>
+                    </div>
+                </div>
+                <div class="header__sign-up user-popup_is-hidden">
+                    <div class="sign-up__icon">
+                        <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                        <div class="user-popup">
+                            <div class="user-popup__top">
+                                <div class="user-popup__icon"></div>
+                                <div class="user-popup__column">
+                                    <div class="user-popup__name">Dmytro Ivanov</div>
+                                    <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                    <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                                </div>
+                            </div>
+                            <ul class="user-popup__links">
+                                <li class="user-popup__link-row">
+                                    <a href="#" class="user-popup__link">Моніторинг</a>
+                                </li>
+                                <li class="user-popup__link-row">
+                                    <a href="#" class="user-popup__link">Мої закази</a>
+                                    <div class="user-popup__link-notification">4</div>
+                                </li>
+                                <li class="user-popup__link-row">
+                                    <a href="#" class="user-popup__link">Вихід</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="sign-up__name">
+                        <div>Dmytro Ivanov</div>
+                    </div>
+                    <div class="sign-up__btn">
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                </div>
+                <div class="header__sign-up_unregistered">
+                    <div class="header__registration">
+                        <div class="header__registration-icon"></div>
+                        <a href="#" class="header__registration-link">Реєстрація</a>
+                    </div>
+                    <div class="header__log-in">
+                        <div class="header__log-in-icon"></div>
+                        <a href="#" class="header__registration-link">Вхід</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+            <!--Add class "mobile-menu-registered" for registered users-->
+            <div class="mobile-menu__links">
+                <div class="mobile-menu__top">
+                    <div class="mobile-menu__btn">
+                        <img src="img/mobile-btn.svg" alt="mobile-button">
+                    </div>
+                    <div class="header__city header__city-mobile">
+                        <div class="current__city-wrapper">
+                            <div class="current__city">Каменець-Подільський</div>
+                            <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                        </div>
+                        <ul class="city__list city__list-hidden city__list-mobile">
+                            <li class="city__item city__item-mobile">Белая Церковь</li>
+                            <li class="city__item city__item-mobile">Бровары</li>
+                            <li class="city__item city__item-mobile">Ирпень</li>
+                            <li class="city__item city__item-mobile">Винница</li>
+                            <li class="city__item city__item-mobile">Чернигов</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="mobile-menu__main-nav">
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__nav">
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">Забудовнику</a>
+                    </li>
+                    <li>
+                        <a href="#">Послуги та ціни</a>
+                    </li>
+                    <li>
+                        <a href="#">Умови використання</a>
+                    </li>
+                    <li>
+                        <a href="#">Корисні статті</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансії</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu__sign-in">
+                <div class="sign-in__line">
+                    <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                    <div class="sign-in__text">Вхід</div>
+                </div>
+                <div class="sign-in__line">
+                    <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                    <div class="sign-in__text">Реєстрація</div>
+                </div>
+            </div>
+
+            <div class="mobile-menu__profile">
+                <ul>
+                    <li class="mobileProfile__item">
+                        <a href="#">Мій профіль</a>
+                        <img src="img/user-icon.svg" alt="icon">
+                    </li>
+                    <li class="mobileProfile__item">
+                        <a href="#">Моніторинг</a>
+                    </li>
+                    <li class="mobileProfile__item">
+                        <a href="#">Мої закази</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container container__no_results">
+
+            <div class="filters filters_no-results">
+                <div class="filters-show-button"></div>
+                <div class="filters__wrapper">
+                    <div class="row filters__top">
+                        <div class="filters__title">Фільтри</div>
+                        <div class="pro-mode">
+                            <div class="question-icon"></div>
+                            <div>Pro-режим:</div>
+                            <div class="pro-mode__toggler pro-mode__toggler_yes">
+                                <div class="switch pro-mode__toggler-switch"></div>
+                                <div class="toggler-state toggler-state_yes">Так</div>
+                                <div class="toggler-state toggler-state_no">Hi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="filters__form" action="">
+                        <label class="input__label input__label_name">
+                            Назва новобудови або забудовника
+                            <input class="input input_name" type="text" placeholder="Назва">
+                            <label class="check-box__container">Перевірені забудовники
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </label>
+                        <label class="input__label input__label_district">Район
+                            <select class="input input_district" name="district">
+                                <option value="disable" selected disabled>Район</option>
+                                <option value="district-1">Район1</option>
+                                <option value="district-2">Район2</option>
+                                <option value="district-3">Район3</option>
+                            </select>
+                        </label>
+
+                        <div class="budget-wrapper">
+                            <p>
+                                <label for="budget">Бюджет:</label>
+                                <input class="budget-value" type="text" id="budget">
+                            </p>
+                            <div id="slider-range"></div>
+                        </div>
+
+                        <div class="infrastructure-input">
+                            <div class="infrastructure-input__title">Інфраструктура:</div>
+
+                            <label class="check-box__container">Зупинки
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check-box__container">Парки
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check-box__container">Супермаркети
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="check-box__container">Спорткомплекси
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="rooms-quantity">
+                            <div class="rooms-quantity__title">Кількість кімнат:</div>
+                            <div class="rooms-quantity__wrapper">
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">Усі</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">1</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark">2</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">3</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">4</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">5+</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="square-wrapper">
+                            <p>
+                                <label for="square">Площа, м
+                                    <sup>2</sup>
+                                </label>
+                                <input class="square-value" type="text" id="square">
+                            </p>
+                            <div id="square-range"></div>
+                        </div>
+
+                        <div class="terms-wrapper">
+                            <p>
+                                <label for="terms">Термін здачі:</label>
+                                <input class="input__terms" type="text" id="terms">
+                            </p>
+                            <div id="slider-terms-min"></div>
+                            <div class="terms-scale__wrapper">
+                                <div class="terms-scale">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="terms-scale__legend">
+                                    <div class="terms-scale__start">2017</div>
+                                    <div class="terms-scale__choice"></div>
+                                    <div class="terms-scale__finish">2025</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="class">
+                            <div class="class__title">Класс:</div>
+                            <div class="class__wrapper">
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">Усі</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">Еліт</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark">Бізнес</span>
+                                </label>
+                                <label class="check-box__container">
+                                    <input type="checkbox">
+                                    <span class="checkmark">Єконом</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="filters__button-wrapper">
+                        <div class="filters__button">
+                            <div class="search-icon"></div>
+                            <div>Показати результати</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-result">
+                <div class="no-result__close-btn"></div>
+                <img class="no-result__img" src="img/img_search.svg" alt="search">
+
+                <div class="no-result__text">Нажаль, ми не знайшли новобудов
+                    <br>задовільняючих вашим критеріям пошуку
+                </div>
+                <div class="no-result__text-light">Спробуйте змінити параметри бажаного житла, або район пошуку</div>
+                <div class="no-result__button">
+                    <div class="search-icon"></div>
+                    <div>Шукати ще раз</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+            <nav class="footer__menu">
+                <ul>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">Забудовнику</a>
+                    </li>
+                    <li>
+                        <a href="#">Послуги та ціни</a>
+                    </li>
+                    <li>
+                        <a href="#">Умови використання</a>
+                    </li>
+                    <li>
+                        <a href="#">Корисні статті</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансії</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__sn">
+                <ul>
+                    <li>
+                        <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="footer__sn-y" target="_blank" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

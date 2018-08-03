@@ -7,7 +7,8 @@
   align-items: center;
 }
 
-.vacancies-top__description, .vacancies-top__img {
+.vacancies-top__description,
+.vacancies-top__img {
   width: 50%;
 }
 
@@ -130,7 +131,8 @@
     font-weight: 400;
     line-height: 20px;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -163,7 +165,8 @@
   box-sizing: border-box;
 }
 
-.form__name, .form__email {
+.form__name,
+.form__email {
   width: 47%;
 }
 
@@ -212,7 +215,7 @@
   display: none;
   position: absolute;
   top: 80px;
-  left: 5% ;
+  left: 5%;
   z-index: 2;
   background: #f84646;
   -webkit-border-radius: 6px;
@@ -222,7 +225,7 @@
   height: auto;
   width: 90%;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: calc(50% - 20px);
     bottom: 100%;
@@ -239,7 +242,7 @@
   }
 }
 
-.form__email-wrong{
+.form__email-wrong {
   position: relative;
   input {
     outline: solid 1px #f84646;
@@ -360,11 +363,13 @@
   margin-bottom: 30px;
 }
 
-.working-conditions, .requirements {
+.working-conditions,
+.requirements {
   width: 45%;
 }
 
-.working-conditions__title, .requirements__title {
+.working-conditions__title,
+.requirements__title {
   color: #2a313b;
   font-family: "Montserrat";
   font-size: 16px;
@@ -372,7 +377,8 @@
   line-height: 24px;
 }
 
-.working-conditions__list, .requirements__list {
+.working-conditions__list,
+.requirements__list {
   .vacancy__responsibility;
   margin-left: 15px;
 }
@@ -388,7 +394,7 @@
 //no-job page
 
 .vacancies-no-job {
-  .vacancies-top__description h1{
+  .vacancies-top__description h1 {
     max-width: 535px;
   }
 }
@@ -400,7 +406,10 @@
     padding: 25px 25px 45px;
   }
 
-  .vacancies-top__description, .vacancies-top__img, .hr, .job_list-form {
+  .vacancies-top__description,
+  .vacancies-top__img,
+  .hr,
+  .job_list-form {
     width: 100%;
   }
 
@@ -465,15 +474,14 @@
   .vacancy-header {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas:
-            'image title' 'image list' 'image button';
+    grid-template-areas: "image title" "image list" "image button";
     column-gap: 24px;
     padding: 0;
   }
 
   .vacancy-without-image {
     .vacancy-header {
-      grid-template-areas: 'title' 'list' 'button';
+      grid-template-areas: "title" "list" "button";
     }
   }
 
@@ -499,12 +507,12 @@
     margin-top: 40px;
   }
 
-  .working-conditions__list, .requirements__list {
+  .working-conditions__list,
+  .requirements__list {
     margin-left: 10px;
     list-style-position: inside;
     li {
       padding-left: 0;
-
     }
   }
 
@@ -560,7 +568,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: 92px auto;
-    grid-template-areas: 'img name' 'img tel';
+    grid-template-areas: "img name" "img tel";
     align-items: end;
     column-gap: 13px;
     &__img {
@@ -589,7 +597,8 @@
     box-shadow: none;
   }
 
-  .form__name, .form__email {
+  .form__name,
+  .form__email {
     width: 100%;
   }
 
@@ -638,7 +647,7 @@
 
   .vacancy-header {
     grid-template-columns: 60px auto;
-    grid-template-areas: 'image title' 'list list' 'button button';
+    grid-template-areas: "image title" "list list" "button button";
     column-gap: 10px;
     padding: 18px 15px 0;
   }
@@ -681,13 +690,14 @@
     order: 2;
   }
 
-  .working-conditions, .requirements {
+  .working-conditions,
+  .requirements {
     width: 100%;
   }
 
   .vacancy-without-image {
     .vacancy-header {
-      grid-template-areas: 'title title' 'list list' 'button button';
+      grid-template-areas: "title title" "list list" "button button";
     }
   }
 
@@ -699,6 +709,6 @@
     font-weight: 700;
     line-height: 24px;
     align-self: flex-start;
-    margin:0 0 9px 15px;
+    margin: 0 0 9px 15px;
   }
 }

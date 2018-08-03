@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DashBoard</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/my_stat.css">
+
+
+</head>
+
+<body>
+    <header data-status="developer">
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+        </div>
+
+        <div class="header__right-side header__right-side_developer">
+            <div class="header__notification">
+                <div class="notification__icon notification__icon_alarm">
+                    <div class="notification__status">23</div>
+                </div>
+                <div class="notification__text"></div>
+            </div>
+            <div class="header__sign-up">
+                <div class="sign-up__icon">
+                    <img src="img/ic_builder_24_black Copy.svg" alt="icon">
+                </div>
+                <div class="sign-up__name">ZIM Capital Group</div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <section class="top">
+            <h1 class="page-title">Статистика забудовника</h1>
+            <div class="row sort-row">
+                <div class="sort-settings">
+                    <div class="sort-settings__title">Відвідування будинків за період:</div>
+                    <div class="sort-settings__inner">
+                        <div class="sort-period">
+                            <div class="sort-period__input-container">
+                                <label class="sort-period__label label">Початок періоду</label>
+                                <input class="sort-period__input" value="2018-05-20" type="date">
+                            </div>
+                            <hr class="sort-period__dash"></hr>
+                            <div class="sort-period__input-container">
+                                <label class="sort-period__label label">Кінець періоду</label>
+                                <input class="sort-period__input" value="2018-05-27" type="date">
+                            </div>
+                        </div>
+                        <div class="sort-filter">
+                            <div class="sort-filter__label label">Виводити по:</div>
+                            <div class="sort-filter__row row">
+                                <div class="sort-filter__option sort-filter__option_active">Дням</div>
+                                <div class="sort-filter__option">Місяцям</div>
+                                <button class="sort-filter__button">Показати</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-area">
+                    <div class="download-area__title">Завантажити звіт:</div>
+                    <div class="download-area__link">
+                        <div class="download-area__icon icon-pdf"></div>
+                        <a href="#" download="">zvit.pdf</a>
+                    </div>
+                    <div class="download-area__link">
+                        <div class="download-area__icon icon-xls"></div>
+                        <a href="#" download="">zvit.pdf</a>
+                    </div>
+                </div>
+            </div>
+            <div class="top-statistic">
+                <div class="top-statistic__item">
+                    <div class="top-statistic__bg top-statistic__bg_search"></div>
+                    <div class="top-statistic__value">950 364</div>
+                    <div class="top-statistic__description">Кількість попадань в видачу по запитам</div>
+                </div>
+                <div class="top-statistic__item">
+                    <div class="top-statistic__bg top-statistic__bg_jump"></div>
+                    <div class="top-statistic__value">104 282</div>
+                    <div class="top-statistic__description">Кілька переходів на сторінку новобудови</div>
+                </div>
+                <div class="top-statistic__item">
+                    <div class="top-statistic__bg top-statistic__bg_page-hook"></div>
+                    <div class="top-statistic__value">10 107</div>
+                    <div class="top-statistic__description">Кількість переходів на сторінку забудовника</div>
+                </div>
+                <div class="top-statistic__item">
+                    <div class="top-statistic__bg top-statistic__bg_reviews"></div>
+                    <div class="top-statistic__value">874</div>
+                    <div class="top-statistic__description">Кількість переглядів контактів</div>
+                </div>
+            </div>
+        </section>
+        <section class="main-statistic">
+            <h2 class="main-statistic__title">Покази сторінок новбудов та перегляди контактів</h2>
+            <div class="main-statistic__legend">
+                <div class="main-statistic__legend-item">
+                    <div class="main-statistic__legend-icon main-statistic__legend-icon_show"></div>
+                    <div>Кількість показів</div>
+                </div>
+                <div class="main-statistic__legend-item">
+                    <div class="main-statistic__legend-icon main-statistic__legend-icon_review"></div>
+                    <div>Переглядів контактів</div>
+                </div>
+            </div>
+            <div class="city-statistic">
+                <div class="city-name">Новоград-Волинський</div>
+                <div class="complex-area">
+
+                    <div class="complex-popup complex-popup_is-hidden">
+                        <div class="complex-popup__close-btn"></div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_view"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількість переглядів</div>
+                        </div>
+                        <div class="complex-popup__item ">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількісь переходів</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_favorite "></div>
+                                <div>723</div>
+                            </div>
+                            <div class="complex-popup__description label">Додали в улюблене</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_contacts"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Дивились контакти</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Переходів на сайт</div>
+                        </div>
+
+                    </div>
+                    <div class="complex-area__top">
+                        <div class="complex-info">
+                            <div class="complex-info__photo">
+                                <img class="complex-info__image" src="img/building-1.jpg" alt="photo">
+                            </div>
+                            <div class="complex-info__column">
+                                <div class="complex-info__title">«Полісська слобода»</div>
+                                <div class="complex-info__address">Львів,
+                                    <br> вул. Леся Курбаса 25</div>
+                                <div class="complex-info__queue"></div>
+                            </div>
+                        </div>
+                        <div class="complex-statistic">
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_view"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількість переглядів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількісь переходів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_favorite"></div>
+                                    <div>723</div>
+                                </div>
+                                <div class="complex-statistic__description label">Додали в улюблене</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_contacts"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Дивились контакти</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Переходів на сайт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complex-chart">
+                        <img class="complex-chart__img" src="img/chart.jpg" alt="chart">
+                        <img class="complex-chart__img_phone" src="img/chart-mobile.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="complex-area">
+
+                    <div class="complex-popup">
+                        <div class="complex-popup__close-btn"></div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_view"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількість переглядів</div>
+                        </div>
+                        <div class="complex-popup__item ">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількісь переходів</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_favorite "></div>
+                                <div>723</div>
+                            </div>
+                            <div class="complex-popup__description label">Додали в улюблене</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_contacts"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Дивились контакти</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Переходів на сайт</div>
+                        </div>
+
+                    </div>
+
+                    <div class="complex-area__top">
+                        <div class="complex-info">
+                            <div class="complex-info__photo">
+                                <img class="complex-info__image" src="img/building-2.jpg" alt="photo">
+                            </div>
+                            <div class="complex-info__column">
+                                <div class="complex-info__title">«Краківський»</div>
+                                <div class="complex-info__address">Львів, вул. Малоголоськівська 14</div>
+                                <div class="complex-info__queue">Друга черга</div>
+                            </div>
+                        </div>
+                        <div class="complex-statistic">
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_view"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількість переглядів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількісь переходів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_favorite"></div>
+                                    <div>723</div>
+                                </div>
+                                <div class="complex-statistic__description label">Додали в улюблене</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_contacts"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Дивились контакти</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Переходів на сайт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complex-chart">
+                        <img class="complex-chart__img" src="img/chart.jpg" alt="chart">
+                        <img class="complex-chart__img_phone" src="img/chart-mobile.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="city-statistic">
+                <div class="city-name">Львів</div>
+                <div class="complex-area">
+
+                    <div class="complex-popup complex-popup_is-hidden">
+                        <div class="complex-popup__close-btn"></div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_view"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількість переглядів</div>
+                        </div>
+                        <div class="complex-popup__item ">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількісь переходів</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_favorite "></div>
+                                <div>723</div>
+                            </div>
+                            <div class="complex-popup__description label">Додали в улюблене</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_contacts"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Дивились контакти</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Переходів на сайт</div>
+                        </div>
+
+                    </div>
+
+                    <div class="complex-area__top">
+                        <div class="complex-info">
+                            <div class="complex-info__photo">
+                                <img class="complex-info__image" src="img/building-3.jpg" alt="photo">
+                            </div>
+                            <div class="complex-info__column">
+                                <div class="complex-info__title">«Малоголосківські пагорби»</div>
+                                <div class="complex-info__address">Львів, вул. Малоголоськівська 37</div>
+                                <div class="complex-info__queue">Третя черга</div>
+                            </div>
+                        </div>
+                        <div class="complex-statistic">
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_view"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількість переглядів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількісь переходів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_favorite"></div>
+                                    <div>723</div>
+                                </div>
+                                <div class="complex-statistic__description label">Додали в улюблене</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_contacts"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Дивились контакти</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Переходів на сайт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complex-chart">
+                        <img class="complex-chart__img" src="img/chart.jpg" alt="chart">
+                        <img class="complex-chart__img_phone" src="img/chart-mobile.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="complex-area">
+
+                    <div class="complex-popup complex-popup_is-hidden">
+                        <div class="complex-popup__close-btn"></div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_view"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількість переглядів</div>
+                        </div>
+                        <div class="complex-popup__item ">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількісь переходів</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_favorite "></div>
+                                <div>723</div>
+                            </div>
+                            <div class="complex-popup__description label">Додали в улюблене</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_contacts"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Дивились контакти</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Переходів на сайт</div>
+                        </div>
+
+                    </div>
+
+                    <div class="complex-area__top">
+                        <div class="complex-info">
+                            <div class="complex-info__photo">
+                                <img class="complex-info__image" src="img/building-4.jpg" alt="photo">
+                            </div>
+                            <div class="complex-info__column">
+                                <div class="complex-info__title">«Глобус Меридиан»</div>
+                                <div class="complex-info__address">Львів, вул. Малинова 10</div>
+                                <div class="complex-info__queue">Четверта черга</div>
+                            </div>
+                        </div>
+                        <div class="complex-statistic">
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_view"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількість переглядів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількісь переходів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_favorite"></div>
+                                    <div>723</div>
+                                </div>
+                                <div class="complex-statistic__description label">Додали в улюблене</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_contacts"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Дивились контакти</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Переходів на сайт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complex-chart">
+                        <img class="complex-chart__img" src="img/chart.jpg" alt="chart">
+                        <img class="complex-chart__img_phone" src="img/chart-mobile.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="complex-area">
+
+                    <div class="complex-popup complex-popup_is-hidden">
+                        <div class="complex-popup__close-btn"></div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_view"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількість переглядів</div>
+                        </div>
+                        <div class="complex-popup__item ">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Кількісь переходів</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_favorite "></div>
+                                <div>723</div>
+                            </div>
+                            <div class="complex-popup__description label">Додали в улюблене</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_contacts"></div>
+                                <div>158 681</div>
+                            </div>
+                            <div class="complex-popup__description label">Дивились контакти</div>
+                        </div>
+                        <div class="complex-popup__item">
+                            <div class="complex-popup__value">
+                                <div class="complex-popup__icon complex-popup__icon_jump"></div>
+                                <div>23 988</div>
+                            </div>
+                            <div class="complex-popup__description label">Переходів на сайт</div>
+                        </div>
+
+                    </div>
+
+                    <div class="complex-area__top">
+                        <div class="complex-info">
+                            <div class="complex-info__photo">
+                                <img class="complex-info__image" src="img/building-5.jpg" alt="photo">
+                            </div>
+                            <div class="complex-info__column">
+                                <div class="complex-info__title">«Полісська слобода»</div>
+                                <div class="complex-info__address">Львів,
+                                    <br> вул. Леся Курбаса 25</div>
+                                <div class="complex-info__queue"></div>
+                            </div>
+                        </div>
+                        <div class="complex-statistic">
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_view"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількість переглядів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Кількісь переходів</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_favorite"></div>
+                                    <div>723</div>
+                                </div>
+                                <div class="complex-statistic__description label">Додали в улюблене</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_contacts"></div>
+                                    <div>158 681</div>
+                                </div>
+                                <div class="complex-statistic__description label">Дивились контакти</div>
+                            </div>
+
+                            <div class="complex-statistic-item">
+                                <div class="complex-statistic__value">
+                                    <div class="complex-statistic__icon complex-statistic__icon_jump"></div>
+                                    <div>23 988</div>
+                                </div>
+                                <div class="complex-statistic__description label">Переходів на сайт</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complex-chart">
+                        <img class="complex-chart__img" src="img/chart.jpg" alt="chart">
+                        <img class="complex-chart__img_phone" src="img/chart-mobile.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

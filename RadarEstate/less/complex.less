@@ -2,7 +2,7 @@
 //---------------------COMPLEX----------------------
 aside {
   flex-basis: 370px;
-  background:  #f0f1f4;
+  background: #f0f1f4;
   padding-left: 40px;
   padding-top: 32px;
   padding-right: 60px;
@@ -15,7 +15,7 @@ aside {
   align-items: flex-start;
 }
 
-.aside-logo-aid{
+.aside-logo-aid {
   margin-top: 38px;
 }
 
@@ -34,7 +34,7 @@ aside {
   font-weight: 400;
   line-height: 24px;
   margin-top: 7px;
-  a{
+  a {
     color: #2a313b;
     &:hover {
       text-decoration: none;
@@ -46,7 +46,7 @@ aside {
   display: flex;
   align-items: flex-start;
   margin-top: 10px;
-  >div{
+  > div {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -151,7 +151,7 @@ article {
 .complex-real-estate__image {
   display: block;
   position: relative;
-  img{
+  img {
     min-width: 100%;
     max-width: 100%;
   }
@@ -168,7 +168,12 @@ article {
   left: 0;
   top: 0;
   right: 0;
-  background-image: linear-gradient(180deg, rgba(42, 49, 59, 0) 0%, rgba(42, 49, 59, 0.25) 40%, #2a313b 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(42, 49, 59, 0) 0%,
+    rgba(42, 49, 59, 0.25) 40%,
+    #2a313b 100%
+  );
   color: rgba(255, 255, 255, 0.95);
   transition: all 400ms;
 }
@@ -253,8 +258,6 @@ article {
   position: relative;
   height: 440px;
   overflow: hidden;
-  //display: flex;
-  //align-items: center;
   box-shadow: inset 0 1px 0 #e1e3ea, inset 0 -1px 0 #e1e3ea;
   background-color: #f9f9fb;
 }
@@ -393,7 +396,7 @@ article {
 }
 
 .circle-yellow {
-  background:#f8ce46;
+  background: #f8ce46;
 }
 
 .progress {
@@ -536,14 +539,10 @@ article {
   width: auto;
 }
 
-
-
-
-
 //------------------TABLET------------------
 
 @media (max-width: 992px) {
-//  -------------COMPANY-------------
+  //  -------------COMPANY-------------
 
   article {
     display: contents;
@@ -604,7 +603,7 @@ article {
     padding: 23px 10px;
     width: auto;
     height: auto;
-    img{
+    img {
       width: 40px;
       height: 14px;
     }
@@ -634,7 +633,8 @@ article {
     margin-bottom: 9px;
   }
 
-  .complex-real-estate, .infrastructure {
+  .complex-real-estate,
+  .infrastructure {
     padding: 0 24px;
   }
 
@@ -668,7 +668,7 @@ article {
 
   .complex-real-estate__grid {
     display: grid;
-    grid-template-columns: repeat(3 , 31%);
+    grid-template-columns: repeat(3, 31%);
   }
 
   .complex-real-estate__item {
@@ -728,13 +728,11 @@ article {
   .object__distance {
     margin-bottom: 3px;
   }
-
 }
 
 //----------------PHONE--------------
 
 @media (max-width: 576px) {
-
   .article__title {
     font-size: 27px;
     font-weight: 700;
@@ -765,7 +763,8 @@ article {
     height: 160px;
   }
 
-  .carousel__btn, .carousel__btn:hover {
+  .carousel__btn,
+  .carousel__btn:hover {
     width: 20px;
     height: 40px;
     background-size: cover;
@@ -773,7 +772,7 @@ article {
   }
 
   .article__text-wrapper {
-    padding: 19px 15px  0;
+    padding: 19px 15px 0;
     height: auto;
   }
 
@@ -781,7 +780,8 @@ article {
     padding-bottom: 15px;
   }
 
-  .aside-logo-aid, .aside-logo-aid {
+  .aside-logo-aid,
+  .aside-logo-aid {
     margin-top: 0;
   }
 
@@ -821,7 +821,9 @@ article {
     margin-right: 10px;
   }
 
-  aside, .complex-real-estate, .infrastructure {
+  aside,
+  .complex-real-estate,
+  .infrastructure {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -913,7 +915,6 @@ article {
     margin-left: 10px;
     margin-right: 10px;
   }
-
 }
 
 @media (min-width: 1660px) {
@@ -929,11 +930,3 @@ article {
     width: auto;
   }
 }
-
-
-
-
-
-
-
-

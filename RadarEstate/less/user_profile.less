@@ -1,7 +1,8 @@
 @import "main";
 
-html,body{
-  height:100% ;
+html,
+body {
+  height: 100%;
 }
 
 .wrapper {
@@ -25,8 +26,9 @@ html,body{
   padding: 40px 20px 40px 40px;
   background: #f0f1f4;
   width: 375px;
-  border-right: 10px solid #7f7f7f;
-  box-sizing: border-box
+  flex-shrink: 0;
+  box-sizing: border-box;
+  box-shadow: 10px 0 20px -15px rgba(0, 0, 0, 0.5), inset -1px 0 0 #d7d8db;
 }
 
 .profile__image {
@@ -118,7 +120,7 @@ html,body{
 }
 
 .profile-item__icon_user {
-  background-image: url(../img/ic_user_32_gray.png);
+  background-image: url(../img/ic_user_32_gray.svg);
 }
 
 .profile-item__icon_tel {
@@ -126,15 +128,15 @@ html,body{
 }
 
 .profile-item__icon_mail {
-  background-image: url(../img/ic_Email_32_disable.png);
+  background-image: url(../img/ic_Email_32_disable.svg);
 }
 
 .profile-item__icon_google {
-  background-image: url(../img/ic_Email_32_disable.png);
+  background-image: url(../img/ic_Email_32_disable.svg);
 }
 
 .profile-item__icon_facebook {
-  background-image: url(../img/ic_fb_32_disable.png);
+  background-image: url(../img/ic_facebook_32_disable.svg);
 }
 
 .profile-item_completed {
@@ -143,23 +145,23 @@ html,body{
   }
 
   .profile-item__icon_user {
-    background-image: url(../img/ic_user_32_dark.png);
+    background-image: url(../img/ic_user_32_dark.svg);
   }
-  
+
   .profile-item__icon_tel {
-    background-image: url(../img/ic_Phone_32_dark_hovered.png);
+    background-image: url(../img/ic_Phone_32_dark_hovered.svg);
   }
-  
+
   .profile-item__icon_mail {
-    background-image: url(../img/ic_Email_32_dark_hovered.png);
+    background-image: url(../img/ic_Email_32_dark_hovered.svg);
   }
-  
+
   .profile-item__icon_google {
-    background-image: url(../img/ic_google_32_hovered.png);
+    background-image: url(../img/ic_google_32_hovered.svg);
   }
-  
+
   .profile-item__icon_facebook {
-    background-image: url(../img/ic_fb_32_dark_hovered.png);
+    background-image: url(../img/ic_facebook_32_dark_hovered.svg);
   }
 }
 
@@ -211,24 +213,24 @@ html,body{
 }
 
 .button-edit {
-  background: url(../img/edit-button-bg.png) no-repeat center;
+  background: url(../img/ic_edit_16_normal.svg) no-repeat center;
   &:hover {
-    background-image: url(../img/edit-button-bg-black.png);
+    background-image: url(../img/ic_edit_16_hovered.svg);
   }
 }
 
 .button-save {
-  background: url(../img/save-button-bg.png) no-repeat center;
+  background: url(../img/ic_tick_16_normal.svg) no-repeat center;
   display: none;
 }
 
 .button-cancel {
-  background: url(../img/cancel-button-bg.png) no-repeat center;
+  background: url(../img/ic_undo_16_hovered.svg) no-repeat center;
   display: none;
 }
 
 .button-delete {
-  background: url(../img/delete-button-bg.png) no-repeat center;
+  background: url(../img/ic_close_16_hover.svg) no-repeat center;
   display: none;
 }
 
@@ -236,7 +238,9 @@ html,body{
   .button-edit {
     display: none;
   }
-  .button-save, .button-cancel, .button-delete {
+  .button-save,
+  .button-cancel,
+  .button-delete {
     display: block;
   }
 }
@@ -254,7 +258,8 @@ html,body{
   margin-bottom: 15px;
 }
 
-.checkbox__conditions, .checkbox__conditions_link {
+.checkbox__conditions,
+.checkbox__conditions_link {
   color: #2a313b;
   font-family: Roboto;
   font-size: 16px;
@@ -276,7 +281,7 @@ html,body{
   display: flex;
   margin-bottom: 20px;
   input {
-  display: none;
+    display: none;
   }
 }
 
@@ -293,7 +298,7 @@ html,body{
 }
 
 .input-box_checked {
-  background-image: url(../img/check-mark.png);
+  background-image: url(../img/ic_tick_16_normal.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -321,7 +326,7 @@ html,body{
   }
 }
 
-.edit-prifile-image {
+.edit-profile-image {
   width: 32px;
   height: 32px;
   position: absolute;
@@ -330,7 +335,7 @@ html,body{
   background: #fff;
   border: 1px solid #e1e3ea;
   border-radius: 50%;
-  background-image: url(../img/edit-button-bg.png);
+  background-image: url(../img/ic_edit_16_normal.svg);
   background-repeat: no-repeat;
   background-position: center;
   &:hover {
@@ -348,11 +353,16 @@ html,body{
   display: flex;
 }
 
-
+@media (min-width: 993px) {
+  .my-profile {
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 //------------------TABLET------------------
 
 @media (max-width: 992px) {
-
   body {
     height: auto;
   }
@@ -393,7 +403,6 @@ html,body{
     margin-bottom: 6px;
   }
 
-
   .my-profile {
     width: 100%;
     padding: 0 24px 24px;
@@ -415,7 +424,7 @@ html,body{
   .profile-item {
     flex-wrap: wrap;
   }
-  
+
   .profile-item__type {
     width: 100%;
     margin-bottom: 15px;
@@ -424,7 +433,6 @@ html,body{
 //----------------PHONE--------------
 
 @media (max-width: 576px) {
-
   body {
     height: auto;
   }
@@ -448,7 +456,7 @@ html,body{
     }
   }
 
-  .edit-prifile-image {
+  .edit-profile-image {
     width: 15px;
     height: 15px;
     border-radius: 0;
@@ -474,50 +482,49 @@ html,body{
   }
 
   .profile-item__icon_user {
-    background-image: url(../img/ic_user_16_normal.png);
-  }
-  
-  .profile-item__icon_tel {
-    background-image: url(../img/ic_Phone_24_dark.png);
-  }
-  
-  .profile-item__icon_mail {
-    background-image: url(../img/ic_email_normal.png);
-  }
-  
-  .profile-item__icon_google {
-    background-image: url(../img/ic_google_Leter24_gray.png);
-  }
-  
-  .profile-item__icon_facebook {
-    background-image: url(../img/ic_facebook_Leter24_gray.png);
+    background-image: url(../img/ic_user_16_normal.svg);
   }
 
-  
+  .profile-item__icon_tel {
+    background-image: url(../img/ic_Phone_24_dark.svg);
+  }
+
+  .profile-item__icon_mail {
+    background-image: url(../img/ic_email_normal.svg);
+  }
+
+  .profile-item__icon_google {
+    background-image: url(../img/ic_google_Leter24_gray.svg);
+  }
+
+  .profile-item__icon_facebook {
+    background-image: url(../img/ic_facebook_Leter24_gray.svg);
+  }
+
   .profile-item_completed {
     .profile-item__icon_user {
-      background-image: url(../img/ic_user_16_hovered.png);
+      background-image: url(../img/ic_user_16_hovered.svg);
     }
-    
+
     .profile-item__icon_tel {
-      background-image: url(../img/ic_Phone_24_dark_hovered.png);
+      background-image: url(../img/ic_Phone_24_dark_hovered.svg);
     }
-    
+
     .profile-item__icon_mail {
-      background-image: url(../img/ic_email_hovered.png);
+      background-image: url(../img/ic_email_hovered.svg);
     }
-    
+
     .profile-item__icon_google {
-      background-image: url(../img/ic_google_Leter24_dark.png);
+      background-image: url(../img/ic_google_Leter24_dark.svg);
     }
-    
+
     .profile-item__icon_facebook {
-      background-image: url(../img/ic_facebook_Leter24_dark.png);
+      background-image: url(../img/ic_facebook_Leter24_dark.svg);
     }
   }
 
   .profile-item {
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
 
   .my-profile {
@@ -577,13 +584,4 @@ html,body{
       height: 40px;
     }
   }
-
 }
-
-
-
-
-
-
-
-

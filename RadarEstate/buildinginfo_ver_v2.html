@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>building info</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/buildinginfo.css">
+</head>
+
+<body>
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
+            </div>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="">
+        <!-- add class "reg" to <main> for "radar_estate_BuildingInfo_REG_v2" version -->
+        <!-- add class "state" to <main> for "radar_estate_BuildingInfo_VER_v2_State" version -->
+        <aside class="aside" data-status="hidden">
+            <div class="aside-mobile__title">
+                <div class="back-icon"></div> Швидка навігація
+            </div>
+            <div class="aside__block">
+                <div class="aside__title">Загальна інформація</div>
+                <a href="#advantages" class="aside__link">Переваги новобудови</a>
+                <a href="#" class="aside__link">Загальна інформація</a>
+                <a href="#technical-information" class="aside__link">Характеристики новобудови</a>
+                <a href="#related-companies" class="aside__link">Пов’язані компанії</a>
+            </div>
+            <div class="aside__block">
+                <div class="aside__title">Росташування та зовнішній вигляд новобудови</div>
+                <a href="#videos" class="aside__link">Відео про новобудову</a>
+                <a href="#infrastructure" class="aside__link">Новобудова на карті</a>
+            </div>
+            <div class="aside__block">
+                <div class="aside__title">Ціни та спеціальні пропозиції</div>
+                <a href="#prices" class="aside__link">Ціни на квартири</a>
+                <a href="#plan" class="aside__link">Плани поверхів</a>
+            </div>
+            <div class="aside__block">
+                <div class="aside__title">Будівництво</div>
+                <a href="#building-progress" class="aside__link">Ход будівництва</a>
+                <a href="#price-dynamic" class="aside__link">Динаміка зміни цін</a>
+                <a href="#view" class="aside__link">3-d обліт будинку</a>
+                <a href="#videos-webcam" class="aside__link">Стройка «On Air»</a>
+            </div>
+            <div class="aside__block">
+                <div class="aside__title">Документи та новини</div>
+                <a href="#documents" class="aside__link">Документи</a>
+                <a href="#building-news" class="aside__link">Новини та зміни</a>
+            </div>
+        </aside>
+
+        <section class="main">
+            <div class="main__header">
+                <div class="main-header">
+                    <div class="main-header__complex-name">ЖК «Журавлівська слобода»</div>
+                    <div class="main-header__title">Бориспільска 19, друга черга</div>
+                    <div class="main-header__status-line">
+                        <div class="main-header__check">
+                            <div class="main-header__check-icon"></div>
+                            <div>Перевірено</div>
+                        </div>
+                        <div class="main-header__status">Будується</div>
+                        <div class="main-header__developer">Забудовник: Zim Capital Group</div>
+                    </div>
+                    <div class="main-header__text">Залишилось 5 останніх квартир!</div>
+                    <div class="main-header__price">Ціна від:
+                        <br>
+                        <span class="main-header__price_bold">19 600 </span>грн. / м
+                        <sup>2</sup>
+                    </div>
+                </div>
+                <div class="main-header-promotion">
+                    <div class="main-header-promotion__icon">Акція!</div>
+                    <div class="main-header-promotion__text">При 100% оплаті — знижки до 1000 грн/м² Розстрочка 12 місяців без здорожчання!</div>
+                </div>
+            </div>
+
+            <div class="main__carousel">
+                <img src="img/carousel-img.png" alt="">
+            </div>
+
+            <div id="advantages" class="main__advantages">
+                <div class="advantages__title">Наші переваги</div>
+                <div class="advantages__list">
+                    <div class="advantage">
+                        <div class="advantage__icon advantage__icon_quality"></div>
+                        <div class="advantage__subtitle advantage__subtitle">Тільки якісни матеріали</div>
+                        <div class="advantage__text advantage__text">Для будівництва ми використовуємо тількі якісні матеріали перевірені часом</div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon advantage__icon_purity"></div>
+                        <div class="advantage__subtitle advantage__subtitle">Зачинений внутрішній двір</div>
+                        <div class=" advantage__text advantage__text ">Додаткова безпека для ваших дітей. Вхід на теріторію ЖК тільки за наявності перепустки</div>
+                    </div>
+                    <div class="advantage ">
+                        <div class="advantage__icon advantage__icon_security "></div>
+                        <div class="advantage__subtitle advantage__subtitle ">Професійна охорона</div>
+                        <div class="advantage__text advantage__text ">Відеоспостереження, та своя служба охорони ЖК — гарантія безпеки для вашего майна</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="technical-information" class="main__technical-information technical-information">
+                <div class="technical-information__title">Технічна інформація</div>
+                <table class="technical-information__table tech-info-table">
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Загальна площа</td>
+                        <td class="tech-info-table__cell">150 м
+                            <sup>2</sup>
+                        </td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Вартість</td>
+                        <td class="tech-info-table__cell">100–150 грн.</td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Ім'я позиції, яке може займати декілька строк</td>
+                        <td class="tech-info-table__cell">100–150 грн.</td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">
+                            <div class="cell-wrapper">
+                                <div class="link-icon"></div> Сторінка новобудови
+                            </div>
+                        </td>
+                        <td class="tech-info-table__cell">
+                            <a href="#">radarestate.ua/page_name.html</a>
+                        </td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Вартість</td>
+                        <td class="tech-info-table__cell">
+                            <div class="cell-wrapper">
+                                <a href="#">domainname.com/pages/name.html</a>
+                                <div class="external-icon"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Тип кровлі</td>
+                        <td class="tech-info-table__cell">
+                            <div class="cell-wrapper">
+                                Скатна
+                                <div class="question-icon"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Плануєма дата здачі</td>
+                        <td class="tech-info-table__cell">
+                            <span class="calendar-icon"></span>15.03.2019</td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Час будівництва</td>
+                        <td class="tech-info-table__cell">
+                            <span class="calendar-icon"></span>01.08.2018–15.03.2019</td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">
+                            <div class="cell-wrapper">
+                                Найменування з іконкою
+                                <div class="question-icon"></div>
+                            </div>
+                        </td>
+                        <td class="tech-info-table__cell">Минимальная цена указана на 2-комнатную квартиру 81.5 м² со скидкой 20% при 100% оплате</td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Назва параметру
+                            <br>
+                            <span class="tech-info-table_light-text">Пояснення до цієї позиції, яке може займати декілька строк</span>
+                        </td>
+                        <td class="tech-info-table__cell">
+                            <div class="cell-wrapper">
+                                <div class="location-icon"></div> Київ, Шулявська 32
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <td class="tech-info-table__title-cell">Час будівництва</td>
+                        <td class="tech-info-table__cell">
+                            <ul class="tech-info-table__list">
+                                <li class="tech-info-table__list-item">Список з декількіми пунктами</li>
+                                <li class="tech-info-table__list-item">Із зовнішнім посиланням</li>
+                                <li class="tech-info-table__list-item">Із внутрішнім посиланням</li>
+                                <li class="tech-info-table__list-item">З іконкою</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="tech-info-table__row">
+                        <th colspan="2" class="tech-info-table__title-cell">Назва позиції
+                            <br>
+                            <span class="tech-info-table_light-text">Житловий об'єкт знаходиться в центральній частині Києва. Близькість до центру можна назвати і
+                                перевагою, і недоліком ЖК. Місцеві жителі скаржаться на затори в районі проспекту Перемоги
+                                й вулиці Борщагівської, на перетині яких будують комплекс. Незважаючи на проблему з заторами,
+                                спостерігається активний продаж квартир у ЖК Manhattan city, ціни теж не відштовхують покупців.
+                                До того ж транспортну ситуацію рятує наявність метро. Найближча станція – «Політехнічний
+                                інститут», дійти до неї можна за 15 хв.</span>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="related-companies" class="related-companies">
+                <div class="related-companies__title">Пов’язані компанії</div>
+                <div class="company-info__wrapper">
+                    <div class="company-info">
+                        <div class="company-info__top">
+                            <div class="company-info__logo company-info__logo_zim"></div>
+                            <div class="company-info__name">Zim Capital Group</div>
+                        </div>
+                        <div class="company-info__role">Забудовник</div>
+                        <div class="company-info__link">
+                            <div class="link-icon link-icon_hovered"></div>
+                            <a href="#">www.zimcapital.com.ua</a>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <div class="company-info__top">
+                            <div class="company-info__logo company-info__logo_geos"></div>
+                            <div class="company-info__name">GEOS</div>
+                        </div>
+                        <div class="company-info__role">geos.ua</div>
+                        <div class="company-info__link">
+                            <div class="link-icon link-icon_hovered"></div>
+                            <a href="#">www.zimcapital.com.ua</a>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <div class="company-info__top">
+                            <div class="company-info__logo company-info__logo_integral"></div>
+                            <div class="company-info__name">Интергал-Буд</div>
+                        </div>
+                        <div class="company-info__role">Будівельна компанія</div>
+                        <div class="company-info__link">
+                            <div class="link-icon link-icon_hovered"></div>
+                            <a href="#">intergal-bud.com.ua</a>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <div class="company-info__top">
+                            <div class="company-info__logo company-info__logo_fundament"></div>
+                            <div class="company-info__name">Фундамент</div>
+                        </div>
+                        <div class="company-info__role">Будівельна компанія</div>
+                        <div class="company-info__link">
+                            <div class="link-icon link-icon_hovered"></div>
+                            <a href="#">fundament.ua</a>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <div class="company-info__top">
+                            <div class="company-info__logo company-info__logo_kovalska"></div>
+                            <div class="company-info__name">Ковальская Недвижимость</div>
+                        </div>
+                        <div class="company-info__role">Забудовник</div>
+                        <div class="company-info__link">
+                            <div class="link-icon link-icon_hovered"></div>
+                            <a href="#">build.kovalska.com</a>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <div class="company-info__top">
+                            <div class="company-info__logo company-info__logo_edelburg"></div>
+                            <div class="company-info__name">Edelburg Development</div>
+                        </div>
+                        <div class="company-info__role">Забудовник</div>
+                        <div class="company-info__link">
+                            <div class="link-icon link-icon_hovered"></div>
+                            <a href="#">edel-burg.de</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="videos" class="videos building-videos">
+
+                <div class="videos__title">Відео про новобудову</div>
+
+                <div class="videos__inner">
+
+                    <iframe class="videos__frame" src="https://www.youtube.com/embed/2rZycngD304?showinfo=0&iv_load_policy=3&modestbranding=1&fs=0">
+                    </iframe>
+
+                    <div class="videos__list-wrapper">
+                        <div class="videos__list">
+
+                            <div class="videos__list-item videos-list-item">
+                                <div class="videos-list-item__number">1</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/img-video-preview-small.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Започатковано будівницвто першої черги</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videos__list-item videos-list-item videos-list-item_active">
+                                <div class="videos-list-item__number">2</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/img-video-preview-small.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Чудове житло в престижному районі міста</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videos__list-item videos-list-item">
+                                <div class="videos-list-item__number">3</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/img-video-preview-small-2.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Тур по підїздам и квартирам</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videos__list-item videos-list-item">
+                                <div class="videos-list-item__number">4</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/img-video-preview-small-3.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Завершується будівництво другої черги</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videos__list-item videos-list-item">
+                                <div class="videos-list-item__number">5</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/img-video-preview-small.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Нове планування квартир якому ви будете раді</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="videos__description-block videos__description-block_is-collapsed">
+                        <p class="videos__description">
+                            Комплекс знаходиться в елітному зеленому районі міста, максимально близько до Київа(6км)Поруч знаходиться центральний міський
+                            парк європейського рівня з красивими дитячими площадкими та зонами барбекю. Чисте повітря а також
+                            близкість до природи дозволить швидко відновити вам сили після робочого дня.
+                        </p>
+
+                        <p class="videos__description">
+                            Будинок збудовано з червоної цегли - товщина кладки до 80см. В будинку встановлені ліфти отіс, є консьєрж та відеонагляд.
+                            В квартирі підлога підготовленна для укладки ламинату або плитки (лазерна стяжка),стіни фінішна
+                            штукатурка, якісні металеві двері з МДФ накладками (2 замка), двохкамерні склопакети Wds з підвіконнями,
+                            двохконтурнай газовий котел Bosch
+                        </p>
+                    </div>
+                    <div class="videos__description-show-more">
+                        <div>Читати далі</div>
+                        <div class="arrow-down-icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="infrastructure" class="infrastructure">
+                <div class="infrastructure__title">Розташування та інфраструктура</div>
+                <div class="infrastructure__map">
+                    <img src="img/infrastructure-map.png" alt="map">
+                </div>
+
+                <div class="infrastructure__list-wrapper">
+                    <div class="infrastructure__list">
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon bus-stop-icon"></div>
+                                <div>Зупинка</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>300 м.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>6 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>2 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon park-icon"></div>
+                                <div>Парк</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>1,7 км.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>22 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>5 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon shop-icon"></div>
+                                <div>Супермаркет</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>800 м.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>12 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>6 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon gym-icon"></div>
+                                <div>Спорткомплекс</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>3,6 км.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>42 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>12 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon subway-icon"></div>
+                                <div>Метро</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>1,2 км.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>21 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>4 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon bus-stop-icon"></div>
+                                <div>Зупинка</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>300 м.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>6 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>2 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon park-icon"></div>
+                                <div>Парк</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>1,7 км.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>22 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>5 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon shop-icon"></div>
+                                <div>Супермаркет</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>800 м.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>12 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>6 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon gym-icon"></div>
+                                <div>Спорткомплекс</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>3,6 км.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>42 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>12 хв.</div>
+                            </div>
+                        </div>
+
+                        <div class="infrastructure__item">
+                            <div class="infrastructure__object">
+                                <div class="infrastructure__object-icon subway-icon"></div>
+                                <div>Метро</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon distance-icon"></div>
+                                <div>1,2 км.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon walk-icon"></div>
+                                <div>21 хв.</div>
+                            </div>
+                            <div class="infrastructure__characteristic">
+                                <div class="infrastructure__characteristic-icon drive-icon"></div>
+                                <div>4 хв.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infrastructure__show-more-btn">Показати ще</div>
+                </div>
+            </div>
+
+            <div id="prices" class="prices">
+                <div class="prices__title">Ціни на квартири</div>
+                <div class="prices__inner">
+                    <div class="prices__table">
+                        <table class="prices-table">
+
+                            <tr class="prices-table__title-row">
+                                <th>
+                                    <div class="prices-table__th-wrapper">
+                                        <div>Курс</div>
+                                        <div class="prices-table__exchange-rate">1$ = 26.2 грн.
+                                            <div class="question-icon"></div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>Ціна від:</th>
+                                <th>Ціна за м² від:</th>
+                                <th>Залишилось
+                                    <br> квартир</th>
+                            </tr>
+
+                            <tr class="prices-table__row">
+                                <td class="prices-table__cell">
+                                    <div class="prices-table__td-wrapper">
+                                        <div class="arrow-icon arrow-icon_up"></div>
+                                        1 кімнатні
+                                    </div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    25 000 грн.
+                                    <div class="prices-table__cell_small">9 750 $</div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    <div>9 000 грн.</div>
+                                    <div class="prices-table__cell_small">360 $</div>
+                                </td>
+                                <td class="prices-table__cell">7</td>
+                            </tr>
+
+                            <tr class="prices-table__row">
+                                <td class="prices-table__cell">
+                                    <div class="prices-table__td-wrapper">
+                                        <div class="arrow-icon arrow-icon_up"></div>
+                                        2 кімнатні
+                                    </div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    25 000 грн.
+                                    <div class="prices-table__cell_small">9 750 $</div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    <div>9 000 грн.</div>
+                                    <div class="prices-table__cell_small">360 $</div>
+                                </td>
+                                <td class="prices-table__cell">7</td>
+                            </tr>
+
+                            <tr class="prices-table__row">
+                                <td class="prices-table__cell">
+                                    <div class="prices-table__td-wrapper">
+                                        <div class="arrow-icon arrow-icon_up"></div>
+                                        3 кімнатні
+                                    </div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    25 000 грн.
+                                    <div class="prices-table__cell_small">9 750 $</div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    <div>9 000 грн.</div>
+                                    <div class="prices-table__cell_small">360 $</div>
+                                </td>
+                                <td class="prices-table__cell">7</td>
+                            </tr>
+
+                            <tr class="prices-table__row">
+                                <td class="prices-table__cell">
+                                    <div class="prices-table__td-wrapper">
+                                        <div class="arrow-icon arrow-icon_up"></div>
+                                        4 кімнатні
+                                    </div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    25 000 грн.
+                                    <div class="prices-table__cell_small">9 750 $</div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    <div>9 000 грн.</div>
+                                    <div class="prices-table__cell_small">360 $</div>
+                                </td>
+                                <td class="prices-table__cell">7</td>
+                            </tr>
+
+                            <tr class="prices-table__row">
+                                <td class="prices-table__cell">
+                                    <div class="prices-table__td-wrapper">
+                                        <div class="arrow-icon arrow-icon_down"></div>
+                                        5 кімнатні
+                                    </div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    25 000 грн.
+                                    <div class="prices-table__cell_small">9 750 $</div>
+                                </td>
+                                <td class="prices-table__cell">
+                                    <div>9 000 грн.</div>
+                                    <div class="prices-table__cell_small">360 $</div>
+                                </td>
+                                <td class="prices-table__cell">7</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="prices__table_mobile">
+                        <div class="exchange-rate_mobile">1$ = 26.2 грн.
+                            <div class="question-icon"></div>
+                        </div>
+
+                        <div class="prices-table-mobile">
+                            <div class="prices-table-mobile__title-row">1 кімнатні</div>
+                            <div class="prices-table-mobile__cell prices-table-mobile__cell_row">Ціна
+                                <div class="arrow-icon arrow-icon_up"></div>
+                            </div>
+                            <div class="prices-table-mobile__cell">25 000 грн.
+                                <div class="prices-table-mobile__cell_small">9 750 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Ціна за м²</div>
+                            <div class="prices-table-mobile__cell">9 000 грн.
+                                <div class="prices-table-mobile__cell_small">360 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Залишилось квартир</div>
+                            <div class="prices-table-mobile__cell">7</div>
+
+                            <div class="prices-table-mobile__title-row">2 кімнатні</div>
+                            <div class="prices-table-mobile__cell prices-table-mobile__cell_row">Ціна
+                                <div class="arrow-icon arrow-icon_up"></div>
+                            </div>
+                            <div class="prices-table-mobile__cell">25 000 грн.
+                                <div class="prices-table-mobile__cell_small">9 750 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Ціна за м²</div>
+                            <div class="prices-table-mobile__cell">9 000 грн.
+                                <div class="prices-table-mobile__cell_small">360 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Залишилось квартир</div>
+                            <div class="prices-table-mobile__cell">7</div>
+
+                            <div class="prices-table-mobile__title-row">3 кімнатні</div>
+                            <div class="prices-table-mobile__cell prices-table-mobile__cell_row">Ціна
+                                <div class="arrow-icon arrow-icon_up"></div>
+                            </div>
+                            <div class="prices-table-mobile__cell">25 000 грн.
+                                <div class="prices-table-mobile__cell_small">9 750 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Ціна за м²</div>
+                            <div class="prices-table-mobile__cell">9 000 грн.
+                                <div class="prices-table-mobile__cell_small">360 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Залишилось квартир</div>
+                            <div class="prices-table-mobile__cell">7</div>
+
+                            <div class="prices-table-mobile__title-row">4 кімнатні</div>
+                            <div class="prices-table-mobile__cell prices-table-mobile__cell_row">Ціна
+                                <div class="arrow-icon arrow-icon_up"></div>
+                            </div>
+                            <div class="prices-table-mobile__cell">25 000 грн.
+                                <div class="prices-table-mobile__cell_small">9 750 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Ціна за м²</div>
+                            <div class="prices-table-mobile__cell">9 000 грн.
+                                <div class="prices-table-mobile__cell_small">360 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Залишилось квартир</div>
+                            <div class="prices-table-mobile__cell">7</div>
+
+                            <div class="prices-table-mobile__title-row">5 кімнатні</div>
+                            <div class="prices-table-mobile__cell prices-table-mobile__cell_row">Ціна
+                                <div class="arrow-icon arrow-icon_down"></div>
+                            </div>
+                            <div class="prices-table-mobile__cell">25 000 грн.
+                                <div class="prices-table-mobile__cell_small">9 750 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Ціна за м²</div>
+                            <div class="prices-table-mobile__cell">9 000 грн.
+                                <div class="prices-table-mobile__cell_small">360 $</div>
+                            </div>
+                            <div class="prices-table-mobile__cell">Залишилось квартир</div>
+                            <div class="prices-table-mobile__cell">7</div>
+                        </div>
+                    </div>
+
+                    <div class="prices__promotion-block">
+                        <img src="img/banner-credit.png" alt="banner">
+                    </div>
+                    <div class="prices__promotion-block_tablet">
+                        <img src="img/banner-credit-tablet.png" alt="banner">
+                    </div>
+                    <div class="prices__promotion-block_mobile">
+                        <img src="img/banner-credit-mobile.png" alt="banner">
+                    </div>
+                    <label class="prices-checkbox prices-checkbox_fluid prices-checkbox__container">Повідомте мене про зниження цін на квартири в цьому будинку
+                        <input type="checkbox">
+                        <span class="prices-checkbox__checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="plan" class="plan">
+                <div class="plan__title">Плани поверхів новобудови</div>
+                <div class="plan__subtitle">Зверніть увагу, що на інших поверхах, можуть бути квартири аналогічні недоступним на цьому поверху</div>
+
+                <div class="plan__inner">
+                    <div class="plan-scheme">
+                        <div class="plan-scheme__compass-icon"></div>
+                        <div class="plan-scheme__mini-map-icon"></div>
+                        <div class="plan-scheme__status">
+                            <div class="yes-icon"></div> Актуальна інформація</div>
+                        <img src="img/plan-sheme.png" alt="plan">
+                    </div>
+                    <div class="sections">
+                        <div class="sections-list">
+
+                            <div class="section">
+                                <div class="section__title">Секція 1</div>
+                                <div class="floor__list">
+                                    <div class="floor">
+                                        <div class="floor__link">1</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">2</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">3</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link floor__link_active">4</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">5</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">6</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">7</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">8</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">9</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">10</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">11</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">12</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section section_active">
+                                <div class="section__title">Секція 2,4</div>
+                                <div class="floor__list">
+                                    <div class="floor">
+                                        <div class="floor__link">1</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">2</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">3</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">4</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">5</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">6</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">7</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">8</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">9</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">10</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">11</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">12</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <div class="section__title">Секція 5-8</div>
+                                <div class="floor__list">
+                                    <div class="floor">
+                                        <div class="floor__link">1</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">2</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">3</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">4</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">5</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">6</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">7</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">8</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">9</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">10</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">11</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">12</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <div class="section__title">Секція 5-8</div>
+                                <div class="floor__list">
+                                    <div class="floor">
+                                        <div class="floor__link">1</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">2</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">3</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">4</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">5</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">6</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">7</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">8</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">9</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">10</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">11</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">12</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <div class="section__title">Секція 5-8</div>
+                                <div class="floor__list">
+                                    <div class="floor">
+                                        <div class="floor__link">1</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">2</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">3</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">4</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">5</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">6</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">7</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">8</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">9</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">10</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">11</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">12</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section">
+                                <div class="section__title">Секція 5-8</div>
+                                <div class="floor__list">
+                                    <div class="floor">
+                                        <div class="floor__link">1</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">2</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">3</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">4</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">5</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">6</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">7</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">8</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">9</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">10</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">11</div>
+                                    </div>
+                                    <div class="floor">
+                                        <div class="floor__link">12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promotions">
+                <div class="promotions__title">Акції та спеціальні пропозиції від забудовника</div>
+
+                <div class="promotions__list">
+
+                    <div class="promotion-block">
+                        <div class="promotion-block__top promotion-block__top_promotion">
+                            <div class="promotion-block__title">Акція!</div>
+                        </div>
+                        <div class="promotion-block__text">
+                            <div class="promotion-block__date">До 29.05.2018</div>
+                            <div class="promotion-block__info">При 100% оплаті — знижки до 1000 грн/м² Розстрочка 12 місяців без здорожчання!</div>
+                            <a href="#" class="promotion-block__link">Узнати умови</a>
+                        </div>
+                    </div>
+
+                    <div class="promotion-block">
+                        <div class="promotion-block__top promotion-block__top_credit">
+                            <div class="promotion-block__title">Розстрочка</div>
+                            <div class="promotion-block__label">
+                                Залишилось
+                                <br>лише 5 днів!
+                            </div>
+                        </div>
+                        <div class="promotion-block__text">
+                            <div class="promotion-block__date"> До 01.07.2018</div>
+                            <div class="promotion-block__info">Перший внесок від 10%. Розстрочка до 7 років. Знижки до&nbsp;10%!</div>
+                            <a href="#" class="promotion-block__link">Узнати умови</a>
+                        </div>
+                    </div>
+
+                    <div class="promotion-block">
+                        <div class="promotion-block__top promotion-block__top_discount">
+                            <div class="promotion-block__title">Знижка!</div>
+                        </div>
+                        <div class="promotion-block__text">
+                            <div class="promotion-block__date">До 15.07.2018</div>
+                            <div class="promotion-block__info">Тільки до 30-го липня знижка на всі однокімнатні квартири&nbsp;12%!</div>
+                            <a href="#" class="promotion-block__link">Узнати умови</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contacts__title">Зв’язатись із забудовником</div>
+                <div class="contacts__wrapper">
+                    <div class="contacts-left-side">
+                        <div class="contacts-left-side__logo-wrapper">
+                            <div class="contacts-left-side__logo"></div>
+                            <div class="contacts-left-side__company-name">ZIM трейд</div>
+                        </div>
+                        <div class="contacts-left-side-line">
+                            <div class="contacts-left-side-line__icon contacts-left-side-line__icon_mail"></div>
+                            <div class="contacts-left-side-line__text">
+                                <div>Електронна адреса</div>
+                                <a href="mailto:trade@zim.com.ua" class="contacts-left-side-line__link">trade@zim.com.ua</a>
+                            </div>
+                        </div>
+                        <div class="contacts-left-side-line">
+                            <div class="contacts-left-side-line__icon contacts-left-side-line__icon_tel"></div>
+                            <div class="contacts-left-side-line__text">
+                                <div>Телефон відділу збуту</div>
+                                <a href="tel:(067) 987-65-43" class="contacts-left-side-line__link">(067) 987-65-43</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-right-side">
+
+                        <div class="associate">
+                            <div class="associate__icon associate__icon_1"></div>
+                            <div class="associate__name">Олександр Константинопольський</div>
+                            <div class="associate__position">Менеджер з продажу</div>
+                            <div class="associate__contacts">
+                                <div class="associate-contacts-item">
+                                    <div class="associate-contacts-item__icon associate-contacts-item__icon_tel"></div>
+                                    <a href="" class="associate-contacts-item__link">(067) 987-65-43</a>
+                                </div>
+                                <div class="associate-contacts-item">
+                                    <div class="associate-contacts-item__icon associate-contacts-item__icon_email"></div>
+                                    <a href="" class="associate-contacts-item__link">trade@zim.com.ua</a>
+                                </div>
+                                <div class="associate-contacts-item">
+                                    <div class="associate-contacts-item__icon associate-contacts-item__icon_skype"></div>
+                                    <a href="" class="associate-contacts-item__link">zim.com.ua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="associate">
+                            <div class="associate__icon associate__icon_2"></div>
+                            <div class="associate__name">Вікторія Семенченко</div>
+                            <div class="associate__position">Спеціаліст з нерухомості</div>
+                            <div class="associate__contacts">
+                                <div class="associate-contacts-item">
+                                    <div class="associate-contacts-item__icon associate-contacts-item__icon_tel"></div>
+                                    <a href="" class="associate-contacts-item__link">(067) 987-65-43</a>
+                                </div>
+                                <div class="associate-contacts-item">
+                                    <div class="associate-contacts-item__icon associate-contacts-item__icon_email"></div>
+                                    <a href="" class="associate-contacts-item__link">trade@zim.com.ua</a>
+                                </div>
+                                <div class="associate-contacts-item">
+                                    <div class="associate-contacts-item__icon associate-contacts-item__icon_skype"></div>
+                                    <a href="" class="associate-contacts-item__link">zim.com.ua</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="building-progress" class="building-progress">
+                <div class="building-progress__title">Прогрес будівництва будинку</div>
+                <div class="building-progress__wrapper">
+                    <div class="building-progress__left-side">
+                        <div class="building-progress-photo-block">
+                            <img class="building-progress-photo-block__img" src="img/img-progress-desktop.png" alt="photo">
+                            <div class="building-progress-photo-block__button building-progress-photo-block__button_prev"></div>
+                            <div class="building-progress-photo-block__button building-progress-photo-block__button_next"></div>
+                        </div>
+                        <div class="building-progress-bar__wrapper">
+                            <div class="building-progress-bar">
+                                <div class="building-progress-bar__value">травень 2018</div>
+                            </div>
+                            <div class="building-progress-bar__bottom">
+                                <div class="building-progress-bar__start">Січень 2017</div>
+                                <div class="building-progress-bar__finish">Серпень 2018</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="building-progress__right-side">
+                        <ul class="building-progress__calendar calendar">
+
+                            <li class="calendar-month calendar-month_collapsed">
+                                <div class="calendar-month__top">
+                                    <div class="calendar-month__month-name">Січень 2018</div>
+                                    <div class="calendar-month__button"></div>
+                                </div>
+                                <div class="calendar-month__inner">
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="calendar-month">
+                                <div class="calendar-month__top">
+                                    <div class="calendar-month__month-name">Березень 2018</div>
+                                    <div class="calendar-month__button"></div>
+                                </div>
+                                <div class="calendar-month__inner">
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="calendar-month">
+                                <div class="calendar-month__top">
+                                    <div class="calendar-month__month-name">Квiтень 2018</div>
+                                    <div class="calendar-month__button"></div>
+                                </div>
+                                <div class="calendar-month__inner">
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-3.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-desktop.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                    <div class="calendar-month__item">
+                                        <div class="calendar-month__img">
+                                            <img src="img/img-progress-preview-mini-1.png" alt="photo">
+                                        </div>
+                                        <div class="calendar-month__date">12.03.2018</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="price-dynamic" class="price-dynamic">
+                <div class="price-dynamic__title">Динаміка зміни цін на квартири в цьому будинку</div>
+                <div class="price-dynamic__wrapper">
+                    <div class="price-dynamic__chart">
+                        <img src="img/buildinginfo-price-dynamic-chart.png" alt="chart">
+                    </div>
+                    <div class="price-dynamic__chart price-dynamic__chart_mobile">
+                        <img src="img/buildinginfo-price-dynamic-chart_nobile.png" alt="chart">
+                    </div>
+                    <div class="price-dynamic__description">
+                        <div class="price-dynamic__currency">
+                            <div>Показувати ціни:</div>
+                            <div class="currency-toggler__wrapper">
+                                <div class="currency-toggler currency-toggler__uah">грн</div>
+                                <div class="currency-toggler currency-toggler__usd currency-toggler_active">&#36;</div>
+                            </div>
+                        </div>
+                        <div class="rooms-quantity">
+                            <div class="rooms-quantity__item">
+                                <div class="rooms-quantity__color rooms-quantity__color_red"></div>
+                                <label class="custom-checkbox-container">1 кімнатні
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox-checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="rooms-quantity__item">
+                                <div class="rooms-quantity__color rooms-quantity__color_orange"></div>
+                                <label class="custom-checkbox-container">2 кімнатні
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox-checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="rooms-quantity__item">
+                                <div class="rooms-quantity__color rooms-quantity__color_yellow"></div>
+                                <label class="custom-checkbox-container">3 кімнатні
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox-checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="rooms-quantity__item">
+                                <div class="rooms-quantity__color rooms-quantity__color_green"></div>
+                                <label class="custom-checkbox-container">4 кімнатні
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox-checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="rooms-quantity__item">
+                                <div class="rooms-quantity__color rooms-quantity__color_purple"></div>
+                                <label class="custom-checkbox-container">5 кімнатні
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox-checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="rooms-quantity__item">
+                                <div class="rooms-quantity__color rooms-quantity__color_blue"></div>
+                                <label class="custom-checkbox-container">Середня ціна квартири в травні 2018
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox-checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-dynamic__bottom">
+                    <div class="price-dynamic__button price-dynamic__button_prev"></div>
+                    <ul class="price-dynamic__year-list">
+                        <li class="price-dynamic__year">2015</li>
+                        <li class="price-dynamic__year">2016</li>
+                        <li class="price-dynamic__year price-dynamic__year_active">2017</li>
+                        <li class="price-dynamic__year">2018</li>
+                    </ul>
+                    <div class="price-dynamic__button price-dynamic__button_next"></div>
+                </div>
+            </div>
+
+            <div class="seo-text">
+                <div class="seo-text__title">SEO текст про найкращий будинок 246 слів</div>
+                <p>Компания ZIM Group представляет новый жилой комплекс ZIM Towers.</p>
+                <p>Коммерческие помещения на первых этажах при удачном расположении комплекса возле метро Васильковская, сделают
+                    бизнес конкурентным и востребованным, что в наше время очень важно.</p>
+                <p class="seo-text_hidden">Большое внимание уделяется вместительной трёхуровневой подземной парковке для автомобилей клиентов и жильцов
+                    комплекса, благодаря чему, мы смогли максимально освободить внутреннюю территорию и обезопасить её для спокойного
+                    времяпровождения родителей и детей комплекса.
+                </p>
+                <p class="seo-text_hidden">Как и более ранние объекты компании, территория нового жилого комплекса ZIM Towers будет закрытой с круглосуточной
+                    охраной и видео наблюдением.
+                </p>
+                <p class="seo-text_hidden">Сам же комплекс будет построен по монолитно каркасной технологии с применением новейших технологий систем
+                    энергосбережений и остекления фасадов
+                </p>
+                <p class="seo-text_hidden">Новий проект від Української Державної будівельної корпорації «Укрбуд», девелопером проекту виступають: ТОВ
+                    «УКРБУД ДЕВЕЛОПМЕНТ» та Perfect Group ТМ.
+                </p>
+                <p class="seo-text_hidden">Комплекс розташований у Дарницькому районі міста Києва, за адресою вул. Бориспільська, 18 − 26. Площа забудови
+                    12 га — це цілий мікрорайон з власною інфраструктурою. Проектом передбачено будівництво житлових будинків,
+                    торгівельного центру з підземними паркінгами та дитячий садок, спортивні та дитячі майданчики.
+                </p>
+                <p class="seo-text_hidden">Тим, хто хоче купити квартиру на Харківському масиві, не варто турбуватися про віддаленість від центру, адже
+                    вигідне розташування метрополітену дозволить швидко доїхати в будь-яку точку Києва, оскільки станція
+                    метро «Червоний Хутір» знаходиться одразу біля комплексу. Крім того, Ви можете скористатися послугами
+                    міської електрички, недалеко від комплексу розташований Дарницький залізничний вокзал та Дарницький ринок.
+                </p>
+                <p class="seo-text_hidden">Жителів ЖК «Чарівне Місто» не буде турбувати міський шум — комплекс повністю огороджений від автомобільного
+                    руху. Власники автомобілів будуть задоволені сучасним підземним паркінгом.
+                </p>
+                <p class="seo-text_hidden">Цей комплекс відкриває нові можливості організації Вашого побуту, дозвілля, спорту та сімейного життя.
+                </p>
+                <div class="seo-text__more-btn">Читати далі
+                    <div class="seo-text__icon-more"></div>
+                </div>
+            </div>
+
+            <div class="another-buildings">
+                <div class="another-buildings__title">Інші будинки житлового комплексу</div>
+
+                <ul class="complex-real-estate__grid">
+
+                    <li class="complex-real-estate__item">
+                        <a href="#" class="complex-real-estate__image">
+                            <img src="img/building-12.jpg" alt="photo">
+                            <div class="complex-real-estate__inner">
+                                <div class="complex-real-estate__name ">ЖК «Комфорт Таун»</div>
+                                <div class="complex-real-estate__address">Черга 15</div>
+                            </div>
+                        </a>
+                        <div class="complex-real-estate__status">
+                            <div class="progress">
+                                <div class="progress__icon">
+                                    <div class="progress__value">29%</div>
+                                    <canvas class="canvas"></canvas>
+                                </div>
+                                <div class="progress__help">
+                                    <div class="progress__help-text">
+                                        <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                    </div>
+                                    <div class="progress__help-text">
+                                        <span class="circle"></span>Залишилось — 19 міс.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <div class="terms__start">
+                                <div class="terms__text terms__text-title">Початок</div>
+                                <div class="terms__text">06.2017</div>
+                            </div>
+                            <div class="terms__finish">
+                                <div class="terms__text terms__text-title">Здача</div>
+                                <div class="terms__text">1 квартал 2019</div>
+                            </div>
+                        </div>
+                        <div class="complex__link">
+                            <a href="#">На сторінку новобудови</a>
+                        </div>
+                    </li>
+
+                    <li class="complex-real-estate__item complex-real-estate__item_complete">
+                        <a href="#" class="complex-real-estate__image">
+                            <img src="img/building-14.jpg" alt="photo">
+                            <div class="complex-real-estate__inner">
+                                <div class="complex-real-estate__name">ЖК «Комфорт Таун»</div>
+                                <div class="complex-real-estate__address">Черга 17</div>
+                            </div>
+                        </a>
+                        <div class="complex-real-estate__status">
+                            <div>Сдано в експлуатацію</div>
+                            <div class="complex-real-estate-status__date">25.05.2018</div>
+                            <div class="complex-real-estate-status__icon"></div>
+
+                        </div>
+                        <div class="complex__link">
+                            <a href="#">На сторінку новобудови</a>
+                        </div>
+                    </li>
+
+                    <li class="complex-real-estate__item">
+                        <a href="#" class="complex-real-estate__image">
+                            <img src="img/building-16.jpg" alt="photo">
+                            <div class="complex-real-estate__inner">
+                                <div class="complex-real-estate__name">ЖК «Комфорт Таун»</div>
+                                <div class="complex-real-estate__address">Черга 17</div>
+                            </div>
+                        </a>
+                        <div class="complex-real-estate__status">
+                            <div class="progress">
+                                <div class="progress__icon">
+                                    <div class="progress__value">90%</div>
+                                    <canvas class="canvas"></canvas>
+                                </div>
+                                <div class="progress__help">
+                                    <div class="progress__help-text">
+                                        <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                    </div>
+                                    <div class="progress__help-text">
+                                        <span class="circle"></span>Залишилось — 19 міс.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <div class="terms__start">
+                                <div class="terms__text terms__text-title">Початок</div>
+                                <div class="terms__text">06.2017</div>
+                            </div>
+                            <div class="terms__finish">
+                                <div class="terms__text terms__text-title">Здача</div>
+                                <div class="terms__text">1 квартал 2019</div>
+                            </div>
+                        </div>
+                        <div class="complex__link">
+                            <a href="#">На сторінку новобудови</a>
+                        </div>
+                    </li>
+
+                    <li class="complex-real-estate__item complex-real-estate__item_mobile-hidden">
+                        <a href="#" class="complex-real-estate__image">
+                            <img src="img/building-16.jpg" alt="photo">
+                            <div class="complex-real-estate__inner">
+                                <div class="complex-real-estate__name">ЖК «Комфорт Таун»</div>
+                                <div class="complex-real-estate__address">Черга 17</div>
+                            </div>
+                        </a>
+                        <div class="complex-real-estate__status">
+                            <div class="progress">
+                                <div class="progress__icon">
+                                    <div class="progress__value">45%</div>
+                                    <canvas class="canvas"></canvas>
+                                </div>
+                                <div class="progress__help">
+                                    <div class="progress__help-text">
+                                        <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                    </div>
+                                    <div class="progress__help-text">
+                                        <span class="circle"></span>Залишилось — 19 міс.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <div class="terms__start">
+                                <div class="terms__text terms__text-title">Початок</div>
+                                <div class="terms__text">06.2017</div>
+                            </div>
+                            <div class="terms__finish">
+                                <div class="terms__text terms__text-title">Здача</div>
+                                <div class="terms__text">1 квартал 2019</div>
+                            </div>
+                        </div>
+                        <div class="complex__link">
+                            <a href="#">На сторінку новобудови</a>
+                        </div>
+                    </li>
+
+                    <li class="complex-real-estate__item complex-real-estate__item_mobile-hidden">
+                        <a href="#" class="complex-real-estate__image">
+                            <img src="img/building-9.jpg" alt="photo">
+                            <div class="complex-real-estate__inner">
+                                <div class="complex-real-estate__name">ЖК «Комфорт Таун»</div>
+                                <div class="complex-real-estate__address">Черга 17</div>
+                            </div>
+                        </a>
+                        <div class="complex-real-estate__status">
+                            <div class="progress">
+                                <div class="progress__icon">
+                                    <div class="progress__value">29%</div>
+                                    <canvas class="canvas"></canvas>
+                                </div>
+                                <div class="progress__help">
+                                    <div class="progress__help-text">
+                                        <span class="circle circle-yellow"></span>Будується — 8 міс.
+                                    </div>
+                                    <div class="progress__help-text">
+                                        <span class="circle"></span>Залишилось — 19 міс.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <div class="terms__start">
+                                <div class="terms__text terms__text-title">Початок</div>
+                                <div class="terms__text">06.2017</div>
+                            </div>
+                            <div class="terms__finish">
+                                <div class="terms__text terms__text-title">Здача</div>
+                                <div class="terms__text">1 квартал 2019</div>
+                            </div>
+                        </div>
+                        <div class="complex__link">
+                            <a href="#">На сторінку новобудови</a>
+                        </div>
+                    </li>
+
+                    <li class="complex-real-estate__item complex-real-estate__item_mobile-hidden complex-real-estate__item_complete">
+                        <a href="#" class="complex-real-estate__image">
+                            <img src="img/building-14.jpg" alt="photo">
+                            <div class="complex-real-estate__inner">
+                                <div class="complex-real-estate__name">ЖК «Комфорт Таун»</div>
+                                <div class="complex-real-estate__address">Черга 17</div>
+                            </div>
+                        </a>
+                        <div class="complex-real-estate__status">
+                            <div>Сдано в експлуатацію</div>
+                            <div class="complex-real-estate-status__date">25.05.2018</div>
+                            <div class="complex-real-estate-status__icon"></div>
+
+                        </div>
+                        <div class="complex__link">
+                            <a href="#">На сторінку новобудови</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="another-buildings__button_more">Ще 19 будинків на сторінці ЖК</button>
+            </div>
+
+            <div id="view" class="view">
+                <div class="view__title">3-D обліт будинку</div>
+
+                <div class="view__wrapper">
+                    <div class="view__full-screen-button"></div>
+                    <div class="view__inner">
+
+                        <div class="view__rotate-button view__rotate-button_left"></div>
+                        <div class="view__image">
+                            <div class="view__full-screen-button_mobile"></div>
+                            <img src="img/img-3d-view-desktop.png" alt="photo">
+                        </div>
+                        <div class="view__rotate-button view__rotate-button_right"></div>
+                        <div class="view__shadow"></div>
+                    </div>
+                    <div class="view__oval"></div>
+                </div>
+            </div>
+
+            <div id="videos-webcam" class="videos videos-webcam">
+
+                <div class="videos__title ">Web-камери новобудови</div>
+
+                <div class="videos__inner videos-webcam__inner">
+
+                    <div class="videos__frame videos-webcam__frame">
+                        <img src="img/webcam-mg.png" alt="photo">
+                    </div>
+
+                    <div class="videos__list-wrapper">
+                        <div class="videos__list">
+
+                            <div class="videos__list-item videos-list-item">
+                                <div class="videos-list-item__number">1</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/webcam-video-preview-small.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Започатковано будівницвто першої черги</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videos__list-item videos-list-item videos-list-item_active">
+                                <div class="videos-list-item__number">2</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/webcam-video-preview-small2.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Чудове житло в престижному районі міста</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="videos__list-item videos-list-item">
+                                <div class="videos-list-item__number">3</div>
+                                <div class="videos-list-item__inner">
+                                    <div class="videos-list-item__img">
+                                        <img src="img/webcam-video-preview-small3.png" alt="img">
+                                    </div>
+                                    <div class="videos-list-item__link">
+                                        <a href="#">Тур по підїздам и квартирам</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="documents" class="documents">
+                <div class="documents__title">Документи надані забудовником</div>
+
+                <div class="documents-table">
+
+                    <div class="documents-table__row">
+                        <div class="documents-table__cell documents-table__cell_title">Документи на землю</div>
+                        <div class="documents-table__cell">На яких умовах забудовник її використовує і чи передбачено договором оренди чи актом на право власності
+                            будувати багатоповерхівку чи котедж
+                        </div>
+                        <div class="documents-table__cell">
+                            <div class="documents-table__cell-wrapper">
+                                <div class="documents__icon documents__icon_pdf"></div>
+                                <a href="" class="documents-table__link">Завантажити</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="documents-table__row">
+                        <div class="documents-table__cell documents-table__cell_title">Декларація про початок будівельних робіт</div>
+                        <div class="documents-table__cell">Договір оренди чи суборенди земельної ділянки, право власності на неї або ж право постійного користування
+                        </div>
+                        <div class="documents-table__cell">
+                            <div class="documents-table__cell-wrapper">
+                                <div class="documents__icon documents__icon_doc"></div>
+                                <a href="" class="documents-table__link">Завантажити</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="documents-table__row">
+                        <div class="documents-table__cell documents-table__cell_title">Витяг з Єдиного Реєстра юридичних осіб</div>
+                        <div class="documents-table__cell">Отримання відомостей з автоматизованої системи збирання, накопичення, захисту, обліку та надання
+                            інформації про юридичних осіб
+                        </div>
+                        <div class="documents-table__cell">
+                            <div class="documents-table__cell-wrapper">
+                                <div class="documents__icon documents__icon_xls"></div>
+                                <a href="" class="documents-table__link">Завантажити</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="documents-table__row">
+                        <div class="documents-table__cell documents-table__cell_title">Сертифікат відповідності містобудівним умовам</div>
+                        <div class="documents-table__cell">Акт готовності об'єкта до експлуатації (додаток 3 постанови Кабінету Міністрів України від 13.04.2011
+                            № 461)
+                        </div>
+                        <div class="documents-table__cell">
+                            <div class="documents-table__cell-wrapper">
+                                <div class="documents__icon documents__icon_pdf"></div>
+                                <a href="" class="documents-table__link">Завантажити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="documents-bottom">
+                    <div class="documents-bottom__icon"></div>
+                    <a href="#" class="documents-bottom__link">Завантажити усі документи одним архівом</a>
+                </div>
+
+            </div>
+
+            <div id="building-news" class="building-news">
+                <div class="building-news__title">Новини новобудови</div>
+                <div class="building-news__wrapper">
+                    <div class="news-block">
+                        <div class="news-block__header">Новини</div>
+
+                        <article class="news-block__article article">
+                            <div class="article__icon article__icon_1"></div>
+                            <div class="article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        <span class="article__title_new">Нове.</span> Ціни на квартири в новобудовах Києва в травні
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                    <div class="article__website">www.zitloinvest.com.ua</div>
+                                </div>
+                                <div class="article__text">В травнем 2017 року середня вартість представлених до продажу квартир на первинному ринку
+                                    житлової нерухомості Києва становила 23304 грн / кв. м, що нижче показників квітня на
+                                    0,1%.
+                                </div>
+                                <div class="article__line article__link">
+                                    <a href="#">Перейти на джерело новини</a>
+                                    <div class="external-link-icon"></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__icon article__icon_2"></div>
+                            <div class="article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Започатковано будівництво нового ЖК на троєщині
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                    <div class="article__website">www.artemivskyy.com.ua</div>
+                                </div>
+                                <div class="article__text">Жилой комплекс «Jack House» в Киеве представлен 31-этажным строением бизнес класса. ЖК на
+                                    пересечении бульвара Леси Украинки и улицы Первомайского возводится по новаторскому дизайну
+                                    в престижном Печерском районе столицы
+                                </div>
+                                <div class="article__line article__link">
+                                    <a href="#">Перейти на джерело новини</a>
+                                    <div class="external-link-icon"></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__icon article__icon_3"></div>
+                            <div class="article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Продаж розпочато! Новий будинок по вул. Милославська,18
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                    <div class="article__website">www.artemivskyy.com.ua</div>
+                                </div>
+                                <div class="article__text">
+                                    Комплекс розташований в Денснянском районі, мікрорайон Троєщина. Це буде 3-секційне панельне будівля висотою 24-3-16 поверхів
+                                    з підземним паркінгом та приміщеннями комерційного призначення. Нежитлові площі розмістяться
+                                    в 3-поверхової секції «Б», а ось квартири - в секціях «А» і «В», 24 і заввишки 16 поверхів
+                                    відповідно </div>
+                                <div class="article__line article__link">
+                                    <a href="#">Перейти на джерело новини</a>
+                                    <div class="external-link-icon"></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__icon article__icon_1"></div>
+                            <div class="article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        <span class="article__title_new">Нове.</span> В Україні введуть електронну оцінку нерухомості
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                    <div class="article__website">www.zitloinvest.com.ua</div>
+                                </div>
+                                <div class="article__text">
+                                    ФДМУ розробив проект постанови Кабміну, згідно з яким технічно осучаснить Єдину базу даних звітів про оцінку і введе модуль
+                                    електронного визначення оціночної вартості
+                                </div>
+                                <div class="article__line article__link">
+                                    <a href="#">Перейти на джерело новини</a>
+                                    <div class="external-link-icon"></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__icon article__icon_5"></div>
+                            <div class="article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        В Україні подешевшає житло: Кабмін скасував деякі норми
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                    <div class="article__website">www.info.gov.ua</div>
+                                </div>
+                                <div class="article__text">
+                                    В Україні плата за отримання дозволу на будівництво житла більше не буде входити у вартість самих будівель. Як результат,
+                                    будинки і квартири коштуватимуть дешевше для кінцевого споживача </div>
+                                <div class="article__line article__link">
+                                    <a href="#">Перейти на джерело новини</a>
+                                    <div class="external-link-icon"></div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <button class="building-news__button">Завантажити ще новин</button>
+
+                    </div>
+
+                    <div class="updates-block">
+                        <div class="news-block__header">Поновлення</div>
+
+                        <article class="news-block__article article">
+                            <div class="article__inner updates-article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        3-D обліт
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                </div>
+                                <div class="article__text">
+                                    На 3-d обліт додана роза вітрів, та підвищена якість фотоматеріалів панорами
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__inner updates-article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Додано нові документи
+                                        <br>
+                                        <span class="article__title_new">Нове.</span>
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                </div>
+                                <div class="article__text">
+                                    В розділі «Документи» додано сертифікат відповідності містобудівним вимогам
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__inner updates-article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Змінено ціни на квартири
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                </div>
+                                <div class="article__text">
+                                    Оновлені ціни на кваритри в будинках третьої та четвертої черги
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__inner updates-article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Додана нова панорама
+                                        <br>
+                                        <span class="article__title_new">Нове.</span>
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                </div>
+                                <div class="article__text">
+                                    В розділі «Фотографї ЖК» додані нові фото за травень 2018 року
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__inner updates-article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Запрошуємо на екскурсію!
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                </div>
+                                <div class="article__text">
+                                    Ми проводимо для всіх бажаючих безкоштовні екскурії по нашому ЖК. Для запису, зв'яжіться із нашими менеджерами
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-block__article article">
+                            <div class="article__inner updates-article__inner">
+                                <div class="article__header">
+                                    <div class="article__title">
+                                        Відкрито продаж
+                                        <br>
+                                        <span class="article__title_new">Нове.</span>
+                                    </div>
+                                </div>
+                                <div class="article__line">
+                                    <div class="article__date">25.04.2018</div>
+                                </div>
+                                <div class="article__text">
+                                    Вже цього тижня, ви можете стати власником чудової квартири в нашому ЖК! Ми відкрили для продажу квартири 2 та 3 черги будівництва
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="information">
+                <div class="information__title">Що до уточнення інформації</div>
+                <p class="information__text">
+                    Відповідно до абзацу другого частини першої статті 9 Закону нотаріус в процесі обслуговування клієнта зобов«язаний уточнювати
+                    інформацію про клієнта в порядку, встановленому Міністерством юстиції України.
+                </p>
+                <p class="information__text">
+                    Уточнення інформації про клієнта — це актуалізація даних щодо клієнта, в тому числі ідентифікаційних даних, шляхом отримання
+                    документального підтвердження наявності (відсутності) змін у них (пункт 44 частини першої статті 1 Закону).
+                </p>
+                <p class="information__text">
+                    Уточнення інформації про клієнта включає:
+                    <br>
+                    <br> — проведення заходів, спрямованих на перевірку та уточнення інформації стосовно ідентифікації особи
+                    у разі, якщо є сумніви щодо достовірності чи повноти наданої інформації;
+                    <br>
+                    <br> — проведення заходів, спрямованих на уточнення інформації щодо ідентифікації у разі зміни інформації
+                    або закінчення строку дії документів, на підставі яких вона проводилась.
+                </p>
+                <p class="information__text">
+                    В свою чергу, нотаріус має право відмовитися від проведення фінансових операцій (обслуговування) у разі, коли клієнт на запит
+                    нотаріуса щодо уточнення інформації про клієнта не подав відповідну інформацію (офіційні документи та/або
+                    належним чином засвідчені їх копії). У такому разі нотаріус робить відповідну відмітку в анкеті, передбаченій
+                    пунктом 26 розділу III Положення, яка заповнюється під час ідентифікації та верифікації клієнта (представника
+                    клієнта)
+                </p>
+
+            </div>
+
+            <div class="action-bar">
+                <div class="action-bar__button action-bar__button-favorite"></div>
+                <div class="action-bar__button action-bar__button-compare"></div>
+                <div class="action-bar__button action-bar__button-hide"></div>
+                <div class="action-bar__button action-bar__button-navigation" data-status="disable"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="copyright ">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu ">
+            <ul>
+                <li>
+                    <a href="# ">Контакти</a>
+                </li>
+                <li>
+                    <a href="# ">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="# ">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="# ">Умови використання</a>
+                </li>
+                <li>
+                    <a href="# ">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="# ">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn ">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book " target="_blank " href="# "></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram " target="_blank " href="# "></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y " target="_blank " href="# "></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js "></script>
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>

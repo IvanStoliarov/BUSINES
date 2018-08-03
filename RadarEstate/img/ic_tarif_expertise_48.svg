@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="2" y="46" fill="#2A313B" rx="1"/>
+    <rect width="41" height="23" x="4" y="24" stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect width="41" height="4" x="4" y="20" stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <polygon stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="5 13 43 13 47 20 1 20"/>
+    <rect width="10" height="18" x="9" y="29" stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect width="13" height="10" x="27" y="31" stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect width="9" height="2" x="5" fill="#2A313B" rx="1"/>
+    <rect width="8" height="2" x="36" y="2" fill="#2A313B" rx="1"/>
+    <rect width="6" height="2" x="17" y="6" fill="#2A313B" rx="1"/>
+  </g>
+</svg>

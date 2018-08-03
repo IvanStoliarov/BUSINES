@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DashBoard</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/dashBoard.css">
+
+
+</head>
+
+<body>
+        <header data-status="developer">
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+        </div>
+
+        <div class="header__right-side header__right-side_developer">
+            <div class="header__notification">
+                <div class="notification__icon notification__icon_alarm">
+                    <div class="notification__status">23</div>
+                </div>
+                <div class="notification__text"></div>
+            </div>
+            <div class="header__sign-up">
+                <div class="sign-up__icon">
+                    <img src="img/ic_builder_24_black Copy.svg" alt="icon">
+                </div>
+                <div class="sign-up__name">ZIM Capital Group</div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main>
+        <aside class="messages">
+            <div class="messages__close-btn"></div>
+            <div class="messages__wrapper">
+                <div class="messages__content">
+                    <div class="messages__title">
+                        <div class="messages__icon">
+                            <div class="messages__notification">23</div>
+                        </div>
+                        <div>Повідомлення</div>
+                    </div>
+                    <div class="messages__block">
+                        <div class="messages__subtitle">Фінансові повідомлення</div>
+                        <div class="message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_document"></div>
+                            <div class="message__inner">
+                                <div class="message__title">Бухгалтерські документи готові</div>
+                                <div class="message__text">Готовові бухгалтерські документи за травень 2018 року. Ви можете завантажити їх у розділі
+                                    «Історія замовлень»
+                                </div>
+                                <a href="#" class="message__link">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_wallet"></div>
+                            <div class="message__inner">
+                                <div class="message__title">Оплатіть послуги за минулий місяць</div>
+                                <div class="message__text">Сплатіть 99 999 гнр. за травень 2018 року до 21.06.2018</div>
+                                <a href="#" class="message__link">Перейти</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="messages__block">
+                        <div class="messages-show__button"></div>
+                        <div class="messages__subtitle">Інші повідомлення</div>
+                        <div class="message message_other-message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_show"></div>
+                            <div class="message__inner">
+                                <div class="message__title">1 000 000 переглядів ваших сторінок</div>
+                                <div class="message__text">За минулий рік сторінки ваших будівель було переглянуто більше 1 000 000 раз</div>
+                            </div>
+                        </div>
+                        <div class="message message_other-message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_show"></div>
+                            <div class="message__inner">
+                                <div class="message__title">Нові перегляди ваших контактів</div>
+                                <div class="message__text">Користувачі за сьогодні 32 рази цікавились вашими номерами телефонів</div>
+                            </div>
+                        </div>
+                        <div class="message message_other-message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_show"></div>
+                            <div class="message__inner">
+                                <div class="message__title">1 000 000 переглядів ваших сторінок</div>
+                                <div class="message__text">За минулий рік сторінки ваших будівель було переглянуто більше 1 000 000 раз</div>
+                            </div>
+                        </div>
+                        <div class="message message_other-message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_show"></div>
+                            <div class="message__inner">
+                                <div class="message__title">Нові перегляди ваших контактів</div>
+                                <div class="message__text">Користувачі за сьогодні 32 рази цікавились вашими номерами телефонів</div>
+                            </div>
+                        </div>
+                        <div class="message message_other-message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_show"></div>
+                            <div class="message__inner">
+                                <div class="message__title">1 000 000 переглядів ваших сторінок</div>
+                                <div class="message__text">За минулий рік сторінки ваших будівель було переглянуто більше 1 000 000 раз</div>
+                            </div>
+                        </div>
+                        <div class="message message_other-message">
+                            <div class="message__close-btn"></div>
+                            <div class="message__icon message__icon_show"></div>
+                            <div class="message__inner">
+                                <div class="message__title">Нові перегляди ваших контактів</div>
+                                <div class="message__text">Користувачі за сьогодні 32 рази цікавились вашими номерами телефонів</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="main">
+            <h1 class="page__title">Dashboard забудовника</h1>
+            <ul id="dashBoard" class="timeline">
+                <li class="timeline__item timeline__item_active">Сьогодні</li>
+                <li class="timeline__item">За 24 год.</li>
+                <li class="timeline__item">Неділя</li>
+                <li class="timeline__item">Місяць</li>
+            </ul>
+            <div class="main-dashBoard">
+                <div class="main-dashBoard__wrapper">
+                    <div class="dashBoard-top">
+                        <div class="dashBoard-top__item">
+                            <div class="dashBoard-top__row">
+                                <div class="dashBoard-top__icon dashBoard-top__icon_engineer"></div>
+                                <div class="dashBoard-top__title">1
+                                    <span class="dashBoard-top__title_text">тис.</span>
+                                </div>
+                            </div>
+                            <div class="dashBoard-top__text">користувачів гортали планування квартир</div>
+                        </div>
+                        <div class="dashBoard-top__item">
+                            <div class="dashBoard-top__row">
+                                <div class="dashBoard-top__icon dashBoard-top__icon_engineer"></div>
+                                <div class="dashBoard-top__title">
+                                    <span class="dashBoard-top__title_number">2</span>тис.</div>
+                            </div>
+                            <div class="dashBoard-top__text">Дивились етажні плани будівель</div>
+                        </div>
+                        <div class="dashBoard-top__item">
+                            <div class="dashBoard-top__row">
+                                <div class="dashBoard-top__icon dashBoard-top__icon_favorite"></div>
+                                <div class="dashBoard-top__title">500</div>
+                            </div>
+                            <div class="dashBoard-top__text">Додали ваші сторінки до обранного</div>
+                        </div>
+                        <div class="dashBoard-top__item">
+                            <div class="dashBoard-top__row">
+                                <div class="dashBoard-top__icon dashBoard-top__icon_comparer"></div>
+                                <div class="dashBoard-top__title">300</div>
+                            </div>
+                            <div class="dashBoard-top__text">Порівнювали ваші будинки з іншими</div>
+                        </div>
+                    </div>
+                    <div class="zig-zag">
+                        <div class="zig-zag__line zig-zag__line_1">
+                            <div class="zig-zag__connect zig-zag__connect_1"></div>
+                            <div class="zig-zag__content">
+                                <div class="zig-zag__title zig-zag__title_1">Відвідувачів «Radar Estate»</div>
+                                <div class="zig-zag__bottom">
+                                    <div class="zig-zag__left-side">
+                                        <span class="zig-zag-text-m">Усього</span>
+                                    </div>
+                                    <div class="zig-zag__right-side">
+                                        134&nbsp;
+                                        <span class="zig-zag-text-s">тис.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zig-zag__line zig-zag__line_2">
+                            <div class="zig-zag__connect zig-zag__connect_2"></div>
+                            <div class="zig-zag__content">
+                                <div class="zig-zag__title zig-zag__title_2">Побачили ваші будинки у&nbsp;видачі</div>
+                                <div class="zig-zag__bottom">
+                                    <div class="zig-zag__left-side zig-zag__left-side_2">
+                                        11.2&nbsp;
+                                        <span class="zig-zag-text-s">%</span>
+                                    </div>
+                                    <div class="zig-zag__right-side zig-zag__right-side_2">
+                                        15&nbsp;
+                                        <span class="zig-zag-text-s">тис.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zig-zag__line zig-zag__line_3">
+                            <div class="zig-zag__connect zig-zag__connect_3"></div>
+                            <div class="zig-zag__content">
+                                <div class="zig-zag__title zig-zag__title_3">Відвідали ваші сторінки</div>
+                                <div class="zig-zag__bottom">
+                                    <div class="zig-zag__left-side zig-zag__left-side_3">
+                                        <span class="zig-zag__text-wrapper">
+                                            11.2
+                                            <span class="zig-zag-text-s">%</span>
+                                            <span class="zig-zag-text_desktop">&nbsp;/&nbsp;</span>
+                                            <br class="zig-zag-text_mobile">10&nbsp;<span class="zig-zag-text-s">тис.</span>
+                                        </span>
+                                    </div>
+                                    <div class="zig-zag__right-side zig-zag__right-side_3">
+                                        15&nbsp;
+                                        <span class="zig-zag-text-s">тис.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zig-zag__line zig-zag__line_4">
+                            <div class="zig-zag__content">
+                                <div class="zig-zag__title zig-zag__title_4">
+                                    <div class="zig-zag__subtitle">Перейшли на ваш сайт</div>
+                                    <div class="zig-zag__subtitle">Дивились контакти</div>
+                                </div>
+                                <div class="zig-zag__bottom">
+                                    <div class="zig-zag__left-side zig-zag__left-side_4">
+                                        <span class="zig-zag-text-s">3.7 % / 326</span>
+                                    </div>
+                                    <div class="zig-zag__right-side zig-zag__right-side_4">
+                                        <span class="zig-zag-text-s">5.4 % / 574</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="main-dashBoard__link">Дивитись детальну статистику</a>
+                </div>
+            </div>
+            <div class="dashBoard-promo">
+                <div class="dashBoard-promo__table">
+                    <div class="dashBoard-promo__title">Створено 5 акцій</div>
+                    <div class="dashBoard-promo__left-side">
+                        <div class="dashBoard-promo__icon dashBoard-promo__icon_eye"></div>
+                        <div>
+                            <div>50 756</div>
+                            <div class="dashBoard-promo__text_small">показів</div>
+                        </div>
+                    </div>
+                    <div class="dashBoard-promo__right-side">
+                        <div class="dashBoard-promo__icon dashBoard-promo__icon_jump"></div>
+                        <div>
+                            <div>4 715</div>
+                            <div class="dashBoard-promo__text_small">переходів</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="dashBoard-promo__link">До керування акціями</a>
+            </div>
+
+            <div class="developer-objects">
+                <div class="developer-objects__title">Об’єкти забудовника</div>
+                <ul class="developer-objects__city-list">
+                    <li class="developer-objects__city">
+                        <div class="developer-objects__city-name">Новоград-Волинський</div>
+                        <ul class="developer-objects-list">
+                            <li class="complex">
+                                <div class="complex__header">
+                                    <div class="show-status-icon"></div>
+                                    <div class="complex__icon"></div>
+                                    <div>
+                                        <div class="complex__name">ЖК «Журавлівська слобода» </div>
+                                        <div class="complex__houses-quantity">8 будинків
+                                            <div class="show-status-icon show-status-icon_mobile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="complex-houses__list complex-houses__list_hidden">
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-3.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">2 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-4.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-5.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 16</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-6.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 18</div>
+                                    </li>
+                                    <li class="complex-houses__item complex-houses__item_add">
+                                        <div class="complex-houses__photo complex-houses__photo_add">
+                                            <div class="plus-icon"></div>
+                                        </div>
+                                        <div class="complex-houses__name complex-houses__name_add">Додати будинок</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="complex">
+                                <div class="complex__header">
+                                    <div class="show-status-icon"></div>
+                                    <div class="complex__icon"></div>
+                                    <div>
+                                        <div class="complex__name">ЖК «Французьский квартал 2» </div>
+                                        <div class="complex__houses-quantity">12 будинків
+                                            <div class="show-status-icon show-status-icon_mobile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="complex-houses__list complex-houses__list_hidden">
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-3.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">2 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-4.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-5.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 16</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-6.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 18</div>
+                                    </li>
+                                    <li class="complex-houses__item complex-houses__item_add">
+                                        <div class="complex-houses__photo complex-houses__photo_add">
+                                            <div class="plus-icon"></div>
+                                        </div>
+                                        <div class="complex-houses__name complex-houses__name_add">Додати будинок</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="developer-objects__city">
+                        <div class="developer-objects__city-name">Львів</div>
+                        <ul class="developer-objects-list">
+                            <li class="complex">
+                                <div class="complex__header">
+                                    <div class="show-status-icon"></div>
+                                    <div class="complex__icon"></div>
+                                    <div>
+                                        <div class="complex__name">ЖК «Липинка» </div>
+                                        <div class="complex__houses-quantity">6 будинків
+                                            <div class="show-status-icon show-status-icon_mobile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="complex-houses__list complex-houses__list_hidden">
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-3.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">2 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-4.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-5.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 16</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-6.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 18</div>
+                                    </li>
+                                    <li class="complex-houses__item complex-houses__item_add">
+                                        <div class="complex-houses__photo complex-houses__photo_add">
+                                            <div class="plus-icon"></div>
+                                        </div>
+                                        <div class="complex-houses__name complex-houses__name_add">Додати будинок</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="complex">
+                                <div class="complex__header">
+                                    <div class="show-status-icon"></div>
+                                    <div class="complex__icon"></div>
+                                    <div>
+                                        <div class="complex__name">ЖК Клубний дім «Арт Холл» </div>
+                                        <div class="complex__houses-quantity">4 будинка
+                                            <div class="show-status-icon show-status-icon_mobile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="complex-houses__list complex-houses__list_hidden">
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-3.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">2 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-4.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-5.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 16</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-6.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 18</div>
+                                    </li>
+                                    <li class="complex-houses__item complex-houses__item_add">
+                                        <div class="complex-houses__photo complex-houses__photo_add">
+                                            <div class="plus-icon"></div>
+                                        </div>
+                                        <div class="complex-houses__name complex-houses__name_add">Додати будинок</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="complex">
+                                <div class="complex__header">
+                                    <div class="show-status-icon"></div>
+                                    <div class="complex__icon"></div>
+                                    <div>
+                                        <div class="complex__name">ЖК «Журавлівська слобода» </div>
+                                        <div class="complex__houses-quantity">8 будинкiв
+                                            <div class="show-status-icon show-status-icon_mobile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="complex-houses__list complex-houses__list_hidden">
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-3.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">2 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-4.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-5.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 16</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-6.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 18</div>
+                                    </li>
+                                    <li class="complex-houses__item complex-houses__item_add">
+                                        <div class="complex-houses__photo complex-houses__photo_add">
+                                            <div class="plus-icon"></div>
+                                        </div>
+                                        <div class="complex-houses__name complex-houses__name_add">Додати будинок</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="complex">
+                                <div class="complex__header">
+                                    <div class="show-status-icon"></div>
+                                    <div class="complex__icon"></div>
+                                    <div>
+                                        <div class="complex__name">ЖК «Французьский квартал 2» </div>
+                                        <div class="complex__houses-quantity">12 будинкiв
+                                            <div class="show-status-icon show-status-icon_mobile"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="complex-houses__list complex-houses__list_hidden">
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 12</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-3.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">2 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-4.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">1 черга. Солом’янська 14</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-5.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 16</div>
+                                    </li>
+                                    <li class="complex-houses__item">
+                                        <div class="complex-houses__photo">
+                                            <img src="img/house-photo-6.jpg" alt="photo">
+                                        </div>
+                                        <div class="complex-houses__name">3 черга. Солом’янська 18</div>
+                                    </li>
+                                    <li class="complex-houses__item complex-houses__item_add">
+                                        <div class="complex-houses__photo complex-houses__photo_add">
+                                            <div class="plus-icon"></div>
+                                        </div>
+                                        <div class="complex-houses__name complex-houses__name_add">Додати будинок</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

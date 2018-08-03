@@ -5,8 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700&subset=cyrillic');
 html {
   line-height: 1.15;
   /* 1 */
@@ -299,6 +297,30 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_ZpC3g3D-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3g3D-w.ttf) format('truetype');
+}
 header {
   padding: 24px 40px;
 }
@@ -326,12 +348,10 @@ form {
   border-radius: 4px;
   background-color: #f8ce46;
   padding: 24px 32px;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   box-sizing: border-box;
   margin-bottom: 40px;
 }
@@ -372,18 +392,16 @@ form {
   margin-bottom: 10px;
 }
 .timer {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-bottom: 25px;
 }
 .timer__icon {
   width: 36px;
   height: 45px;
-  background: url(../img/ic_timer_48_hovered.png) no-repeat center;
+  background: url(../img/ic_timer_48_hovered.svg) no-repeat center;
   background-size: 100%;
   margin-right: 14px;
 }
@@ -449,10 +467,8 @@ form {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     margin-bottom: 10px;
   }
   form input {

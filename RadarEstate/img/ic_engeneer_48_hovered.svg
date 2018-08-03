@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g fill="none" fill-rule="evenodd">
+    <g stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)">
+      <path d="M0,34 L0,6.10526316 C-4.16333634e-16,2.73341942 2.6862915,6.77820373e-16 6,0 C9.3137085,-5.93092826e-16 12,2.73341942 12,6.10526316 L12,34"/>
+      <path d="M12,35 C12,31.6862915 9.3137085,29 6,29 C2.6862915,29 0,31.6862915 0,35 C0,38.3137085 2.6862915,41 6,41 L12,41"/>
+    </g>
+    <g fill="#2A313B" transform="translate(34 8)">
+      <path fill-rule="nonzero" d="M2,21.625 C2,22.1772847 1.55228475,22.625 1,22.625 C0.44771525,22.625 0,22.1772847 0,21.625 L0,3 C0,1.34314575 1.34314575,0 3,0 L9,0 C10.6568542,0 12,1.34314575 12,3 L12,26 C12,26.5522847 11.5522847,27 11,27 C10.4477153,27 10,26.5522847 10,26 L10,3 C10,2.44771525 9.55228475,2 9,2 L3,2 C2.44771525,2 2,2.44771525 2,3 L2,21.625 Z"/>
+      <rect width="5" height="2" x="1" y="4"/>
+      <rect width="5" height="2" x="1" y="12"/>
+      <rect width="3" height="2" x="1" y="16"/>
+      <rect width="3" height="2" x="1" y="8"/>
+    </g>
+    <g fill="#2A313B" transform="matrix(0 1 1 0 17 34)">
+      <path fill-rule="nonzero" d="M2,13.625 C2,14.1772847 1.55228475,14.625 1,14.625 C0.44771525,14.625 0,14.1772847 0,13.625 L0,3 C0,1.34314575 1.34314575,0 3,0 L9,0 C10.6568542,0 12,1.34314575 12,3 L12,18 C12,18.5522847 11.5522847,19 11,19 C10.4477153,19 10,18.5522847 10,18 L10,3 C10,2.44771525 9.55228475,2 9,2 L3,2 C2.44771525,2 2,2.44771525 2,3 L2,13.625 Z"/>
+      <rect width="5" height="2" x="1" y="4"/>
+      <rect width="5" height="2" x="1" y="12"/>
+      <rect width="3" height="2" x="1" y="8"/>
+    </g>
+    <circle cx="40" cy="40" r="7" stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle cx="40" cy="40" r="3" stroke="#2A313B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect width="29" height="2" x="13" y="4" fill="#2A313B" rx="1"/>
+  </g>
+</svg>

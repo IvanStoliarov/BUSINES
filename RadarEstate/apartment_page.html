@@ -1,367 +1,454 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Company</title>
+    <title>apartment page</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/apartment_page.css">
 </head>
+
 <body>
-
-<header>
-    <div class="header__left-side">
-        <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
-        <a href="#" class="header__logo">
-            <img src="img/logo.svg" alt="Radar Estate">
-        </a>
-        <div class="header__city">
-            <div  class="current__city">Каменець-Подільський</div>
-            <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-            <div class="city-popup city-popup-hidden">
-                <ul class="city__list">
-                    <li class="city__item">Белая Церковь</li>
-                    <li class="city__item">Бровары</li>
-                    <li class="city__item">Ирпень</li>
-                    <li class="city__item">Винница</li>
-                    <li class="city__item">Чернигов</li>
+    <header>
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <nav class="header__nav-desktop">
-            <ul>
-                <li><a href="#">Мапа новобудов</a></li>
-                <li><a href="#">Каталог новобудов</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="header__right-side">
-        <div class="header__notification">
-            <div class="notification__img">
-                <img class="notification__icon" src="img/heart-2.svg" title="heart">
-                <div class="notification__status">23</div>
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
             </div>
-            <div class="notification__text">Улюблене</div>
-        </div>
-        <div class="header__notification">
-            <div class="notification__img">
-                <img class="notification__icon" src="img/icons-comparer-24-ic-compare-24-normal.svg" title="heart">
-                <div class="notification__status">5</div>
-            </div>
-            <div class="notification__text">Порівняння</div>
-        </div>
-        <div class="header__sign-up">
-            <div class="sign-up__icon">
-                <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
-            </div>
-            <div class="sign-up__name">Dmytro Ivanov</div>
-            <div class="sign-up__btn">
-                <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
-            </div>
-        </div>
-    </div>
-</header>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
 
-<div class="mobile-menu mobile-menu-registered  mobile-menu-hidden"> <!--Add class "mobile-menu-registered" for registered users-->
-    <div class="mobile-menu__links">
-        <div class="mobile-menu__top">
-            <div class="mobile-menu__btn">
-                <img src="img/mobile-btn.svg" alt="mobile-button">
-            </div>
-            <div class="header__city header__city-mobile">
-                <div class="current__city-wrapper">
-                    <div  class="current__city">Каменець-Подільський</div>
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
                     <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
                 </div>
-                <ul class="city__list city__list-hidden city__list-mobile">
-                    <li class="city__item city__item-mobile">Белая Церковь</li>
-                    <li class="city__item city__item-mobile">Бровары</li>
-                    <li class="city__item city__item-mobile">Ирпень</li>
-                    <li class="city__item city__item-mobile">Винница</li>
-                    <li class="city__item city__item-mobile">Чернигов</li>
-                </ul>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
             </div>
         </div>
-        <ul class="mobile-menu__main-nav">
-            <li><a href="#">Мапа новобудов</a></li>
-            <li><a href="#">Каталог новобудов</a></li>
-        </ul>
-        <ul class="mobile-menu__nav">
-            <li><a href="#">Контакти</a></li>
-            <li><a href="#">Забудовнику</a></li>
-            <li><a href="#">Послуги та ціни</a></li>
-            <li><a href="#">Умови використання</a></li>
-            <li><a href="#">Корисні статті</a></li>
-            <li><a href="#">Вакансії</a></li>
-        </ul>
-    </div>
+    </header>
 
-    <div class="mobile-menu__sign-in">
-        <div class="sign-in__line">
-            <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
-            <div class="sign-in__text">Вхід</div>
+    <div class="mobile-menu   mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
         </div>
-        <div class="sign-in__line">
-            <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
-            <div class="sign-in__text">Реєстрація</div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
         </div>
     </div>
 
-    <div class="mobile-menu__profile">
-        <ul>
-            <li class="mobileProfile__item"><a href="#">Мій профіль</a> <img src="img/user-icon.svg" alt="icon"></li>
-            <li class="mobileProfile__item"><a href="#">Моніторинг</a></li>
-            <li class="mobileProfile__item"><a href="#">Мої закази</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="main">
-    <div class="left-side">
-        <section class="apartment-scheme">
-            <div class="apartment-scheme__img">
-                <img class="apartment-scheme__img_icon" src="img/zoom-touch-img.png" alt="zoom icon">
-                <img src="img/apartment layout.jpg" alt="apartment layout">
-            </div>
-            <div class="apartment-scheme_subtitle">Планування квартири</div>
-        </section>
-        <section class="apartment-scheme">
-            <div class="apartment-scheme__img">
-                <img class="apartment-scheme__img_icon" src="img/zoom-touch-img.png" alt="zoom icon">
-                <img src="img/floor plan.jpg" alt="apartment layout">
-            </div>
-            <div class="apartment-scheme_subtitle">Розташування квартири на плані поверху</div>
-        </section>
-        <section class="apartment-scheme apartment-scheme_map">
-            <div class="apartment-scheme__img">
-                <img class="apartment-scheme__img_icon" src="img/zoom-touch-img.png" alt="zoom icon">
-                <img src="img/house-on-the-map.jpg" alt="apartment layout">
-            </div>
-            <div class="apartment-scheme_subtitle">Розташування планування на макеті будинку на карті</div>
-        </section>
-    </div>
-
-    <div class="right-side">
-        <a href="#" class="complex-name">ЖК «Журавлівська слобода»</a>
-        <h1 class="apartment-title">5 кімнатна квартира №133</h1>
-
-        <div class="apartment-carousel" data-flickity="{ 'wrapAround': true }">
-            <section class="carousel-cell apartment-scheme">
+    <div class="main">
+        <div class="left-side">
+            <section class="apartment-scheme">
                 <div class="apartment-scheme__img">
+                    <img class="apartment-scheme__icon-compass-rose" src="img/ic_comaps_rose_48_8.svg" alt="compass rose">
+                    <img class="apartment-scheme__img_icon" src="img/ZoomIn.svg" alt="zoom icon">
                     <img src="img/apartment layout.jpg" alt="apartment layout">
                 </div>
                 <div class="apartment-scheme_subtitle">Планування квартири</div>
             </section>
-            <section class="carousel-cell apartment-scheme">
+            <section class="apartment-scheme">
                 <div class="apartment-scheme__img">
+                    <img class="apartment-scheme__icon-compass-rose" src="img/ic_comaps_rose_48_8.svg" alt="comps rose">
+                    <img class="apartment-scheme__img_icon" src="img/ZoomIn.svg" alt="zoom icon">
                     <img src="img/floor plan.jpg" alt="apartment layout">
                 </div>
                 <div class="apartment-scheme_subtitle">Розташування квартири на плані поверху</div>
             </section>
-            <section class="carousel-cell apartment-scheme apartment-scheme_map">
+            <section class="apartment-scheme apartment-scheme_map">
                 <div class="apartment-scheme__img">
+                    <img class="apartment-scheme__img_icon" src="img/ZoomIn.svg" alt="zoom icon">
                     <img src="img/house-on-the-map.jpg" alt="apartment layout">
                 </div>
                 <div class="apartment-scheme_subtitle">Розташування планування на макеті будинку на карті</div>
             </section>
         </div>
 
-        <div class="apartment-info">
-            <div class="apartment-info__item">
-                <div class="apartment-info__title">Секція</div>
-                <div class="apartment-info__value">2</div>
-            </div>
-            <div class="apartment-info__item">
-                <div class="apartment-info__title">Дом</div>
-                <div class="apartment-info__value">12</div>
-            </div>
-            <div class="apartment-info__item">
-                <div class="apartment-info__title">Поверх</div>
-                <div class="apartment-info__value">4</div>
-            </div>
-            <div class="apartment-info__item">
-                <div class="apartment-info__title">Планування</div>
-                <div class="apartment-info__value">1-51.8</div>
-            </div>
-            <div class="apartment-info__item">
-                <div class="apartment-info__title">Площа</div>
-                <div class="apartment-info__value">51.8 м <sup>2</sup></div>
-            </div>
-        </div>
+        <div class="right-side">
+            <a href="#" class="complex-name">ЖК «Журавлівська слобода»</a>
+            <h1 class="apartment-title">5 кімнатна квартира №133</h1>
 
-        <div class="apartment-status">
-            <div class="apartment-status__sale">Продається</div>
-            <div class="apartment-status__price">$ 522,000 / 13,574,200 грн.</div>
-            <div class="apartment-status__button apartment-button">Записатись на огляд квартири</div>
-        </div>
-
-        <div class="price-change">
-            <div class="price-change__title">Зміна вартості квартири</div>
-            <div class="price-change__chart">
-                <img class="price-change__chart_desctop" src="img/img_line_chart_desktop.png" alt="price chart">
-                <img class="price-change__chart_tablet" src="img/img_line_chart_tablet.png" alt="price chart">
-                <img class="price-change__chart_phone" src="img/img_line_chart_phone.png" alt="price chart">
+            <div class="apartment-carousel" data-flickity="{ 'wrapAround': true }">
+                <section class="carousel-cell apartment-scheme">
+                    <div class="apartment-scheme__img">
+                        <img src="img/apartment layout.jpg" alt="apartment layout">
+                    </div>
+                    <div class="apartment-scheme_subtitle">Планування квартири</div>
+                </section>
+                <section class="carousel-cell apartment-scheme">
+                    <div class="apartment-scheme__img">
+                        <img src="img/floor plan.jpg" alt="apartment layout">
+                    </div>
+                    <div class="apartment-scheme_subtitle">Розташування квартири на плані поверху</div>
+                </section>
+                <section class="carousel-cell apartment-scheme apartment-scheme_map">
+                    <div class="apartment-scheme__img">
+                        <img src="img/house-on-the-map.jpg" alt="apartment layout">
+                    </div>
+                    <div class="apartment-scheme_subtitle">Розташування планування на макеті будинку на карті</div>
+                </section>
             </div>
-            <div class="price-change__legend">
-                <div class="price-change__legend_available">
-                    <div class="legend__icon"></div>
-                    <div class="legend__text">Бронювання доступне</div>
+
+            <div class="apartment-info">
+                <div class="apartment-info__item">
+                    <div class="apartment-info__title">Секція</div>
+                    <div class="apartment-info__value">2</div>
                 </div>
-                <div class="price-change__legend_booked">
-                    <div class="legend__icon"></div>
-                    <div class="legend__text">Заброньовано</div>
+                <div class="apartment-info__item">
+                    <div class="apartment-info__title">Дом</div>
+                    <div class="apartment-info__value">12</div>
+                </div>
+                <div class="apartment-info__item">
+                    <div class="apartment-info__title">Поверх</div>
+                    <div class="apartment-info__value">4</div>
+                </div>
+                <div class="apartment-info__item">
+                    <div class="apartment-info__title">Планування</div>
+                    <div class="apartment-info__value">1-51.8</div>
+                </div>
+                <div class="apartment-info__item">
+                    <div class="apartment-info__title">Площа</div>
+                    <div class="apartment-info__value">51.8 м
+                        <sup>2</sup>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apartment-status">
+                <div class="apartment-status__sale">Продається</div>
+                <div class="apartment-status__price">$ 522,000 / 13,574,200 грн.</div>
+                <div class="apartment-status__button apartment-button">Записатись на огляд квартири</div>
+            </div>
+
+            <div class="price-change">
+                <div class="price-change__title">Зміна вартості квартири</div>
+                <div class="price-change__chart">
+                    <img class="price-change__chart_desktop" src="img/img_line_chart_desktop.png" alt="price chart">
+                    <img class="price-change__chart_tablet" src="img/img_line_chart_tablet.png" alt="price chart">
+                    <img class="price-change__chart_phone" src="img/img_line_chart_phone.png" alt="price chart">
+                </div>
+                <div class="price-change__legend">
+                    <div class="price-change__legend_available">
+                        <div class="legend__icon"></div>
+                        <div class="legend__text">Бронювання доступне</div>
+                    </div>
+                    <div class="price-change__legend_booked">
+                        <div class="legend__icon"></div>
+                        <div class="legend__text">Заброньовано</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apartment-features">
+                <div class="apartment-features__title">Особливості квартири</div>
+                <ul>
+                    <li class="apartment-features__item">
+                        <div class="smile-icon smile-icon_sad"></div>
+                        <div class="apartment-features__feature">Поруч із ліфтом (можливий більший рівень шуму)</div>
+                    </li>
+                    <li class="apartment-features__item">
+                        <div class="smile-icon smile-icon_sad"></div>
+                        <div class="apartment-features__feature">Розташована на північній стороні будівлі (більші витрати на опалення)</div>
+                    </li>
+                    <li class="apartment-features__item">
+                        <div class="smile-icon smile-icon_indifferent"></div>
+                        <div class="apartment-features__feature">2 вікна виходять на північ (нижча інсоляція, більши витрати на опалення)</div>
+                    </li>
+                    <li class="apartment-features__item">
+                        <div class="smile-icon smile-icon_sad"></div>
+                        <div class="apartment-features__feature">3 вікна розташовані близько до дороги з інтенсивним трафіком (можливий підвищений рівень шуму)</div>
+                    </li>
+                    <li class="apartment-features__item">
+                        <div class="smile-icon smile-icon_fun"></div>
+                        <div class="apartment-features__feature">20% стін межують з вулицей (додаткові витрати на опалення)</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="apartment-form__wrapper">
+                <div class="apartment-form__title">Запишіться на огляд квартири</div>
+                <div class="apartment-form__description">Залиште свій номер телефону і ми зателефонуємо вам для погодження зручного часу відвідування квартири
+                </div>
+                <form class="apartment-form" action="">
+                    <div class="apartment-form__input-wrapper">
+                        <div class="apartment-form__phone">
+                            <label for="phone">Ваш номер телефону</label>
+                            <input class="input-phone" id="phone" type="tel" required placeholder="+38 ___ ___ __ __">
+                        </div>
+                        <div class="apartment-form__name">
+                            <label for="name">Ваше ім'я</label>
+                            <input class="input-name" id="name" type="text">
+                        </div>
+                    </div>
+                    <div class="apartment-form__button-wrapper">
+                        <button type="submit" class="apartment-button apartment-form__button">Записатись на огляд квартири
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="apartment-link">
+                <div class="apartment-link__icon"></div>
+                <a class="apartment-link_desktop" href="#">Повернутись до сторінки новобудівлі</a>
+                <a class="apartment-link_mobile" href="#">До сторінки новобудівлі</a>
+            </div>
+
+            <div class="similar-apartments">
+                <div class="similar-apartments__title">Схожі квартири в цьому житловому комплексі</div>
+                <div class="similar-apartments__list">
+
+                    <div class="similar-apartment">
+                        <div class="similar-apartment__img">
+                            <img src="img/img_apartment_2.jpg" alt="apartment image">
+                        </div>
+                        <a href="#" class="similar-apartment__link">5 кімнатна квартира 51.8 м2, секція 5, дім 12, поверх 3
+                        </a>
+                        <div class="similar-apartment__info">
+                            <div class="apartment-info__icon"></div>
+                            <div class="apartment-info__text">Здача: 2 кв. 2019</div>
+                        </div>
+                    </div>
+
+                    <div class="similar-apartment">
+                        <div class="similar-apartment__img">
+                            <img src="img/img_apartment_1.jpg" alt="apartment image">
+                        </div>
+                        <a href="#" class="similar-apartment__link">5 кімнатна квартира 53 м2, секція 3, дім 5, поверх 7</a>
+                    </div>
+
+                    <div class="similar-apartment">
+                        <div class="similar-apartment__img">
+                            <img src="img/img_apartment_2.jpg" alt="apartment image">
+                        </div>
+                        <a href="#" class="similar-apartment__link">5 кімнатна квартира 51 м2, секція 5, дім 3, поверх 11
+                        </a>
+                    </div>
+
+                    <div class="similar-apartment">
+                        <div class="similar-apartment__img">
+                            <img src="img/img_apartment_1.jpg" alt="apartment image">
+                        </div>
+                        <a href="#" class="similar-apartment__link">5 кімнатна квартира 51 м2, секція 5, дім 3, поверх 11
+                        </a>
+                    </div>
+
+                    <div class="similar-apartment">
+                        <div class="similar-apartment__img">
+                            <img src="img/img_apartment_2.jpg" alt="apartment image">
+                        </div>
+                        <a href="#" class="similar-apartment__link">5 кімнатна квартира 53 м2, секція 3, дім 5, поверх 7</a>
+                    </div>
+
+                    <div class="similar-apartment">
+                        <div class="similar-apartment__img">
+                            <img src="img/img_apartment_1.jpg" alt="apartment image">
+                        </div>
+                        <a href="#" class="similar-apartment__link">5 кімнатна квартира 51.8 м2, секція 5, дім 12, поверх 3
+                        </a>
+                        <div class="similar-apartment__info">
+                            <div class="apartment-info__icon"></div>
+                            <div class="apartment-info__text">Здача: 2 кв. 2019</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="apartment-features">
-            <div class="apartment-features__title">Особливості квартири</div>
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
             <ul>
-                <li class="apartment-features__item">
-                    <div class="smile-icon smile-icon_sad"></div>
-                    <div class="apartment-features__feauter">Поруч із ліфтом (можливий більший рівень шуму)</div>
+                <li>
+                    <a href="#">Контакти</a>
                 </li>
-                <li class="apartment-features__item">
-                    <div class="smile-icon smile-icon_sad"></div>
-                    <div class="apartment-features__feauter">Розташована на північній сторонфі будівлі (більші витрати на опалення)</div>
+                <li>
+                    <a href="#">Забудовнику</a>
                 </li>
-                <li class="apartment-features__item">
-                    <div class="smile-icon smile-icon_indifferent"></div>
-                    <div class="apartment-features__feauter">2 вікна виходять на північ (ничжа інсоляція, більши витрати на опалення)</div>
+                <li>
+                    <a href="#">Послуги та ціни</a>
                 </li>
-                <li class="apartment-features__item">
-                    <div class="smile-icon smile-icon_sad"></div>
-                    <div class="apartment-features__feauter">3 вікна розташовані близько до дороги з інтенсивним трафіком (можливий підвищений рівень шуму)</div>
+                <li>
+                    <a href="#">Умови використання</a>
                 </li>
-                <li class="apartment-features__item">
-                    <div class="smile-icon smile-icon_fun"></div>
-                    <div class="apartment-features__feauter">20% стін межують з вулицей (додаткові витрати на опалення)</div>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
                 </li>
             </ul>
         </div>
+    </footer>
 
-        <div class="apartment-form__wrapper">
-            <div class="apartment-form__title">Запишіться на огляд квартири</div>
-            <div class="apartment-form__description">Залиште свій номер телефону і ми зателефонуємо вам для погодження зручного часу відвідування квартири
-            </div>
-            <form class="apartment-form" action="">
-                <div class="apartment-form__input-wrapper">
-                    <div class="apartment-form__phone">
-                        <label for="phone">Ваш номер телефону</label>
-                        <input class="input-phone" id="phone" type="tel" required placeholder="+38 ___ ___ __ __">
-                    </div>
-                    <div class="apartment-form__name">
-                        <label for="name">Ваше ім'я</label>
-                        <input class="input-name" id="name" type="text">
-                    </div>
-                </div>
-                <div class="apartment-form__button-wrapper">
-                    <button type="submit" class="apartment-button apartment-form__button">Записатись на огляд
-                        квартири
-                    </button>
-                </div>
-            </form>
-        </div>
-        
-        <div class="apartment-link">
-            <div class="apartment-link__icon"></div>
-            <a class="apartment-link_desctop" href="#">Повернутись до сторінки новобудівлі</a>
-            <a class="apartment-link_mobile" href="#">До сторінки новобудівлі</a>
-        </div>
-
-        <div class="similar-apartments">
-            <div class="similar-apartments__title">Схожі квартири в цьому житловому комплексі</div>
-            <div class="similar-apartments__list">
-
-                <div class="similar-apartment">
-                    <div class="similar-apartment__img">
-                        <img src="img/img_apartment_2.jpg" alt="apartment image">
-                    </div>
-                    <a href="#" class="similar-apartment__link">5 кімнатна квартира 51.8 м2, секція 5, дім 12, поврех
-                        3</a>
-                    <div class="similar-apartment__info">
-                        <div class="apartment-info__icon"></div>
-                        <div class="apartment-info__text">Здача: 2 кв. 2019</div>
-                    </div>
-                </div>
-                
-                <div class="similar-apartment">
-                    <div class="similar-apartment__img">
-                        <img src="img/img_apartment_1.jpg" alt="apartment image">
-                    </div>
-                    <a href="#" class="similar-apartment__link">5 кімнатна квартира 53 м2, секція 3, дім 5, поверх 7</a>
-                </div>
-
-                <div class="similar-apartment">
-                    <div class="similar-apartment__img">
-                        <img src="img/img_apartment_2.jpg" alt="apartment image">
-                    </div>
-                    <a href="#" class="similar-apartment__link">5 кімнатна квартира 51 м2, секція 5, дім 3,
-                        поверх 11</a>
-                </div>
-
-                <div class="similar-apartment">
-                    <div class="similar-apartment__img">
-                        <img src="img/img_apartment_1.jpg" alt="apartment image">
-                    </div>
-                    <a href="#" class="similar-apartment__link">5 кімнатна квартира 51 м2, секція 5, дім 3,
-                        поверх 11</a>
-                </div>
-
-                <div class="similar-apartment">
-                    <div class="similar-apartment__img">
-                        <img src="img/img_apartment_2.jpg" alt="apartment image">
-                    </div>
-                    <a href="#" class="similar-apartment__link">5 кімнатна квартира 53 м2, секція 3, дім 5, поверх 7</a>
-                </div>
-
-                <div class="similar-apartment">
-                    <div class="similar-apartment__img">
-                        <img src="img/img_apartment_1.jpg" alt="apartment image">
-                    </div>
-                    <a href="#" class="similar-apartment__link">5 кімнатна квартира 51.8 м2, секція 5, дім 12, поврех
-                        3</a>
-                    <div class="similar-apartment__info">
-                        <div class="apartment-info__icon"></div>
-                        <div class="apartment-info__text">Здача: 2 кв. 2019</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
-    <nav class="footer__menu">
-        <ul>
-            <li><a href="#">Контакти</a></li>
-            <li><a href="#">Забудовнику</a></li>
-            <li><a href="#">Послуги та ціни</a></li>
-            <li><a href="#">Умови використання</a></li>
-            <li><a href="#">Корисні статті</a></li>
-            <li><a href="#">Вакансії</a></li>
-        </ul>
-    </nav>
-    <div class="footer__sn">
-        <ul>
-            <li><a class="footer__sn-face-book" target="_blank" href="#"></a></li>
-            <li><a class="footer__sn-instagram" target="_blank" href="#"></a></li>
-            <li><a class="footer__sn-y" target="_blank" href="#"></a></li>
-        </ul>
-    </div>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="js/apartment_carousel.js"></script>
-<script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/apartment_carousel.js"></script>
+    <script src="js/script.js"></script>
 
 
 </body>
+
 </html>

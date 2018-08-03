@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="47" viewBox="0 0 114 47">
+<defs>
+    <path id="shmxa" d="M868 5508v-40h108v40z"/>
+    <mask id="shmxc" width="2" height="2" x="-1" y="-1">
+        <path fill="#fff" d="M868 5468h108v40H868z"/>
+        <use xlink:href="#shmxa"/>
+    </mask>
+    <filter id="shmxb" width="136" height="70" x="854" y="5454" filterUnits="userSpaceOnUse">
+        <feOffset dy="2" in="SourceGraphic" result="FeOffset1059Out"/>
+        <feGaussianBlur in="FeOffset1059Out" result="FeGaussianBlur1060Out" stdDeviation="1.6 1.6"/>
+    </filter>
+</defs>
+<g>
+    <g transform="translate(-865 -5466)">
+        <g filter="url(#shmxb)">
+            <use fill="none" stroke-opacity=".5" stroke-width="0" mask="url(&quot;#shmxc&quot;)" xlink:href="#shmxa"/>
+            <use fill-opacity=".5" xlink:href="#shmxa"/>
+        </g>
+        <use fill="#f8ce46" xlink:href="#shmxa"/>
+    </g>
+</g>
+</svg>

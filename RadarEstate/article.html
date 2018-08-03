@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Article</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/article.css">
+</head>
+
+<body>
+
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
+            </div>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <article class="article">
+            <div class="article__date">28 березня 2018 року</div>
+            <h1 class="article__title">Огляд ринку новобудов Київ:
+                <br> березень 2018 р.</h1>
+            <div class="article-options">
+                <div class="article-options__item">
+                    <div class="article-options__icon_print"></div>
+                    <a href="#" class="article-options__link">Версія для друку</a>
+                </div>
+                <div class="article-options__item">
+                    <div class="article-options__icon_rss"></div>
+                    <a href="#" class="article-options__link">RSS
+                        <span class="article-options__link_mobile-hide">стрічка</span>
+                    </a>
+                </div>
+            </div>
+            <div class="article__description">Середня вартість квартир у новобудовах Києва в березні 2018 року склала
+                <span class="no-wrap">24 140 грн. /кв. м.</span> Порівняно з лютим середня вартість збільшилась на 0,05 %</div>
+            <img class="article__image" src="img/img_article_page_main_W840_H424.jpg" alt="skyscraper">
+            <div class="article__contents">
+                <div class="contents__title">Зміст:</div>
+                <ul class="contents">
+                    <li class="contents__item">
+                        <a href="#price-dynamic">Динаміка середньої ціни пропозиції квартир в новобудовах Києва</a>
+                    </li>
+                    <li class="contents__item contents__item_light">
+                        <a href="#prices-table">Середні ціни пропозиції квартир у новобудовах за районами Києва</a>
+                    </li>
+                    <li class="contents__item">
+                        <a href="#">Середня вартість квартир у новобудовах Києва за класами і кількістю кімнат</a>
+                    </li>
+                    <li class="contents__item">
+                        <a href="#offer-dynamic">Динаміка пропозиції новобудов на первинному ринку житла Києва</a>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="price-dynamic" id="price-dynamic">
+                <h2 class="section__title">Динаміка середньої ціни пропозиції квартир в новобудовах Києва</h2>
+                <div class="section__text-wrapper">
+                    <p class="section__text">Протягом березня 2018 року обсяг інвестицій в нерухомість Києва склав еквівалент 16 млн. 105 тис. дол.
+                        США, що на 20 % менше показників лютого.</p>
+                    <p class="section__text">Про це повідомили в аналітичній службі АН «Благовіст».</p>
+                    <p class="section__text">
+                        <em> Всі, придбані протягом місяця об`єкти нерухомості, були представлені квартирами.</em>
+                    </p>
+                    <p class="section__text">
+                        Сегмент до 50 тис. дол. в березні зайняв частку 39 % від загальної кількості операцій. У цій категорії купувалися 1 − 2-кімнатні
+                        квартири, в основному в старому житловому фонді, переважно в Дарницькому, Дніпровському та Святошинському
+                        районах столиці.
+                    </p>
+                </div>
+                <h3 class="section__subtitle">Середня вартість квартир у новобудовах Києва</h3>
+                <div class="section__text">
+                    Середня вартість квартир у новобудовах Києва в березні 2018 року склала 24 140 грн. /кв. м. Порівняно з лютим середня вартість
+                    збільшилась на 0,05 %, при показнику рівня похибки ± 1,8 %.
+                </div>
+                <div class="chart chart-average-price">
+                    <img class="chart-average-price__chart" src="img/img_article_page_Line Chart_W743_H256.png" alt="average price chart">
+                    <img class="chart-average-price__chart chart-average-price__chart_mobile" src="img/img_article_page_Line Chart__W292_H308.png"
+                        alt="average price chart">
+                    <div class="chart-average-price__analysis analysis">
+                        <h4 class="analysis__title">Порівняно з попереднім місяцем зміна цін за класами первинної нерухомості склала:</h4>
+                        <ul class="analysis__list list-style_disc">
+                            <li class="analysis__subtitle">Елітна нерухомість найвищого классу:
+                                <ul class="analysis__sublist list-style_disc">
+                                    <li class="analysis__item">економ-клас — ріст на 0,7 % до 18 112 грн. /кв. м;</li>
+                                    <li class="analysis__item">комфорт-клас — зниження на 1 % до 22 052 грн. /кв. м;</li>
+                                    <li class="analysis__item">бізнес-клас — зниження на 0,5 % до 32 387 грн. /кв. м;</li>
+                                    <li class="analysis__item">преміум-клас — ріст на 0,8 % до 50 349 грн. /кв. м.</li>
+                                </ul>
+                            </li>
+                            <li class="analysis__subtitle">Нерухомість середнього классу:
+                                <ul class="analysis__sublist list-style_disc">
+                                    <li class="analysis__item">економ-клас — ріст на 0,7 % до 18 112 грн. /кв. м;</li>
+                                    <li class="analysis__item">комфорт-клас — зниження на 1 % до 22 052 грн. /кв. м;</li>
+                                    <li class="analysis__item">бізнес-клас — зниження на 0,5 % до 32 387 грн. /кв. м;</li>
+                                    <li class="analysis__item">преміум-клас — ріст на 0,8 % до 50 349 грн. /кв. м.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 class="analysis__title">Порівняння зміни цін за класами первинної нерухомості в марті:</h4>
+                        <ul class="analysis__list list-style_disc">
+                            <li class="analysis__subtitle">Елітна нерухомість найвищого классу:
+                                <ul class="analysis__sublist list-style_disc">
+                                    <li class="analysis__item">економ-клас — ріст на 0,7 % до 18 112 грн. /кв. м;</li>
+                                    <li class="analysis__item">комфорт-клас — зниження на 1 % до 22 052 грн. /кв. м;</li>
+                                    <li class="analysis__item">бізнес-клас — зниження на 0,5 % до 32 387 грн. /кв. м;</li>
+                                    <li class="analysis__item">преміум-клас — ріст на 0,8 % до 50 349 грн. /кв. м.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offer-dynamic" id="offer-dynamic">
+                <h2 class="section__title">Динаміка пропозиції новобудов на первинному ринку житла Києва</h2>
+                <div class="section__text-wrapper">
+                    <p class="section__text">У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов
+                        економ-класу — 27 %, бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості. </p>
+                    <p class="section__text">У березні більша кількість житлових комплексів пропонувалася в Голосіївському районі — 18 %, Шевченківському
+                        — 14 %, Солом`янському та Дарницькому — по 13 %, Печерському — 12 %. Менша частка новобудов у Дніпровському
+                        — 9 %, Святошинському — 7 %, Оболонському та Подільському — по 5 %, Деснянському районі — 4 %. </p>
+                </div>
+                <div class="chart chart-offer-dynamic">
+                    <img class="chart-offer-dynamic__chart" src="img/img_article_page_Bar Chart_W743_H256.png" alt="offer dynamic chart">
+                    <img class="chart-offer-dynamic__chart chart-offer-dynamic__chart_mobile" src="img/img_article_page_Bar_Chart_W290_H305.png"
+                        alt="offer dynamic chart">
+                    <div class="chart-offer-dynamic__analysis analysis">
+                        <ul class="analysis__list list-style_upper-roman">
+                            <li class="analysis__subtitle">У березні розпочато чи відновлено продаж квартир в
+                                <span class="no-wrap"> 7-ми</span> комплексах:
+                                <ul class="analysis__sublist list-style_decimal">
+                                    <li class="analysis__item">Припинено чи призупинено продаж квартир в 4-х новобудовах. </li>
+                                    <li class="analysis__item">Збільшена ціна квадратного метра квартир в 21 новобудові — на 500 − 2000 грн. /кв. м.</li>
+                                </ul>
+                            </li>
+                            <li class="analysis__subtitle">У березні розпочато чи відновлено продаж квартир в
+                                <span class="no-wrap"> 7-ми</span> комплексах:
+                                <ul class="analysis__sublist list-style_decimal">
+                                    <li class="analysis__item">Знижено вартість квартир в 23 об`єктах — на 500 − 1500 грн. /кв. м.</li>
+                                    <li class="analysis__item">Кількість проаналізованих новобудов: 208</li>
+                                </ul>
+                            </li>
+                            <li class="analysis__subtitle">У березні розпочато чи відновлено продаж квартир в
+                                <span class="no-wrap"> 7-ми</span> комплексах:
+                                <ul class="analysis__sublist list-style_decimal">
+                                    <li class="analysis__item">Кількість компаній операторів: 77</li>
+                                    <li class="analysis__item">Введення в експлуатацію: введені — 4 кв. 2020 року.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section class="average-prices-table" id="prices-table">
+                <table class="table">
+                    <caption class="table__title">Середні ціни пропозиції квартир у районах Києва, березень 2018 р. </caption>
+                    <tr class="table__row_title">
+                        <td>Район</td>
+                        <td>Кількість ЖК</td>
+                        <td>Вибірка квартир, од.</td>
+                        <td>Сер. заг. пл., кв.м</td>
+                        <td>Сер.&nbsp;ціна, грн.</td>
+                        <td>Середня ціна, грн/кв.м</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Голосіївський</td>
+                        <td>12</td>
+                        <td>320</td>
+                        <td>75</td>
+                        <td>1 250 530</td>
+                        <td>24 180</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Дарницький</td>
+                        <td>7</td>
+                        <td>236</td>
+                        <td>59</td>
+                        <td>1 402 500</td>
+                        <td>24 020</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Печерський</td>
+                        <td>21</td>
+                        <td>123</td>
+                        <td>61</td>
+                        <td>978 920</td>
+                        <td>19 350</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Святошинський</td>
+                        <td>18</td>
+                        <td>240</td>
+                        <td>63</td>
+                        <td>1 050 321</td>
+                        <td>20 174</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Голосіївський</td>
+                        <td>12</td>
+                        <td>320</td>
+                        <td>75</td>
+                        <td>1 250 530</td>
+                        <td>24 180</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Дарницький</td>
+                        <td>7</td>
+                        <td>236</td>
+                        <td>59</td>
+                        <td>1 402 500</td>
+                        <td>24 020</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Печерський</td>
+                        <td>21</td>
+                        <td>123</td>
+                        <td>61</td>
+                        <td>978 920</td>
+                        <td>19 350</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Святошинський</td>
+                        <td>18</td>
+                        <td>240</td>
+                        <td>63</td>
+                        <td>1 050 321</td>
+                        <td>20 174</td>
+                    </tr>
+                </table>
+
+                <div class="table__title table__title_mobile">Середні ціни пропозиції квартир у районах Києва, березень 2018 р. </div>
+                <table class="table table_mobile">
+                    <tr class="table__row_title">
+                        <td colspan="2">Голосіївський</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. заг. пл., кв.м</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. ціна, грн.</td>
+                        <td>18</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Середня ціна, грн/кв.м</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Дарницький</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Печерський</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Святошинський</td>
+                        <td>18</td>
+                    </tr>
+                </table>
+
+                <table class="table table_mobile">
+                    <tr class="table__row_title">
+                        <td colspan="2">Дарницький</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. заг. пл., кв.м</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. ціна, грн.</td>
+                        <td>18</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Середня ціна, грн/кв.м</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Дарницький</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Печерський</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Святошинський</td>
+                        <td>18</td>
+                    </tr>
+                </table>
+
+                <table class="table table_mobile">
+                    <tr class="table__row_title">
+                        <td colspan="2">Печерський</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. заг. пл., кв.м</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. ціна, грн.</td>
+                        <td>18</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Середня ціна, грн/кв.м</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Дарницький</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Печерський</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Святошинський</td>
+                        <td>18</td>
+                    </tr>
+                </table>
+
+                <table class="table table_mobile">
+                    <tr class="table__row_title">
+                        <td colspan="2">Святошинський</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Кіль-ть ЖК</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. заг. пл., кв.м</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Сер. ціна, грн.</td>
+                        <td>18</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Середня ціна, грн/кв.м</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Дарницький</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Печерський</td>
+                        <td>21</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td>Святошинський</td>
+                        <td>18</td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section class="primary-market">
+                <h2 class="section__title">Розподілення первинного ринку Київа</h2>
+                <p class="section__text">
+                    У структурі пропозиції первинного житла переважають новобудови комфорт-класу — 37 %. Частка новобудов економ-класу — 27 %,
+                    бізнес-класу — 24 % та преміум-класу — 12 % від загальної кількості.
+                </p>
+                <p class="section__text">
+                    У березні більша кількість житлових комплексів пропонувалася в Голосіївському районі — 18 %, Шевченківському — 14 %, Солом`янському
+                    та Дарницькому — по 13 %, Печерському — 12 %. Менша частка новобудов у Дніпровському — 9 %, Святошинському
+                    — 7 %, Оболонському та Подільському — по 5 %, Деснянському районі — 4 %.
+                </p>
+                <div class="chart chart-primary-market">
+                    <img class="chart-primary-market__chart" src="img/img_article_page_Pie_Chart_W523_H310.svg" alt="chart">
+                    <img class="chart-primary-market__chart chart-primary-market__chart_mobile" src="img/img_article_page_Pie_Chart_W271_H443.svg"
+                        alt="chart">
+                </div>
+                <p class="section__text">
+                    Локальні оператори складської нерухомості починають створювати більше серйозну конкуренцію міжнародним логістичним компаніям.
+                    Українські компанії вже зараз розглядають нові напрямки для розвитку, демонструють готовність інвестувати
+                    в проекти і формати.
+                </p>
+                <p class="section__text">
+                    Про це повідомили аналітики компанії CBRE.
+                </p>
+                <p class="section__text">
+                    «Однією з переваг локальної логістичної компанії є можливість швидкого прийняття рішень на місці. Що стосується міжнародних
+                    логістичних операторів, то їх ключовими характеристиками залишаються високі стандарти корпоративної культури,
+                    процедурності і якості послуг. Наприклад, навіть під час кризи, міжнародний провайдер FM Logistic продовжував
+                    будівництво складських об'єктів і зараз, вакантність в складських комплексах, що перебувають у власності
+                    провайдера, є нульовою», — кажуть експерти.
+                </p>
+            </section>
+
+            <form class="browser-survey" action="">
+                <div class="browser-survey__title">Допоможіть покращити наш сайт.</div>
+                <div class="browser-survey__subtitle">Яким браузером ви користуєтесь для перегляду цієї сторінки?</div>
+
+                <label class="browser-survey__container">Google Chrome
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Mozilla Firefox
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Opera
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Safari
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Microsoft Edge
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Internet Explorer
+                    <input type="radio" disabled name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <button class="browser-survey__button" type="submit">Відправити</button>
+            </form>
+
+            <div class="warning">
+                Використання інформації можливе лише зі згоди адміністрації сайту, та за умови розміщення посилання на джерело.
+            </div>
+
+            <div class="article__footer">
+                <div class="article__hashtags">
+                    <a href="#" class="hashtag">#Нерухомість</a>
+                    <a href="#" class="hashtag">#Огляди</a>
+                    <a href="#" class="hashtag">#Київ</a>
+                </div>
+                <div class="article-sn">
+                    <div class="article-sn__item article-sn__item_tw">
+                        <a href="#" class="article-sn__link article-sn__link_tw">
+                            <div class="article-sn__icon article-sn__icon_tw"></div>Tweet
+                        </a>
+                        <div class="article-sn__status">93</div>
+                    </div>
+
+                    <div class="article-sn__item article-sn__item_fb">
+                        <a href="#" class="article-sn__link article-sn__link_fb">
+                            <div class="article-sn__icon article-sn__icon_fb"></div>Share
+                        </a>
+                        <div class="article-sn__status">1.6m</div>
+                    </div>
+
+                    <div class="article-sn__item article-sn__item_google">
+                        <a href="#" class="article-sn__link article-sn__link_google">
+                            <div class="article-sn__icon article-sn__icon_google"></div>+1
+                        </a>
+                        <div class="article-sn__status">11M</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </article>
+
+        <aside>
+            <h3 class="aside__title">Схожі теми:</h3>
+            <div class="aside__item aside-article">
+                <a href="#" class="aside-article__title">Огляд ринку приватних будинків Києва: січень – березень 2018 р.</a>
+                <div class="aside-article__date">19 березня 2018 року</div>
+            </div>
+            <div class="aside__item aside-article">
+                <a href="#" class="aside-article__title">Аналіз цін на вторинному ринку житлової нерухомості Києва: березень 2018 р.</a>
+                <div class="aside-article__date">19 березня 2018 року</div>
+            </div>
+            <div class="aside__item aside-article">
+                <a href="#" class="aside-article__title">Експерти розповіли, хто зараз орендує склади в Україні</a>
+                <div class="aside-article__date">22 березня 2018 р.</div>
+            </div>
+            <div class="aside__item aside-article">
+                <div class="aside-article_with-img">
+                    <img class="aside-article__img" src="img/aside-article-img.png" alt="photo">
+                    <a href="#" class="aside-article__title">У березні столичний ринок нерухомості пропонував лояльні ціни</a>
+                </div>
+                <div class="aside-article__date"></div>
+            </div>
+            <div class="aside__item aside-article">
+                <a href="#" class="aside-article__title">Огляд ринку приватних будинків Києва: січень – березень 2018 р.</a>
+                <div class="aside-article__date">25 березня 2018 р.</div>
+            </div>
+            <div class="aside__item aside-article">
+                <div class="aside-article_with-img">
+                    <img class="aside-article__img" src="img/aside-article-img-2.png" alt="photo">
+                    <a href="#" class="aside-article__title">У столиці зберігається високий попит на оренду нерухомості</a>
+                </div>
+                <div class="aside-article__date"></div>
+            </div>
+            <div class="aside__item aside-article">
+                <a href="#" class="aside-article__title">Розпочали підготовку до відкриття сезону роботи фонтанів</a>
+                <div class="aside-article__date">29 березня 2018 р.</div>
+            </div>
+
+            <form class="browser-survey browser-survey_mobile" action="">
+                <div class="browser-survey__title">Допоможіть покращити наш сайт.</div>
+                <div class="browser-survey__subtitle">Яким браузером ви користуєтесь для перегляду цієї сторінки?</div>
+
+                <label class="browser-survey__container">Google Chrome
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Mozilla Firefox
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Opera
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Safari
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Microsoft Edge
+                    <input type="radio" name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <label class="browser-survey__container">Internet Explorer
+                    <input type="radio" disabled name="radio">
+                    <span class="browser-survey__radiobtn"></span>
+                </label>
+                <button class="browser-survey__button" type="submit">Відправити</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

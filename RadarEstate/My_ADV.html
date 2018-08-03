@@ -1,0 +1,1855 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DashBoard</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/My_ADV.css">
+
+
+</head>
+
+<body>
+    <header data-status="developer">
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+        </div>
+
+        <div class="header__right-side header__right-side_developer">
+            <div class="header__notification">
+                <div class="notification__icon notification__icon_alarm">
+                    <div class="notification__status">23</div>
+                </div>
+                <div class="notification__text"></div>
+            </div>
+            <div class="header__sign-up">
+                <div class="sign-up__icon">
+                    <img src="img/ic_builder_24_black Copy.svg" alt="icon">
+                </div>
+                <div class="sign-up__name">ZIM Capital Group</div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="main">
+        <div class="page__top">
+            <h1 class="page__title">Керування акціями забудовника</h1>
+            <button class="page__top-btn">Додати акцію</button>
+        </div>
+        <ul id="dashBoard" class="timeline">
+            <li class="timeline__item">Минулі</li>
+            <li class="timeline__item timeline__item_active">Діючі</li>
+            <li class="timeline__item">Майбутні</li>
+            <li class="timeline__item">Архив</li>
+        </ul>
+
+        <div class="promotions-list">
+
+            <div class="promotion">
+                <div class="promotion__header">
+                    <div class="promotion__image">
+                        <img class="promotion__image-picture" src="img/promotion-img-1.jpg" alt="photo">
+                    </div>
+                    <div class="promotion__info">
+                        <div class="promotion__subtitle">Період проведення</div>
+                        <div class="promotion__info-value">05.08.2017–01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Початок</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">05.08.2017</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Завершення</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Приймають участь</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">12 будинків</div>
+                    </div>
+                </div>
+                <div class="promotion__title">Щедре літо з УКРБУД. Спеціальна ціна - 20700 грн/м2 при купівлі багатокімнатних квартир</div>
+                <a href="#" class="promotion__link">https://radarestate.ua/offers/go=building&action=arch</a>
+                <div class="promotion__footer">
+                    <div class="promotion__buttons">
+                        <div data-button="edit-button" class="promotion__button promotion__button_edit"></div>
+                        <div class="promotion__button promotion__button_archive"></div>
+                    </div>
+                    <div class="promotion__activation">
+                        <div class="promotion__activation-label">Акція активна:</div>
+                        <div class="promotion__activation-label promotion__activation-label_mobile">Активна:</div>
+                        <div class="promotion__toggler promotion__toggler_yes">
+                            <div class="switch promotion__toggler-switch"></div>
+                            <div class="toggler-state toggler-state_yes">Так</div>
+                            <div class="toggler-state toggler-state_no">Hi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion__status">
+                    <div class="promotion__status-icon promotion__status-icon_approved"></div>
+                    <div class="promotion__status-text promotion__status-text_approved">Ухвалено</div>
+                </div>
+                <div class="promotion__editor editor">
+                    <form class="editor__form" action="">
+                        <div class="editor__content">
+                            <div data-button="close-btn" class="editor__close-btn"></div>
+                            <div class="editor__main-block">
+                                <div class="editor__img-block">
+                                    <div class="editor__img">
+                                        <img class="editor__img-picture" src="img/promotion-img-3.jpg" alt="photo">
+                                    </div>
+                                    <div class="editor__img-change-wrapper">
+                                        <div class="editor__img-change">
+                                            <div class="editor__img-change-icon"></div>
+                                            <div>Змінити зображення</div>
+                                        </div>
+                                        <div class="editor__img-label editor-label">Файли в форматі jpg, png, gif розміром не більше 480 px по найбільшій стороні, та об’ємом
+                                            меньше ніж 1 Мбт</div>
+                                    </div>
+                                </div>
+                                <div class="editor__promotion-period">
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата початку</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-02-05">
+                                    </div>
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата завершення</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-04-30">
+                                    </div>
+                                </div>
+
+                                <div class="editor__promotion-title">
+                                    <div class="editor__promotion-title-label editor-label">Назва новобудови або забудовника</div>
+                                    <textarea class="editor__promotion-input" rows="3">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</textarea>
+                                </div>
+
+                                <div class="editor__promotion-link">
+                                    <div class="editor__promotion-link-label editor-label">Посилання на сторінку ації</div>
+                                    <input type="url" class="editor__promotion-link-input" value="https://radarestate.ua/offers/go=building&action=arch">
+                                </div>
+                            </div>
+                            <div class="editor__buildings">
+                                <div class="editor__buildings-title">Будинки, що приймають участь в акції</div>
+                                <div class="editor__buildings-wrapper">
+                                    <ul class="editor__buildings-list">
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editor__buttons">
+                            <div data-button="editor-button" class="editor__button editor__button_light">Відкинити зміни</div>
+                            <div data-button="editor-button" class="editor__button">Зберігти зміни</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="promotion promotion_awaiting">
+                <div class="promotion__header">
+                    <div class="promotion__image">
+                        <img class="promotion__image-picture" src="img/promotion-img-2.jpg" alt="photo">
+                    </div>
+                    <div class="promotion__info">
+                        <div class="promotion__subtitle">Період проведення</div>
+                        <div class="promotion__info-value">05.08.2017–01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Початок</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">05.08.2017</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Завершення</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Приймають участь</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">12 будинків</div>
+                        <div class="promotion__subtitle">Приймають участь</div>
+                        <div class="promotion__info-value">12 будинків</div>
+                    </div>
+                </div>
+                <div class="promotion__title">Квартиры в Оболонском районе от 23500 грн/м² Рассрочка до конца строительства</div>
+                <a href="#" class="promotion__link">https://radarestate.ua/offers/go=building&action=arch</a>
+                <div class="promotion__footer">
+                    <div class="promotion__buttons">
+                        <div data-button="edit-button" class="promotion__button promotion__button_edit"></div>
+                        <div class="promotion__button promotion__button_archive"></div>
+                    </div>
+                    <div class="promotion__activation">
+                        <div class="promotion__activation-label">Акція активна:</div>
+                        <div class="promotion__activation-label promotion__activation-label_mobile">Активна:</div>
+                        <div class="promotion__toggler">
+                            <div class="switch promotion__toggler-switch"></div>
+                            <div class="toggler-state toggler-state_yes">Так</div>
+                            <div class="toggler-state toggler-state_no">Hi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion__status">
+                    <div class="promotion__status-icon promotion__status-icon_awaiting"></div>
+                    <div class="promotion__status-text promotion__status-text_awaiting">Очікує модерації</div>
+                </div>
+                <div class="promotion__editor editor">
+                    <form class="editor__form" action="">
+                        <div class="editor__content">
+                            <div data-button="close-btn" class="editor__close-btn"></div>
+                            <div class="editor__main-block">
+                                <div class="editor__img-block">
+                                    <div class="editor__img">
+                                        <img class="editor__img-picture" src="img/promotion-img-3.jpg" alt="photo">
+                                    </div>
+                                    <div class="editor__img-change-wrapper">
+                                        <div class="editor__img-change">
+                                            <div class="editor__img-change-icon"></div>
+                                            <div>Змінити зображення</div>
+                                        </div>
+                                        <div class="editor__img-label editor-label">Файли в форматі jpg, png, gif розміром не більше 480 px по найбільшій стороні, та об’ємом
+                                            меньше ніж 1 Мбт</div>
+                                    </div>
+                                </div>
+                                <div class="editor__promotion-period">
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата початку</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-02-05">
+                                    </div>
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата завершення</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-04-30">
+                                    </div>
+                                </div>
+
+                                <div class="editor__promotion-title">
+                                    <div class="editor__promotion-title-label editor-label">Назва новобудови або забудовника</div>
+                                    <textarea class="editor__promotion-input" rows="3">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</textarea>
+                                </div>
+
+                                <div class="editor__promotion-link">
+                                    <div class="editor__promotion-link-label editor-label">Посилання на сторінку ації</div>
+                                    <input type="url" class="editor__promotion-link-input" value="https://radarestate.ua/offers/go=building&action=arch">
+                                </div>
+                            </div>
+                            <div class="editor__buildings">
+                                <div class="editor__buildings-title">Будинки, що приймають участь в акції</div>
+                                <div class="editor__buildings-wrapper">
+                                    <ul class="editor__buildings-list">
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editor__buttons">
+                            <div data-button="editor-button" class="editor__button editor__button_light">Відкинити зміни</div>
+                            <div data-button="editor-button" class="editor__button">Зберігти зміни</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="promotion">
+                <div class="promotion__header">
+                    <div class="promotion__image">
+                        <img class="promotion__image-picture" src="img/promotion-img-3.jpg" alt="photo">
+                    </div>
+                    <div class="promotion__info">
+                        <div class="promotion__subtitle">Період проведення</div>
+                        <div class="promotion__info-value">05.08.2017–01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Початок</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">05.08.2017</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Завершення</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Приймають участь</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">12 будинків</div>
+                        <div class="promotion__subtitle">Приймають участь</div>
+                        <div class="promotion__info-value">12 будинків</div>
+                    </div>
+                </div>
+                <div class="promotion__title">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</div>
+                <a href="#" class="promotion__link">https://radarestate.ua/offers/go=building&action=arch</a>
+                <div class="promotion__footer">
+                    <div class="promotion__buttons">
+                        <div data-button="edit-button" class="promotion__button promotion__button_edit"></div>
+                        <div class="promotion__button promotion__button_archive"></div>
+                    </div>
+                    <div class="promotion__activation">
+                        <div class="promotion__activation-label">Акція активна:</div>
+                        <div class="promotion__activation-label promotion__activation-label_mobile">Активна:</div>
+                        <div class="promotion__toggler promotion__toggler_yes">
+                            <div class="switch promotion__toggler-switch"></div>
+                            <div class="toggler-state toggler-state_yes">Так</div>
+                            <div class="toggler-state toggler-state_no">Hi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion__status">
+                    <div class="promotion__status-icon promotion__status-icon_approved"></div>
+                    <div class="promotion__status-text promotion__status-text_approved">Ухвалено</div>
+                </div>
+                <div class="promotion__editor editor">
+                    <form class="editor__form" action="">
+                        <div class="editor__content">
+                            <div data-button="close-btn" class="editor__close-btn"></div>
+                            <div class="editor__main-block">
+                                <div class="editor__img-block">
+                                    <div class="editor__img">
+                                        <img class="editor__img-picture" src="img/promotion-img-3.jpg" alt="photo">
+                                    </div>
+                                    <div class="editor__img-change-wrapper">
+                                        <div class="editor__img-change">
+                                            <div class="editor__img-change-icon"></div>
+                                            <div>Змінити зображення</div>
+                                        </div>
+                                        <div class="editor__img-label editor-label">Файли в форматі jpg, png, gif розміром не більше 480 px по найбільшій стороні, та об’ємом
+                                            меньше ніж 1 Мбт</div>
+                                    </div>
+                                </div>
+                                <div class="editor__promotion-period">
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата початку</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-02-05">
+                                    </div>
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата завершення</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-04-30">
+                                    </div>
+                                </div>
+
+                                <div class="editor__promotion-title">
+                                    <div class="editor__promotion-title-label editor-label">Назва новобудови або забудовника</div>
+                                    <textarea class="editor__promotion-input" rows="3">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</textarea>
+                                </div>
+
+                                <div class="editor__promotion-link">
+                                    <div class="editor__promotion-link-label editor-label">Посилання на сторінку ації</div>
+                                    <input type="url" class="editor__promotion-link-input" value="https://radarestate.ua/offers/go=building&action=arch">
+                                </div>
+                            </div>
+                            <div class="editor__buildings">
+                                <div class="editor__buildings-title">Будинки, що приймають участь в акції</div>
+                                <div class="editor__buildings-wrapper">
+                                    <ul class="editor__buildings-list">
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editor__buttons">
+                            <div data-button="editor-button" class="editor__button editor__button_light">Відкинити зміни</div>
+                            <div data-button="editor-button" class="editor__button">Зберігти зміни</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="promotion promotion_rejected">
+                <div class="promotion__header">
+                    <div class="promotion__image">
+                        <img class="promotion__image-picture" src="img/promotion-img-2.jpg" alt="photo">
+                    </div>
+                    <div class="promotion__info">
+                        <div class="promotion__subtitle">Період проведення</div>
+                        <div class="promotion__info-value">05.08.2017–01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Початок</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">05.08.2017</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Завершення</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Приймають участь</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">12 будинків</div>
+                        <div class="promotion__subtitle">Приймають участь</div>
+                        <div class="promotion__info-value">12 будинків</div>
+                    </div>
+                </div>
+                <div class="promotion__title">Квартиры в Оболонском районе от 23500 грн/м² Рассрочка до конца строительства</div>
+                <a href="#" class="promotion__link">https://radarestate.ua/offers/go=building&action=arch</a>
+                <div class="promotion__footer">
+                    <div class="promotion__buttons">
+                        <div data-button="edit-button" class="promotion__button promotion__button_edit"></div>
+                        <div class="promotion__button promotion__button_archive"></div>
+                    </div>
+                    <div class="promotion__activation">
+                        <div class="promotion__activation-label">Акція активна:</div>
+                        <div class="promotion__activation-label promotion__activation-label_mobile">Активна:</div>
+                        <div class="promotion__toggler">
+                            <div class="switch promotion__toggler-switch"></div>
+                            <div class="toggler-state toggler-state_yes">Так</div>
+                            <div class="toggler-state toggler-state_no">Hi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion__status">
+                    <div class="promotion__status-icon promotion__status-icon_rejected"></div>
+                    <div class="promotion__status-text promotion__status-text_rejected">Відхилено модератором. Не вказана дата початку акції</div>
+                </div>
+                <div class="promotion__editor editor">
+                    <form class="editor__form" action="">
+                        <div class="editor__content">
+                            <div data-button="close-btn" class="editor__close-btn"></div>
+                            <div class="editor__main-block">
+                                <div class="editor__img-block">
+                                    <div class="editor__img">
+                                        <img class="editor__img-picture" src="img/promotion-img-3.jpg" alt="photo">
+                                    </div>
+                                    <div class="editor__img-change-wrapper">
+                                        <div class="editor__img-change">
+                                            <div class="editor__img-change-icon"></div>
+                                            <div>Змінити зображення</div>
+                                        </div>
+                                        <div class="editor__img-label editor-label">Файли в форматі jpg, png, gif розміром не більше 480 px по найбільшій стороні, та об’ємом
+                                            меньше ніж 1 Мбт</div>
+                                    </div>
+                                </div>
+                                <div class="editor__promotion-period">
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата початку</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-02-05">
+                                    </div>
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата завершення</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-04-30">
+                                    </div>
+                                </div>
+
+                                <div class="editor__promotion-title">
+                                    <div class="editor__promotion-title-label editor-label">Назва новобудови або забудовника</div>
+                                    <textarea class="editor__promotion-input" rows="3">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</textarea>
+                                </div>
+
+                                <div class="editor__promotion-link">
+                                    <div class="editor__promotion-link-label editor-label">Посилання на сторінку ації</div>
+                                    <input type="url" class="editor__promotion-link-input" value="https://radarestate.ua/offers/go=building&action=arch">
+                                </div>
+                            </div>
+                            <div class="editor__buildings">
+                                <div class="editor__buildings-title">Будинки, що приймають участь в акції</div>
+                                <div class="editor__buildings-wrapper">
+                                    <ul class="editor__buildings-list">
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editor__buttons">
+                            <div data-button="editor-button" class="editor__button editor__button_light">Відкинити зміни</div>
+                            <div data-button="editor-button" class="editor__button">Зберігти зміни</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="promotion promotion">
+                <div class="promotion__header">
+                    <div class="promotion__image">
+                        <img class="promotion__image-picture" src="img/promotion-img-3.jpg" alt="photo">
+                    </div>
+                    <div class="promotion__info">
+                        <div class="promotion__subtitle">Період проведення</div>
+                        <div class="promotion__info-value">05.08.2017–01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Початок</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">05.08.2017</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Завершення</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">01.04.2018</div>
+                        <div class="promotion__subtitle promotion__subtitle_mobile">Приймають участь</div>
+                        <div class="promotion__info-value promotion__info-value_mobile">12 будинків</div>
+                        <div class="promotion__subtitle">Приймають участь</div>
+                        <div class="promotion__info-value">12 будинків</div>
+                    </div>
+                </div>
+                <div class="promotion__title">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</div>
+                <a href="#" class="promotion__link">https://radarestate.ua/offers/go=building&action=arch</a>
+                <div class="promotion__footer">
+                    <div class="promotion__buttons">
+                        <div data-button="edit-button" class="promotion__button promotion__button_edit"></div>
+                        <div class="promotion__button promotion__button_archive"></div>
+                    </div>
+                    <div class="promotion__activation">
+                        <div class="promotion__activation-label">Акція активна:</div>
+                        <div class="promotion__activation-label promotion__activation-label_mobile">Активна:</div>
+                        <div class="promotion__toggler promotion__toggler_yes">
+                            <div class="switch promotion__toggler-switch"></div>
+                            <div class="toggler-state toggler-state_yes">Так</div>
+                            <div class="toggler-state toggler-state_no">Hi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion__status">
+                    <div class="promotion__status-icon promotion__status-icon_moderete"></div>
+                    <div class="promotion__status-text promotion__status-text_moderete">Ухвалено. Модератором відредаговані посилання на сторінку акції</div>
+                </div>
+                <div class="promotion__editor editor">
+                    <form class="editor__form" action="">
+                        <div class="editor__content">
+                            <div data-button="close-btn" class="editor__close-btn"></div>
+                            <div class="editor__main-block">
+                                <div class="editor__img-block">
+                                    <div class="editor__img">
+                                        <img class="editor__img-picture" src="img/promotion-img-3.jpg" alt="photo">
+                                    </div>
+                                    <div class="editor__img-change-wrapper">
+                                        <div class="editor__img-change">
+                                            <div class="editor__img-change-icon"></div>
+                                            <div>Змінити зображення</div>
+                                        </div>
+                                        <div class="editor__img-label editor-label">Файли в форматі jpg, png, gif розміром не більше 480 px по найбільшій стороні, та об’ємом
+                                            меньше ніж 1 Мбт</div>
+                                    </div>
+                                </div>
+                                <div class="editor__promotion-period">
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата початку</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-02-05">
+                                    </div>
+                                    <div class="editor__promotion-period-col">
+                                        <div class="editor__promotion-period-label editor-label">Дата завершення</div>
+                                        <input type="date" class="editor__promotion-period-input" value="2018-04-30">
+                                    </div>
+                                </div>
+
+                                <div class="editor__promotion-title">
+                                    <div class="editor__promotion-title-label editor-label">Назва новобудови або забудовника</div>
+                                    <textarea class="editor__promotion-input" rows="3">Лише у травні! Комфортне житло із суперзнижкою - від 20 890 грн/м²!</textarea>
+                                </div>
+
+                                <div class="editor__promotion-link">
+                                    <div class="editor__promotion-link-label editor-label">Посилання на сторінку ації</div>
+                                    <input type="url" class="editor__promotion-link-input" value="https://radarestate.ua/offers/go=building&action=arch">
+                                </div>
+                            </div>
+                            <div class="editor__buildings">
+                                <div class="editor__buildings-title">Будинки, що приймають участь в акції</div>
+                                <div class="editor__buildings-wrapper">
+                                    <ul class="editor__buildings-list">
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-1.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-2.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Alter Ego», 3 черга</div>
+                                                        <div class="building-item__address">Київ, Солом'янська 12</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-3.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК Manhattan city, 1 черга</div>
+                                                        <div class="building-item__address">Київ, Політехнічний інститут</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-4.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Полісська слобода». 2 черга</div>
+                                                        <div class="building-item__address">Львів. Січових стрільців 25</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-5.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Rybalsky», 3 черга</div>
+                                                        <div class="building-item__address"> Київ, Поштова площа</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-6.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Воздухофлотський квартал»</div>
+                                                        <div class="building-item__address">Київ, Шулявська 37</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-7.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «Галактика» 5 черга</div>
+                                                        <div class="building-item__address">Київ, Лівобережна</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="building-item">
+                                            <label class="check-box__container">
+                                                <div class="building-item__content">
+                                                    <div class="building-item__img">
+                                                        <img class="building-item__img-picture" src="img/building-item-8.jpg" alt="photo">
+                                                    </div>
+                                                    <div class="building-item__info">
+                                                        <div class="building-item__name">ЖК «New York Concept House», 4 черга</div>
+                                                        <div class="building-item__address">Київ, вул. Олімпійська 87</div>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editor__buttons">
+                            <div data-button="editor-button" class="editor__button editor__button_light">Відкинити зміни</div>
+                            <div data-button="editor-button" class="editor__button">Зберігти зміни</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

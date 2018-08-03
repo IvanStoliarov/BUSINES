@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="523" height="310" viewBox="0 0 523 310">
+  <defs>
+    <path id="img_article_page_pie_chart_w523_h310-a" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-h" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-a"/>
+    </mask>
+    <path id="img_article_page_pie_chart_w523_h310-b" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-i" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-b"/>
+    </mask>
+    <path id="img_article_page_pie_chart_w523_h310-c" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-j" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-c"/>
+    </mask>
+    <path id="img_article_page_pie_chart_w523_h310-d" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-k" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-d"/>
+    </mask>
+    <path id="img_article_page_pie_chart_w523_h310-e" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-l" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-e"/>
+    </mask>
+    <path id="img_article_page_pie_chart_w523_h310-f" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-m" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-f"/>
+    </mask>
+    <path id="img_article_page_pie_chart_w523_h310-g" d="M147,254 C206.094468,254 254,206.094468 254,147 C254,87.9055318 206.094468,40 147,40 C87.9055318,40 40,87.9055318 40,147 C40,206.094468 87.9055318,254 147,254 Z"/>
+    <mask id="img_article_page_pie_chart_w523_h310-n" width="214" height="214" x="0" y="0" fill="#fff">
+      <use xlink:href="#img_article_page_pie_chart_w523_h310-g"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -5)">
+    <g transform="translate(114 42)">
+      <circle cx="147" cy="147" r="124.5" stroke="#E1E3EA"/>
+      <use stroke="#D6E6AC" stroke-dasharray="671.96 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-h)" xlink:href="#img_article_page_pie_chart_w523_h310-a"/>
+      <use stroke="#FFC710" stroke-dasharray="389.74 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-i)" transform="rotate(28 147 147)" xlink:href="#img_article_page_pie_chart_w523_h310-b"/>
+      <use stroke="#FF5964" stroke-dasharray="6.72 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-j)" transform="rotate(31 147 147)" xlink:href="#img_article_page_pie_chart_w523_h310-c"/>
+      <use stroke="#F5A623" stroke-dasharray="94.074 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-k)" transform="rotate(81 147 147)" xlink:href="#img_article_page_pie_chart_w523_h310-d"/>
+      <use stroke="#E3000F" stroke-dasharray="6.72 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-l)" transform="rotate(84 147 147)" xlink:href="#img_article_page_pie_chart_w523_h310-e"/>
+      <use stroke="#C0D87F" stroke-dasharray="68.3 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-m)" transform="rotate(120 147 147)" xlink:href="#img_article_page_pie_chart_w523_h310-f"/>
+      <use stroke="#D6E6AC" stroke-dasharray="107.514 9999999" stroke-width="224" mask="url(#img_article_page_pie_chart_w523_h310-n)" transform="rotate(180 147 147)" xlink:href="#img_article_page_pie_chart_w523_h310-g"/>
+      <circle cx="147" cy="147" r="40" fill="#8D9099"/>
+      <circle cx="147" cy="147" r="24" fill="#FFF"/>
+    </g>
+    <g transform="translate(376 210)">
+      <path stroke="#E1E3EA" d="M20 23.5L147 23.5M7 9L20 24"/>
+      <circle cx="6" cy="8" r="6" fill="#F8CE46"/>
+      <text fill="#94989D" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="65" y="14">Комфорт-клас</tspan>
+      </text>
+      <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+        <tspan x="26.031" y="15">58%</tspan>
+      </text>
+    </g>
+    <g transform="translate(23 291)">
+      <g transform="matrix(-1 0 0 1 184 2)">
+        <path stroke="#E1E3EA" d="M20 21.5L184 21.5M7 7L20 22"/>
+        <circle cx="6" cy="6" r="6" fill="#FF5964"/>
+      </g>
+      <text fill="#94989D" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="2.383" y="14">Закрите будівництво</tspan>
+      </text>
+      <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+        <tspan x="134.578" y="15">1%</tspan>
+      </text>
+    </g>
+    <g transform="translate(30 250)">
+      <g transform="matrix(-1 0 0 1 132 2)">
+        <path stroke="#E1E3EA" d="M20 21.5L132 21.5M7 7L20 22"/>
+        <circle cx="6" cy="6" r="6" fill="#F5A623"/>
+      </g>
+      <text fill="#94989D" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x=".674" y="14">Бізнес клас</tspan>
+      </text>
+      <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+        <tspan x="74.031" y="15">14%</tspan>
+      </text>
+    </g>
+    <g transform="translate(3 202)">
+      <g transform="matrix(-1 0 0 1 141 2)">
+        <path stroke="#E1E3EA" d="M20 21.5L141 21.5M7 7L20 22"/>
+        <circle cx="6" cy="6" r="6" fill="#E3000F"/>
+      </g>
+      <text fill="#94989D" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="1.441" y="14">Держ. резерв</tspan>
+      </text>
+      <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+        <tspan x="91.578" y="15">1%</tspan>
+      </text>
+    </g>
+    <g transform="translate(0 127)">
+      <g transform="matrix(-1 0 0 1 142 23)">
+        <path stroke="#E1E3EA" d="M20,0.5 L142,0.5"/>
+        <path stroke="#E1E3EA" d="M7,0 L20,15" transform="matrix(1 0 0 -1 0 15)"/>
+        <circle cx="6" cy="15" r="6" fill="#C0D87F"/>
+      </g>
+      <text fill="#94989D" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x="1.422" y="14">Преміум-клас</tspan>
+      </text>
+      <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+        <tspan x="88.031" y="15">10%</tspan>
+      </text>
+    </g>
+    <g transform="translate(58 47)">
+      <g transform="matrix(-1 0 0 1 136 23)">
+        <path stroke="#E1E3EA" d="M20,0.5 L136,0.5"/>
+        <path stroke="#E1E3EA" d="M7,0 L20,15" transform="matrix(1 0 0 -1 0 15)"/>
+        <circle cx="6" cy="15" r="6" fill="#D6E6AC"/>
+      </g>
+      <text fill="#94989D" font-family="Roboto-Regular, Roboto" font-size="12">
+        <tspan x=".654" y="14">Економ-клас</tspan>
+      </text>
+      <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+        <tspan x="82.031" y="15">16%</tspan>
+      </text>
+    </g>
+    <text fill="#2A313B" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400">
+      <tspan x="77" y="15">Разподілення первинного ринку</tspan>
+    </text>
+  </g>
+</svg>
