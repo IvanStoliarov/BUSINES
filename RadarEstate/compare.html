@@ -1,0 +1,2301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compare</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/floating-scroll.css">
+    <link rel="stylesheet" href="css/compare.css">
+
+
+</head>
+
+<body class="compare-page">
+    <header class="is-registered">
+        <!-- Add class "is-registered" for change header -->
+        <div class="header__left-side">
+            <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Radar Estate">
+            </a>
+            <div class="header__city">
+                <div class="current__city">Каменець-Подільський</div>
+                <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                <div class="city-popup city-popup-hidden">
+                    <ul class="city__list">
+                        <li class="city__item">Белая Церковь</li>
+                        <li class="city__item">Бровары</li>
+                        <li class="city__item">Ирпень</li>
+                        <li class="city__item">Винница</li>
+                        <li class="city__item">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header__nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__right-side">
+            <div class="header__notification__block">
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_favorite">
+                        <div class="notification__status">23</div>
+                    </div>
+                    <div class="notification__text">Улюблене</div>
+                </div>
+                <div class="header__notification">
+                    <div class="notification__icon notification__icon_compare">
+                        <div class="notification__status">5</div>
+                    </div>
+                    <div class="notification__text">Порівняння</div>
+                </div>
+            </div>
+            <div class="header__sign-up user-popup_is-hidden">
+                <div class="sign-up__icon">
+                    <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                    <div class="user-popup">
+                        <div class="user-popup__top">
+                            <div class="user-popup__icon"></div>
+                            <div class="user-popup__column">
+                                <div class="user-popup__name">Dmytro Ivanov</div>
+                                <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                            </div>
+                        </div>
+                        <ul class="user-popup__links">
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Моніторинг</a>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Мої закази</a>
+                                <div class="user-popup__link-notification">4</div>
+                            </li>
+                            <li class="user-popup__link-row">
+                                <a href="#" class="user-popup__link">Вихід</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="sign-up__name">
+                    <div>Dmytro Ivanov</div>
+                </div>
+                <div class="sign-up__btn">
+                    <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                </div>
+            </div>
+            <div class="header__sign-up_unregistered">
+                <div class="header__registration">
+                    <div class="header__registration-icon"></div>
+                    <a href="#" class="header__registration-link">Реєстрація</a>
+                </div>
+                <div class="header__log-in">
+                    <div class="header__log-in-icon"></div>
+                    <a href="#" class="header__registration-link">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+        <!--Add class "mobile-menu-registered" for registered users-->
+        <div class="mobile-menu__links">
+            <div class="mobile-menu__top">
+                <div class="mobile-menu__btn">
+                    <img src="img/mobile-btn.svg" alt="mobile-button">
+                </div>
+                <div class="header__city header__city-mobile">
+                    <div class="current__city-wrapper">
+                        <div class="current__city">Каменець-Подільський</div>
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                    <ul class="city__list city__list-hidden city__list-mobile">
+                        <li class="city__item city__item-mobile">Белая Церковь</li>
+                        <li class="city__item city__item-mobile">Бровары</li>
+                        <li class="city__item city__item-mobile">Ирпень</li>
+                        <li class="city__item city__item-mobile">Винница</li>
+                        <li class="city__item city__item-mobile">Чернигов</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mobile-menu__main-nav">
+                <li>
+                    <a href="#">Мапа новобудов</a>
+                </li>
+                <li>
+                    <a href="#">Каталог новобудов</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__sign-in">
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                <div class="sign-in__text">Вхід</div>
+            </div>
+            <div class="sign-in__line">
+                <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                <div class="sign-in__text">Реєстрація</div>
+            </div>
+        </div>
+
+        <div class="mobile-menu__profile">
+            <ul>
+                <li class="mobileProfile__item">
+                    <a href="#">Мій профіль</a>
+                    <img src="img/user-icon.svg" alt="icon">
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Моніторинг</a>
+                </li>
+                <li class="mobileProfile__item">
+                    <a href="#">Мої закази</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mobile-top">
+        <h1 class="aside__title">Порівняння новобудов</h1>
+        <div class="aside__button-add">Додати новобудову</div>
+        <div class="aside__button-clear">
+            <div class="trash-icon"></div>
+            <div>Очистити список</div>
+        </div>
+        <div class="aside__subtitle">Характеристики:</div>
+        <label class="aside__checkbox check-box__container">Тільки відмінності
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <div class="main">
+        <div class="aside">
+            <h1 class="aside__title">Порівняння новобудов</h1>
+            <div class="aside__button-add">Додати новобудову</div>
+            <div class="aside__button-clear">
+                <div class="trash-icon"></div>
+                <div>Очистити список</div>
+            </div>
+            <div class="aside__subtitle">Характеристики:</div>
+            <label class="aside__checkbox check-box__container">Тільки відмінності
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <table class="aside__table">
+                <tr>
+                    <th>Основне</th>
+                </tr>
+                <tr>
+                    <td>Забудовник</td>
+                </tr>
+                <tr>
+                    <td>Термін здачі</td>
+                </tr>
+                <tr>
+                    <td>Поверховість</td>
+                </tr>
+                <tr>
+                    <td>Кількість квартир</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell__inner">
+                            <div>Кількість секцій</div>
+                            <div class="help-icon"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Висота стель</td>
+                </tr>
+
+                <tr>
+                    <th>Інфраструктура</th>
+                </tr>
+                <tr>
+                    <td>Підземний паркінг</td>
+                </tr>
+                <tr>
+                    <td>Дитячий майданчик</td>
+                </tr>
+                <tr>
+                    <td>Опалення</td>
+                </tr>
+                <tr>
+                    <td>Спортивний майданчик</td>
+                </tr>
+                <tr>
+                    <td>Закритий паркінг</td>
+                </tr>
+                <tr>
+                    <td>Комерційні приміщення</td>
+                </tr>
+
+                <tr>
+                    <th>Розташування</th>
+                </tr>
+                <tr>
+                    <td class="location-cell">До центру міста</td>
+                </tr>
+                <tr>
+                    <td class="location-cell">До зупинки</td>
+                </tr>
+                <tr>
+                    <td class="location-cell">До дитячого садочку</td>
+                </tr>
+                <tr>
+                    <td class="location-cell">До супермаркету</td>
+                </tr>
+
+                <tr>
+                    <th>Технічні параметри</th>
+                </tr>
+                <tr>
+                    <td>Тип будинку</td>
+                </tr>
+                <tr>
+                    <td>Конструкційний матеріал</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell__inner">
+                            <div>Утеплення</div>
+                            <div class="help-icon"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell__inner">
+                            <div>Тип даху</div>
+                            <div class="help-icon"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Покрівля</td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <div class="cell__inner">
+                            <div>Ціни</div>
+                            <div class="currency-toggler__wrapper">
+                                <div class="currency-toggler currency-toggler__uah">грн</div>
+                                <div class="currency-toggler currency-toggler__usd currency-toggler_active">&#36;</div>
+                            </div>
+                        </div>
+
+                    </th>
+                </tr>
+                <tr>
+                    <td class="price-cell">1-кімнатна від:</td>
+                </tr>
+                <tr>
+                    <td class="price-cell">2-кімнатна від:</td>
+                </tr>
+                <tr>
+                    <td class="price-cell">3-кімнатна від:</td>
+                </tr>
+                <tr>
+                    <td class="price-cell">4-кімнатна від:</td>
+                </tr>
+                <tr>
+                    <td class="price-cell">5-кімнатна від:</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="compare__container">
+            <div class="compare-top__container">
+                <div class="compare-top__inner">
+                    <div class="compare-top__copy-link">
+                        <div class="copy-icon"></div>
+                        <a href="#">Копіювати посилання</a>
+                    </div>
+                    <div class="compare-top__sn">
+                        <div>Поділитися порівнянням:</div>
+                        <a href="" class="sn-icon sn-icon_fb"></a>
+                        <a href="" class="sn-icon sn-icon_tw"></a>
+                        <a href="" class="sn-icon sn-icon_g"></a>
+                    </div>
+                </div>
+            </div>
+
+            <table class="compare__table">
+                <tr class="top-row">
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_1_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_1_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Смарт-Плаза» 1 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Володимирівська набережна 12</div>
+                        </div>
+                    </td>
+
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Набережний квартал» 2 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Мечнікова 32</div>
+                        </div>
+                    </td>
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_3_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_3_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Нв-Буд»</div>
+                            </div>
+                            <div class="title-cell__complex-address">Івана Франка 5</div>
+                        </div>
+                    </td>
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_4_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_4_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Парк-Ленд» 2 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Костя Левитьского</div>
+                        </div>
+                    </td>
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Смарт-Плаза» 1 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Володимирівська набережна 12</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr>
+                    <td>Смарт-Плаза</td>
+                    <td>Набережний Квартал</td>
+                    <td>НВ буд</td>
+                    <td>Парк Ленд</td>
+                    <td>Грінвіль Хаус</td>
+                </tr>
+
+                <tr>
+                    <td>1 квартал 2018</td>
+                    <td>2 квартал 2018</td>
+                    <td>4 квартал 2019</td>
+                    <td>1 квартал 2018</td>
+                    <td>3 квартал 2018</td>
+                </tr>
+
+                <tr>
+                    <td>12 поверхів</td>
+                    <td>16 поверхів</td>
+                    <td>12 поверхів</td>
+                    <td>9 поверхів</td>
+                    <td>12 поверхів</td>
+                </tr>
+
+                <tr>
+                    <td>72</td>
+                    <td>96</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>72</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>2.8 м.</td>
+                    <td>2.65 м.</td>
+                    <td>2.8 м.</td>
+                    <td>3 м.</td>
+                    <td>2.8 м.</td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr class="hide-if-mobile">
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr>
+                    <td>Монолітно-корпусний</td>
+                    <td>Корпусний</td>
+                    <td>Монолітно-корпусний</td>
+                    <td>Каркасний</td>
+                    <td>Монолітно-корпусний</td>
+                </tr>
+
+                <tr>
+                    <td>Пінобетон</td>
+                    <td>Пінобетон</td>
+                    <td>Пінобетон</td>
+                    <td>Цегла</td>
+                    <td>Пінобетон</td>
+                </tr>
+
+                <tr>
+                    <td>Мін. вата</td>
+                    <td>Пінополістірол</td>
+                    <td>Мін. вата</td>
+                    <td>Мін. вата</td>
+                    <td>Мін. вата</td>
+                </tr>
+
+
+                <tr>
+                    <td>Плаский</td>
+                    <td>Плаский</td>
+                    <td>Скатний</td>
+                    <td>Двоскатний</td>
+                    <td>Плаский</td>
+                </tr>
+
+                <tr>
+                    <td>Рубероїд</td>
+                    <td>Профнастіл</td>
+                    <td>Рубероїд</td>
+                    <td>Металочерепиця</td>
+                    <td>Рубероїд</td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- mobile table -->
+
+            <table class="compare__table compare__table_mobile">
+                <tr class="top-row">
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_1_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_1_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Смарт-Плаза» 1 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Володимирівська набережна 12</div>
+                        </div>
+                    </td>
+
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Набережний квартал» 2 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Мечнікова 32</div>
+                        </div>
+                    </td>
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_3_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_3_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Нв-Буд»</div>
+                            </div>
+                            <div class="title-cell__complex-address">Івана Франка 5</div>
+                        </div>
+                    </td>
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_4_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_4_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Парк-Ленд» 2 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Костя Левитьского</div>
+                        </div>
+                    </td>
+                    <td class="compare-cell">
+                        <div class="title-cell">
+                            <div class="title-cell__top">
+                                <div class="favorite-button">
+                                    <div class="favorite-button__icon"></div>
+                                    <div>В улюблене</div>
+                                </div>
+                                <div class="delete-button">
+                                    <div class="delete-button__icon"></div>
+                                    <div>Видалити</div>
+                                </div>
+                            </div>
+                            <div class="title-cell__img">
+                                <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                            </div>
+                            <div class="title-cell__complex-name  title-cell__complex-name_disable">
+                                <div class="complex__img-small">
+                                    <img src="img/building_desktop_2_W180_H135.png" alt="photo">
+                                </div>
+                                <div class="complex-name">ЖК «Смарт-Плаза» 1 черга</div>
+                            </div>
+                            <div class="title-cell__complex-address">Володимирівська набережна 12</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Забудовник</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Смарт-Плаза</td>
+                    <td>Набережний Квартал</td>
+                    <td>НВ буд</td>
+                    <td>Парк Ленд</td>
+                    <td>Грінвіль Хаус</td>
+                </tr>
+
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Термін здачі</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>1 квартал 2018</td>
+                    <td>2 квартал 2018</td>
+                    <td>4 квартал 2019</td>
+                    <td>1 квартал 2018</td>
+                    <td>3 квартал 2018</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Поверховість</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>12 поверхів</td>
+                    <td>16 поверхів</td>
+                    <td>12 поверхів</td>
+                    <td>9 поверхів</td>
+                    <td>12 поверхів</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Кількість квартир</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>72</td>
+                    <td>96</td>
+                    <td>72</td>
+                    <td>64</td>
+                    <td>72</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Кількість секцій</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Висота стель</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2.8 м.</td>
+                    <td>2.65 м.</td>
+                    <td>2.8 м.</td>
+                    <td>3 м.</td>
+                    <td>2.8 м.</td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Підземний паркінг</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr class="hide-if-mobile">
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Опалення
+                            <div class="help-icon"></div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Спортивний майданчик</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Закритий паркінг</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Комерційні приміщення</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                    <td>
+                        <div class="yes-icon"></div>
+                    </td>
+                    <td>
+                        <div class="no-icon"></div>
+                    </td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">До центру міста</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">До зупинки</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">До дитячого садочку</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">До супермаркету</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="location-cell">
+                        <div class="location-cell__inner">
+                            <div class="location-cell__row">
+                                <div class="distance-icon"></div>
+                                <div class="location-cell_value">3,6 км.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="walk-icon"></div>
+                                <div class="location-cell_value">42 хв.</div>
+                            </div>
+                            <div class="location-cell__row">
+                                <div class="drive-icon"></div>
+                                <div class="location-cell_value">12 хв.</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Тип будинку</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Монолітно-корпусний</td>
+                    <td>Корпусний</td>
+                    <td>Монолітно-корпусний</td>
+                    <td>Каркасний</td>
+                    <td>Монолітно-корпусний</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Конструкційний матеріал</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Пінобетон</td>
+                    <td>Пінобетон</td>
+                    <td>Пінобетон</td>
+                    <td>Цегла</td>
+                    <td>Пінобетон</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Утеплення
+                            <div class="help-icon"></div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Мін. вата</td>
+                    <td>Пінополістірол</td>
+                    <td>Мін. вата</td>
+                    <td>Мін. вата</td>
+                    <td>Мін. вата</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Тип даху
+                            <div class="help-icon"></div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Плаский</td>
+                    <td>Плаский</td>
+                    <td>Скатний</td>
+                    <td>Двоскатний</td>
+                    <td>Плаский</td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">Покрівля</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Рубероїд</td>
+                    <td>Профнастіл</td>
+                    <td>Рубероїд</td>
+                    <td>Металочерепиця</td>
+                    <td>Рубероїд</td>
+                </tr>
+
+                <!--  -->
+
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                    <th class="empty-cell"></th>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">1-кімнатна від:</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">2-кімнатна від:</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">3-кімнатна від:</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">4-кімнатна від:</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+                <tr class="mobile-label-row">
+                    <td>
+                        <div class="mobile-label">5-кімнатна від:</div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;19,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;16,000</div>
+                        <div class="cost">&#36;890/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;1020/м2</div>
+                    </td>
+                    <td class="price-cell">
+                        <div class="price">&#36;18,000</div>
+                        <div class="cost">&#36;970/м2</div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+        <nav class="footer__menu">
+            <ul>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#">Забудовнику</a>
+                </li>
+                <li>
+                    <a href="#">Послуги та ціни</a>
+                </li>
+                <li>
+                    <a href="#">Умови використання</a>
+                </li>
+                <li>
+                    <a href="#">Корисні статті</a>
+                </li>
+                <li>
+                    <a href="#">Вакансії</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__sn">
+            <ul>
+                <li>
+                    <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                </li>
+                <li>
+                    <a class="footer__sn-y" target="_blank" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/floating_scroll.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

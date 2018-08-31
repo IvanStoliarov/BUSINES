@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700&subset=cyrillic");
 html {
   line-height: 1.15;
   /* 1 */
@@ -296,36 +298,6 @@ template {
  */
 [hidden] {
   display: none;
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fABc9.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc9.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_ZpC3g3D-w.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3g3D-w.ttf) format('truetype');
 }
 ul {
   list-style: none;
@@ -820,7 +792,7 @@ header {
   background-color: #ffffff;
   border-radius: 5px;
   width: 320px;
-  height: 240px;
+  height: 230px;
   padding: 24px;
   box-sizing: border-box;
   border: 1px solid #c6c7cc;
@@ -875,12 +847,14 @@ header {
   color: #2a313b;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 3px;
 }
 .user-popup__email {
   color: #94989d;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
+  margin-bottom: 5px;
 }
 .user-popup__profile-link {
   color: #2a313b;
@@ -900,7 +874,7 @@ header {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 .user-popup__link {
   color: #2a313b;
@@ -1141,7 +1115,7 @@ footer {
   .footer__menu ul .pressed-link:before {
     position: absolute;
     bottom: -7px;
-    left: calc(50% - 32px);
+    left: calc(18%);
     content: "";
     width: 64px;
     height: 4px;
@@ -1427,10 +1401,10 @@ h1 {
   line-height: 24px;
   font-size: 12px;
   line-height: 16px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .order__link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .order_title {
   color: #2a313b;
@@ -1619,7 +1593,7 @@ h1 {
     border-color: #e1e3ea;
     border-right: none;
     border-left: none;
-    text-align-last: left;
+    text-align: left;
   }
   .order__service {
     background: #f0f1f4;
@@ -1781,5 +1755,6 @@ h1 {
   }
   .main_developer .order {
     width: 100%;
+    text-align: left;
   }
 }

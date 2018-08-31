@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main_page</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main_page.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="is-registered">
+            <!-- Add class "is-registered" for change header -->
+            <div class="header__left-side">
+                <img class="menu__btn" src="img/menu-btn.svg" alt="menu">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="Radar Estate">
+                </a>
+                <div class="header__city">
+                    <div class="current__city">Каменець-Подільський</div>
+                    <img class="current__city-icon" src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    <div class="city-popup city-popup-hidden">
+                        <ul class="city__list">
+                            <li class="city__item">Белая Церковь</li>
+                            <li class="city__item">Бровары</li>
+                            <li class="city__item">Ирпень</li>
+                            <li class="city__item">Винница</li>
+                            <li class="city__item">Чернигов</li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="header__nav-desktop">
+                    <ul>
+                        <li>
+                            <a href="#">Мапа новобудов</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог новобудов</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__right-side">
+                <div class="header__notification__block">
+                    <div class="header__notification">
+                        <div class="notification__icon notification__icon_favorite">
+                            <div class="notification__status">23</div>
+                        </div>
+                        <div class="notification__text">Улюблене</div>
+                    </div>
+                    <div class="header__notification">
+                        <div class="notification__icon notification__icon_compare">
+                            <div class="notification__status">5</div>
+                        </div>
+                        <div class="notification__text">Порівняння</div>
+                    </div>
+                </div>
+                <div class="header__sign-up user-popup_is-hidden">
+                    <div class="sign-up__icon">
+                        <img src="img/icons-user-16-ic-user-16-hovered.svg" alt="icon">
+                        <div class="user-popup">
+                            <div class="user-popup__top">
+                                <div class="user-popup__icon"></div>
+                                <div class="user-popup__column">
+                                    <div class="user-popup__name">Dmytro Ivanov</div>
+                                    <div class="user-popup__email">Dmytro.Ivanov@gmail.com</div>
+                                    <a href="#" class="user-popup__profile-link">Мій профіль</a>
+                                </div>
+                            </div>
+                            <ul class="user-popup__links">
+                                <li class="user-popup__link-row">
+                                    <a href="#" class="user-popup__link">Моніторинг</a>
+                                </li>
+                                <li class="user-popup__link-row">
+                                    <a href="#" class="user-popup__link">Мої закази</a>
+                                    <div class="user-popup__link-notification">4</div>
+                                </li>
+                                <li class="user-popup__link-row">
+                                    <a href="#" class="user-popup__link">Вихід</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="sign-up__name">
+                        <div>Dmytro Ivanov</div>
+                    </div>
+                    <div class="sign-up__btn">
+                        <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                    </div>
+                </div>
+                <div class="header__sign-up_unregistered">
+                    <div class="header__registration">
+                        <div class="header__registration-icon"></div>
+                        <a href="#" class="header__registration-link">Реєстрація</a>
+                    </div>
+                    <div class="header__log-in">
+                        <div class="header__log-in-icon"></div>
+                        <a href="#" class="header__registration-link">Вхід</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-menu mobile-menu-registered  mobile-menu-hidden">
+            <!--Add class "mobile-menu-registered" for registered users-->
+            <div class="mobile-menu__links">
+                <div class="mobile-menu__top">
+                    <div class="mobile-menu__btn">
+                        <img src="img/mobile-btn.svg" alt="mobile-button">
+                    </div>
+                    <div class="header__city header__city-mobile">
+                        <div class="current__city-wrapper">
+                            <div class="current__city">Каменець-Подільський</div>
+                            <img src="img/icons-expand-16-ic-expand-16-normal.svg" alt="more">
+                        </div>
+                        <ul class="city__list city__list-hidden city__list-mobile">
+                            <li class="city__item city__item-mobile">Белая Церковь</li>
+                            <li class="city__item city__item-mobile">Бровары</li>
+                            <li class="city__item city__item-mobile">Ирпень</li>
+                            <li class="city__item city__item-mobile">Винница</li>
+                            <li class="city__item city__item-mobile">Чернигов</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="mobile-menu__main-nav">
+                    <li>
+                        <a href="#">Мапа новобудов</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог новобудов</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__nav">
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">Забудовнику</a>
+                    </li>
+                    <li>
+                        <a href="#">Послуги та ціни</a>
+                    </li>
+                    <li>
+                        <a href="#">Умови використання</a>
+                    </li>
+                    <li>
+                        <a href="#">Корисні статті</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансії</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu__sign-in">
+                <div class="sign-in__line">
+                    <img class="sign-in__icon" src="img/login-icon.svg" alt="login">
+                    <div class="sign-in__text">Вхід</div>
+                </div>
+                <div class="sign-in__line">
+                    <img class="sign-in__icon" src="img/signup-icon.svg" alt="login">
+                    <div class="sign-in__text">Реєстрація</div>
+                </div>
+            </div>
+
+            <div class="mobile-menu__profile">
+                <ul>
+                    <li class="mobileProfile__item">
+                        <a href="#">Мій профіль</a>
+                        <img src="img/user-icon.svg" alt="icon">
+                    </li>
+                    <li class="mobileProfile__item">
+                        <a href="#">Моніторинг</a>
+                    </li>
+                    <li class="mobileProfile__item">
+                        <a href="#">Мої закази</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <h1 class="page__title">Пошуковик новобудов</h1>
+            <h2 class="page__subtitle">Разом з Real Estate вибрати квартиру справді легко</h2>
+            <form action="" class="select-city">
+                <div class="page__title_mobile">Пошуковик <br> новобудов</div>
+                <select class="select-city__area" name="" id="">
+                    <option value="0" selected disabled>Оберіть місто</option>
+                    <option value="1">Київ</option>
+                    <option value="2">Одеса</option>
+                    <option value="3">Львiв</option>
+                    <option value="3">Харкiв</option>
+                </select>
+                <button class="select-city__button" type="submit">
+                    <div class="button__inner">
+                        <div class="search-icon"></div>
+                        <div>Знайти</div>
+                    </div>
+                </button>
+            </form>
+            <div class="page__map">
+                <div class="page__map-mask"></div>
+            </div>
+            <div class="page-descriptions">
+                <div class="page-descriptions__item">
+                    <div class="page-descriptions__icon page-descriptions__icon_search"></div>
+                    <div class="page-descriptions__text">Розумний пошук з урахуванням бажаної інфраструктури, та строків здачі об’єктів </div>
+                </div>
+                <div class="page-descriptions__item">
+                    <div class="page-descriptions__icon page-descriptions__icon_favorite"></div>
+                    <div class="page-descriptions__text">Спільний доступ до списку улюбенного. Можливість поділитися списком порівняння </div>
+                </div>
+                <div class="page-descriptions__item">
+                    <div class="page-descriptions__icon page-descriptions__icon_analysis"></div>
+                    <div class="page-descriptions__text">Перевірка забудовника. Еко-аналіз. Ви обираєте надійне, та безпечне житло</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">&copy; ТОВ &laquo;Радар Естейтcity&raquo;, 2018</div>
+            <nav class="footer__menu">
+                <ul>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">Забудовнику</a>
+                    </li>
+                    <li>
+                        <a href="#">Послуги та ціни</a>
+                    </li>
+                    <li>
+                        <a href="#">Умови використання</a>
+                    </li>
+                    <li>
+                        <a href="#">Корисні статті</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансії</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__sn">
+                <ul>
+                    <li>
+                        <a class="footer__sn-face-book" target="_blank" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="footer__sn-instagram" target="_blank" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="footer__sn-y" target="_blank" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
